@@ -6,7 +6,7 @@ Web fashions by POLITICO Interatives.
 
 ### Using in your project
 
-Install the module:
+Install the module.
 
 ```
 $ yarn add politico-style
