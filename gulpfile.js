@@ -3,13 +3,20 @@ const webserver = require('gulp-webserver');
 const sass = require('gulp-sass');
 const nunjucksRender = require('gulp-nunjucks-render');
 const tildeImporter = require('node-sass-tilde-importer');
+const portfinder = require('portfinder');
+
+portfinder.basePort = 3000;
 
 gulp.task('server', () =>
-  gulp.src('docs')
-    .pipe(webserver({
-      livereload: true,
-      open: true
-    }))
+  portfinder.getPortPromise()
+    .then((foundPort) => {
+      gulp.src('docs')
+        .pipe(webserver({
+          livereload: true,
+          open: true,
+          port: foundPort
+        }))
+    })
 );
 
 gulp.task('scss', () =>
