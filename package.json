@@ -17,8 +17,8 @@
     "web"
   ],
   "files": [
-    "scss/",
-    "docs/css/"
+    "scss/*",
+    "docs/css/*"
   ],
   "style": "docs/css/base/main.css",
   "sass": "scss/base/main.scss",
