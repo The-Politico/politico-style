@@ -1,0 +1,47 @@
+@import '../base/theme/fonts';
+
+nav{
+  width: 300px;
+  float: left;
+  height: 100vh;
+  overflow-y: scroll;
+  font-family: $franklin;
+  padding: 10px;
+  h4{
+    text-align: left;
+  }
+  ul{
+    width: 100%;
+    padding-left: 0;
+    li{
+      margin: 4px 0;
+      background-color: #ddd;
+      list-style-type: none;
+      padding: 5px 15px;
+      cursor: pointer;
+      a{
+        color: grey;
+        display: block;
+        width: 100%;
+      }
+      &:hover{
+        background-color: lightgrey;
+        a{
+          color: #333;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+
+content{
+  width: calc(100% - 300px);
+  float: left;
+  height: 100vh;
+  padding: 40px 5px;
+  overflow-y: scroll;
+  article{
+    width: 100% !important;
+  }
+}

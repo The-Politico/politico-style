@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.11.0/themes/prism-okaidia.min.css" />
+    <link rel="stylesheet" href="/css/components/main.css">
+    <link rel="stylesheet" type="text/css" href="https://www.politico.com/interactives/cdn/fonts/base-icons/politico-base-icons.min.css">
+  </head>
+  <body>
+    {% include "components/partials/sidenav.html" %}
+    <content>
+      <article class="container">
+        {% include "components/partials/header.html" %}
+        <hr/>
+        {% include "components/partials/cards.html" %}
+      </article>
+    </content>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.11.0/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.11.0/components/prism-django.min.js"></script>
+  </body>
+</html>
