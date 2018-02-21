@@ -1,7 +1,7 @@
 {
   "name": "politico-style",
   "version": "0.0.0",
-  "description": "Web fashions by Politico interactives.",
+  "description": "Web fashions by Politico Interactives.",
   "main": "index.js",
   "repository": "git@github.com:The-Politico/politico-style.git",
   "author": "Politico Interactives <interactives@politico.com>",

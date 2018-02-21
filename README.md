@@ -2,28 +2,30 @@
 
 # politico-style
 
-Web fashions by POLITICO interatives.
+Web fashions by POLITICO Interatives.
 
 ### Using in your project
 
-1. Install the module:
-  ```
-  $ yarn add politico-style
-  ```
-2. Use SASS imports to include styles in your project.
+Install the module:
 
-  Include an entire theme:
+```
+$ yarn add politico-style
+```
 
-  ```scss
-  @import '../../node_modules/politico-style/scss/base/theme';
-  ```
+Use SASS imports to include styles in your project.
 
-  Include parts of a theme:
+Include an entire theme:
 
-  ```scss
-  @import '../../node_modules/politico-style/scss/base/components/header';
-  @import '../../node_modules/politico-style/scss/base/components/footer';
-  ```
+```scss
+@import '../../node_modules/politico-style/scss/base/theme';
+```
+
+Include parts of a theme:
+
+```scss
+@import '../../node_modules/politico-style/scss/base/components/header';
+@import '../../node_modules/politico-style/scss/base/components/footer';
+```
 
 
 ### Developing
