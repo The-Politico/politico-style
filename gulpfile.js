@@ -2,6 +2,7 @@ const gulp = require('gulp');
 const webserver = require('gulp-webserver');
 const sass = require('gulp-sass');
 const nunjucksRender = require('gulp-nunjucks-render');
+const tildeImporter = require('node-sass-tilde-importer');
 
 gulp.task('server', () =>
   gulp.src('docs')
@@ -13,7 +14,7 @@ gulp.task('server', () =>
 
 gulp.task('scss', () =>
   gulp.src('./scss/**/*.scss')
-    .pipe(sass().on('error', sass.logError))
+    .pipe(sass({ importer: tildeImporter }))
     .pipe(gulp.dest('./docs/css'))
 );
 

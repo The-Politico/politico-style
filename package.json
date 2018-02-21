@@ -1,6 +1,6 @@
 {
   "name": "politico-style",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Web fashions by Politico Interactives.",
   "main": "index.js",
   "repository": "git@github.com:The-Politico/politico-style.git",
@@ -17,8 +17,8 @@
     "web"
   ],
   "files": [
-    "scss/*",
-    "docs/css/*"
+    "scss/**/*.scss",
+    "docs/css/**/*.css"
   ],
   "style": "docs/css/base/main.css",
   "sass": "scss/base/main.scss",
@@ -29,6 +29,7 @@
     "gulp": "^3.9.1",
     "gulp-nunjucks-render": "^2.2.2",
     "gulp-sass": "^3.1.0",
-    "gulp-webserver": "^0.9.1"
+    "gulp-webserver": "^0.9.1",
+    "node-sass-tilde-importer": "^1.0.1"
   }
 }
