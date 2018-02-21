@@ -39,3 +39,9 @@ Once you're done:
 ```
 $ yarn publish
 ```
+
+
+### Cf.
+
+- [politico-icons](https://github.com/The-Politico/politico-icons)
+- [prismjs](http://prismjs.com/)
