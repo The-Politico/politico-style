@@ -1,0 +1,22 @@
+tbody{
+
+  .header{
+    th{
+      padding-right: 15px;
+      font-family: $franklin;
+      font-weight: normal;
+      font-size: .7rem;
+      text-align: left;
+
+      &.vote-count{
+        text-align: right;
+      }
+    }
+  }
+
+  td{
+    padding: 5px 15px 5px 0;
+    font-size: 1.1rem;
+    border-bottom: dashed 1px #ddd;
+  }
+}

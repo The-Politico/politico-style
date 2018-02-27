@@ -2856,14 +2856,14 @@ a.label:hover, a.label:focus {
   border-radius: 3px; }
 
 .sans {
-  font-family: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  font-family: "franklin-gothic-urw", "Arial Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif; }
 
 .sans-light {
-  font-family: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "franklin-gothic-urw", "Arial Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 300; }
 
 .sans-bold {
-  font-family: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "franklin-gothic-urw", "Arial Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 700; }
 
 .graphic-text {
@@ -2891,7 +2891,6 @@ article {
 
 body {
   color: #000000;
-  font-family: "ff-tisa-web-pro", Georgia, Times, "Times New Roman", serif;
   position: relative;
   margin: 0;
   padding-bottom: 6rem;
@@ -2921,10 +2920,7 @@ button {
   text-align: right; }
 
 .sans {
-  font-family: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif; }
-
-.serif {
-  font-family: "ff-tisa-web-pro", Georgia, Times, "Times New Roman", serif; }
+  font-family: "din-2014", "Helvetica Neue", Helvetica, Arial, sans-serif; }
 
 .bold {
   font-weight: 700; }
@@ -2944,7 +2940,6 @@ button {
   margin: auto 2px; }
 
 p {
-  font-family: "ff-tisa-web-pro", Georgia, Times, "Times New Roman", serif;
   font-size: 1.15rem;
   line-height: 1.618;
   margin: 1.8rem auto;
@@ -2968,7 +2963,7 @@ p {
     float: left;
     font-size: 5rem;
     line-height: 0.85;
-    font-family: "tablet-gothic-condensed", "Arial Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "din-2014", "Helvetica Neue", Helvetica, Arial, sans-serif;
     margin: 0.225rem 0.525rem 0 0;
     color: #000000;
     text-transform: uppercase; }
@@ -2981,7 +2976,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "din-2014", "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin: 0 auto 3px;
   max-width: 100%;
   text-align: center;
@@ -2998,7 +2993,6 @@ h2 {
   line-height: 1.2;
   font-weight: 700; }
   h2.serif {
-    font-family: "ff-tisa-web-pro", Georgia, Times, "Times New Roman", serif;
     font-size: 1.52rem; }
     @media (max-width: 768px) {
       h2.serif {
@@ -3011,7 +3005,6 @@ h3 {
   font-size: 1.35rem;
   line-height: 1.2; }
   h3.serif {
-    font-family: "ff-tisa-web-pro", Georgia, Times, "Times New Roman", serif;
     font-size: 1.45rem; }
 
 h4 {
@@ -3095,9 +3088,9 @@ section {
     .card {
       padding: 20px 25px; } }
   .card.serif h2 {
-    font-family: "ff-tisa-web-pro", Georgia, Times, "Times New Roman", serif; }
+    font-family: "georgia", serif; }
   .card.serif p {
-    font-family: "ff-tisa-web-pro", Georgia, Times, "Times New Roman", serif; }
+    font-family: "georgia", serif; }
   .card.color-coded {
     border-bottom: 6px solid #fd5639; }
     .card.color-coded h2 {
@@ -3124,14 +3117,14 @@ section {
   .card p {
     font-size: .9rem;
     line-height: 1.5em;
-    font-family: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+    font-family: "franklin-gothic-urw", "Arial Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif; }
     .card p:first-of-type {
       margin-top: .1rem; }
     .card p:last-of-type {
       margin-bottom: 1rem; }
 
 .key {
-  font-family: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "franklin-gothic-urw", "Arial Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: .8rem;
   padding-right: 3px;
   margin: 10px auto;
@@ -3177,7 +3170,7 @@ h4.refer-toss {
   .refer h5, .refer h4 {
     text-align: left; }
   .refer h4 {
-    font-family: "tablet-gothic-condensed", "Arial Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "din-2014", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 1.25rem;
     line-height: 1;
     margin-bottom: 0;
@@ -3188,7 +3181,6 @@ h4.refer-toss {
     color: #9e0000;
     font-size: 12px; }
   .refer p {
-    font-family: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #666666;
     font-size: 12px;
     margin: 0;
@@ -3240,7 +3232,7 @@ h4.refer-toss {
         background: #9e0000;
         border-left: 1px solid #6b0000;
         display: block;
-        font-family: "tablet-gothic-condensed", "Arial Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-family: "din-2014", "Helvetica Neue", Helvetica, Arial, sans-serif;
         font-weight: 700;
         line-height: 45px;
         min-width: 2.5em;
@@ -3272,13 +3264,13 @@ header {
   header p.category,
   header p.category a {
     color: #9e0000;
-    font-family: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "franklin-gothic-urw", "Arial Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 1em;
     font-weight: bold;
     margin-bottom: 0;
     text-transform: uppercase; }
   header h1 {
-    font-family: "tablet-gothic-condensed", "Arial Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "din-2014", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 3.33em;
     font-weight: bold;
     line-height: 1.1em;
@@ -3297,7 +3289,7 @@ header {
   header .subhead {
     max-width: 750px;
     padding: 0;
-    font-family: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "franklin-gothic-urw", "Arial Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 1.28rem;
     font-weight: normal;
     line-height: 1.18;
@@ -3310,7 +3302,7 @@ header {
   header .info a {
     max-width: 750px;
     color: #666666;
-    font-family: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "franklin-gothic-urw", "Arial Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif;
     line-height: 1.27rem;
     margin-top: .5rem;
     font-size: 1em;
@@ -3361,7 +3353,7 @@ header.center .info p {
     text-decoration: none; }
   #global-footer .copyright, #global-footer .legal-links, #global-footer .legal-links a {
     font-size: 10px;
-    font-family: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "franklin-gothic-urw", "Arial Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #999999; }
   #global-footer ul {
     display: block;
@@ -3387,7 +3379,7 @@ figure {
 
 figcaption {
   color: #999999;
-  font-family: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "franklin-gothic-urw", "Arial Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: .875em;
   line-height: 1.2em;
   padding: 5px;
@@ -3429,7 +3421,7 @@ figcaption {
   display: table; }
 
 .btn {
-  font-family: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "franklin-gothic-urw", "Arial Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin: 5px 5px 0 0; }
 
 .button-group {
@@ -3509,7 +3501,7 @@ figcaption {
     text-align: center; }
   .content-group.ad p {
     text-transform: uppercase;
-    font-family: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "franklin-gothic-urw", "Arial Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 12px;
     color: #999999;
     margin: 5px auto 0; }
@@ -3548,7 +3540,7 @@ div.share {
 section.credits p {
   border-top: 1px solid #f7f7f7;
   color: #666666;
-  font-family: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "franklin-gothic-urw", "Arial Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: .9em;
   margin-top: 3em;
   padding-top: 1em;
@@ -3565,5 +3557,5 @@ p.correction {
   font-size: 14px;
   border-radius: 4px;
   line-height: 1.3em;
-  font-family: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "franklin-gothic-urw", "Arial Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin: .8em auto 2em; }

@@ -20,7 +20,6 @@ article{
 
 body {
   color: $black;
-  font-family: $tisa;
   position: relative;
   margin: 0;
   padding-bottom: 6rem;
@@ -62,11 +61,11 @@ button {
 // Manipulating the text
 
 .sans{
-font-family: $proxima;
+font-family: $din;
 }
 
 .serif{
-font-family: $tisa;
+
 }
 
 .bold{
@@ -93,7 +92,7 @@ margin: auto 2px;
 
 // Paragraphs
 p {
-  font-family: $tisa;
+
   font-size: 1.15rem;
   line-height: 1.618;
   margin: 1.8rem auto;
@@ -129,7 +128,7 @@ p {
     float: left;
     font-size: 5rem;
     line-height: 0.85;
-    font-family: $tablet;
+    font-family: $din;
     margin: 0.225rem 0.525rem 0 0;
     color: $black;
     text-transform: uppercase;
@@ -146,7 +145,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: $proxima;
+  font-family: $din;
   margin: 0 auto 3px;
   max-width: 100%;
   text-align: center;
@@ -163,7 +162,7 @@ h2 {
   font-weight: 700;
 
   &.serif{
-      font-family: $tisa;
+
       font-size: 1.52rem;
       @media (max-width: $width-medium) {
           font-size: 1.48rem;
@@ -178,7 +177,7 @@ h3 {
   font-size: 1.35rem;
   line-height: 1.2;
   &.serif{
-      font-family: $tisa;
+
       font-size: 1.45rem;
   }
 }

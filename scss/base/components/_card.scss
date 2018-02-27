@@ -11,10 +11,10 @@
 
   &.serif{
     h2{
-      font-family: $tisa;
+      font-family: "georgia", serif;
     }
     p{
-        font-family: $tisa;
+        font-family: "georgia", serif;
     }
   }
 
@@ -57,7 +57,7 @@
   p{
     font-size: .9rem;
     line-height: 1.5em;
-    font-family: $proxima;
+    font-family: $franklin;
 
     &:first-of-type{
       margin-top: .1rem;

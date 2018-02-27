@@ -1,0 +1,69 @@
+$din: 'din-2014', Helvetica, Arial, sans-serif;
+$franklin: 'franklin-gothic-urw', 'Arial Narrow', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+body{
+  font-family: Georgia, Times, "Times New Roman", serif;
+  font-size: 16px;
+}
+
+.election-results{
+  max-width:980px;
+  margin: 0 auto;
+}
+
+tbody{
+  font-family: $franklin;
+}
+
+h1, h2, h3, h4, h5, h6{
+  font-family: $din;
+}
+
+h1{
+  text-align:center;
+  font-size: 2.5em;
+}
+
+h3{
+  text-align: left;
+}
+
+h5.space-case{
+  letter-spacing: 3px;
+  font-weight: normal;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0 auto;
+}
+
+h5 + h1{
+  margin-top: 0;
+}
+
+
+.forty-five{
+  float: left;
+  width: 45%;
+}
+
+.fifty{
+  float: left;
+  width: 50%;
+}
+
+.fifty-five{
+  float: left;
+  width: 55%;
+}
+
+.clear{
+  clear: both;
+}
+
+// .fifty + .fifty{
+//   &:after{
+//     content: "";
+//    display: table;
+//    clear: both;
+//   }
+// }
