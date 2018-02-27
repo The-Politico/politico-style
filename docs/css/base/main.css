@@ -2873,6 +2873,11 @@ a.label:hover, a.label:focus {
   font-family: "franklin-gothic-urw", "Arial Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 700; }
 
+.credits {
+  margin-top: 3rem;
+  font-size: .9rem;
+  text-align: center; }
+
 .clear {
   clear: both; }
 

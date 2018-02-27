@@ -1,8 +1,11 @@
 tbody{
 
   .header{
+
     th{
+      border-bottom: dashed 1px #ddd;
       padding-right: 15px;
+      padding-bottom: 3px;
       font-family: $franklin;
       font-weight: normal;
       font-size: .7rem;
@@ -19,4 +22,37 @@ tbody{
     font-size: 1.1rem;
     border-bottom: dashed 1px #ddd;
   }
+}
+
+
+
+table.results-table{
+  border-collapse: collapse;
+}
+
+.key{
+  font-family: $franklin;
+  font-size: .8rem;
+  padding-right: 3px;
+  margin: 10px auto;
+  width: auto;
+  // uncomment this to get your key to align center
+  // text-align: center;
+
+  span{
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 2px;
+    margin: 0 2px 0 5px;
+
+    &:first-of-type{
+      margin-left: 0;
+    }
+
+    &.primary-green{
+      background-color: $primary-green;
+    }
+  }
+
 }

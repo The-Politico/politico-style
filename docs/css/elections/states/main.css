@@ -1,10 +1,60 @@
+.sans {
+  font-family: "franklin-gothic-urw", "Arial Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+
+.sans-light {
+  font-family: "franklin-gothic-urw", "Arial Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 300; }
+
+.sans-bold {
+  font-family: "franklin-gothic-urw", "Arial Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 700; }
+
+.graphic-text {
+  font-family: "franklin-gothic-urw", "Arial Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+
+.graphic-text .bold {
+  font-family: "franklin-gothic-urw", "Arial Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 700; }
+
+.credits {
+  margin-top: 3rem;
+  font-size: .9rem;
+  text-align: center; }
+
+div.share {
+  text-align: center;
+  margin: 20px auto; }
+  div.share a {
+    color: white;
+    background-color: #f7f7f7;
+    padding: 5px;
+    margin: 0 2px;
+    display: inline-block;
+    border-radius: 4px;
+    font-size: 14px;
+    transition: all .2s;
+    text-decoration: none;
+    cursor: pointer; }
+    div.share a.icon-facebook {
+      background-color: #3b5998; }
+    div.share a.icon-twitter {
+      background-color: #00aced; }
+    div.share a.icon-mail {
+      background-color: #999999; }
+    div.share a:hover {
+      text-decoration: none; }
+
 body {
   font-family: Georgia, Times, "Times New Roman", serif;
   font-size: 16px;
-  padding: 0 15px; }
+  padding: 0 15px;
+  margin: 0 8px 8px 8px; }
+
+a {
+  cursor: pointer; }
 
 .election-results {
-  max-width: 860px;
+  max-width: 900px;
   margin: 0 auto; }
 
 tbody {
@@ -18,13 +68,12 @@ h1 {
   font-size: 2.5rem; }
 
 h3 {
-  text-align: left;
   font-size: 1.6rem; }
 
 h4 {
   font-size: 1.2rem; }
 
-h5.space-case {
+.space-case {
   letter-spacing: 3px;
   font-weight: normal;
   text-align: center;
@@ -48,17 +97,6 @@ h5 + h1 {
 
 .clear {
   clear: both; }
-
-.results-group h3 {
-  margin-bottom: 0; }
-
-.results-group h4 {
-  margin-top: 10px;
-  margin-bottom: 10px;
-  font-weight: normal; }
-
-.results-group table {
-  margin-bottom: 3rem; }
 
 #global-header::after {
   clear: both;
@@ -91,7 +129,7 @@ h5 + h1 {
     padding: 0 .3125em; }
   #global-header #nav-micro ul {
     list-style: none;
-    margin: 0;
+    margin: 00;
     padding-bottom: 0;
     color: #000; }
     #global-header #nav-micro ul li {
@@ -116,8 +154,58 @@ h5 + h1 {
 .light-theme .micro-list > li > a {
   border: 0; }
 
+h1 {
+  margin-bottom: 5px; }
+
+p.time {
+  font-family: "franklin-gothic-urw", "Arial Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin: 5px auto; }
+  p.time .live {
+    font-weight: bold;
+    color: #9e0000;
+    font-size: 1.1rem; }
+  p.time .timestamp {
+    color: #9e0000; }
+
+.jumpto {
+  margin: 0 auto; }
+  .jumpto p {
+    font-size: .8rem;
+    text-align: center;
+    font-family: "franklin-gothic-urw", "Arial Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  .jumpto a {
+    text-decoration: underline;
+    margin: 0 5px; }
+
+section.results-group {
+  margin-top: 2.5rem;
+  padding-top: 2.5rem;
+  border-top: dashed 2px #ddd; }
+  section.results-group h3 {
+    margin: 0;
+    text-align: center; }
+  section.results-group h4 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: normal; }
+  section.results-group table {
+    margin-bottom: 2.5rem; }
+
+section.results-list {
+  margin-top: 2.5rem;
+  padding-top: 2.5rem;
+  border-top: dashed 2px #ddd; }
+  section.results-list h3 {
+    margin: 0; }
+  section.results-list section.results-group {
+    margin-top: 0rem;
+    padding-top: 0rem;
+    border-top: 0; }
+
 tbody .header th {
+  border-bottom: dashed 1px #ddd;
   padding-right: 15px;
+  padding-bottom: 3px;
   font-family: "franklin-gothic-urw", "Arial Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: normal;
   font-size: .7rem;
@@ -130,25 +218,22 @@ tbody td {
   font-size: 1.1rem;
   border-bottom: dashed 1px #ddd; }
 
-div.share {
-  text-align: center;
-  margin: 20px auto; }
-  div.share a {
-    color: white;
-    background-color: #f7f7f7;
-    padding: 5px;
-    margin: 0 2px;
+table.results-table {
+  border-collapse: collapse; }
+
+.key {
+  font-family: "franklin-gothic-urw", "Arial Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: .8rem;
+  padding-right: 3px;
+  margin: 10px auto;
+  width: auto; }
+  .key span {
     display: inline-block;
-    border-radius: 4px;
-    font-size: 14px;
-    transition: all .2s;
-    text-decoration: none;
-    cursor: pointer; }
-    div.share a.icon-facebook {
-      background-color: #3b5998; }
-    div.share a.icon-twitter {
-      background-color: #00aced; }
-    div.share a.icon-mail {
-      background-color: #999999; }
-    div.share a:hover {
-      text-decoration: none; }
+    width: 10px;
+    height: 10px;
+    border-radius: 2px;
+    margin: 0 2px 0 5px; }
+    .key span:first-of-type {
+      margin-left: 0; }
+    .key span.primary-green {
+      background-color: #44A783; }

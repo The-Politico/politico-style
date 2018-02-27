@@ -1,0 +1,18 @@
+h1{
+  margin-bottom: 5px;
+}
+
+p.time{
+  font-family: $franklin;
+  margin: 5px auto;
+
+  .live{
+    font-weight: bold;
+    color: $politico-red;
+    font-size: 1.1rem;
+  }
+
+  .timestamp{
+    color: $politico-red;
+  }
+}

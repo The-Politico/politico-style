@@ -1,0 +1,36 @@
+section.results-group{
+  margin-top: 2.5rem;
+  padding-top:2.5rem;
+  border-top: dashed 2px #ddd;
+
+  h3{
+    margin: 0;
+    text-align: center;
+  }
+
+  h4{
+      margin-top: 10px;
+      margin-bottom: 10px;
+      font-weight: normal;
+    }
+
+  table{
+    margin-bottom: 2.5rem;
+  }
+}
+
+section.results-list{
+  margin-top: 2.5rem;
+  padding-top:2.5rem;
+  border-top: dashed 2px #ddd;
+
+  h3{
+    margin: 0;
+  }
+
+  section.results-group{
+    margin-top: 0rem;
+    padding-top:0rem;
+    border-top: 0;
+  }
+}
