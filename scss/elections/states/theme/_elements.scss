@@ -4,10 +4,12 @@ $franklin: 'franklin-gothic-urw', 'Arial Narrow', 'Helvetica Neue', Helvetica, A
 body{
   font-family: Georgia, Times, "Times New Roman", serif;
   font-size: 16px;
+  padding: 0 15px;
 }
 
+
 .election-results{
-  max-width:980px;
+  max-width:860px;
   margin: 0 auto;
 }
 
@@ -21,11 +23,16 @@ h1, h2, h3, h4, h5, h6{
 
 h1{
   text-align:center;
-  font-size: 2.5em;
+  font-size: 2.5rem;
 }
 
 h3{
   text-align: left;
+  font-size: 1.6rem;
+}
+
+h4{
+  font-size: 1.2rem;
 }
 
 h5.space-case{
@@ -60,10 +67,18 @@ h5 + h1{
   clear: both;
 }
 
-// .fifty + .fifty{
-//   &:after{
-//     content: "";
-//    display: table;
-//    clear: both;
-//   }
-// }
+.results-group{
+  h3{
+    margin-bottom: 0;
+  }
+
+  h4{
+      margin-top: 10px;
+      margin-bottom: 10px;
+      font-weight: normal;
+    }
+
+  table{
+    margin-bottom: 3rem;
+  }
+}

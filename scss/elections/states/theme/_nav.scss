@@ -1,0 +1,89 @@
+//Clearfix
+@mixin clearfix {
+  &::after {
+    clear: both;
+    content: '';
+    display: table;
+  }
+}
+
+#global-header {
+  @include clearfix;
+
+  #global-header, ul {
+    @include clearfix;
+  }
+
+  .icon-politico {
+    font-size: 16px;
+    line-height: 46px;
+    margin-left: .7em;
+    color: $politico-red;
+  }
+
+  a {
+      &:hover, &:focus{
+        text-decoration:none;
+        opacity: .8;
+      }
+    }
+
+  #global-branding {
+    float: left;
+  }
+
+  #nav-micro {
+    float: right;
+
+    .icon.icon-pro-small-bold {
+      font-size: 1em;
+      line-height: 2.29166666666667em;
+      padding: 0 .3125em;
+    }
+
+    ul {
+      list-style: none;
+      margin: 0;
+      padding-bottom: 0;
+      color: #000;
+
+      li{
+        float:left;
+        text-transform: uppercase;
+        font-size: .8rem;
+      }
+
+      li > a {
+        display: block;
+        font-family: $din;
+        font-weight: 700;
+        line-height: 45px;
+        min-width: 2.5em;
+        padding: 0 .9375em;
+        position: relative;
+        text-align: center;
+        text-decoration: none;
+        color: #000;
+      }
+    }
+  }
+}
+
+//Light Theme
+.light-theme {
+  #global-header {
+    border-bottom: 0;
+  }
+
+  #global-header a, #global-footer a  {
+  }
+
+  #global-header.icon , nav .icon {
+
+  }
+
+  .micro-list>li>a {
+
+  border: 0;
+  }
+}

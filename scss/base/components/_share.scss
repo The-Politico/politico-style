@@ -4,12 +4,13 @@ margin: 20px auto;
   a {
     color: white;
     background-color: $light-gray;
-    padding: 4px;
+    padding: 5px;
     margin: 0 2px;
     display: inline-block;
     border-radius: 4px;
-    font-size: 18px;
+    font-size: 14px;
     transition: all .2s;
+    text-decoration: none;
     &.icon-facebook{
       background-color: $facebook;
     }

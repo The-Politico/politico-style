@@ -1,6 +1,12 @@
 @import 'theme/breakpoints';
 @import 'theme/fonts';
 @import 'theme/elements';
+@import '../../base/theme/colors/base';
+@import 'theme/nav';
 
 @import 'components/results-table';
 @import 'components/header';
+
+
+
+@import '../../base/components/share';

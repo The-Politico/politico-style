@@ -3521,12 +3521,13 @@ div.share {
   div.share a {
     color: white;
     background-color: #f7f7f7;
-    padding: 4px;
+    padding: 5px;
     margin: 0 2px;
     display: inline-block;
     border-radius: 4px;
-    font-size: 18px;
+    font-size: 14px;
     transition: all .2s;
+    text-decoration: none;
     cursor: pointer; }
     div.share a.icon-facebook {
       background-color: #3b5998; }
