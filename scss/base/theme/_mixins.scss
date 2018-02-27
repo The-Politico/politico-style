@@ -6,29 +6,29 @@ $box-shadow-heavy: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 
 //Clearfix
 @mixin clearfix {
-  &::after {
-    clear: both;
-    content: '';
-    display: table;
-  }
+    &::after {
+        clear: both;
+        content: '';
+        display: table;
+    }
 }
 
 //Clear center
 @mixin center-clear {
-  text-align: left;
-  margin: inherit 0;
+    text-align: left;
+    margin: inherit 0;
 }
 
 //Margin auto
 @mixin margin-auto {
-  margin-left: auto;
-  margin-right: auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 //Border radius
 @mixin border-radius($radius) {
-  -webkit-border-radius: $radius;
-     -moz-border-radius: $radius;
-      -ms-border-radius: $radius;
-          border-radius: $radius;
+    -webkit-border-radius: $radius;
+       -moz-border-radius: $radius;
+        -ms-border-radius: $radius;
+            border-radius: $radius;
 }
