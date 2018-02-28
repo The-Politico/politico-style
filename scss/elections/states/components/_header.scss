@@ -1,5 +1,9 @@
+header{
+  padding: 0 15px;
+
 h1{
   margin-bottom: 5px;
+  line-height: 1;
 }
 
 p.time{
@@ -15,4 +19,5 @@ p.time{
   .timestamp{
     color: $politico-red;
   }
+}
 }

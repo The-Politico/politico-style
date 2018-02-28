@@ -344,13 +344,17 @@ h5 + h1 {
     color: #000;
     text-align: left; }
 
-@media (max-width: 500px) {
+@media (max-width: 768px) {
   .forty-five,
   .fifty,
   .fifty-five {
     width: 100%;
     padding: 0;
     float: none; } }
+
+@media (max-width: 600px) {
+  .hide-phone {
+    display: none; } }
 
 #global-header::after {
   clear: both;
@@ -367,6 +371,9 @@ h5 + h1 {
   line-height: 46px;
   margin-left: .7em;
   color: #9e0000; }
+  @media (max-width: 600px) {
+    #global-header .icon-politico {
+      font-size: 12px; } }
 
 #global-header a {
   text-decoration: none; }
@@ -386,6 +393,10 @@ h5 + h1 {
     float: left;
     display: inline-block;
     font-weight: 200; }
+    @media (max-width: 600px) {
+      #global-header #global-branding span.elex-tag {
+        font-size: 1.05rem;
+        padding-top: 12px; } }
 
 #global-header #nav-micro {
   float: right; }
@@ -395,9 +406,12 @@ h5 + h1 {
     padding: 0 .3125em; }
   #global-header #nav-micro ul {
     list-style: none;
-    margin: 00;
+    margin: 0;
     padding-bottom: 0;
-    color: #000; }
+    color: #000;
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    -webkit-padding-start: 0px; }
     #global-header #nav-micro ul li {
       float: left;
       text-transform: uppercase;
@@ -414,18 +428,20 @@ h5 + h1 {
       text-decoration: none;
       color: #000; }
 
-h1 {
-  margin-bottom: 5px; }
-
-p.time {
-  font-family: "franklin-gothic-urw", "Arial Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  margin: 5px auto; }
-  p.time .live {
-    font-weight: bold;
-    color: #9e0000;
-    font-size: 1.1rem; }
-  p.time .timestamp {
-    color: #9e0000; }
+header {
+  padding: 0 15px; }
+  header h1 {
+    margin-bottom: 5px;
+    line-height: 1; }
+  header p.time {
+    font-family: "franklin-gothic-urw", "Arial Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin: 5px auto; }
+    header p.time .live {
+      font-weight: bold;
+      color: #9e0000;
+      font-size: 1.1rem; }
+    header p.time .timestamp {
+      color: #9e0000; }
 
 .jumpto {
   margin: 0 auto; }
@@ -511,6 +527,9 @@ td {
   padding: 10px 15px 10px 6px;
   font-size: 1.1rem;
   border-bottom: dashed 1px #ddd; }
+  @media (max-width: 768px) {
+    td {
+      font-size: .88rem; } }
 
 .key {
   font-family: "franklin-gothic-urw", "Arial Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -553,12 +572,19 @@ td {
   .elex-footer.results-list.app h4 {
     margin: 3em 0 0 0; }
   .elex-footer.results-list.app ul {
-    webkit-margin-before: 0em;
-    -webkit-margin-after: 0em;
-    -webkit-padding-start: 0px;
+    webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    -webkit-padding-start: 0;
     font-family: "din-2014", "Helvetica Neue", Helvetica, Arial, sans-serif;
     float: left;
     width: 20%; }
+    @media (max-width: 768px) {
+      .elex-footer.results-list.app ul {
+        width: 33%; } }
+    @media (max-width: 420px) {
+      .elex-footer.results-list.app ul {
+        width: 50%;
+        float: left; } }
     .elex-footer.results-list.app ul li {
       list-style: none;
       padding: 4px 0; }

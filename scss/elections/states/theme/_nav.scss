@@ -19,6 +19,10 @@
     line-height: 46px;
     margin-left: .7em;
     color: $politico-red;
+
+    @media(max-width: $width-small){
+      font-size: 12px;
+    }
   }
 
   a {
@@ -44,6 +48,11 @@
       float:left;
       display: inline-block;
       font-weight: 200;
+
+      @media(max-width: $width-small){
+        font-size: 1.05rem;
+        padding-top: 12px;
+      }
     }
   }
 
@@ -58,9 +67,12 @@
 
     ul {
       list-style: none;
-      margin: 00;
+      margin: 0;
       padding-bottom: 0;
       color: #000;
+      -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    -webkit-padding-start: 0px;
 
       li{
         float:left;

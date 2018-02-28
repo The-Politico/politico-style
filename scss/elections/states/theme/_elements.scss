@@ -93,7 +93,7 @@ h5 + h1{
 }
 
 
-@media(max-width: 500px){
+@media(max-width: $width-medium){
 .forty-five,
 .fifty,
 .fifty-five{
@@ -101,4 +101,10 @@ h5 + h1{
     padding: 0;
     float: none;
 }
+}
+
+@media(max-width: $width-small){
+  .hide-phone{
+    display: none;
+  }
 }
