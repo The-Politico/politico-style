@@ -280,7 +280,7 @@ body {
   font-size: 16px;
   margin: 0; }
 
-#app {
+#app, .app {
   padding: 0 15px; }
 
 a {
@@ -548,6 +548,9 @@ td {
   -webkit-padding-start: 0px;
   font-family: "din-2014", "Helvetica Neue", Helvetica, Arial, sans-serif;
   float: left;
-  width: 18%; }
+  width: 20%; }
   .elex-footer ul li {
-    list-style: none; }
+    list-style: none;
+    padding: 4px 0; }
+    .elex-footer ul li a {
+      color: #000; }

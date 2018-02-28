@@ -9,10 +9,15 @@
     -webkit-padding-start: 0px;
     font-family: $din;
     float:left;
-    width: 18%;
+    width: 20%;
 
     li{
       list-style: none;
+      padding: 4px 0;
+
+      a{
+        color: #000;
+      }
     }
   }
 
