@@ -3568,6 +3568,8 @@ section.credits p {
   max-width: 600px;
   margin-left: auto;
   margin-right: auto; }
+  section.credits p a {
+    text-decoration: none; }
   section.credits p a:hover {
     text-decoration: underline; }
 

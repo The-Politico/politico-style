@@ -9,6 +9,10 @@ section.credits {
     max-width: 600px;
     @include margin-auto;
 
+    a{
+      text-decoration: none;
+    }
+
     a:hover {
       text-decoration: underline;
     }

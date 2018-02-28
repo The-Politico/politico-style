@@ -1,11 +1,14 @@
-$din: 'din-2014', Helvetica, Arial, sans-serif;
-$franklin: 'franklin-gothic-urw', 'Arial Narrow', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 
 body{
   font-family: Georgia, Times, "Times New Roman", serif;
   font-size: 16px;
+  margin: 0;
+  // padding: 0 15px;
+  // margin: 0 8px 8px 8px;
+}
+
+#app{
   padding: 0 15px;
-  margin: 0 8px 8px 8px;
 }
 
 a{
@@ -13,9 +16,10 @@ a{
 }
 
 
-.election-results{
+.election-results, .app{
   max-width:980px;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 tbody{
@@ -77,4 +81,13 @@ h5 + h1{
 
 .clear{
   clear: both;
+}
+
+.credits{
+  text-align: left;
+  a{
+    color: #000;
+    text-align: left;
+
+  }
 }
