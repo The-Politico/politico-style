@@ -91,3 +91,14 @@ h5 + h1{
 
   }
 }
+
+
+@media(max-width: 500px){
+.forty-five,
+.fifty,
+.fifty-five{
+    width: 100%;
+    padding: 0;
+    float: none;
+}
+}

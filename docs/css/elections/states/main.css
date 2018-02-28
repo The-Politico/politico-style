@@ -344,6 +344,14 @@ h5 + h1 {
     color: #000;
     text-align: left; }
 
+@media (max-width: 500px) {
+  .forty-five,
+  .fifty,
+  .fifty-five {
+    width: 100%;
+    padding: 0;
+    float: none; } }
+
 #global-header::after {
   clear: both;
   content: '';
@@ -539,18 +547,20 @@ td {
   .key .winner td {
     background-color: red; }
 
-.elex-footer h4 {
-  margin: 3em 0 0 0; }
-
-.elex-footer ul {
-  webkit-margin-before: 0em;
-  -webkit-margin-after: 0em;
-  -webkit-padding-start: 0px;
-  font-family: "din-2014", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  float: left;
-  width: 20%; }
-  .elex-footer ul li {
-    list-style: none;
-    padding: 4px 0; }
-    .elex-footer ul li a {
-      color: #000; }
+.elex-footer.results-list.app {
+  padding-top: 0em;
+  padding-bottom: 2em; }
+  .elex-footer.results-list.app h4 {
+    margin: 3em 0 0 0; }
+  .elex-footer.results-list.app ul {
+    webkit-margin-before: 0em;
+    -webkit-margin-after: 0em;
+    -webkit-padding-start: 0px;
+    font-family: "din-2014", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    float: left;
+    width: 20%; }
+    .elex-footer.results-list.app ul li {
+      list-style: none;
+      padding: 4px 0; }
+      .elex-footer.results-list.app ul li a {
+        color: #000; }
