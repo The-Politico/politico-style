@@ -1,63 +1,72 @@
 // Footer
-#global-footer {
-  background-color: $politico-gray;
-  color: $medium-gray;
-  padding: 5px 10px;
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  left: 0;
+footer{
+  background-color: #121522;
+  margin-top: 2rem;
+  padding: 3rem 5rem 1.5rem;
+  position: relative;
+  font-family: $din;
+  font-size: .75rem;
+  text-align: left;
 
-  .icon-politico {
-      font-size: 1em;
-      color: $medium-gray;
-      padding-bottom: 3px;
+  @media(max-width: 800px){
+    padding: 1rem;
+  }
+
+  .footer__group--links{
+    float: left;
+    width: 70%;
+  }
+
+  .footer__group--legal{
+    float:right;
+    width: 30%;
+    text-align:right;
+  }
+
+  p{
+    font-family: $din;
+    font-size: .75rem;
+    text-align: right;
+    color: rgba(255,255,255,0.8);
+  }
+  ul{
+    list-style: none;
+    list-style-image: none;
+    -webkit-margin-before: 0em;
+    -webkit-margin-after: 0em;
+    -webkit-padding-start: 00px;
+
+    & + ul{
+      padding: 20px 0;
+    }
   }
 
   a{
-    color: $medium-gray;
+    color: rgba(255,255,255,0.8);
+    text-decoration: none;
   }
 
-  .footer-branding::after{
-    clear:both;
+  li{
+    display: inline-block;
+    padding: 0 0.5rem;
+    text-align: left;
+  }
+
+  li + li{
+    border-left: 1px solid #6E7381;
+    margin: 0 -1px;
+    margin-top: 0.2rem;
+  }
+
+  @media(max-width: 800px){
+    padding: 1rem;
+
+    .footer__group--links,
+    .footer__group--legal{
+      float: none;
+      width: 100%;
+
+      p{text-align:left}
     }
-
-  .copyright{
-    float: left;
-    }
-
-  .legal-links{
-    float:right;
-    text-align: right;
-
-      li+li:before {
-        content: "\0020\007C\0020";
-      }
-    }
-
-    a:hover{
-      text-decoration: none;
-    }
-
-    .copyright, .legal-links, .legal-links a{
-      font-size: 10px;
-      font-family: $franklin;
-      color: $medium-gray;
-    }
-
-    ul{
-      display: block;
-      margin: 0;
-    }
-
-    .legal-links li {
-      display: inline;
-    }
-
-    @media (max-width: $width-xtra-small) {
-        .legal-links, .copyright{
-          -webkit-padding-start: 0;
-        }
-    }
-
+  }
 }

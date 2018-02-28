@@ -3331,43 +3331,58 @@ header.center .info p {
   margin-right: auto;
   text-align: center; }
 
-#global-footer {
-  background-color: #22252c;
-  color: #999999;
-  padding: 5px 10px;
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  left: 0; }
-  #global-footer .icon-politico {
-    font-size: 1em;
-    color: #999999;
-    padding-bottom: 3px; }
-  #global-footer a {
-    color: #999999; }
-  #global-footer .footer-branding::after {
-    clear: both; }
-  #global-footer .copyright {
-    float: left; }
-  #global-footer .legal-links {
+footer {
+  background-color: #121522;
+  margin-top: 2rem;
+  padding: 3rem 5rem 1.5rem;
+  position: relative;
+  font-family: "din-2014", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: .75rem;
+  text-align: left; }
+  @media (max-width: 800px) {
+    footer {
+      padding: 1rem; } }
+  footer .footer__group--links {
+    float: left;
+    width: 70%; }
+  footer .footer__group--legal {
     float: right;
+    width: 30%;
     text-align: right; }
-    #global-footer .legal-links li + li:before {
-      content: "\0020\007C\0020"; }
-  #global-footer a:hover {
+  footer p {
+    font-family: "din-2014", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: .75rem;
+    text-align: right;
+    color: rgba(255, 255, 255, 0.8); }
+  footer ul {
+    list-style: none;
+    list-style-image: none;
+    -webkit-margin-before: 0em;
+    -webkit-margin-after: 0em;
+    -webkit-padding-start: 00px; }
+    footer ul + ul {
+      padding: 20px 0; }
+  footer a {
+    color: rgba(255, 255, 255, 0.8);
     text-decoration: none; }
-  #global-footer .copyright, #global-footer .legal-links, #global-footer .legal-links a {
-    font-size: 10px;
-    font-family: "franklin-gothic-urw", "Arial Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    color: #999999; }
-  #global-footer ul {
-    display: block;
-    margin: 0; }
-  #global-footer .legal-links li {
-    display: inline; }
-  @media (max-width: 350px) {
-    #global-footer .legal-links, #global-footer .copyright {
-      -webkit-padding-start: 0; } }
+  footer li {
+    display: inline-block;
+    padding: 0 0.5rem;
+    text-align: left; }
+  footer li + li {
+    border-left: 1px solid #6E7381;
+    margin: 0 -1px;
+    margin-top: 0.2rem; }
+  @media (max-width: 800px) {
+    footer {
+      padding: 1rem; }
+      footer .footer__group--links,
+      footer .footer__group--legal {
+        float: none;
+        width: 100%; }
+        footer .footer__group--links p,
+        footer .footer__group--legal p {
+          text-align: left; } }
 
 figure {
   margin: 10px auto; }

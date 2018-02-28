@@ -44,6 +44,59 @@ div.share {
     div.share a:hover {
       text-decoration: none; }
 
+footer {
+  background-color: #121522;
+  margin-top: 2rem;
+  padding: 3rem 5rem 1.5rem;
+  position: relative;
+  font-family: "din-2014", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: .75rem;
+  text-align: left; }
+  @media (max-width: 800px) {
+    footer {
+      padding: 1rem; } }
+  footer .footer__group--links {
+    float: left;
+    width: 70%; }
+  footer .footer__group--legal {
+    float: right;
+    width: 30%;
+    text-align: right; }
+  footer p {
+    font-family: "din-2014", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: .75rem;
+    text-align: right;
+    color: rgba(255, 255, 255, 0.8); }
+  footer ul {
+    list-style: none;
+    list-style-image: none;
+    -webkit-margin-before: 0em;
+    -webkit-margin-after: 0em;
+    -webkit-padding-start: 00px; }
+    footer ul + ul {
+      padding: 20px 0; }
+  footer a {
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none; }
+  footer li {
+    display: inline-block;
+    padding: 0 0.5rem;
+    text-align: left; }
+  footer li + li {
+    border-left: 1px solid #6E7381;
+    margin: 0 -1px;
+    margin-top: 0.2rem; }
+  @media (max-width: 800px) {
+    footer {
+      padding: 1rem; }
+      footer .footer__group--links,
+      footer .footer__group--legal {
+        float: none;
+        width: 100%; }
+        footer .footer__group--links p,
+        footer .footer__group--legal p {
+          text-align: left; } }
+
 body {
   font-family: Georgia, Times, "Times New Roman", serif;
   font-size: 16px;
@@ -54,14 +107,15 @@ a {
   cursor: pointer; }
 
 .election-results {
-  max-width: 900px;
+  max-width: 980px;
   margin: 0 auto; }
 
 tbody {
   font-family: "franklin-gothic-urw", "Arial Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif; }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "din-2014", Helvetica, Arial, sans-serif; }
+  font-family: "din-2014", Helvetica, Arial, sans-serif;
+  text-align: center; }
 
 h1 {
   text-align: center;
@@ -71,7 +125,8 @@ h3 {
   font-size: 1.6rem; }
 
 h4 {
-  font-size: 1.2rem; }
+  font-size: 1.1rem;
+  text-align: left; }
 
 .space-case {
   letter-spacing: 3px;
@@ -89,7 +144,11 @@ h5 + h1 {
 
 .fifty {
   float: left;
-  width: 50%; }
+  width: 47.5%;
+  padding-right: 5%; }
+
+.fifty + .fifty {
+  padding-right: 0; }
 
 .fifty-five {
   float: left;
@@ -114,12 +173,24 @@ h5 + h1 {
   margin-left: .7em;
   color: #9e0000; }
 
-#global-header a:hover, #global-header a:focus {
-  text-decoration: none;
-  opacity: .8; }
+#global-header a {
+  text-decoration: none; }
+  #global-header a:hover, #global-header a:focus {
+    text-decoration: none;
+    opacity: .8; }
 
 #global-header #global-branding {
   float: left; }
+  #global-header #global-branding .navbar-brand {
+    float: left;
+    display: inline-block; }
+  #global-header #global-branding span.elex-tag {
+    font-family: "din-2014", Helvetica, Arial, sans-serif;
+    font-size: 1.2rem;
+    padding: 11px 0 0 2px;
+    float: left;
+    display: inline-block;
+    font-weight: 200; }
 
 #global-header #nav-micro {
   float: right; }
@@ -148,12 +219,6 @@ h5 + h1 {
       text-decoration: none;
       color: #000; }
 
-.light-theme #global-header {
-  border-bottom: 0; }
-
-.light-theme .micro-list > li > a {
-  border: 0; }
-
 h1 {
   margin-bottom: 5px; }
 
@@ -181,6 +246,10 @@ section.results-group {
   margin-top: 2.5rem;
   padding-top: 2.5rem;
   border-top: dashed 2px #ddd; }
+  section.results-group .gop {
+    color: #fd5639; }
+  section.results-group .dem {
+    color: #2b6abd; }
   section.results-group h3 {
     margin: 0;
     text-align: center; }
@@ -188,6 +257,9 @@ section.results-group {
     margin-top: 10px;
     margin-bottom: 10px;
     font-weight: normal; }
+    section.results-group h4.district {
+      text-align: center;
+      margin: 0 0 20px 0; }
   section.results-group table {
     margin-bottom: 2.5rem; }
 
@@ -202,24 +274,48 @@ section.results-list {
     padding-top: 0rem;
     border-top: 0; }
 
-tbody .header th {
+.results-group table {
+  width: 100%;
+  padding-right: 20px;
+  border-collapse: collapse; }
+  .results-group table tr {
+    vertical-align: top; }
+    .results-group table tr.winner {
+      background-color: #ddd; }
+      .results-group table tr.winner.primary1 {
+        background-color: #e9f9f3; }
+      .results-group table tr.winner.primary2 {
+        background-color: #F1F1FD; }
+      .results-group table tr.winner.primary3 {
+        background-color: #ffebe7; }
+      .results-group table tr.winner.primary4 {
+        background-color: #F6F1E5; }
+      .results-group table tr.winner.primary5 {
+        background-color: #F3C7FD; }
+      .results-group table tr.winner.primary6-light {
+        background-color: #FFEBC0; }
+      .results-group table tr.winner.primary7 {
+        background-color: #DED7E4; }
+      .results-group table tr.winner.primary8 {
+        background-color: #E0CFF5; }
+      .results-group table tr.winner.primary9 {
+        background-color: #E3B5B5; }
+
+.header th {
   border-bottom: dashed 1px #ddd;
   padding-right: 15px;
-  padding-bottom: 3px;
+  padding-bottom: 5px;
   font-family: "franklin-gothic-urw", "Arial Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: normal;
   font-size: .7rem;
   text-align: left; }
-  tbody .header th.vote-count {
+  .header th.vote-count {
     text-align: right; }
 
-tbody td {
-  padding: 5px 15px 5px 0;
+td {
+  padding: 10px 15px 10px 6px;
   font-size: 1.1rem;
   border-bottom: dashed 1px #ddd; }
-
-table.results-table {
-  border-collapse: collapse; }
 
 .key {
   font-family: "franklin-gothic-urw", "Arial Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -229,11 +325,29 @@ table.results-table {
   width: auto; }
   .key span {
     display: inline-block;
-    width: 10px;
-    height: 10px;
-    border-radius: 2px;
-    margin: 0 2px 0 5px; }
+    width: 15px;
+    height: 15px;
+    border-radius: 10px;
+    margin: 3px 3px 0 5px; }
     .key span:first-of-type {
       margin-left: 0; }
-    .key span.primary-green {
+    .key span.primary1 {
       background-color: #44A783; }
+    .key span.primary2 {
+      background-color: #999CE0; }
+    .key span.primary3 {
+      background-color: #FD5639; }
+    .key span.primary4 {
+      background-color: #DCC696; }
+    .key span.primary5 {
+      background-color: #CD1CF8; }
+    .key span.primary6 {
+      background-color: #FFAF00; }
+    .key span.primary7 {
+      background-color: #795D93; }
+    .key span.primary8 {
+      background-color: #5900CB; }
+    .key span.primary9 {
+      background-color: #AF2727; }
+  .key .winner td {
+    background-color: red; }

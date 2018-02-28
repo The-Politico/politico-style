@@ -1,4 +1,12 @@
 section.results-group{
+  .gop{
+    color: $gop;
+  }
+
+  .dem{
+    color: $dem;
+  }
+
   margin-top: 2.5rem;
   padding-top:2.5rem;
   border-top: dashed 2px #ddd;
@@ -12,6 +20,11 @@ section.results-group{
       margin-top: 10px;
       margin-bottom: 10px;
       font-weight: normal;
+
+      &.district{
+        text-align: center;
+        margin: 0 0 20px 0;
+      }
     }
 
   table{

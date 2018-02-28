@@ -1,11 +1,24 @@
-tbody{
+.results-group table{
+  width: 100%;
+  padding-right: 20px;
+  border-collapse: collapse;
+
+      tr{
+        vertical-align: top;
+
+        &.winner{
+            background-color: #ddd;
+
+            @include swatch-classes-light
+        }
+      }
+  }
 
   .header{
-
     th{
       border-bottom: dashed 1px #ddd;
       padding-right: 15px;
-      padding-bottom: 3px;
+      padding-bottom: 5px;
       font-family: $franklin;
       font-weight: normal;
       font-size: .7rem;
@@ -18,41 +31,37 @@ tbody{
   }
 
   td{
-    padding: 5px 15px 5px 0;
+    padding: 10px 15px 10px 6px;
     font-size: 1.1rem;
     border-bottom: dashed 1px #ddd;
-  }
-}
 
-
-
-table.results-table{
-  border-collapse: collapse;
-}
-
-.key{
-  font-family: $franklin;
-  font-size: .8rem;
-  padding-right: 3px;
-  margin: 10px auto;
-  width: auto;
-  // uncomment this to get your key to align center
-  // text-align: center;
-
-  span{
-    display: inline-block;
-    width: 10px;
-    height: 10px;
-    border-radius: 2px;
-    margin: 0 2px 0 5px;
-
-    &:first-of-type{
-      margin-left: 0;
-    }
-
-    &.primary-green{
-      background-color: $primary-green;
-    }
   }
 
-}
+
+ //key
+    .key{
+      font-family: $franklin;
+      font-size: .8rem;
+      padding-right: 3px;
+      margin: 10px auto;
+      width: auto;
+
+      span{
+        display: inline-block;
+        width: 15px;
+        height: 15px;
+        border-radius: 10px;
+        margin: 3px 3px 0 5px;
+
+        &:first-of-type{
+          margin-left: 0;
+        }
+
+        @include swatch-classes
+      }
+
+
+      .winner td{
+        background-color: red;
+      }
+ }

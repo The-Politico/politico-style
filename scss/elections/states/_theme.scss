@@ -1,12 +1,15 @@
 @import '../../base/theme/colors/base';
 @import '../../base/theme/fonts';
 @import '../../base/components/share';
+@import '../../base/components/footer';
+
 
 
 @import 'theme/breakpoints';
 @import 'theme/elements';
 @import 'theme/nav';
 @import 'theme/colors';
+@import 'theme/color-mixins';
 
 @import 'components/header';
 @import 'components/jumpto';
