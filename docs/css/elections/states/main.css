@@ -303,11 +303,19 @@ h1 {
   font-size: 2.5rem; }
 
 h3 {
-  font-size: 1.6rem; }
+  font-size: 1.8rem;
+  margin: 0 auto 1rem;
+  text-align: center; }
 
 h4 {
   font-size: 1.1rem;
   text-align: left; }
+
+h5 {
+  font-weight: normal;
+  margin-bottom: 0px; }
+  h5 + h3 {
+    margin-top: 0px; }
 
 .space-case {
   letter-spacing: 3px;
@@ -428,19 +436,19 @@ h5 + h1 {
       text-decoration: none;
       color: #000; }
 
-header {
+header.center {
   padding: 0 15px; }
-  header h1 {
+  header.center h1 {
     margin-bottom: 5px;
     line-height: 1; }
-  header p.time {
+  header.center p.time {
     font-family: "franklin-gothic-urw", "Arial Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif;
     margin: 5px auto; }
-    header p.time .live {
+    header.center p.time .live {
       font-weight: bold;
       color: #9e0000;
       font-size: 1.1rem; }
-    header p.time .timestamp {
+    header.center p.time .timestamp {
       color: #9e0000; }
 
 .jumpto {
@@ -457,20 +465,22 @@ section.results-group {
   margin-top: 2.5rem;
   padding-top: 2.5rem;
   border-top: dashed 2px #ddd; }
-  section.results-group .gop {
-    color: #fd5639; }
-  section.results-group .dem {
-    color: #2b6abd; }
-  section.results-group h3 {
-    margin: 0;
-    text-align: center; }
   section.results-group h4 {
-    margin-top: 10px;
+    margin-top: 0px;
     margin-bottom: 10px;
     font-weight: normal; }
     section.results-group h4.district {
       text-align: center;
-      margin: 0 0 20px 0; }
+      font-size: .9rem;
+      border-top: 1px dashed #ddd;
+      text-align: center;
+      width: 80%;
+      margin: 2rem auto 1rem;
+      padding-top: 10px;
+      text-transform: uppercase;
+      letter-spacing: 3px; }
+    section.results-group h4 + h5 {
+      margin: 0 auto 1.5rem; }
   section.results-group table {
     margin-bottom: 2.5rem; }
 
@@ -478,8 +488,6 @@ section.results-list {
   margin-top: 2.5rem;
   padding-top: 2.5rem;
   border-top: dashed 2px #ddd; }
-  section.results-list h3 {
-    margin: 0; }
   section.results-list section.results-group {
     margin-top: 0rem;
     padding-top: 0rem;
@@ -493,24 +501,50 @@ section.results-list {
     vertical-align: top; }
     .results-group table tr.winner {
       background-color: #ddd; }
-      .results-group table tr.winner.primary1 {
-        background-color: #e9f9f3; }
-      .results-group table tr.winner.primary2 {
-        background-color: #F1F1FD; }
-      .results-group table tr.winner.primary3 {
-        background-color: #ffebe7; }
-      .results-group table tr.winner.primary4 {
-        background-color: #F6F1E5; }
-      .results-group table tr.winner.primary5 {
-        background-color: #F3C7FD; }
-      .results-group table tr.winner.primary6-light {
-        background-color: #FFEBC0; }
-      .results-group table tr.winner.primary7 {
-        background-color: #DED7E4; }
-      .results-group table tr.winner.primary8 {
-        background-color: #E0CFF5; }
-      .results-group table tr.winner.primary9 {
-        background-color: #E3B5B5; }
+      .results-group table tr.winner.dem1 {
+        background-color: rgba(53, 113, 192, 0.07); }
+      .results-group table tr.winner.dem2 {
+        background-color: rgba(127, 165, 214, 0.07); }
+      .results-group table tr.winner.dem3 {
+        background-color: rgba(154, 211, 252, 0.07); }
+      .results-group table tr.winner.dem4 {
+        background-color: rgba(156, 217, 224, 0.07); }
+      .results-group table tr.winner.dem5 {
+        background-color: rgba(56, 183, 147, 0.07); }
+      .results-group table tr.winner.dem6-light {
+        background-color: rgba(141, 221, 199, 0.07); }
+      .results-group table tr.winner.dem7 {
+        background-color: rgba(180, 238, 191, 0.07); }
+      .results-group table tr.winner.dem8 {
+        background-color: rgba(148, 128, 100, 0.07); }
+      .results-group table tr.winner.dem9 {
+        background-color: rgba(217, 195, 165, 0.07); }
+      .results-group table tr.winner.dem10 {
+        background-color: rgba(217, 195, 165, 0.07); }
+      .results-group table tr.winner.gop1 {
+        background-color: rgba(253, 94, 66, 0.07); }
+      .results-group table tr.winner.gop2 {
+        background-color: rgba(236, 150, 135, 0.07); }
+      .results-group table tr.winner.gop3 {
+        background-color: rgba(254, 203, 194, 0.07); }
+      .results-group table tr.winner.gop4 {
+        background-color: rgba(251, 194, 78, 0.07); }
+      .results-group table tr.winner.gop5 {
+        background-color: rgba(148, 128, 100, 0.07); }
+      .results-group table tr.winner.gop6-light {
+        background-color: rgba(204, 188, 167, 0.07); }
+      .results-group table tr.winner.gop7 {
+        background-color: rgba(67, 62, 118, 0.07); }
+      .results-group table tr.winner.gop8 {
+        background-color: rgba(120, 110, 159, 0.07); }
+      .results-group table tr.winner.gop9 {
+        background-color: rgba(182, 171, 226, 0.07); }
+      .results-group table tr.winner.gop10 {
+        background-color: rgba(238, 171, 208, 0.07); }
+    .results-group table tr td.precints-reporting {
+      border-bottom: 0;
+      font-size: 13px;
+      color: #7b7b7b; }
 
 .header th {
   border-bottom: dashed 1px #ddd;
@@ -545,24 +579,46 @@ td {
     margin: 3px 3px 0 5px; }
     .key span:first-of-type {
       margin-left: 0; }
-    .key span.primary1 {
-      background-color: #44A783; }
-    .key span.primary2 {
-      background-color: #999CE0; }
-    .key span.primary3 {
-      background-color: #FD5639; }
-    .key span.primary4 {
-      background-color: #DCC696; }
-    .key span.primary5 {
-      background-color: #CD1CF8; }
-    .key span.primary6 {
-      background-color: #FFAF00; }
-    .key span.primary7 {
-      background-color: #795D93; }
-    .key span.primary8 {
-      background-color: #5900CB; }
-    .key span.primary9 {
-      background-color: #AF2727; }
+    .key span.dem1 {
+      background-color: #3571C0; }
+    .key span.dem2 {
+      background-color: #7FA5D6; }
+    .key span.dem3 {
+      background-color: #9AD3FC; }
+    .key span.dem4 {
+      background-color: #9CD9E0; }
+    .key span.dem5 {
+      background-color: #38B793; }
+    .key span.dem6 {
+      background-color: #8DDDC7; }
+    .key span.dem7 {
+      background-color: #B4EEBF; }
+    .key span.dem8 {
+      background-color: #948064; }
+    .key span.dem9 {
+      background-color: #D9C3A5; }
+    .key span.dem10 {
+      background-color: #F9E67F; }
+    .key span.gop1 {
+      background-color: #FD5E42; }
+    .key span.gop2 {
+      background-color: #EC9687; }
+    .key span.gop3 {
+      background-color: #FECBC2; }
+    .key span.gop4 {
+      background-color: #FBC24E; }
+    .key span.gop5 {
+      background-color: #948064; }
+    .key span.gop6 {
+      background-color: #CCBCA7; }
+    .key span.gop7 {
+      background-color: #433E76; }
+    .key span.gop8 {
+      background-color: #786E9F; }
+    .key span.gop9 {
+      background-color: #B6ABE2; }
+    .key span.gop10 {
+      background-color: #EEABD0; }
   .key .winner td {
     background-color: red; }
 

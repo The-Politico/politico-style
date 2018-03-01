@@ -1,31 +1,32 @@
 section.results-group{
-  .gop{
-    color: $gop;
-  }
-
-  .dem{
-    color: $dem;
-  }
 
   margin-top: 2.5rem;
   padding-top:2.5rem;
   border-top: dashed 2px #ddd;
 
-  h3{
-    margin: 0;
-    text-align: center;
-  }
-
   h4{
-      margin-top: 10px;
+      margin-top: 0px;
       margin-bottom: 10px;
       font-weight: normal;
 
       &.district{
         text-align: center;
-        margin: 0 0 20px 0;
+        font-size: .9rem;
+        border-top: 1px dashed #ddd;
+        text-align: center;
+        width: 80%;
+        margin: 2rem auto 1rem;
+        padding-top: 10px;
+        text-transform:uppercase;
+        letter-spacing: 3px;
+
+      }
+
+      & + h5{
+        margin: 0 auto 1.5rem;
       }
     }
+
 
   table{
     margin-bottom: 2.5rem;
@@ -37,9 +38,6 @@ section.results-list{
   padding-top:2.5rem;
   border-top: dashed 2px #ddd;
 
-  h3{
-    margin: 0;
-  }
 
   section.results-group{
     margin-top: 0rem;

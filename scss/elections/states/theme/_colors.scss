@@ -1,34 +1,50 @@
 //election-colors
 
-$primary-green: #44A783;
-$primary-periwinkle: #999CE0;
-$primary-salmon: #FD5639;
-$primary-sand: #DCC696;
-$primary-magenta: #CD1CF8;
-$primary-gold: #FFAF00;
-$primary-purple: #795D93;
-$primary-concord: #5900CB;
-$primary-blood: #AF2727;
-$primary-tie: #3F4048;
+$dem1: #3571C0;
+$dem2: #7FA5D6;
+$dem3: #9AD3FC;
+$dem4: #9CD9E0;
+$dem5: #38B793;
+$dem6: #8DDDC7;
+$dem7: #B4EEBF;
+$dem8: #948064;
+$dem9: #D9C3A5;
+$dem10: #F9E67F;
 
-$primary1: $primary-green;
-$primary2: $primary-periwinkle;
-$primary3: $primary-salmon;
-$primary4: $primary-sand;
-$primary5: $primary-magenta;
-$primary6: $primary-gold;
-$primary7: $primary-purple;
-$primary8: $primary-concord;
-$primary9: $primary-blood;
-$primarytie: $primary-tie;
+$tie: #282828;
+
+$gop1: #FD5E42;
+$gop2: #EC9687;
+$gop3: #FECBC2;
+$gop4: #FBC24E;
+$gop5: #948064;
+$gop6: #CCBCA7;
+$gop7: #433E76;
+$gop8: #786E9F;
+$gop9: #B6ABE2;
+$gop10: #EEABD0;
 
 
-$primary1-light: #e9f9f3;
-$primary2-light: #F1F1FD;
-$primary3-light: #ffebe7;
-$primary4-light: #F6F1E5;
-$primary5-light: #F3C7FD;
-$primary6-light: #FFEBC0;
-$primary7-light: #DED7E4;
-$primary8-light: #E0CFF5;
-$primary9-light: #E3B5B5;
+//table row
+$dem1-light: rgba( $dem1,.07 );
+$dem2-light: rgba( $dem2,.07 );
+$dem3-light: rgba( $dem3,.07 );
+$dem4-light: rgba( $dem4,.07 );
+$dem5-light: rgba( $dem5,.07 );
+$dem6-light: rgba( $dem6,.07 );
+$dem7-light: rgba( $dem7,.07 );
+$dem8-light: rgba( $dem8,.07 );
+$dem9-light: rgba( $dem9,.07 );
+$dem10-light: rgba( $dem9,.07 );
+
+
+$gop1-light: rgba( $gop1,.07 );
+$gop2-light: rgba( $gop2,.07 );
+$gop3-light: rgba( $gop3,.07 );
+$gop4-light: rgba( $gop4,.07 );
+$gop5-light: rgba( $gop5,.07 );
+$gop6-light: rgba( $gop6,.07 );
+$gop7-light: rgba( $gop7,.07 );
+$gop8-light: rgba( $gop8,.07 );
+$gop9-light: rgba( $gop9,.07 );
+$gop10-light: rgba( $gop10,.07 );

@@ -1,79 +1,167 @@
 @mixin swatch-classes{
 
-  &.primary1{
-    background-color: $primary1;
+  &.dem1{
+    background-color: $dem1;
   }
 
-  &.primary2{
-    background-color: $primary2;
+  &.dem2{
+    background-color: $dem2;
   }
 
-  &.primary3{
-    background-color: $primary3;
+  &.dem3{
+    background-color: $dem3;
   }
 
-  &.primary4{
-    background-color: $primary4;
+  &.dem4{
+    background-color: $dem4;
   }
 
-  &.primary5{
-    background-color: $primary5;
+  &.dem5{
+    background-color: $dem5;
   }
 
-  &.primary6{
-    background-color: $primary6;
+  &.dem6{
+    background-color: $dem6;
   }
 
-  &.primary7{
-    background-color: $primary7;
+  &.dem7{
+    background-color: $dem7;
   }
 
-  &.primary8{
-    background-color: $primary8;
+  &.dem8{
+    background-color: $dem8;
   }
 
-  &.primary9{
-    background-color: $primary9;
+  &.dem9{
+    background-color: $dem9;
+  }
+
+  &.dem10{
+    background-color: $dem10;
+  }
+
+  &.gop1{
+    background-color: $gop1;
+  }
+
+  &.gop2{
+    background-color: $gop2;
+  }
+
+  &.gop3{
+    background-color: $gop3;
+  }
+
+  &.gop4{
+    background-color: $gop4;
+  }
+
+  &.gop5{
+    background-color: $gop5;
+  }
+
+  &.gop6{
+    background-color: $gop6;
+  }
+
+  &.gop7{
+    background-color: $gop7;
+  }
+
+  &.gop8{
+    background-color: $gop8;
+  }
+
+  &.gop9{
+    background-color: $gop9;
+  }
+
+  &.gop10{
+    background-color: $gop10;
   }
 }
 
 
 @mixin swatch-classes-light{
 
-  &.primary1{
-    background-color: $primary1-light;
+  &.dem1{
+    background-color: $dem1-light;
   }
 
-  &.primary2{
-    background-color: $primary2-light;
+  &.dem2{
+    background-color: $dem2-light;
   }
 
-  &.primary3{
-    background-color: $primary3-light;
+  &.dem3{
+    background-color: $dem3-light;
   }
 
-  &.primary4{
-    background-color: $primary4-light;
+  &.dem4{
+    background-color: $dem4-light;
   }
 
-  &.primary5{
-    background-color: $primary5-light;
+  &.dem5{
+    background-color: $dem5-light;
   }
 
-  &.primary6-light{
-    background-color: $primary6-light;
+  &.dem6-light{
+    background-color: $dem6-light;
   }
 
-  &.primary7{
-    background-color: $primary7-light;
+  &.dem7{
+    background-color: $dem7-light;
   }
 
-  &.primary8{
-    background-color: $primary8-light;
+  &.dem8{
+    background-color: $dem8-light;
   }
 
-  &.primary9{
-    background-color: $primary9-light;
+  &.dem9{
+    background-color: $dem9-light;
+  }
+
+  &.dem10{
+    background-color: $dem10-light;
+  }
+
+  &.gop1{
+    background-color: $gop1-light;
+  }
+
+  &.gop2{
+    background-color: $gop2-light;
+  }
+
+  &.gop3{
+    background-color: $gop3-light;
+  }
+
+  &.gop4{
+    background-color: $gop4-light;
+  }
+
+  &.gop5{
+    background-color: $gop5-light;
+  }
+
+  &.gop6-light{
+    background-color: $gop6-light;
+  }
+
+  &.gop7{
+    background-color: $gop7-light;
+  }
+
+  &.gop8{
+    background-color: $gop8-light;
+  }
+
+  &.gop9{
+    background-color: $gop9-light;
+  }
+
+  &.gop10{
+    background-color: $gop10-light;
   }
 
 }
