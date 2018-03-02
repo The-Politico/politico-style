@@ -471,14 +471,11 @@ section.results-group {
     font-weight: normal; }
     section.results-group h4.district {
       text-align: center;
-      font-size: .9rem;
-      border-top: 1px dashed #ddd;
+      font-size: 1.3rem;
       text-align: center;
-      width: 80%;
-      margin: 2rem auto 1rem;
+      margin: 2rem auto .5rem;
       padding-top: 10px;
-      text-transform: uppercase;
-      letter-spacing: 3px; }
+      font-weight: bold; }
     section.results-group h4 + h5 {
       margin: 0 auto 1.5rem; }
   section.results-group table {
