@@ -7,7 +7,7 @@
         vertical-align: top;
 
         &.winner{
-            background-color: #ddd;
+            background-color: #f0f0f0;
 
             @include swatch-classes-light
         }
@@ -68,10 +68,5 @@
         }
 
         @include swatch-classes
-      }
-
-
-      .winner td{
-        background-color: red;
       }
  }

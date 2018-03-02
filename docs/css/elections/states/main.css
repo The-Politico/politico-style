@@ -497,7 +497,7 @@ section.results-list {
   .results-group table tr {
     vertical-align: top; }
     .results-group table tr.winner {
-      background-color: #ddd; }
+      background-color: #f0f0f0; }
       .results-group table tr.winner.dem1 {
         background-color: rgba(53, 113, 192, 0.07); }
       .results-group table tr.winner.dem2 {
@@ -538,7 +538,7 @@ section.results-list {
         background-color: rgba(182, 171, 226, 0.07); }
       .results-group table tr.winner.gop10 {
         background-color: rgba(238, 171, 208, 0.07); }
-    .results-group table tr td.precints-reporting {
+    .results-group table tr td.precincts-reporting {
       border-bottom: 0;
       font-size: 13px;
       color: #7b7b7b; }
@@ -616,8 +616,6 @@ td {
       background-color: #B6ABE2; }
     .key span.gop10 {
       background-color: #EEABD0; }
-  .key .winner td {
-    background-color: red; }
 
 .elex-footer.results-list.app {
   padding-top: 0em;
