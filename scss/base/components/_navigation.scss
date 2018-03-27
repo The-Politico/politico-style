@@ -1,19 +1,25 @@
+nav.global{
+  position: relative;
+
 #global-header {
   @include clearfix;
-  background: $politico-red;
+  background: $transparent;
+  height: 6.25rem;
+  border-bottom: 1px solid rgba(180,180,180,0.35);
 
   #global-header, ul {
     @include clearfix;
   }
 
-  .icon-politico {
-    font-size: 16px;
-    line-height: 46px;
-    margin-left: .7em;
+
+
+  .bt-icon--politico {
+    font-size: 2.5rem;
+    color: $politico-red
   }
 
   a {
-    color: $white;
+    color: $black;
 
       &:hover, &:focus{
         text-decoration: none;
@@ -22,60 +28,40 @@
     }
 
   #global-branding {
-    float: left;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
   }
 
   #nav-micro {
     float: right;
 
-    .icon.icon-pro-small-bold {
-      font-size: 1em;
-      line-height: 2.29166666666667em;
-      padding: 0 .3125em;
-    }
 
     ul {
       list-style: none;
       margin-bottom: 1px;
       padding-bottom: 0;
+      display: flex;
+      -webkit-box-pack: justify;
 
       li{
         float:left;
       }
 
       li > a {
-        background: $politico-red;
-        border-left: 1px solid $politico-dark-red;
+        background: transparent;
         display: block;
+        color: rgba(0,0,0,0.85);
+        padding: 0.15rem 0.75rem;
         font-family: $din;
+        text-transform: uppercase;
         font-weight: 700;
-        line-height: 45px;
-        min-width: 2.5em;
-        padding: 0 .9375em;
-        position: relative;
-        text-align: center;
+        font-size: 0.75rem;
+        letter-spacing: 0.1rem;
       }
     }
   }
 }
-
-//Light Theme
-.light-theme {
-  #global-header {
-    background: $white;
-    border-bottom: 0;
-  }
-
-  #global-header a, #global-footer a  {
-    color: $politico-red;
-  }
-
-  #global-header.icon , nav .icon {
-  color: $politico-red;
-  }
-
-  .micro-list>li>a {
-  background: $white;
-  border: 0;
-  }
 }

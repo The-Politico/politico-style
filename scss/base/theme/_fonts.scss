@@ -1,31 +1,4 @@
 $din: 'din-2014', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 $franklin: 'franklin-gothic-urw', 'Arial Narrow', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-
-.sans {
-    font-family: $franklin;
-}
-
-.sans-light {
-    font-family: $franklin;
-    font-weight: 300;
-}
-
-.sans-bold {
-    font-family: $franklin;
-    font-weight: 700;
-}
-
-.graphic-text {
-    font-family: $franklin;
-}
-
-.graphic-text .bold {
-    font-family: $franklin;
-    font-weight: 700;
-}
-
-.credits{
-  margin-top: 3rem;
-  font-size: .9rem;
-  text-align: center;
-}
+$georgia: Georgia, Times, 'Times New Roman', serif;
+$jubilat: 'Jubilat', Georgia, Times, 'Times New Roman', serif;

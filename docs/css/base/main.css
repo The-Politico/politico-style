@@ -2855,36 +2855,17 @@ a.label:hover, a.label:focus {
   padding: 9px;
   border-radius: 3px; }
 
-.sans {
-  font-family: "franklin-gothic-urw", "Arial Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif; }
-
-.sans-light {
-  font-family: "franklin-gothic-urw", "Arial Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 300; }
-
-.sans-bold {
-  font-family: "franklin-gothic-urw", "Arial Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 700; }
-
-.graphic-text {
-  font-family: "franklin-gothic-urw", "Arial Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif; }
-
-.graphic-text .bold {
-  font-family: "franklin-gothic-urw", "Arial Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 700; }
-
-.credits {
-  margin-top: 3rem;
-  font-size: .9rem;
-  text-align: center; }
-
 .clear {
   clear: both; }
 
 html {
-  height: 100%;
-  box-sizing: border-box;
-  font-size: 18px; }
+  margin: 0;
+  font-family: "din-2014", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.2;
+  color: #696d70;
+  text-align: left; }
 
 *,
 *::before,
@@ -2924,20 +2905,33 @@ button {
 .text-align-right {
   text-align: right; }
 
-.sans {
-  font-family: "din-2014", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+.lightest.headline, .lightest.sans, .lightest.graphic-text, .lightest.jubilat {
+  font-weight: 200; }
 
-.bold {
-  font-weight: 700; }
+.light.headline, .light.sans, .light.graphic-text, .light.jubilat {
+  font-weight: 300; }
 
-.unbold {
+.normal.headline, .normal.sans, .normal.graphic-text, .normal.jubilat {
   font-weight: 500; }
 
-.italic {
-  text-style: italic; }
+.bold.headline, .bold.sans, .bold.graphic-text, .bold.jubilat {
+  font-weight: 700; }
 
-.uppercase {
-  text-transform: uppercase; }
+.headline {
+  font-family: "din-2014", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 700; }
+
+.sans {
+  font-family: "franklin-gothic-urw", "Arial Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 500; }
+
+.graphic-text {
+  font-family: "franklin-gothic-urw", "Arial Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 500; }
+
+.jubilat,
+.headline.mag {
+  font-family: "Jubilat", Georgia, Times, "Times New Roman", serif; }
 
 .highlight {
   background-color: #fffab7;
@@ -2945,32 +2939,21 @@ button {
   margin: auto 2px; }
 
 p {
-  font-size: 1.15rem;
+  font-family: Georgia,Times,"Times New Roman",serif;
+  font-size: 1.35rem;
   line-height: 1.618;
-  margin: 1.8rem auto;
-  max-width: 575px;
+  margin: 1rem auto;
+  max-width: 550px;
   overflow-wrap: break-word; }
   p.small {
     font-size: .9rem; }
-  p.sans {
-    font-size: 1.15em;
-    line-height: 1.45em; }
-    p.sans.small {
-      font-size: .9rem;
-      line-height: 1.5em; }
-    @media (max-width: 768px) {
-      p.sans {
-        font-size: 1.05em; } }
-  @media (max-width: 768px) {
-    p {
-      font-size: 1.05em; } }
   p span.dropcap {
     float: left;
     font-size: 5rem;
-    line-height: 0.85;
+    line-height: 0.65;
     font-family: "din-2014", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    margin: 0.225rem 0.525rem 0 0;
-    color: #000000;
+    font-weight: bold;
+    margin: 0.225rem .5rem -.5rem 0;
     text-transform: uppercase; }
     @media (max-width: 600px) {
       p span.dropcap {
@@ -3048,6 +3031,11 @@ ul.no-bullets.no-indent {
 ul.no-bullets.border li {
   border-top: 1px solid #ddd;
   padding: 10px 0; }
+
+.icon-text {
+  position: absolute;
+  left: -999em;
+  top: -999em; }
 
 section {
   padding: 1.25rem 0; }
@@ -3183,7 +3171,7 @@ h4.refer-toss {
   .refer h5 {
     margin: 0;
     text-transform: uppercase;
-    color: #9e0000;
+    color: #dc0228;
     font-size: 12px; }
   .refer p {
     color: #666666;
@@ -3200,64 +3188,54 @@ h4.refer-toss {
     .refer h5, .refer p {
       font-size: 10px; } }
 
-#global-header {
-  background: #9e0000; }
-  #global-header::after {
-    clear: both;
-    content: '';
-    display: table; }
-  #global-header #global-header::after, #global-header ul::after {
-    clear: both;
-    content: '';
-    display: table; }
-  #global-header .icon-politico {
-    font-size: 16px;
-    line-height: 46px;
-    margin-left: .7em; }
-  #global-header a {
-    color: #ffffff; }
-    #global-header a:hover, #global-header a:focus {
-      text-decoration: none;
-      opacity: .8; }
-  #global-header #global-branding {
-    float: left; }
-  #global-header #nav-micro {
-    float: right; }
-    #global-header #nav-micro .icon.icon-pro-small-bold {
-      font-size: 1em;
-      line-height: 2.29166666666667em;
-      padding: 0 .3125em; }
-    #global-header #nav-micro ul {
-      list-style: none;
-      margin-bottom: 1px;
-      padding-bottom: 0; }
-      #global-header #nav-micro ul li {
-        float: left; }
-      #global-header #nav-micro ul li > a {
-        background: #9e0000;
-        border-left: 1px solid #6b0000;
-        display: block;
-        font-family: "din-2014", "Helvetica Neue", Helvetica, Arial, sans-serif;
-        font-weight: 700;
-        line-height: 45px;
-        min-width: 2.5em;
-        padding: 0 .9375em;
-        position: relative;
-        text-align: center; }
-
-.light-theme #global-header {
-  background: #ffffff;
-  border-bottom: 0; }
-
-.light-theme #global-header a, .light-theme #global-footer a {
-  color: #9e0000; }
-
-.light-theme #global-header.icon, .light-theme nav .icon {
-  color: #9e0000; }
-
-.light-theme .micro-list > li > a {
-  background: #ffffff;
-  border: 0; }
+nav.global {
+  position: relative; }
+  nav.global #global-header {
+    background: transparent;
+    height: 6.25rem;
+    border-bottom: 1px solid rgba(180, 180, 180, 0.35); }
+    nav.global #global-header::after {
+      clear: both;
+      content: '';
+      display: table; }
+    nav.global #global-header #global-header::after, nav.global #global-header ul::after {
+      clear: both;
+      content: '';
+      display: table; }
+    nav.global #global-header .bt-icon--politico {
+      font-size: 2.5rem;
+      color: #dc0228; }
+    nav.global #global-header a {
+      color: #000000; }
+      nav.global #global-header a:hover, nav.global #global-header a:focus {
+        text-decoration: none;
+        opacity: .8; }
+    nav.global #global-header #global-branding {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center; }
+    nav.global #global-header #nav-micro {
+      float: right; }
+      nav.global #global-header #nav-micro ul {
+        list-style: none;
+        margin-bottom: 1px;
+        padding-bottom: 0;
+        display: flex;
+        -webkit-box-pack: justify; }
+        nav.global #global-header #nav-micro ul li {
+          float: left; }
+        nav.global #global-header #nav-micro ul li > a {
+          background: transparent;
+          display: block;
+          color: rgba(0, 0, 0, 0.85);
+          padding: 0.15rem 0.75rem;
+          font-family: "din-2014", "Helvetica Neue", Helvetica, Arial, sans-serif;
+          text-transform: uppercase;
+          font-weight: 700;
+          font-size: 0.75rem;
+          letter-spacing: 0.1rem; }
 
 header {
   padding: 0 20px; }
@@ -3268,7 +3246,7 @@ header {
     margin-top: 0; }
   header p.category,
   header p.category a {
-    color: #9e0000;
+    color: #dc0228;
     font-family: "franklin-gothic-urw", "Arial Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 1em;
     font-weight: bold;
@@ -3276,7 +3254,7 @@ header {
     text-transform: uppercase; }
   header h1 {
     font-family: "din-2014", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 3.33em;
+    font-size: 3.75em;
     font-weight: bold;
     line-height: 1.1em;
     margin: 0;

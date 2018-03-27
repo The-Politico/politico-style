@@ -1,26 +1,3 @@
-.sans {
-  font-family: "franklin-gothic-urw", "Arial Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif; }
-
-.sans-light {
-  font-family: "franklin-gothic-urw", "Arial Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 300; }
-
-.sans-bold {
-  font-family: "franklin-gothic-urw", "Arial Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 700; }
-
-.graphic-text {
-  font-family: "franklin-gothic-urw", "Arial Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif; }
-
-.graphic-text .bold {
-  font-family: "franklin-gothic-urw", "Arial Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 700; }
-
-.credits {
-  margin-top: 3rem;
-  font-size: .9rem;
-  text-align: center; }
-
 div.share {
   text-align: center;
   margin: 20px auto; }
@@ -378,7 +355,7 @@ h5 + h1 {
   font-size: 16px;
   line-height: 46px;
   margin-left: .7em;
-  color: #9e0000; }
+  color: #dc0228; }
   @media (max-width: 600px) {
     #global-header .icon-politico {
       font-size: 12px; } }
@@ -446,10 +423,10 @@ header.center {
     margin: 5px auto; }
     header.center p.time .live {
       font-weight: bold;
-      color: #9e0000;
+      color: #dc0228;
       font-size: 1.1rem; }
     header.center p.time .timestamp {
-      color: #9e0000; }
+      color: #dc0228; }
 
 .jumpto {
   margin: 0 auto; }
