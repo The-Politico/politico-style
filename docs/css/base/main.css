@@ -2855,12 +2855,136 @@ a.label:hover, a.label:focus {
   padding: 9px;
   border-radius: 3px; }
 
+.text-align-center {
+  text-align: center; }
+
+.text-align-left {
+  text-align: left; }
+
+.text-align-right {
+  text-align: right; }
+
+.sans, .graphic-text, .headline, .jubilat,
+.headline.mag {
+  font-weight: 500; }
+  .lighter.sans, .lighter.graphic-text, .lighter.headline, .lighter.jubilat {
+    font-weight: 200; }
+  .light.sans, .light.graphic-text, .light.headline, .light.jubilat {
+    font-weight: 300; }
+  .normal.sans, .normal.graphic-text, .normal.headline, .normal.jubilat {
+    font-weight: 500; }
+  .bold.sans, .bold.graphic-text, .bold.headline, .bold.jubilat {
+    font-weight: 700; }
+  .bolder.sans, .bolder.graphic-text, .bolder.headline, .bolder.jubilat {
+    font-weight: 900; }
+
+.sans {
+  font-family: "din-2014", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+
+.graphic-text {
+  font-family: "din-2014", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+
+.headline {
+  font-family: "din-2014", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+
+.jubilat,
+.headline.mag {
+  font-family: "Jubilat", Georgia, Times, "Times New Roman", serif; }
+
+p {
+  font-family: Georgia,Times,"Times New Roman",serif;
+  font-size: 1.35rem;
+  line-height: 1.618;
+  margin: 1rem auto;
+  max-width: 550px;
+  overflow-wrap: break-word; }
+  p.sans {
+    font-size: 1.3rem; }
+    p.sans.small {
+      font-size: 1.25rem; }
+    p.sans.small {
+      font-size: 1.15rem; }
+  p span.dropcap {
+    float: left;
+    font-size: 5rem;
+    line-height: 0.65;
+    font-family: "din-2014", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    margin: 0.225rem .5rem -.5rem 0;
+    text-transform: uppercase; }
+    @media (max-width: 600px) {
+      p span.dropcap {
+        font-size: 4rem; } }
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "din-2014", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin: 0 auto 3px;
+  max-width: 550px;
+  font-weight: 200; }
+  h2 + p,
+  h3 + p,
+  h4 + p,
+  h5 + p,
+  h6 + p {
+    margin-top: 0px; }
+
+h2 {
+  font-size: 2rem;
+  line-height: 1.2;
+  font-weight: 200; }
+
+h3 {
+  font-size: 1.5rem;
+  line-height: 1.2;
+  font-weight: 700; }
+
+h4 {
+  font-size: 1.2rem;
+  line-height: 1.3;
+  font-weight: 700;
+  color: #666666; }
+
+h5 {
+  font-size: 0.8rem;
+  line-height: 1.3;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 3.5px;
+  color: #666666; }
+  h5.light {
+    font-weight: 500; }
+
+h6 {
+  font-size: 0.85rem;
+  line-height: 1.3; }
+
+h2 + h3 {
+  margin-top: 10px; }
+
+p + h2 {
+  padding-top: .5rem; }
+
+p + h3 {
+  padding-top: .5rem; }
+
+p + h4 {
+  padding-top: .5rem; }
+
+.icon-text {
+  position: absolute;
+  left: -999em;
+  top: -999em; }
+
 .clear {
   clear: both; }
 
 html {
   margin: 0;
-  font-family: "din-2014", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: Georgia, Times, "Times New Roman", serif;
   font-size: 1rem;
   font-weight: 500;
   line-height: 1.2;
@@ -2896,43 +3020,6 @@ button {
   -webkit-transition: all .25s ease;
   transition: all .25s ease; }
 
-.text-align-center {
-  text-align: center; }
-
-.text-align-left {
-  text-align: left; }
-
-.text-align-right {
-  text-align: right; }
-
-.lightest.headline, .lightest.sans, .lightest.graphic-text, .lightest.jubilat {
-  font-weight: 200; }
-
-.light.headline, .light.sans, .light.graphic-text, .light.jubilat {
-  font-weight: 300; }
-
-.normal.headline, .normal.sans, .normal.graphic-text, .normal.jubilat {
-  font-weight: 500; }
-
-.bold.headline, .bold.sans, .bold.graphic-text, .bold.jubilat {
-  font-weight: 700; }
-
-.headline {
-  font-family: "din-2014", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 700; }
-
-.sans {
-  font-family: "franklin-gothic-urw", "Arial Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 500; }
-
-.graphic-text {
-  font-family: "franklin-gothic-urw", "Arial Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 500; }
-
-.jubilat,
-.headline.mag {
-  font-family: "Jubilat", Georgia, Times, "Times New Roman", serif; }
-
 .highlight {
   background-color: #fffab7;
   box-shadow: 0.2rem 0 0 #fff7a5, -0.2rem 0 0 #fffab7;
@@ -2947,6 +3034,8 @@ p {
   overflow-wrap: break-word; }
   p.small {
     font-size: .9rem; }
+    p.small.sans {
+      font-size: 1rem; }
   p span.dropcap {
     float: left;
     font-size: 5rem;
@@ -2959,83 +3048,17 @@ p {
       p span.dropcap {
         font-size: 4rem; } }
 
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "din-2014", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  margin: 0 auto 3px;
-  max-width: 100%;
-  text-align: center;
-  font-weight: 300; }
-  h2 + p,
-  h3 + p,
-  h4 + p,
-  h5 + p,
-  h6 + p {
-    margin-top: 0px; }
-
-h2 {
-  font-size: 1.68rem;
-  line-height: 1.2;
-  font-weight: 700; }
-  h2.serif {
-    font-size: 1.52rem; }
-    @media (max-width: 768px) {
-      h2.serif {
-        font-size: 1.48rem; } }
-  @media (max-width: 768px) {
-    h2 {
-      font-size: 1.48rem; } }
-
-h3 {
-  font-size: 1.35rem;
-  line-height: 1.2; }
-  h3.serif {
-    font-size: 1.45rem; }
-
-h4 {
-  font-size: 1.05rem;
-  line-height: 1.3; }
-
-h5 {
-  font-size: 0.7rem;
-  line-height: 1.3;
-  text-transform: uppercase;
-  font-weight: 500; }
-
-h6 {
-  font-size: 0.85rem;
-  line-height: 1.3; }
-
-h2 + h3 {
-  margin-top: 10px; }
-
-p + h2 {
-  padding-top: .5rem; }
-
-p + h3 {
-  padding-top: .5rem; }
-
-p + h4 {
-  padding-top: .5rem; }
-
-ul.no-bullets li {
-  list-style: none; }
-
-ul.no-bullets.no-indent {
+ul.no-bullets {
   -webkit-margin-before: 0;
   -webkit-padding-start: 0px; }
-
-ul.no-bullets.border li {
-  border-top: 1px solid #ddd;
-  padding: 10px 0; }
-
-.icon-text {
-  position: absolute;
-  left: -999em;
-  top: -999em; }
+  ul.no-bullets li {
+    list-style: none; }
+  ul.no-bullets.no-indent {
+    -webkit-margin-before: 0;
+    -webkit-padding-start: 0px; }
+  ul.no-bullets.border li {
+    border-top: 1px solid #ddd;
+    padding: 10px 0; }
 
 section {
   padding: 1.25rem 0; }
@@ -3110,14 +3133,14 @@ section {
   .card p {
     font-size: .9rem;
     line-height: 1.5em;
-    font-family: "franklin-gothic-urw", "Arial Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+    font-family: "din-2014", "Helvetica Neue", Helvetica, Arial, sans-serif; }
     .card p:first-of-type {
       margin-top: .1rem; }
     .card p:last-of-type {
       margin-bottom: 1rem; }
 
 .key {
-  font-family: "franklin-gothic-urw", "Arial Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "din-2014", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: .8rem;
   padding-right: 3px;
   margin: 10px auto;
@@ -3259,7 +3282,7 @@ header {
   header p.category,
   header p.category a {
     color: #dc0228;
-    font-family: "franklin-gothic-urw", "Arial Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "din-2014", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 1em;
     font-weight: bold;
     margin-bottom: 0;
@@ -3284,7 +3307,7 @@ header {
   header .subhead {
     max-width: 750px;
     padding: 0;
-    font-family: "franklin-gothic-urw", "Arial Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "din-2014", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 1.28rem;
     font-weight: normal;
     line-height: 1.18;
@@ -3297,7 +3320,7 @@ header {
   header .info a {
     max-width: 750px;
     color: #666666;
-    font-family: "franklin-gothic-urw", "Arial Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "din-2014", "Helvetica Neue", Helvetica, Arial, sans-serif;
     line-height: 1.27rem;
     margin-top: .5rem;
     font-size: 1em;
@@ -3389,7 +3412,7 @@ figure {
 
 figcaption {
   color: #999999;
-  font-family: "franklin-gothic-urw", "Arial Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "din-2014", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: .875em;
   line-height: 1.2em;
   padding: 5px;
@@ -3431,7 +3454,7 @@ figcaption {
   display: table; }
 
 .btn {
-  font-family: "franklin-gothic-urw", "Arial Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "din-2014", "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin: 5px 5px 0 0; }
 
 .button-group {
@@ -3511,7 +3534,7 @@ figcaption {
     text-align: center; }
   .content-group.ad p {
     text-transform: uppercase;
-    font-family: "franklin-gothic-urw", "Arial Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "din-2014", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 12px;
     color: #999999;
     margin: 5px auto 0; }
@@ -3551,7 +3574,7 @@ div.share {
 section.credits p {
   border-top: 1px solid #f7f7f7;
   color: #666666;
-  font-family: "franklin-gothic-urw", "Arial Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "din-2014", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: .9em;
   margin-top: 3em;
   padding-top: 1em;
@@ -3570,5 +3593,5 @@ p.correction {
   font-size: 14px;
   border-radius: 4px;
   line-height: 1.3em;
-  font-family: "franklin-gothic-urw", "Arial Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "din-2014", "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin: .8em auto 2em; }

@@ -4,7 +4,7 @@
 
 html {
   margin: 0;
-  font-family: $din;
+  font-family: $georgia;
   font-size: 1rem;
   font-weight: 500;
   line-height: 1.2;
@@ -48,73 +48,6 @@ button {
 }
 
 
-// Aligning text
-.text-align-center{
-  text-align: center;
-}
-
-.text-align-left{
-  text-align: left;
-}
-
-.text-align-right{
-  text-align: right;
-}
-
-//Font weights
-
-%weights{
-  //lightest available for Din 2014 and Jubilat only
-  &.lightest{
-    font-weight: 200;
-  }
-
-  &.light{
-      font-weight: 300;
-  }
-
-  &.normal{
-    font-weight: 500;
-  }
-
-  &.bold{
-    font-weight: 700;
-  }
-}
-
-.headline{
-  font-family: $din;
-  font-weight: 700;
-
-  @extend %weights;
-}
-
-.sans {
-    font-family: $franklin;
-    font-weight: 500;
-
-    @extend %weights;
-}
-
-
-.graphic-text {
-  font-family: $franklin;
-  font-weight: 500;
-
-  @extend %weights;
-}
-
-
-// Mag fonts
-.jubilat,
-.headline.mag{
-    font-family: $jubilat;
-
-    @extend %weights;
-
-}
-
-
 .highlight {
 background-color: $highlighter-yellow;
 box-shadow: 0.2rem 0 0 #fff7a5, -0.2rem 0 0 $highlighter-yellow;
@@ -132,8 +65,11 @@ p {
 
   &.small{
     font-size: .9rem;
-}
 
+    &.sans{
+      font-size: 1rem;
+    }
+}
 
 
 // The dropcap as needed, not included by default
@@ -152,81 +88,11 @@ p {
    }
 }
 
-// Header groups
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: $din;
-  margin: 0 auto 3px;
-  max-width: 100%;
-  text-align: center;
-  font-weight: 300;
-
-  + p {
-    margin-top: 0px;
-  }
-}
-
-h2 {
-  font-size: 1.68rem;
-  line-height: 1.2;
-  font-weight: 700;
-
-  &.serif{
-
-      font-size: 1.52rem;
-      @media (max-width: $width-medium) {
-          font-size: 1.48rem;
-      }
-  }
-  @media (max-width: $width-medium) {
-      font-size: 1.48rem;
-  }
-}
-
-h3 {
-  font-size: 1.35rem;
-  line-height: 1.2;
-  &.serif{
-
-      font-size: 1.45rem;
-  }
-}
-
-h4 {
-  font-size: 1.05rem;
-  line-height: 1.3;
-}
-
-h5 {
-  font-size: 0.7rem;
-  line-height: 1.3;
-  text-transform: uppercase;
-  font-weight: 500;
-}
-
-h6 {
-  font-size: 0.85rem;
-  line-height: 1.3;
-}
-
-h2 + h3{
-  margin-top: 10px;
-}
-
-
-p + h2{padding-top:.5rem;}
-
-
-p + h3{padding-top:.5rem;}
-
-p + h4{padding-top:.5rem;}
-
-
 // lists
 ul.no-bullets{
+  -webkit-margin-before: 0;
+  -webkit-padding-start: 0px;
+
   li{
     list-style: none;
   }
@@ -240,12 +106,4 @@ ul.no-bullets{
     padding: 10px 0;
     }
   }
-}
-
-//icon text
-
-.icon-text {
-    position: absolute;
-    left: -999em;
-    top: -999em;
 }

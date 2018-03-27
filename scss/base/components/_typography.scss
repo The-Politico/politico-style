@@ -1,0 +1,172 @@
+// Aligning text
+.text-align-center{
+  text-align: center;
+}
+
+.text-align-left{
+  text-align: left;
+}
+
+.text-align-right{
+  text-align: right;
+}
+
+//Font weights
+%weights{
+  font-weight: 500;
+  //lightest available for Din 2014 and Jubilat only
+  &.lighter{
+    font-weight: 200;
+  }
+
+  &.light{
+      font-weight: 300;
+  }
+
+  &.normal{
+    font-weight: 500;
+  }
+
+  &.bold{
+    font-weight: 700;
+  }
+
+  &.bolder{
+    font-weight: 900;
+  }
+}
+
+.sans {
+  @extend %weights;
+  font-family: $din;
+}
+
+.graphic-text {
+  @extend %weights;
+  font-family: $din;
+}
+
+.headline {
+  @extend %weights;
+  font-family: $din;
+}
+
+
+// Mag fonts
+.jubilat,
+.headline.mag{
+    @extend %weights;
+    font-family: $jubilat;
+}
+
+// Paragraphs
+p {
+  font-family: Georgia,Times,"Times New Roman",serif;
+  font-size: 1.35rem;
+  line-height: 1.618;
+  margin: 1rem auto;
+  max-width: 550px;
+  overflow-wrap: break-word;
+
+  &.sans{
+    font-size: 1.3rem;
+
+    &.small{
+      font-size: 1.25rem;
+    }
+  &.small{
+    font-size: 1.15rem;
+  }
+}
+
+
+
+// The dropcap as needed, not included by default
+  span.dropcap {
+    float: left;
+    font-size: 5rem;
+    line-height: 0.65;
+    font-family: $din;
+    font-weight: bold;
+    margin: 0.225rem .5rem -.5rem 0;;
+    text-transform: uppercase;
+
+    @media (max-width: $width-small){
+      font-size: 4rem;
+    }
+   }
+}
+
+// Header groups
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $din;
+  margin: 0 auto 3px;
+  max-width: 550px;
+  font-weight: 200;
+
+
+  + p {
+    margin-top: 0px;
+  }
+}
+
+h2 {
+  font-size: 2rem;
+  line-height: 1.2;
+  font-weight: 200;
+}
+
+h3 {
+  font-size: 1.5rem;
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+h4 {
+  font-size: 1.2rem;
+  line-height: 1.3;
+  font-weight: 700;
+  color: $satan;
+}
+
+h5 {
+  font-size: 0.8rem;
+  line-height: 1.3;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 3.5px;
+  color: $satan;
+
+  &.light{
+    font-weight: 500;
+  }
+}
+
+h6 {
+  font-size: 0.85rem;
+  line-height: 1.3;
+}
+
+h2 + h3{
+  margin-top: 10px;
+}
+
+
+p + h2{padding-top:.5rem;}
+
+
+p + h3{padding-top:.5rem;}
+
+p + h4{padding-top:.5rem;}
+
+
+//icon text
+.icon-text {
+    position: absolute;
+    left: -999em;
+    top: -999em;
+}

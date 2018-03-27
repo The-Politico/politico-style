@@ -269,7 +269,7 @@ a {
   margin-right: auto; }
 
 tbody {
-  font-family: "franklin-gothic-urw", "Arial Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  font-family: "din-2014", "Helvetica Neue", Helvetica, Arial, sans-serif; }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "din-2014", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -419,7 +419,7 @@ header.center {
     margin-bottom: 5px;
     line-height: 1; }
   header.center p.time {
-    font-family: "franklin-gothic-urw", "Arial Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "din-2014", "Helvetica Neue", Helvetica, Arial, sans-serif;
     margin: 5px auto; }
     header.center p.time .live {
       font-weight: bold;
@@ -433,7 +433,7 @@ header.center {
   .jumpto p {
     font-size: .8rem;
     text-align: center;
-    font-family: "franklin-gothic-urw", "Arial Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+    font-family: "din-2014", "Helvetica Neue", Helvetica, Arial, sans-serif; }
   .jumpto a {
     text-decoration: underline;
     margin: 0 5px; }
@@ -524,7 +524,7 @@ section.results-list {
   border-bottom: dashed 1px #ddd;
   padding-right: 15px;
   padding-bottom: 5px;
-  font-family: "franklin-gothic-urw", "Arial Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "din-2014", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: normal;
   font-size: .7rem;
   text-align: left; }
@@ -540,7 +540,7 @@ td {
       font-size: .88rem; } }
 
 .key {
-  font-family: "franklin-gothic-urw", "Arial Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "din-2014", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: .8rem;
   padding-right: 3px;
   margin: 10px auto;
