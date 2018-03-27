@@ -3192,7 +3192,7 @@ nav.global {
   position: relative; }
   nav.global #global-header {
     background: transparent;
-    height: 6.25rem;
+    height: 5.25rem;
     border-bottom: 1px solid rgba(180, 180, 180, 0.35); }
     nav.global #global-header::after {
       clear: both;
@@ -3203,7 +3203,7 @@ nav.global {
       content: '';
       display: table; }
     nav.global #global-header .bt-icon--politico {
-      font-size: 2.5rem;
+      font-size: 2.25rem;
       color: #dc0228; }
     nav.global #global-header a {
       color: #000000; }
@@ -3216,26 +3216,38 @@ nav.global {
       top: 50%;
       transform: translate(-50%, -50%);
       text-align: center; }
-    nav.global #global-header #nav-micro {
-      float: right; }
-      nav.global #global-header #nav-micro ul {
-        list-style: none;
-        margin-bottom: 1px;
-        padding-bottom: 0;
-        display: flex;
-        -webkit-box-pack: justify; }
-        nav.global #global-header #nav-micro ul li {
-          float: left; }
-        nav.global #global-header #nav-micro ul li > a {
-          background: transparent;
-          display: block;
-          color: rgba(0, 0, 0, 0.85);
-          padding: 0.15rem 0.75rem;
-          font-family: "din-2014", "Helvetica Neue", Helvetica, Arial, sans-serif;
-          text-transform: uppercase;
-          font-weight: 700;
-          font-size: 0.75rem;
-          letter-spacing: 0.1rem; }
+    nav.global #global-header .header-content {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      width: 100%; }
+    nav.global #global-header ul {
+      text-transform: uppercase;
+      font-weight: 700;
+      font-size: 0.75rem;
+      letter-spacing: 0.1rem;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      list-style: none;
+      list-style-image: none; }
+      nav.global #global-header ul li {
+        position: relative;
+        left: auto;
+        top: auto; }
+      nav.global #global-header ul li > a {
+        background: transparent;
+        display: block;
+        color: rgba(0, 0, 0, 0.85);
+        padding: 0.15rem 0.75rem; }
 
 header {
   padding: 0 20px; }

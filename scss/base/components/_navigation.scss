@@ -4,17 +4,15 @@ nav.global{
 #global-header {
   @include clearfix;
   background: $transparent;
-  height: 6.25rem;
+  height: 5.25rem;
   border-bottom: 1px solid rgba(180,180,180,0.35);
 
   #global-header, ul {
     @include clearfix;
   }
 
-
-
   .bt-icon--politico {
-    font-size: 2.5rem;
+    font-size: 2.25rem;
     color: $politico-red
   }
 
@@ -35,19 +33,38 @@ nav.global{
     text-align: center;
   }
 
-  #nav-micro {
-    float: right;
+
+  .header-content {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      width: 100%;
+    }
 
 
     ul {
-      list-style: none;
-      margin-bottom: 1px;
-      padding-bottom: 0;
+      text-transform: uppercase;
+      font-weight: 700;
+      font-size: 0.75rem;
+      letter-spacing: 0.1rem;
+      display: -ms-flexbox;
       display: flex;
-      -webkit-box-pack: justify;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      list-style: none;
+      list-style-image: none;
 
       li{
-        float:left;
+        position: relative;
+        left: auto;
+        top: auto;
       }
 
       li > a {
@@ -55,13 +72,9 @@ nav.global{
         display: block;
         color: rgba(0,0,0,0.85);
         padding: 0.15rem 0.75rem;
-        font-family: $din;
-        text-transform: uppercase;
-        font-weight: 700;
-        font-size: 0.75rem;
-        letter-spacing: 0.1rem;
+
+
       }
     }
   }
-}
 }
