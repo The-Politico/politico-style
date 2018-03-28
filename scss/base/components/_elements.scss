@@ -47,7 +47,6 @@ button {
   transition: all .25s ease;
 }
 
-
 .highlight {
 background-color: $highlighter-yellow;
 box-shadow: 0.2rem 0 0 #fff7a5, -0.2rem 0 0 $highlighter-yellow;
@@ -61,6 +60,8 @@ ul.no-bullets{
 
   li{
     list-style: none;
+    font-size: 1.2rem;
+    line-height: 1.6;
   }
   &.no-indent{
         -webkit-margin-before: 0;

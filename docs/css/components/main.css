@@ -2946,7 +2946,7 @@ h3 {
   -moz-osx-font-smoothing: grayscale; }
 
 h4 {
-  font-size: 1rem;
+  font-size: 1.2rem;
   line-height: 1.3;
   font-weight: 700; }
 
@@ -3031,7 +3031,9 @@ ul.no-bullets {
   -webkit-margin-before: 0;
   -webkit-padding-start: 0px; }
   ul.no-bullets li {
-    list-style: none; }
+    list-style: none;
+    font-size: 1.2rem;
+    line-height: 1.6; }
   ul.no-bullets.no-indent {
     -webkit-margin-before: 0;
     -webkit-padding-start: 0px; }
