@@ -3217,6 +3217,11 @@ nav.global {
       top: 50%;
       transform: translate(-50%, -50%);
       text-align: center; }
+      nav.global #global-header #global-branding a {
+        -webkit-transition: none;
+        transition: none; }
+        nav.global #global-header #global-branding a:hover {
+          opacity: 1; }
     nav.global #global-header .header-content {
       display: -webkit-box;
       display: -ms-flexbox;
