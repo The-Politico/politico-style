@@ -33,9 +33,9 @@ body {
 }
 
 a{
-  color: #0a7cc4;
+  color: $link;
   &:hover, &:focus {
-    color: #0e9af3;
+    color: $link-hover;
   }
 }
 
@@ -53,22 +53,6 @@ background-color: $highlighter-yellow;
 box-shadow: 0.2rem 0 0 #fff7a5, -0.2rem 0 0 $highlighter-yellow;
 margin: auto 2px;
 }
-
-
-// The dropcap as needed, not included by default
-span.dropcap {
-  float: left;
-  font-size: 5rem;
-  line-height: 0.65;
-  font-family: $din;
-  font-weight: bold;
-  margin: 0.225rem .5rem -.5rem 0;;
-  text-transform: uppercase;
-
-  @media (max-width: $width-small){
-    font-size: 4rem;
-  }
- }
 
 // lists
 ul.no-bullets{
