@@ -3,7 +3,7 @@ div.share {
   margin: 20px auto; }
   div.share a {
     color: white;
-    background-color: #f7f7f7;
+    background-color: #E5E7EB;
     padding: 5px;
     margin: 0 2px;
     display: inline-block;
@@ -17,7 +17,7 @@ div.share {
     div.share a.icon-twitter {
       background-color: #00aced; }
     div.share a.icon-mail {
-      background-color: #999999; }
+      background-color: #282D40; }
     div.share a:hover {
       text-decoration: none; }
 

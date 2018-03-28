@@ -4,15 +4,19 @@ nav.global{
 #global-header {
   @include clearfix;
   background: $transparent;
-  height: 5.25rem;
   border-bottom: 1px solid rgba(180,180,180,0.35);
+
 
   #global-header, ul {
     @include clearfix;
   }
 
+  #header-contents{
+    padding: 0 1rem;
+  }
+
   .bt-icon--politico {
-    font-size: 2.25rem;
+    font-size: 2.1rem;
     color: $politico-red
   }
 
@@ -45,10 +49,12 @@ nav.global{
       -ms-flex-align: center;
       align-items: center;
       width: 100%;
+      height: 5.25rem;
     }
 
 
     ul {
+      font-family: $din;
       text-transform: uppercase;
       font-weight: 700;
       font-size: 0.75rem;
