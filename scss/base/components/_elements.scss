@@ -54,39 +54,21 @@ box-shadow: 0.2rem 0 0 #fff7a5, -0.2rem 0 0 $highlighter-yellow;
 margin: auto 2px;
 }
 
-// Paragraphs
-p {
-  font-family: Georgia,Times,"Times New Roman",serif;
-  font-size: 1.35rem;
-  line-height: 1.618;
-  margin: 1rem auto;
-  max-width: 550px;
-  overflow-wrap: break-word;
-
-  &.small{
-    font-size: .9rem;
-
-    &.sans{
-      font-size: 1rem;
-    }
-}
-
 
 // The dropcap as needed, not included by default
-  span.dropcap {
-    float: left;
-    font-size: 5rem;
-    line-height: 0.65;
-    font-family: $din;
-    font-weight: bold;
-    margin: 0.225rem .5rem -.5rem 0;;
-    text-transform: uppercase;
+span.dropcap {
+  float: left;
+  font-size: 5rem;
+  line-height: 0.65;
+  font-family: $din;
+  font-weight: bold;
+  margin: 0.225rem .5rem -.5rem 0;;
+  text-transform: uppercase;
 
-    @media (max-width: $width-small){
-      font-size: 4rem;
-    }
-   }
-}
+  @media (max-width: $width-small){
+    font-size: 4rem;
+  }
+ }
 
 // lists
 ul.no-bullets{

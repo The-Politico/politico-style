@@ -2898,23 +2898,24 @@ p {
   margin: 1rem auto;
   max-width: 550px;
   overflow-wrap: break-word; }
+  p.small {
+    font-size: 1.1rem; }
   p.sans {
-    font-size: 1.3rem; }
+    font-size: 1.32rem; }
     p.sans.small {
-      font-size: 1.25rem; }
-    p.sans.small {
-      font-size: 1.15rem; }
-  p span.dropcap {
-    float: left;
-    font-size: 5rem;
-    line-height: 0.65;
-    font-family: "din-2014", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-weight: bold;
-    margin: 0.225rem .5rem -.5rem 0;
-    text-transform: uppercase; }
-    @media (max-width: 600px) {
-      p span.dropcap {
-        font-size: 4rem; } }
+      font-size: 1rem; }
+
+span.dropcap {
+  float: left;
+  font-size: 5rem;
+  line-height: 0.65;
+  font-family: "din-2014", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  margin: 0.225rem .5rem -.5rem 0;
+  text-transform: uppercase; }
+  @media (max-width: 600px) {
+    span.dropcap {
+      font-size: 4rem; } }
 
 h2,
 h3,
@@ -2940,13 +2941,17 @@ h2 {
 h3 {
   font-size: 1.5rem;
   line-height: 1.2;
-  font-weight: 700; }
+  font-weight: 700;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
 
 h4 {
   font-size: 1.2rem;
   line-height: 1.3;
   font-weight: 700;
-  color: #666666; }
+  color: #282828;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
 
 h5 {
   font-size: 0.8rem;
@@ -3025,28 +3030,17 @@ button {
   box-shadow: 0.2rem 0 0 #fff7a5, -0.2rem 0 0 #fffab7;
   margin: auto 2px; }
 
-p {
-  font-family: Georgia,Times,"Times New Roman",serif;
-  font-size: 1.35rem;
-  line-height: 1.618;
-  margin: 1rem auto;
-  max-width: 550px;
-  overflow-wrap: break-word; }
-  p.small {
-    font-size: .9rem; }
-    p.small.sans {
-      font-size: 1rem; }
-  p span.dropcap {
-    float: left;
-    font-size: 5rem;
-    line-height: 0.65;
-    font-family: "din-2014", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-weight: bold;
-    margin: 0.225rem .5rem -.5rem 0;
-    text-transform: uppercase; }
-    @media (max-width: 600px) {
-      p span.dropcap {
-        font-size: 4rem; } }
+span.dropcap {
+  float: left;
+  font-size: 5rem;
+  line-height: 0.65;
+  font-family: "din-2014", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  margin: 0.225rem .5rem -.5rem 0;
+  text-transform: uppercase; }
+  @media (max-width: 600px) {
+    span.dropcap {
+      font-size: 4rem; } }
 
 ul.no-bullets {
   -webkit-margin-before: 0;
