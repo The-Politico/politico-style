@@ -2,6 +2,7 @@
 .card{
   padding: 20px 30px;
   margin-bottom: 20px;
+  border: none;
   background-color: #f7f7f7;
   @include border-radius(4px);
 
@@ -46,7 +47,7 @@
 
   h4{
     text-align:left;
-    font-weight: 700;
+    font-weight: 300;
     margin: 1rem 0 0 0;
   }
 
@@ -54,7 +55,7 @@
     margin-top: 0;
   }
   p{
-    font-size: .9rem;
+    font-size: 1.05rem;
     line-height: 1.5em;
     font-family: $din;
 
