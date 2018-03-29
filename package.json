@@ -23,6 +23,7 @@
   "style": "docs/css/base/main.css",
   "sass": "scss/base/main.scss",
   "dependencies": {
+    "bootstrap": "^4.0.0",
     "bootstrap-sass": "^3.3.7",
     "open": "^0.0.5"
   },
