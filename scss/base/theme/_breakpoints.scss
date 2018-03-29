@@ -4,9 +4,12 @@ $min-width-sm: 768px;
 $min-width-lg: 992px;
 $min-width-xl: 1200px;
 
+$width-xs-small: $min-width-xxs-small;
+$width-xs-sm: $min-width-xxs-small;
 $width-sm:$min-width-xs;
 $width-small:$min-width-xs;
 $width-medium:$min-width-sm;
+$width-large: $min-width-lg;
 
 // ----  Sass Mixins---- //
 // @include media-breakpoint-only(xs) { ... }
