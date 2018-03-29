@@ -4,39 +4,48 @@
  * Copyright 2011-2018 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
 
-//Mixins
-@import "~bootstrap/scss/mixins/alert";
-@import "~bootstrap/scss/mixins/background-variant";
-@import "~bootstrap/scss/mixins/badge";
-@import "~bootstrap/scss/mixins/border-radius";
-@import "~bootstrap/scss/mixins/box-shadow";
+//Mixins-Utilities
 @import "~bootstrap/scss/mixins/breakpoints";
-@import "~bootstrap/scss/mixins/buttons";
-@import "~bootstrap/scss/mixins/caret";
-@import "~bootstrap/scss/mixins/clearfix";
-@import "~bootstrap/scss/mixins/float";
-@import "~bootstrap/scss/mixins/forms";
-@import "~bootstrap/scss/mixins/gradients";
-@import "~bootstrap/scss/mixins/grid-framework";
-@import "~bootstrap/scss/mixins/grid";
 @import "~bootstrap/scss/mixins/hover";
 @import "~bootstrap/scss/mixins/image";
-@import "~bootstrap/scss/mixins/grid";
-@import "~bootstrap/scss/mixins/list-group";
-@import "~bootstrap/scss/mixins/lists";
-@import "~bootstrap/scss/mixins/nav-divider";
-@import "~bootstrap/scss/mixins/navbar-align";
-@import "~bootstrap/scss/mixins/reset-text";
+@import "~bootstrap/scss/mixins/badge";
 @import "~bootstrap/scss/mixins/resize";
 @import "~bootstrap/scss/mixins/screen-reader";
 @import "~bootstrap/scss/mixins/size";
-@import "~bootstrap/scss/mixins/table-row";
+@import "~bootstrap/scss/mixins/reset-text";
 @import "~bootstrap/scss/mixins/text-emphasis";
 @import "~bootstrap/scss/mixins/text-hide";
 @import "~bootstrap/scss/mixins/text-truncate";
-@import "~bootstrap/scss/mixins/transition";
 @import "~bootstrap/scss/mixins/visibility";
+
+
+//Mixins-Components
+@import "~bootstrap/scss/mixins/alert";
+@import "~bootstrap/scss/mixins/buttons";
+@import "~bootstrap/scss/mixins/caret";
+@import "~bootstrap/scss/mixins/pagination";
+@import "~bootstrap/scss/mixins/lists";
+@import "~bootstrap/scss/mixins/list-group";
+@import "~bootstrap/scss/mixins/nav-divider";
+@import "~bootstrap/scss/mixins/forms";
+@import "~bootstrap/scss/mixins/table-row";
+
+//Mixins-Skins
+@import "~bootstrap/scss/mixins/background-variant";
+@import "~bootstrap/scss/mixins/border-radius";
+@import "~bootstrap/scss/mixins/box-shadow";
+@import "~bootstrap/scss/mixins/gradients";
+@import "~bootstrap/scss/mixins/transition";
+
+//Mixins-Layout
+@import "~bootstrap/scss/mixins/clearfix";
+@import "~bootstrap/scss/mixins/navbar-align";
+@import "~bootstrap/scss/mixins/grid-framework";
+@import "~bootstrap/scss/mixins/grid";
+@import "~bootstrap/scss/mixins/float";
 
 
 // Utilities
@@ -56,9 +65,9 @@
 @import "~bootstrap/scss/utilities/visibility";
 
 // Base
-@import "~bootstrap/scss/functions";
-@import "~bootstrap/scss/variables";
-@import "~bootstrap/scss/mixins";
+
+
+// @import "~bootstrap/scss/mixins";
 @import "~bootstrap/scss/root";
 @import "~bootstrap/scss/reboot";
 @import "~bootstrap/scss/type";
@@ -89,5 +98,5 @@
 @import "~bootstrap/scss/tooltip";
 @import "~bootstrap/scss/popover";
 @import "~bootstrap/scss/carousel";
-@import "~bootstrap/scss/utilities";
+// @import "~bootstrap/scss/utilities";
 @import "~bootstrap/scss/print";
