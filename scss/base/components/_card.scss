@@ -1,6 +1,6 @@
 
 .card{
-  padding: 20px 30px;
+  padding: 20px 30px 10px;
   margin-bottom: 20px;
   border: none;
   background-color: #f7f7f7;
@@ -8,6 +8,19 @@
 
   @media (max-width: $width-medium) {
       padding: 20px 25px;
+  }
+
+  figure{
+    padding: 0;
+    margin: -20px -30px 0px -30px ;
+
+    figcaption{
+      text-align:right;
+    }
+
+    img{
+    border-radius: 5px 5px 0 0;
+    }
   }
 
   &.serif{

@@ -5336,7 +5336,7 @@ section {
   margin-right: auto; }
 
 .card {
-  padding: 20px 30px;
+  padding: 20px 30px 10px;
   margin-bottom: 20px;
   border: none;
   background-color: #f7f7f7;
@@ -5347,6 +5347,13 @@ section {
   @media (max-width: 768px) {
     .card {
       padding: 20px 25px; } }
+  .card figure {
+    padding: 0;
+    margin: -20px -30px 0px -30px; }
+    .card figure figcaption {
+      text-align: right; }
+    .card figure img {
+      border-radius: 5px 5px 0 0; }
   .card.serif h3 {
     font-family: Georgia, Times, "Times New Roman", serif;
     font-weight: normal; }
@@ -5469,7 +5476,7 @@ nav.global {
     nav.global #global-header #header-contents {
       padding: 0 1rem; }
     nav.global #global-header .bt-icon--politico {
-      font-size: 2.1rem;
+      font-size: 3.5rem;
       color: #dc0228; }
     nav.global #global-header a {
       color: #000000; }
@@ -5498,7 +5505,7 @@ nav.global {
       -ms-flex-align: center;
       align-items: center;
       width: 100%;
-      height: 5.25rem; }
+      height: 7.25rem; }
     nav.global #global-header ul {
       font-family: "din-2014", "Helvetica Neue", Helvetica, Arial, sans-serif;
       text-transform: uppercase;
