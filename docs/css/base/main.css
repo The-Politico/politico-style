@@ -5159,7 +5159,7 @@ p {
   font-size: 1.35rem;
   line-height: 1.618;
   margin: 1rem auto;
-  max-width: 550px;
+  max-width: 575px;
   overflow-wrap: break-word; }
   p.small {
     font-size: 1.1rem; }
@@ -5187,7 +5187,7 @@ h5,
 h6 {
   font-family: "din-2014", "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin: 0 auto 3px;
-  max-width: 550px;
+  max-width: 575px;
   font-weight: 200; }
   h2 + p,
   h3 + p,
@@ -5601,11 +5601,12 @@ header {
     font-size: 1.5rem;
     font-weight: normal;
     line-height: 1.2;
-    margin: 5px 0 10px 0;
-    padding-bottom: 0; }
-    @media (max-width: 768px) {
+    margin: 5px 0 20px 0;
+    padding-bottom: 0;
+    font-size: 1.5rem; }
+    @media (min-width: 768px) {
       header .subhead {
-        font-size: 1.1em; } }
+        font-size: 1.7rem; } }
   header .info p,
   header .info a {
     max-width: 750px;

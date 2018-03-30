@@ -40,12 +40,12 @@ header {
       margin-top: 0;
     }
 
-    @media (max-width: $min-width-xxs-small) {
+    @media (max-width: $min-width-xxs) {
       font-size: 1.3rem;
     }
   }
 
-  // $min-width-xxs-small: 350px;
+  // $min-width-xxs: 350px;
   // $min-width-xs: 576px;
   // $min-width-sm: 768px;
   // $min-width-lg: 992px;
@@ -58,11 +58,12 @@ header {
     font-size: 1.5rem;
     font-weight: normal;
     line-height: 1.2;
-    margin: 5px 0 10px 0;
+    margin: 5px 0 20px 0;
     padding-bottom: 0;
+    font-size: 1.5rem;
 
-    @media (max-width: $width-medium) {
-      font-size: 1.1em;
+    @media (min-width: $min-width-sm) {
+      font-size: 1.7rem;
       }
 
   }
