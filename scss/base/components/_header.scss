@@ -36,12 +36,12 @@ header {
     }
 
     @media (max-width: $min-width-xs) {
-      font-size: 2.3em;
+      font-size: 2.25rem;
       margin-top: 0;
     }
 
     @media (max-width: $min-width-xxs-small) {
-      font-size: 1.8em;
+      font-size: 1.3rem;
     }
   }
 
@@ -55,9 +55,9 @@ header {
     max-width: 750px;
     padding: 0;
     font-family: $din;
-    font-size: 1.28rem;
+    font-size: 1.5rem;
     font-weight: normal;
-    line-height: 1.18;
+    line-height: 1.2;
     margin: 5px 0 10px 0;
     padding-bottom: 0;
 

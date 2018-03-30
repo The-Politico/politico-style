@@ -1,1 +1,7 @@
-<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 117.67 226.58"><defs><style>.cls-1{fill:#fff;}</style></defs><title>facebook-logo-white</title><path id="f" class="cls-1" d="M76.7,230.45V127.09H111.4l5.19-40.28H76.7V61.1c0-11.66,3.24-19.61,20-19.61H118v-36A285.42,285.42,0,0,0,86.92,3.86c-30.75,0-51.81,18.77-51.81,53.24V86.81H.33v40.28H35.11V230.45Z" transform="translate(-0.33 -3.86)"/></svg>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 117.67 226.58">
+    <defs>
+        <style>.cls-1{fill:#fff;}</style>
+    </defs>
+    <title>facebook-logo-white</title>
+    <path id="f" class="cls-1" d="M76.7,230.45V127.09H111.4l5.19-40.28H76.7V61.1c0-11.66,3.24-19.61,20-19.61H118v-36A285.42,285.42,0,0,0,86.92,3.86c-30.75,0-51.81,18.77-51.81,53.24V86.81H.33v40.28H35.11V230.45Z" transform="translate(-0.33 -3.86)" />
+</svg>

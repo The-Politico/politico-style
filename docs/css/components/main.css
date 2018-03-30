@@ -5336,7 +5336,7 @@ section {
   margin-right: auto; }
 
 .card {
-  padding: 20px 30px 10px;
+  padding: 25px 30px 10px;
   margin-bottom: 20px;
   border: none;
   background-color: #f7f7f7;
@@ -5349,7 +5349,7 @@ section {
       padding: 20px 25px; } }
   .card figure {
     padding: 0;
-    margin: -20px -30px 0px -30px; }
+    margin: -25px -30px 0px -30px; }
     .card figure figcaption {
       text-align: right; }
     .card figure img {
@@ -5469,15 +5469,35 @@ nav.global {
       clear: both;
       content: '';
       display: table; }
-    nav.global #global-header #global-header::after, nav.global #global-header ul::after {
+    nav.global #global-header #global-header::after,
+    nav.global #global-header ul::after {
       clear: both;
       content: '';
       display: table; }
     nav.global #global-header #header-contents {
       padding: 0 1rem; }
     nav.global #global-header .bt-icon--politico {
-      font-size: 3.5rem;
-      color: #dc0228; }
+      color: #dc0228;
+      font-size: 1.5rem; }
+      @media (min-width: 576px) {
+        nav.global #global-header .bt-icon--politico {
+          font-size: 1.6rem;
+          margin-top: 0; } }
+      @media (min-width: 650px) {
+        nav.global #global-header .bt-icon--politico {
+          font-size: 1.8rem;
+          margin: 5px 0 15px;
+          padding: 0; } }
+      @media (min-width: 768px) {
+        nav.global #global-header .bt-icon--politico {
+          font-size: 2.8rem;
+          margin: 5px 0 15px;
+          padding: 0; } }
+      @media (min-width: 992px) {
+        nav.global #global-header .bt-icon--politico {
+          font-size: 3.5rem;
+          margin: 5px 0 15px;
+          padding: 0; } }
     nav.global #global-header a {
       color: #000000; }
       nav.global #global-header a:hover, nav.global #global-header a:focus {
@@ -5495,39 +5515,49 @@ nav.global {
         nav.global #global-header #global-branding a:hover {
           opacity: 1; }
     nav.global #global-header .header-content {
+      -webkit-box-align: center;
+      -ms-flex-pack: justify;
+      -ms-flex-align: center;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
       -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
       justify-content: space-between;
-      -webkit-box-align: center;
-      -ms-flex-align: center;
       align-items: center;
       width: 100%;
-      height: 7.25rem; }
+      height: 4.25rem; }
+      @media (min-width: 576px) {
+        nav.global #global-header .header-content {
+          height: 4.25rem; } }
+      @media (min-width: 768px) {
+        nav.global #global-header .header-content {
+          height: 6.25rem; } }
+      @media (min-width: 992px) {
+        nav.global #global-header .header-content {
+          height: 7.25rem; } }
     nav.global #global-header ul {
-      font-family: "din-2014", "Helvetica Neue", Helvetica, Arial, sans-serif;
-      text-transform: uppercase;
-      font-weight: 700;
-      font-size: 0.75rem;
-      letter-spacing: 0.1rem;
-      display: -ms-flexbox;
-      display: flex;
       -webkit-box-align: center;
       -ms-flex-align: center;
+      display: -ms-flexbox;
+      display: flex;
+      font-family: "din-2014", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      margin-top: 10px;
+      font-weight: 700;
+      font-size: .75rem;
+      letter-spacing: .1rem;
+      text-transform: uppercase;
       align-items: center;
       list-style: none;
       list-style-image: none; }
       nav.global #global-header ul li {
-        position: relative;
+        top: auto;
         left: auto;
-        top: auto; }
-      nav.global #global-header ul li > a {
-        background: transparent;
-        display: block;
-        color: rgba(0, 0, 0, 0.85);
-        padding: 0.15rem 0.75rem; }
+        position: relative; }
+        nav.global #global-header ul li > a {
+          background: transparent;
+          display: block;
+          color: rgba(0, 0, 0, 0.85);
+          padding: 0.15rem 0.75rem; }
 
 header {
   padding: 0 20px; }
@@ -5559,18 +5589,18 @@ header {
         padding: 0; } }
     @media (max-width: 576px) {
       header h1 {
-        font-size: 2.3em;
+        font-size: 2.25rem;
         margin-top: 0; } }
     @media (max-width: 350px) {
       header h1 {
-        font-size: 1.8em; } }
+        font-size: 1.3rem; } }
   header .subhead {
     max-width: 750px;
     padding: 0;
     font-family: "din-2014", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 1.28rem;
+    font-size: 1.5rem;
     font-weight: normal;
-    line-height: 1.18;
+    line-height: 1.2;
     margin: 5px 0 10px 0;
     padding-bottom: 0; }
     @media (max-width: 768px) {
