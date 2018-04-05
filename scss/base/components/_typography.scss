@@ -62,10 +62,10 @@
 // Paragraphs
 p {
   font-family: Georgia,Times,"Times New Roman",serif;
-  font-size: 1.35rem;
+  font-size: 1.28rem;
   line-height: 1.618;
   margin: 1rem auto;
-  max-width: 575px;
+  max-width: $paragraph-width;
   overflow-wrap: break-word;
 
   &.small{
