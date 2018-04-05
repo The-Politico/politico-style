@@ -16,25 +16,28 @@
 // Fitting elements to the size of the well
 .content-small{
   max-width: 400px;
-  @include margin-auto;
 }
 
 .content-fit{
-max-width: 550px;
-@include margin-auto;
+  max-width: $paragraph-width;
 }
 
 .content-large{
-max-width: 800px;
-@include margin-auto;
+  max-width: 800px;
 }
 
 .content-extra-large{
-max-width: 1200px;
-@include margin-auto;
+  max-width: 1200px;
 }
 
 .content-full-width{
-width: 100%;
-@include margin-auto;
+  width: 100%;
+}
+
+.content-small,
+.content-fit,
+.content-large,
+.content-extra-large,
+.content-full-width{
+  @include margin-auto;
 }
