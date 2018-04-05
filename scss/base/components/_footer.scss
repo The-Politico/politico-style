@@ -61,6 +61,11 @@ footer{
 
   @media(max-width: 800px){
 
+    li, ul, p{
+      float: none;
+      text-align: center;
+    }
+
     li + li{
       border-left: none;
     }

@@ -5729,6 +5729,9 @@ footer {
   @media (max-width: 800px) {
     footer {
       padding: 1rem; }
+      footer li, footer ul, footer p {
+        float: none;
+        text-align: center; }
       footer li + li {
         border-left: none; }
       footer .footer__group--links,
