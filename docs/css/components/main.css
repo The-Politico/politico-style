@@ -5155,7 +5155,7 @@ button.close {
   font-family: "Jubilat", Georgia, Times, "Times New Roman", serif; }
 
 p {
-  font-family: Georgia,Times,"Times New Roman",serif;
+  font-family: Georgia, Times, "Times New Roman", serif;
   font-size: 1.1rem;
   line-height: 1.618;
   margin: 1rem auto;
@@ -5168,7 +5168,7 @@ p {
   p.small {
     font-size: 1.02rem; }
   p.sans {
-    font-size: 1.32rem; }
+    font-family: "din-2014", "Helvetica Neue", Helvetica, Arial, sans-serif; }
     p.sans.small {
       font-size: 1rem; }
 
@@ -5544,7 +5544,7 @@ nav.global {
           padding: 0; } }
       @media (min-width: 992px) {
         nav.global #global-header .bt-icon--politico {
-          font-size: 3.5rem;
+          font-size: 3.4rem;
           margin: 5px 0 15px;
           padding: 0; } }
     nav.global #global-header a {

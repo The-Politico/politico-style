@@ -61,7 +61,7 @@
 
 // Paragraphs
 p {
-  font-family: Georgia,Times,"Times New Roman",serif;
+  font-family: $georgia;
   font-size: 1.1rem;
   line-height: 1.618;
   margin: 1rem auto;
@@ -78,7 +78,7 @@ p {
   }
 
   &.sans{
-    font-size: 1.32rem;
+    font-family: $din;
 
     &.small{
       font-size: 1rem;
