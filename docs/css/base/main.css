@@ -5156,11 +5156,15 @@ button.close {
 
 p {
   font-family: Georgia,Times,"Times New Roman",serif;
-  font-size: 1.28rem;
+  font-size: 1.1rem;
   line-height: 1.618;
   margin: 1rem auto;
   max-width: 575px;
   overflow-wrap: break-word; }
+  @media (min-width: 992px) {
+    p {
+      font-size: 1.18rem;
+      margin-top: 0; } }
   p.small {
     font-size: 1.02rem; }
   p.sans {
@@ -5197,9 +5201,9 @@ h6 {
     margin-top: 0px; }
 
 h2 {
-  font-size: 2rem;
+  font-size: 1.8rem;
   line-height: 1.2;
-  font-weight: 200; }
+  font-weight: 300; }
 
 h3 {
   font-size: 1.5rem;
@@ -5621,24 +5625,24 @@ header {
     text-transform: uppercase; }
   header h1 {
     font-family: "din-2014", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 3rem;
+    font-size: 1.2rem;
     font-weight: bold;
     line-height: 1.1em;
     margin: 0;
     padding: 0px 5px 10px;
     max-width: 900px; }
-    @media (max-width: 992px) {
+    @media (min-width: 350px) {
+      header h1 {
+        font-size: 1.8rem; } }
+    @media (min-width: 768px) {
+      header h1 {
+        font-size: 2.4rem;
+        margin-top: 0; } }
+    @media (min-width: 992px) {
       header h1 {
         font-size: 2.8rem;
         margin: 5px 0 15px;
         padding: 0; } }
-    @media (max-width: 576px) {
-      header h1 {
-        font-size: 2.25rem;
-        margin-top: 0; } }
-    @media (max-width: 350px) {
-      header h1 {
-        font-size: 1.3rem; } }
   header .subhead {
     max-width: 750px;
     padding: 0;
@@ -5647,11 +5651,10 @@ header {
     font-weight: normal;
     line-height: 1.2;
     margin: 5px 0 20px 0;
-    padding-bottom: 0;
-    font-size: 1.5rem; }
+    padding-bottom: 0; }
     @media (min-width: 768px) {
       header .subhead {
-        font-size: 1.7rem; } }
+        font-size: 1.3rem; } }
   header .info p,
   header .info a {
     max-width: 750px;

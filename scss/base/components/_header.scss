@@ -22,27 +22,28 @@ header {
 
   h1 {
     font-family: $din;
-    font-size: 3rem;
+    font-size: 1.2rem;
     font-weight: bold;
     line-height: 1.1em;
     margin: 0;
     padding: 0px 5px 10px;
     max-width: 900px;
 
-    @media (max-width: $min-width-lg) {
+    @media (min-width: $min-width-xxs) {
+      font-size: 1.8rem;
+    }
+
+    @media (min-width: $min-width-sm) {
+      font-size: 2.4rem;
+      margin-top: 0;
+    }
+
+    @media (min-width: $min-width-lg) {
       font-size: 2.8rem;
       margin: 5px 0 15px;
       padding: 0;
     }
 
-    @media (max-width: $min-width-xs) {
-      font-size: 2.25rem;
-      margin-top: 0;
-    }
-
-    @media (max-width: $min-width-xxs) {
-      font-size: 1.3rem;
-    }
   }
 
   .subhead {
@@ -54,10 +55,10 @@ header {
     line-height: 1.2;
     margin: 5px 0 20px 0;
     padding-bottom: 0;
-    font-size: 1.5rem;
+
 
     @media (min-width: $min-width-sm) {
-      font-size: 1.7rem;
+      font-size: 1.3rem;
       }
 
   }
