@@ -36,3 +36,27 @@ $box-shadow-heavy: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
         -ms-border-radius: $radius;
             border-radius: $radius;
 }
+
+@mixin uniform-padding($spacing){
+  padding: .5rem*$spacing;
+}
+
+@mixin uniform-padding-top($spacing){
+  padding: .5rem*$spacing;
+}
+
+@mixin uniform-padding-bottom($spacing){
+  padding: .5rem*$spacing;
+}
+
+@mixin uniform-padding-left($spacing){
+  padding: .5rem*$spacing;
+}
+
+@mixin uniform-padding-right($spacing){
+  padding: .5rem*$spacing;
+}
+
+@mixin uniform-margin($spacing){
+  padding: .5rem*$spacing;
+}

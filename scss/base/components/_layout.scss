@@ -1,6 +1,6 @@
 // Sections. Sections should be used to offset sections of the text, like graphics etc.
   section {
-  padding: 1.25rem 0;
+  padding: 2rem 0;
 
     figure + p{
         margin-top: 10px;
@@ -12,6 +12,7 @@
       }
     }
 }
+
 
 // Fitting elements to the size of the well
 .content-small{
@@ -40,4 +41,77 @@
 .content-extra-large,
 .content-full-width{
   @include margin-auto;
+}
+
+
+//Uniform spacing
+// Margin
+.m0{
+ @include uniform-margin(0);
+}
+
+.m05{
+  @include uniform-margin(0.05);
+}
+
+.m1{
+  @include uniform-margin(1);
+}
+
+.m2{
+  @include uniform-margin(2);
+}
+
+.m3{
+    @include uniform-margin(3);
+}
+
+.m4{
+    @include uniform-margin(4);
+}
+
+.m5{
+    @include uniform-margin(5);
+}
+
+.m6{
+    @include uniform-margin(6);
+}
+
+
+//Padding
+.p0{
+    @include uniform-padding(0);
+}
+
+.p05{
+  @include uniform-padding(.05);
+}
+
+.p1{
+  @include uniform-padding(1);
+}
+
+.p2{
+  @include uniform-padding(2);
+}
+
+.p3{
+  @include uniform-padding(3);
+}
+
+.p4{
+  @include uniform-padding(4);
+}
+
+.p5{
+  @include uniform-padding(5);
+}
+
+.p6{
+  @include uniform-padding(6);
+}
+
+.pt{
+
 }

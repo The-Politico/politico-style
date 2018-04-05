@@ -30,6 +30,7 @@ footer{
     color: rgba(255,255,255,0.8);
   }
   ul{
+    overflow: hidden;
     list-style: none;
     list-style-image: none;
     -webkit-margin-before: 0em;
@@ -59,6 +60,11 @@ footer{
   }
 
   @media(max-width: 800px){
+
+    li + li{
+      border-left: none;
+    }
+
     padding: 1rem;
 
     .footer__group--links,

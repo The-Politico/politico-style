@@ -45,6 +45,7 @@ footer {
     text-align: right;
     color: rgba(255, 255, 255, 0.8); }
   footer ul {
+    overflow: hidden;
     list-style: none;
     list-style-image: none;
     -webkit-margin-before: 0em;
@@ -66,6 +67,8 @@ footer {
   @media (max-width: 800px) {
     footer {
       padding: 1rem; }
+      footer li + li {
+        border-left: none; }
       footer .footer__group--links,
       footer .footer__group--legal {
         float: none;
