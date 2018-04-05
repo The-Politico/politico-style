@@ -5253,8 +5253,8 @@ html {
   font-size: 1rem;
   font-weight: 500;
   line-height: 1.2;
-  color: #696d70;
-  text-align: left; }
+  text-align: left;
+  color: #121212; }
 
 *,
 *::before,
@@ -5265,8 +5265,7 @@ article {
   margin-bottom: 2em; }
 
 body {
-  color: #000000;
-  position: relative;
+  color: #121212;
   margin: 0;
   min-height: 100%;
   font-size: 1rem;
@@ -5598,7 +5597,7 @@ header {
     max-width: 750px;
     padding: 0;
     font-family: "din-2014", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-weight: normal;
     line-height: 1.2;
     margin: 5px 0 20px 0;

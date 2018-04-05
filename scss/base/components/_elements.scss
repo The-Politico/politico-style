@@ -8,8 +8,8 @@ html {
   font-size: 1rem;
   font-weight: 500;
   line-height: 1.2;
-  color: #696d70;
   text-align: left;
+  color: $politico-alt-black;
 }
 
 *,
@@ -23,8 +23,7 @@ article{
 }
 
 body {
-  color: $black;
-  position: relative;
+  color: $politico-alt-black;
   margin: 0;
   min-height: 100%;
   font-size: 1rem;
