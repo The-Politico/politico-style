@@ -1,4 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Nanum+Gothic+Coding");
+.fill-politico-red {
+  color: #dc0228; }
+
 body {
   font-family: "Nanum Gothic Coding", sans-serif;
   background-color: #ffffff; }

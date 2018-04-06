@@ -16,22 +16,28 @@
     {% include "components/partials/sidenav.html" %}
     <content>
       <article class="container">
-        <section>
+        <section class="border-bottom">
+          {% include "components/partials/welcome.html" %}
+        </section>
+        <section class="border-bottom">
+          {% include "components/partials/breakpoints.html" %}
+        </section>
+        <section class="border-bottom">
           {% include "components/partials/layout.html" %}
         </section>
-        <section>
+        <section class="border-bottom">
           {% include "components/partials/header.html" %}
         </section>
-        <section>
+        <section class="border-bottom">
           {% include "components/partials/subheds.html" %}
         </section>
-        <section>
+        <section class="border-bottom">
           {% include "components/partials/paragraphs.html" %}
         </section>
-        <section>
+        <section class="border-bottom">
           {% include "components/partials/lists.html" %}
         </section>
-        <section>
+        <section class="border-bottom">
           {% include "components/partials/cards.html" %}
         </section>
       </article>

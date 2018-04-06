@@ -14,9 +14,12 @@
   </head>
   <body>
     <nav>
-  <h4>Components</h4>
+  <h3>CSS Library</h3>
   <ul>
-    <h5 class="pt3">Layout</h5>
+    <h5 class="pt2">Layout</h5>
+    <li>
+      <a href="#breakpoints">Breakpoints</a>
+    </li>
     <li>
       <a href="#header">Standard spacing</a>
     </li>
@@ -28,7 +31,7 @@
       <a href="#subheds">Subheds</a>
     </li>
     <li>
-      <a href="#subheds">Paragraphs</a>
+      <a href="#paragraphs">Paragraphs</a>
     </li>
     <li>
       <a href="#lists">Lists</a>
@@ -43,11 +46,111 @@
 
     <content>
       <article class="container">
-        <section>
+        <section class="border-bottom">
+          <section>
+<h1 class="content-large">Welcome to the <span class="fill-politico-red yell">Politico</span> style guide</h1>
+
+<h2 class="content-large">What is this?</h2>
+<p class="sans content-large">This tool is a reference for POLITICO styles based of the core <a target="blank" href="https://www.politico.com/">Core</a>, <a target="blank" href="https://www.politicopro.com/">Pro</a> and <a target="blank" href="https://www.politico.com/magazine/">Magazine</a> sites. </p>
+
+<p class="content-large">The grid system we use is based off of <code>Bootstrap 4.0</code> — read the documentation <a target="blank" href="https://getbootstrap.com/docs/4.0/layout/grid/">here</a>.
+</section>
+
+        </section>
+        <section class="border-bottom">
+          <a name="breakpoints"></a>
+<section>
+<h3 class="pt3">Breakpoints</h3>
+<p class="sans">More than 63% of our audience comes to us via a mobile device. We prioritize those readers by using <code>min-width</code>.</p>
+
+<h3 class="pt3">Wait, how do min-width breakpoints work again?</h3>
+<p class="sans">The base level css you're writing defaults to the smallest boostrap dedault breakpoint <code>min-width:576px</code>.
+
+<h3 class="pt3">Let's look an an example</h3>
+<p class="sans">This means any screen bigger than 992px, the <code>h2</code> will be aligned center.</p>
+
+<section class="content-fit mt0 pt0">
+
+
+<pre><code class="language-markup"><script type="prism-html-markup">
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+      h2{
+        text-align: center;
+      }
+ }
+</script></code></pre>
+
+</section>
+
+
+<h3 class="pt3">CSS <code>variables</code></h3>
+<table class="table table-bordered content-fit">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Range</th>
+        </tr>
+    </thead>
+    <tbody>
+      <tr>
+          <td><code>min-width-xxs</code></td>
+          <td>min-width 350px</td>
+      </tr>
+      <tr>
+          <td><code>min-width-xs</code></td>
+          <td>min-width 576px</td>
+      </tr>
+      <tr>
+          <td><code>min-width-sm</code></td>
+          <td>min-width 768px</td>
+      </tr>
+      <tr>
+          <td><code>min-width-lg</code></td>
+          <td>min-width 992px</td>
+      </tr>
+      <tr>
+          <td><code>min-width-xl</code></td>
+          <td>min-width 1200px</td>
+      </tr>
+    </tbody>
+</table>
+
+
+<h3 class="pt3">Copy and paste these as needed</h3>
+<section class="content-fit pt0 mt0">
+
+<pre><code class="language-markup"><script type="prism-html-markup">
+// Extra small devices (portrait phones, less than 576px)
+// No media query since this is the default in Bootstrap
+
+//  POLITICO addition
+//Extra small devices (landscape phones, 576px and up)
+@media (min-width: 350px) { ...
+
+// BOOTSTRAP DEFAULT
+//Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+
+</script></code></pre>
+
+</section>
+
+        </section>
+        <section class="border-bottom">
           <a name="layout"></a>
 <section>
 <h3>Spatial Units and how to use them</h3>
-<p class="sans">Margin and padding are based on <code>.5rem</code> increments. This system, informed by Buzzfeed's <a target="blank" href="https://solid.buzzfeed.com/layout.html">solid</a> framework used a 6 step system from <br> <code> 0 to 6</code>.
+<p class="sans">Margin and padding are based on <code>.5rem</code> increments. This system, inspired by Buzzfeed's <a target="blank" href="https://solid.buzzfeed.com/layout.html">solid</a> framework used a 6 step system from <br> <code> 0 to 6</code>.
 
 <div class="row justify-content-md-center content-fit">
   <table class="table table-bordered col-5 ">
@@ -131,7 +234,7 @@
 <h3>Now let's combine them</h3>
 <p class="sans"><code>Spacial units</code> and <code>directions</code> can be combined to deploy standard spacing between elements.<p>
 
-<p class="sans">Our standard spacing between charts and section headers is <code>3rem</code>. A <code>section</code> tag will do this for you, but you can also bring this in by adding the class of <code>pt4</code>.
+<p class="sans">Our standard spacing between charts and section headers is <code>3rem</code>. A <code>section</code> tag will do this for you, but you can also bring this in by adding the class of <code>pt3</code>.
 
 <h3 class="pt3">Let's see it in action</h3>
 
@@ -161,7 +264,7 @@
 </section>
 
         </section>
-        <section>
+        <section class="border-bottom">
           <a name="header"></a>
 <header class="center">
     <div class="share">
@@ -214,7 +317,7 @@
 
 
         </section>
-        <section>
+        <section class="border-bottom">
           <a name="subheds"></a>
 
 
@@ -224,7 +327,7 @@
     <li><h2>This is an h2</h2></li>
     <li><h3 class="mt0">This is an h3</h3></li>
     <li><h4>This is an h4</h4></li>
-    <li><h5>This is an h5</h5></li>
+    <li><h5 class="mb0">This is an h5</h5></li>
     <li><h6>This is an h6</h6></li>
 </ul>
 </section>
@@ -263,8 +366,14 @@
 
 
         </section>
-        <section>
+        <section class="border-bottom">
           <a name="paragraphs"></a>
+<section>
+<h3>Let's talk about paragraphs</h3>
+<p>In most cases we'll use the standard <code>Georgia</code> text. We'll depart from that when we're writing primarily <span class="sans">graphic</sans> paragraph text.</p>
+
+<p>You'll notice a few variations you can use in the table below</p>
+</section>
 
 <table class="table table-bordered content-fit">
     <thead>
@@ -329,7 +438,7 @@
 
 
         </section>
-        <section>
+        <section class="border-bottom">
           <a name="lists"></a>
 <section class="small sans content-fit">
 <h3 class="text-align-left">Links to css hacks</h3>
@@ -357,7 +466,7 @@
 </section>
 
         </section>
-        <section>
+        <section class="border-bottom">
           <a name="cards"></a>
 <section>
   <div class="row">

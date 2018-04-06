@@ -5118,6 +5118,9 @@ button.close {
   .table-bordered td {
     border: 1px solid #ddd !important; } }
 
+.fill-politico-red {
+  color: #dc0228; }
+
 .text-align-center {
   text-align: center; }
 
@@ -5149,6 +5152,9 @@ button.close {
 
 .headline {
   font-family: "din-2014", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+
+.uppercase, .yell {
+  text-transform: uppercase; }
 
 .jubilat,
 .headline.mag {
@@ -5355,6 +5361,10 @@ section {
 .content-large,
 .content-extra-large,
 .content-full-width {
+  margin-left: auto;
+  margin-right: auto; }
+
+.margin-auto {
   margin-left: auto;
   margin-right: auto; }
 

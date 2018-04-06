@@ -37,6 +37,10 @@
   @include margin-auto;
 }
 
+.margin-auto{
+  @include margin-auto;
+}
+
 
 //Uniform spacing
 $spacing: 6;
