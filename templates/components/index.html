@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title></title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.11.0/themes/prism-okaidia.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.13.0/themes/prism.min.css" />
     <link rel="stylesheet" href="../css/components/main.css">
     <link rel="stylesheet" type="text/css" href="https://www.politico.com/interactives/cdn/fonts/base-icons/politico-base-icons.min.css">
 
@@ -16,9 +16,24 @@
     {% include "components/partials/sidenav.html" %}
     <content>
       <article class="container">
-        {% include "components/partials/header.html" %}
-        <hr/>
-        {% include "components/partials/cards.html" %}
+        <section>
+          {% include "components/partials/layout.html" %}
+        </section>
+        <section>
+          {% include "components/partials/header.html" %}
+        </section>
+        <section>
+          {% include "components/partials/subheds.html" %}
+        </section>
+        <section>
+          {% include "components/partials/paragraphs.html" %}
+        </section>
+        <section>
+          {% include "components/partials/lists.html" %}
+        </section>
+        <section>
+          {% include "components/partials/cards.html" %}
+        </section>
       </article>
     </content>
 

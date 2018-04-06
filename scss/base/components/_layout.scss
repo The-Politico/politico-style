@@ -1,15 +1,9 @@
 // Sections. Sections should be used to offset sections of the text, like graphics etc.
   section {
-  padding: 2rem 0;
+  padding: 1.5rem 0;
 
     figure + p{
         margin-top: 10px;
-    }
-
-    h3, h4, h5 {
-      + figure {
-        margin-top: 10px;
-      }
     }
 }
 
@@ -45,73 +39,163 @@
 
 
 //Uniform spacing
-// Margin
-.m0{
- @include uniform-margin(0);
+$spacing: 6;
+
+//uniform Margin
+@mixin uniform-margin($spacing){
+  margin: .5rem*$spacing;
 }
 
-.m05{
-  @include uniform-margin(0.05);
+@mixin margin-list{
+  @for $i from 0 through $spacing{
+    .m#{$i}{
+      @include uniform-margin($i);
+    }
+  }
 }
 
-.m1{
-  @include uniform-margin(1);
+@include margin-list;
+
+
+//uniform margin top
+@mixin uniform-margin-top($spacing){
+  margin-top: .5rem*$spacing;
 }
 
-.m2{
-  @include uniform-margin(2);
+@mixin margin-top-list{
+  @for $i from 0 through $spacing{
+    .mt#{$i}{
+      @include uniform-margin-top($i);
+    }
+  }
 }
 
-.m3{
-    @include uniform-margin(3);
+@include margin-top-list;
+
+
+//uniform margin bottom
+@mixin uniform-margin-bottom($spacing){
+  margin-bottom: .5rem*$spacing;
 }
 
-.m4{
-    @include uniform-margin(4);
+@mixin margin-bottom-list{
+  @for $i from 0 through $spacing{
+    .mb#{$i}{
+      @include uniform-margin-bottom($i);
+    }
+  }
 }
 
-.m5{
-    @include uniform-margin(5);
+@include margin-bottom-list;
+
+
+//uniform margin left
+@mixin uniform-margin-left($spacing){
+  margin-left: .5rem*$spacing;
 }
 
-.m6{
-    @include uniform-margin(6);
+@mixin margin-left-list{
+  @for $i from 0 through $spacing{
+    .ml#{$i}{
+      @include uniform-margin-left($i);
+    }
+  }
 }
 
+@include margin-left-list;
 
-//Padding
-.p0{
-    @include uniform-padding(0);
+//uniform margin right
+@mixin uniform-margin-right($spacing){
+  margin-right: .5rem*$spacing;
 }
 
-.p05{
-  @include uniform-padding(.05);
+@mixin margin-right-list{
+  @for $i from 0 through $spacing{
+    .mr#{$i}{
+      @include uniform-margin-right($i);
+    }
+  }
 }
 
-.p1{
-  @include uniform-padding(1);
+@include margin-right-list;
+
+
+//Uniform Padding
+
+@mixin uniform-padding($spacing){
+  padding: .5rem*$spacing;
 }
 
-.p2{
-  @include uniform-padding(2);
+@mixin padding-list{
+  @for $i from 0 through $spacing{
+    .p#{$i}{
+      @include uniform-padding($i);
+    }
+  }
 }
 
-.p3{
-  @include uniform-padding(3);
+@include padding-list;
+
+
+//uniform padding top
+@mixin uniform-padding-top($spacing){
+  padding-top: .5rem*$spacing;
 }
 
-.p4{
-  @include uniform-padding(4);
+@mixin padding-top-list{
+  @for $i from 0 through $spacing{
+    .pt#{$i}{
+      @include uniform-padding-top($i);
+    }
+  }
 }
 
-.p5{
-  @include uniform-padding(5);
+@include padding-top-list;
+
+
+//uniform padding bottom
+@mixin uniform-padding-bottom($spacing){
+  padding-top: .5rem*$spacing;
 }
 
-.p6{
-  @include uniform-padding(6);
+@mixin padding-bottom-list{
+  @for $i from 0 through $spacing{
+    .pb#{$i}{
+      @include uniform-padding-bottom($i);
+    }
+  }
 }
 
-.pt{
+@include padding-bottom-list;
 
+
+
+//uniform padding left
+@mixin uniform-padding-left($spacing){
+  padding-left: .5rem*$spacing;
 }
+
+@mixin padding-left-list{
+  @for $i from 0 through $spacing{
+    .pl#{$i}{
+      @include uniform-padding-left($i);
+    }
+  }
+}
+
+@include padding-left-list;
+
+//uniform padding right
+@mixin uniform-padding-right($spacing){
+  margin-right: .5rem*$spacing;
+}
+
+@mixin padding-right-list{
+  @for $i from 0 through $spacing{
+    .pr#{$i}{
+      @include uniform-padding-right($i);
+    }
+  }
+}
+
+@include padding-right-list;

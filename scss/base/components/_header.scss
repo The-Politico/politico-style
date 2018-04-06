@@ -20,32 +20,6 @@ header {
     text-transform: uppercase;
   }
 
-  h1 {
-    font-family: $din;
-    font-size: 1.2rem;
-    font-weight: bold;
-    line-height: 1.1em;
-    margin: 0;
-    padding: 0px 5px 10px;
-    max-width: 900px;
-
-    @media (min-width: $min-width-xxs) {
-      font-size: 1.8rem;
-    }
-
-    @media (min-width: $min-width-sm) {
-      font-size: 2.4rem;
-      margin-top: 0;
-    }
-
-    @media (min-width: $min-width-lg) {
-      font-size: 2.8rem;
-      margin: 5px 0 15px;
-      padding: 0;
-    }
-
-  }
-
   .subhead {
     max-width: 750px;
     padding: 0;
