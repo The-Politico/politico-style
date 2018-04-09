@@ -21,52 +21,48 @@
     <body>
 
         <nav title="navigation" class="global">
-  <div id="global-header">
+<div id="global-header">
+  <div id="header-contents">
     <div id="global-branding">
        <a class="navbar-brand" href="https://www.politico.com/" title="POLITICO" target="_top">
          <span class="bt-icon bt-icon--politico"></span>
        </a>
     </div>
 
-    <nav id="nav-micro" role="navigation">
-
+    <nav id="nav-micro" role="home">
       <div class="header-content">
-        <div class="header-left">
-          🍔
-        </div>
+          <div class="header-left">
+            <a href="https://www.politico.com"><img style="height: 25px;" src="/custom-icons/icon_home.svg"></a>
+          </div>
 
-        <div class="header-right">
-          <ul class="micro-list">
-            <li class="subnav">
-              <a href="https://www.politico.com/magazine/" target="_top">Magazine</a>
-            </li>
-            <li class="subnav hide-phone">
-              <a href="https://www.politico.com/agenda/" target="_top">
-              The Agenda
-              </a>
-            </li>
-
-            <li class="subnav">
-              <a href="https://www.politicopro.com" target="_top">
-                 PRO
-              </a>
-            </li>
-          </ul>
-        </div>
-
-    </div>
-    </nav>
+          <div class="header-right">
+            <ul class="micro-list">
+                <li class="subnav d-none d-sm-block"><a href="https://www.politico.com/magazine/" target="_top">Mag<span class="d-sm-none d-md-none">azine</span></a></li>
+                <li class="subnav d-none d-sm-block"><a href="https://www.politico.com/agenda/" target="_top"><span class="d-sm-none">The</span> Agenda</a></li>
+                <li class="subnav"><a href="https://www.politicopro.com" target="_top">PRO</a></li>
+            </ul>
+          </div>
+      </div>
+      </nav>
   </div>
+</div>
 </nav>
+
+        <!-- banner -->
+<div class="content-group ad">
+  <p>Advertisement</p>
+    <div class="ad-slot flex horizontal" id="pol-01" ></div>
+</div>
 
         <header class="center">
   <div class="share">
-     <a href="" class="icon icon-facebook" target="_blank"></a>
-     <a href="" class="bt-icon--twitter" target="_blank"></a>
-     <a class="icon icon-mail" target="_blank"></a>
+    <a href="" class="bt-icon custom-icon--facebook" target="_blank"><img src="/custom-icons/icon_facebook.svg"></a>
+    <a href="" class="bt-icon bt-icon--twitter" target="_blank"></a>
+    <a href="" class="bt-icon bt-icon--mail" target="_blank"></a>
+
   </div>
   <p class="category">
-      <a href="###" target="_blank">Category title</a>
+      <a href="https://www.politico.com/news/politics" target="_blank">Politics</a>
   </p>
   <h1>
     Your pithy, compelling headline, would you share it?
@@ -76,7 +72,7 @@
   </p>
   <div class="info">
       <p>
-          By <span class="byline"><a href="###">First Lastname</a></span> and <span class="byline"><a href="###">First Lastname</a></span> | <span class="timestamp"> <time datetime=""></time></span>
+          By <span class="byline"><a href="###">First Lastname</a></span> and <span class="byline"><a href="###">First Lastname</a></span> | <span class="timestamp"> <time datetime="">04/05/2018 05:00 AM EDT</time></span>
       </p>
   </div>
 </header>
@@ -88,36 +84,28 @@
             <p>Lorem ipsum dolor <span class="highlight">sit amet,</span> consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. </p>
 
             <section>
-            <h2>This is an H2</h2>
-            <h5>H5 no span class</h5>
-            <h4>All headers are sans, like this h4 </h4>
-            <h3>This is an H3</h3>
+              <h2>This is an overall section of content, h2</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris.</p>
+
+              <section>
+              <h5>H5 no span class</h5>
+              <h3>This is a subsection of this content, h3</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris.</p>
+              </section>
+
+              <section>
+              <h5>H5 no span class</h5>
+              <h3>This is a subsection of this content, h3</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus.</p>
+              </section>
+
+              <section>
+              <h4>This is an H4</h4>
+              <p class="sans small">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris.</p>
+              </section>
             </section>
 
-            <section class="small sans content-fit">
-            <h3 class="text-align-left">Links to css hacks</h3>
-            <ul class="no-bullets no-indent">
-              <li>
-                <a target="blank" href="https://politico.gitbooks.io/politico-newsroom-developer-guide/content/tipsheets/handy-css-tricks/text-styles.html">Controlling content widths + Text styles, small type too</a>
-              </li>
 
-              <li>
-                <a target="blank" href="https://politico.gitbooks.io/politico-newsroom-developer-guide/content/tipsheets/handy-css-tricks/text-alignment.html">How to align text</a>
-              </li>
-
-              <li>
-                <a target="blank" href="https://politico.gitbooks.io/politico-newsroom-developer-guide/content/tipsheets/design-guides/css-includes/cards.html">Different card styles</a>
-              </li>
-
-              <li>
-                <a target="blank" href="https://politico.gitbooks.io/politico-newsroom-developer-guide/content/tipsheets/handy-css-tricks/sections.html">When to use a section</a>
-              </li>
-              <li>
-                <a target="blank" href="https://politico.gitbooks.io/politico-newsroom-developer-guide/content/tipsheets/handy-css-tricks/lists.html">List styles</a>
-              </li>
-
-            </ul>
-            </section>
 
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla.</p>
 
@@ -126,36 +114,7 @@
             <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero.</p>
 
 
-            <section>
-              <div class="row">
-                <div class="col-sm-4">
-                  <div class="card">
-                    <h2>Card Title</h2>
-                    <h6>Subtitle if needed</h6>
-                    <p>A variation of the <span class="highlight">ordinary lorem</span> ipsum text has been used in typesetting since the 1960s or earlier,  by advertisements for Letraset transfer sheets or earlier,  by <span class="highlight">advertisements</span> for Letraset transfer sheets.</p>
-                  </div>
-                </div>
-                <div class="col-sm-4">
-                  <div class="card">
-                    <h2 class="border-bottom">Card Title</h2>
-                    <h6>Subtitle if needed</h6>
-                    <p>You can see the border-bottom style on the h2 here. Does what you would expect</p>
 
-                    <h6>Subtitle if needed</h6>
-                    <p>A variation of the ordinary lorem ipsum text has been used in typesetting since the 1960s or earlier by advertisements for Letraset transfer sheets.</p>
-                  </div>
-                </div>
-
-                <div class="col-sm-4">
-                  <div class="card serif">
-                    <h2>Card Title</h2>
-                    <p>Look up! A serif style is appended to the card</p>
-
-                    <p>Does what you'd expect here too.</p>
-                  </div>
-                </div>
-              </row>
-            </section>
 
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. </p>
 
@@ -174,16 +133,7 @@
             <p>At 26, he married Martha Dandridge Custis, a widow who already had two children, Jacky and Patsy. Washington never had any children of his own.</p>
             </section>
 
-            <h2>The following is a group of subheds</h2>
-            <h3 class="content-fit">This is an h3 .content-fit</h3>
-            <p class="sans">This is a paragraph with .sans appended. The death of his father prevented Washington from an education at England's Appleby School such as his older brothers had received.</p>
-
-            <h3 class="content-fit">This is an h3 .content-fit</h3>
-            <p class="sans">This is a paragraph with .sans appended. The death of his father prevented Washington from an education at England's Appleby School such as his older brothers had received.</p>
-
-            <h3 class="content-fit">This is an h3 .content-fit</h3>
-            <p class="sans">This is a paragraph with .sans appended. The death of his father prevented Washington from an education at England's Appleby School such as his older brothers had received.</p>
-
+            
 
             <section class="credits">
                 <p>Produced by <a target="blank" href="###">FirstName Last</a>.</p>
@@ -191,23 +141,75 @@
 
          </article>
 
-         <footer>
-           <div id="global-footer">
-             <div class="footer-branding">
-               <a class="navbar-brand" href="http://www.politico.com/" title="POLITICO" target="_top">
-                 <span class="icon icon-politico"></span>
-               </a>
-             </div>
-               <div class="footer-legal">
-                    <div class="copyright"> © 2017 POLITICO LLC</div>
-                    <ul class="legal-links">
-                      <li><a href="http://www.politico.com/terms-of-service" target="_top">Terms of Service</a></li>
-                      <li><a href="http://www.politico.com/privacy-policy" target="_top">Privacy Policy</a></li>
-                    </ul>
-                </div>
-                <div class="clear"></div>
-            </div>
-           </div>
-         </footer>
+          
+  <footer>
+    <nav class="footer__group footer__group--links">
+    <ul>
+      <li>
+        <a href="https://www.politico.com/about/">About Us</a>
+      </li>
+      <li>
+        <a href="https://www.politico.com/about/advertising">Advertising</a>
+      </li>
+      <li>
+        <a href="http://www.politico.com/subscribe/breaking-news-alerts">Breaking News Alerts</a>
+      </li>
+      <li>
+        <a href="https://www.politico.com/careers">Careers</a>
+      </li>
+      <li>
+        <a href="https://secure.politico.com/payment">Credit Card Payments</a>
+      </li>
+      <li>
+        <a href="http://edition.pagesuite-professional.co.uk/Launch.aspx?bypass=true&PBID=74262970-aa07-44b3-80c8-21fa8a8ac376">Digital Edition</a>
+      </li>
+      <li>
+        <a href="https://www.politico.com/faq">FAQ</a>
+      </li>
+      <li>
+        <a href="https://www.politico.com/feedback">Feedback</a>
+      </li>
+      <li>
+        <a href="https://www.politico.com/politics">Headlines</a>
+      </li>
+      <li>
+        <a href="https://www.politico.com/gallery">Photos</a>
+      </li>
+      <li>
+        <a href="http://www.powerjobs.com/">POWERJobs</a>
+      </li>
+      <li>
+        <a href="http://www.politico.com/about/press/blog">Press</a>
+      </li>
+      <li>
+        <a href="http://www.politico.com/subscriptions">Print Subscriptions</a>
+      </li>
+      <li>
+        <a href="https://www.politico.com/rss">RSS</a>
+      </li>
+      <li>
+        <a href="https://www.politico.com/sitemap">Site Map</a>
+      </li>
+      <!-- <li>
+        <a href="/">Store</a>
+      </li> -->
+    </ul>
+  <ul>
+    <li>
+      <a href="https://www.politico.com/terms-of-service">Terms of Service</a>
+    </li>
+    <li>
+      <a href="https://www.politico.com/privacy-policy">Privacy Policy</a>
+    </li>
+  </ul>
+</nav>
+<nav class="footer__group footer__group--legal">
+    <hr class="footer-top-line">
+    <p>© 2018 POLITICO LLC</p>
+</nav>
+<div class="clear"></div>
+</footer>
+
+
     </body>
 </html>

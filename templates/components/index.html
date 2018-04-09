@@ -3,17 +3,43 @@
   <head>
     <meta charset="utf-8">
     <title></title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.11.0/themes/prism-okaidia.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.13.0/themes/prism.min.css" />
     <link rel="stylesheet" href="../css/components/main.css">
     <link rel="stylesheet" type="text/css" href="https://www.politico.com/interactives/cdn/fonts/base-icons/politico-base-icons.min.css">
+
+    <!--Typekit-->
+    <link rel="stylesheet" href="https://use.typekit.net/ogn0czn.css">
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
+    <!-- end -->
   </head>
   <body>
     {% include "components/partials/sidenav.html" %}
     <content>
       <article class="container">
-        {% include "components/partials/header.html" %}
-        <hr/>
-        {% include "components/partials/cards.html" %}
+        <section class="border-bottom">
+          {% include "components/partials/welcome.html" %}
+        </section>
+        <section class="border-bottom">
+          {% include "components/partials/breakpoints.html" %}
+        </section>
+        <section class="border-bottom">
+          {% include "components/partials/layout.html" %}
+        </section>
+        <section class="border-bottom">
+          {% include "components/partials/header.html" %}
+        </section>
+        <section class="border-bottom">
+          {% include "components/partials/subheds.html" %}
+        </section>
+        <section class="border-bottom">
+          {% include "components/partials/paragraphs.html" %}
+        </section>
+        <section class="border-bottom">
+          {% include "components/partials/lists.html" %}
+        </section>
+        <section class="border-bottom">
+          {% include "components/partials/cards.html" %}
+        </section>
       </article>
     </content>
 

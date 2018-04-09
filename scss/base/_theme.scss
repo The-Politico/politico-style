@@ -1,4 +1,5 @@
 @import 'theme/bootstrap';
+@import 'theme/variables';
 @import 'theme/mixins';
 @import 'theme/breakpoints';
 @import 'theme/colors/base';
@@ -7,8 +8,9 @@
 @import 'theme/colors/sequential';
 @import 'theme/fonts';
 
-@import 'components/elements';
-@import 'components/sections';
+@import 'components/typography';
+@import 'components/base';
+@import 'components/layout';
 @import 'components/card';
 @import 'components/key';
 @import 'components/refer';

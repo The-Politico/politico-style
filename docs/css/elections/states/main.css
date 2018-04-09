@@ -1,23 +1,32 @@
+.fill-politico-red {
+  color: #dc0228; }
+
 div.share {
   text-align: center;
   margin: 20px auto; }
   div.share a {
     color: white;
-    background-color: #f7f7f7;
-    padding: 5px;
+    background-color: #E5E7EB;
     margin: 0 2px;
+    font-size: 12px;
+    padding: 6px;
     display: inline-block;
     border-radius: 4px;
-    font-size: 14px;
     transition: all .2s;
     text-decoration: none;
     cursor: pointer; }
-    div.share a.icon-facebook {
-      background-color: #3b5998; }
-    div.share a.icon-twitter {
+    div.share a.custom-icon--facebook {
+      background-color: #3b5998;
+      font-size: 13px;
+      padding-left: 5px; }
+      div.share a.custom-icon--facebook img {
+        height: 12px;
+        width: 13px;
+        margin-top: -2px; }
+    div.share a.bt-icon--twitter {
       background-color: #00aced; }
-    div.share a.icon-mail {
-      background-color: #999999; }
+    div.share a.bt-icon--mail {
+      background-color: #282D40; }
     div.share a:hover {
       text-decoration: none; }
 
@@ -28,10 +37,11 @@ footer {
   position: relative;
   font-family: "din-2014", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: .75rem;
-  text-align: left; }
-  @media (max-width: 800px) {
+  text-align: left;
+  padding: 1rem; }
+  @media (min-width: 800px) {
     footer {
-      padding: 1rem; } }
+      padding: 3rem 5rem 1.5rem; } }
   footer .footer__group--links {
     float: left;
     width: 70%; }
@@ -45,6 +55,7 @@ footer {
     text-align: right;
     color: rgba(255, 255, 255, 0.8); }
   footer ul {
+    overflow: hidden;
     list-style: none;
     list-style-image: none;
     -webkit-margin-before: 0em;
@@ -66,13 +77,35 @@ footer {
   @media (max-width: 800px) {
     footer {
       padding: 1rem; }
+      footer li {
+        width: 100%;
+        text-align: center;
+        margin: 15px auto 6px;
+        font-size: 14px;
+        font-weight: 200; }
+      footer li + li {
+        border-left: none;
+        margin: 6px auto; }
       footer .footer__group--links,
       footer .footer__group--legal {
         float: none;
         width: 100%; }
+        footer .footer__group--links hr.footer-top-line,
+        footer .footer__group--legal hr.footer-top-line {
+          border-top: 1px solid #6e7381;
+          width: 90px;
+          margin: 0 auto;
+          padding-top: 50px;
+          margin-top: 25px; }
         footer .footer__group--links p,
         footer .footer__group--legal p {
-          text-align: left; } }
+          text-align: center;
+          font-weight: 200;
+          display: inline;
+          margin: 0 auto;
+          float: none;
+          display: block;
+          padding-bottom: 2rem; } }
 
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 html {
@@ -269,7 +302,7 @@ a {
   margin-right: auto; }
 
 tbody {
-  font-family: "franklin-gothic-urw", "Arial Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  font-family: "din-2014", "Helvetica Neue", Helvetica, Arial, sans-serif; }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "din-2014", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -419,7 +452,7 @@ header.center {
     margin-bottom: 5px;
     line-height: 1; }
   header.center p.time {
-    font-family: "franklin-gothic-urw", "Arial Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "din-2014", "Helvetica Neue", Helvetica, Arial, sans-serif;
     margin: 5px auto; }
     header.center p.time .live {
       font-weight: bold;
@@ -433,7 +466,7 @@ header.center {
   .jumpto p {
     font-size: .8rem;
     text-align: center;
-    font-family: "franklin-gothic-urw", "Arial Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+    font-family: "din-2014", "Helvetica Neue", Helvetica, Arial, sans-serif; }
   .jumpto a {
     text-decoration: underline;
     margin: 0 5px; }
@@ -524,7 +557,7 @@ section.results-list {
   border-bottom: dashed 1px #ddd;
   padding-right: 15px;
   padding-bottom: 5px;
-  font-family: "franklin-gothic-urw", "Arial Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "din-2014", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: normal;
   font-size: .7rem;
   text-align: left; }
@@ -540,7 +573,7 @@ td {
       font-size: .88rem; } }
 
 .key {
-  font-family: "franklin-gothic-urw", "Arial Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "din-2014", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: .8rem;
   padding-right: 3px;
   margin: 10px auto;

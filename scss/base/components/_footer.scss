@@ -7,9 +7,10 @@ footer{
   font-family: $din;
   font-size: .75rem;
   text-align: left;
+  padding: 1rem;
 
-  @media(max-width: 800px){
-    padding: 1rem;
+  @media(min-width: 800px){
+      padding: 3rem 5rem 1.5rem;
   }
 
   .footer__group--links{
@@ -30,6 +31,7 @@ footer{
     color: rgba(255,255,255,0.8);
   }
   ul{
+    overflow: hidden;
     list-style: none;
     list-style-image: none;
     -webkit-margin-before: 0em;
@@ -61,12 +63,48 @@ footer{
   @media(max-width: 800px){
     padding: 1rem;
 
+    ul{
+
+    }
+
+    li{
+      width: 100%;
+      text-align: center;
+      margin: 15px auto 6px;
+      font-size: 14px;
+      font-weight: 200;
+    }
+
+    li + li{
+      border-left: none;
+      margin: 6px auto;
+    }
+
+
+
     .footer__group--links,
     .footer__group--legal{
       float: none;
       width: 100%;
 
-      p{text-align:left}
+      hr.footer-top-line{
+        border-top: 1px solid #6e7381;
+        width: 90px;
+        margin: 0 auto;
+        padding-top: 50px;
+        margin-top: 25px;
+      }
+
+      p{
+        text-align: center;
+        font-weight: 200;
+        display: inline;
+        margin: 0 auto;
+        float: none;
+        display: block;
+        padding-bottom: 2rem;
+      }
+
     }
   }
 }

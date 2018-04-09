@@ -4,6 +4,10 @@ $box-shadow-light: 0 1px 2px rgba(218, 218, 218, 0.16), 0 1px 2px rgba(204, 201,
 $box-shadow-medium: 0 7px 6px rgba(230, 230, 230, 0.25), 0 4px 7px rgba(0,0,0,0.22);
 $box-shadow-heavy: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 
+
+@mixin paragraph-width{
+  max-width: $paragraph-width;
+}
 //Clearfix
 @mixin clearfix {
     &::after {

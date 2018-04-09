@@ -21,6 +21,7 @@
     <body>
 
         {% include "base/partials/nav.html" %}
+        {% include "base/ads/_banner1.html" %}
         {% include "base/partials/header.html" %}
 
          <article class="container">
@@ -29,36 +30,28 @@
             <p>Lorem ipsum dolor <span class="highlight">sit amet,</span> consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. </p>
 
             <section>
-            <h2>This is an H2</h2>
-            <h5>H5 no span class</h5>
-            <h4>All headers are sans, like this h4 </h4>
-            <h3>This is an H3</h3>
+              <h2>This is an overall section of content, h2</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris.</p>
+
+              <section>
+              <h5>H5 no span class</h5>
+              <h3>This is a subsection of this content, h3</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris.</p>
+              </section>
+
+              <section>
+              <h5>H5 no span class</h5>
+              <h3>This is a subsection of this content, h3</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus.</p>
+              </section>
+
+              <section>
+              <h4>This is an H4</h4>
+              <p class="sans small">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris.</p>
+              </section>
             </section>
 
-            <section class="small sans content-fit">
-            <h3 class="text-align-left">Links to css hacks</h3>
-            <ul class="no-bullets no-indent">
-              <li>
-                <a target="blank" href="https://politico.gitbooks.io/politico-newsroom-developer-guide/content/tipsheets/handy-css-tricks/text-styles.html">Controlling content widths + Text styles, small type too</a>
-              </li>
 
-              <li>
-                <a target="blank" href="https://politico.gitbooks.io/politico-newsroom-developer-guide/content/tipsheets/handy-css-tricks/text-alignment.html">How to align text</a>
-              </li>
-
-              <li>
-                <a target="blank" href="https://politico.gitbooks.io/politico-newsroom-developer-guide/content/tipsheets/design-guides/css-includes/cards.html">Different card styles</a>
-              </li>
-
-              <li>
-                <a target="blank" href="https://politico.gitbooks.io/politico-newsroom-developer-guide/content/tipsheets/handy-css-tricks/sections.html">When to use a section</a>
-              </li>
-              <li>
-                <a target="blank" href="https://politico.gitbooks.io/politico-newsroom-developer-guide/content/tipsheets/handy-css-tricks/lists.html">List styles</a>
-              </li>
-
-            </ul>
-            </section>
 
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla.</p>
 
@@ -67,36 +60,7 @@
             <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero.</p>
 
 
-            <section>
-              <div class="row">
-                <div class="col-sm-4">
-                  <div class="card">
-                    <h2>Card Title</h2>
-                    <h6>Subtitle if needed</h6>
-                    <p>A variation of the <span class="highlight">ordinary lorem</span> ipsum text has been used in typesetting since the 1960s or earlier,  by advertisements for Letraset transfer sheets or earlier,  by <span class="highlight">advertisements</span> for Letraset transfer sheets.</p>
-                  </div>
-                </div>
-                <div class="col-sm-4">
-                  <div class="card">
-                    <h2 class="border-bottom">Card Title</h2>
-                    <h6>Subtitle if needed</h6>
-                    <p>You can see the border-bottom style on the h2 here. Does what you would expect</p>
 
-                    <h6>Subtitle if needed</h6>
-                    <p>A variation of the ordinary lorem ipsum text has been used in typesetting since the 1960s or earlier by advertisements for Letraset transfer sheets.</p>
-                  </div>
-                </div>
-
-                <div class="col-sm-4">
-                  <div class="card serif">
-                    <h2>Card Title</h2>
-                    <p>Look up! A serif style is appended to the card</p>
-
-                    <p>Does what you'd expect here too.</p>
-                  </div>
-                </div>
-              </row>
-            </section>
 
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. </p>
 
@@ -115,16 +79,7 @@
             <p>At 26, he married Martha Dandridge Custis, a widow who already had two children, Jacky and Patsy. Washington never had any children of his own.</p>
             </section>
 
-            <h2>The following is a group of subheds</h2>
-            <h3 class="content-fit">This is an h3 .content-fit</h3>
-            <p class="sans">This is a paragraph with .sans appended. The death of his father prevented Washington from an education at England's Appleby School such as his older brothers had received.</p>
-
-            <h3 class="content-fit">This is an h3 .content-fit</h3>
-            <p class="sans">This is a paragraph with .sans appended. The death of his father prevented Washington from an education at England's Appleby School such as his older brothers had received.</p>
-
-            <h3 class="content-fit">This is an h3 .content-fit</h3>
-            <p class="sans">This is a paragraph with .sans appended. The death of his father prevented Washington from an education at England's Appleby School such as his older brothers had received.</p>
-
+            
 
             <section class="credits">
                 <p>Produced by <a target="blank" href="###">FirstName Last</a>.</p>
@@ -132,23 +87,7 @@
 
          </article>
 
-         <footer>
-           <div id="global-footer">
-             <div class="footer-branding">
-               <a class="navbar-brand" href="http://www.politico.com/" title="POLITICO" target="_top">
-                 <span class="icon icon-politico"></span>
-               </a>
-             </div>
-               <div class="footer-legal">
-                    <div class="copyright"> © 2017 POLITICO LLC</div>
-                    <ul class="legal-links">
-                      <li><a href="http://www.politico.com/terms-of-service" target="_top">Terms of Service</a></li>
-                      <li><a href="http://www.politico.com/privacy-policy" target="_top">Privacy Policy</a></li>
-                    </ul>
-                </div>
-                <div class="clear"></div>
-            </div>
-           </div>
-         </footer>
+          {% include "base/partials/footer.html" %}
+
     </body>
 </html>

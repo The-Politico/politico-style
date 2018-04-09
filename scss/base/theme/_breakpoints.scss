@@ -1,6 +1,53 @@
-$width-xtra-small: 350px;
-$width-bootstrap-small: 576px;
-$width-small: 600px;
-$width-medium: 768px;
-$width-large: 992px;
-$width-xtra-large: 1200px;
+$min-width-xxs: 350px;
+$min-width-xs: 576px;
+$min-width-sm: 768px;
+$min-width-lg: 992px;
+$min-width-xl: 1200px;
+
+$width-xs-small: $min-width-xxs;
+$width-xs-sm: $min-width-xxs;
+$width-sm:$min-width-xs;
+$width-small:$min-width-xs;
+$width-medium:$min-width-sm;
+$width-large: $min-width-lg;
+
+// ----  Sass Mixins---- //
+// @include media-breakpoint-only(xs) { ... }
+// @include media-breakpoint-only(sm) { ... }
+// @include media-breakpoint-only(md) { ... }
+// @include media-breakpoint-only(lg) { ... }
+// @include media-breakpoint-only(xl) { ... }
+
+
+// ----  Min Width Declarations ---- //
+// Extra small devices (portrait phones, less than 576px)
+// No media query since this is the default in Bootstrap
+
+// Small devices (landscape phones, 576px and up)
+//@media (min-width: 576px) { ... }
+
+// Medium devices (tablets, 768px and up)
+//@media (min-width: 768px) { ... }
+
+// Large devices (desktops, 992px and up)
+//@media (min-width: 992px) { ... }
+
+// Extra large devices (large desktops, 1200px and up)
+//@media (min-width: 1200px) { ... }
+
+
+// ----  Max Width Declarations (if you must) ---- //
+// Extra small devices (portrait phones, less than 576px)
+//@media (max-width: 575.98px) { ... }
+
+// Small devices (landscape phones, less than 768px)
+//@media (max-width: 767.98px) { ... }
+
+// Medium devices (tablets, less than 992px)
+//@media (max-width: 991.98px) { ... }
+
+// Large devices (desktops, less than 1200px)
+//@media (max-width: 1199.98px) { ... }
+
+// Extra large devices (large desktops)
+// No media query since the extra-large breakpoint has no upper bound on its width
