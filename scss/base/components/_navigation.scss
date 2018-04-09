@@ -17,10 +17,10 @@ nav.global{
 
     .bt-icon--politico {
       color: $politico-red;
-      font-size: 1.5rem;
+      font-size: 1.62rem;
 
       @media (min-width: $min-width-xs) {
-        font-size: 1.6rem;
+        font-size: 1.68rem;
         margin-top: 0;
       }
 
@@ -37,7 +37,7 @@ nav.global{
       }
 
       @media (min-width: $min-width-lg) {
-        font-size: 3.4rem;
+        font-size: 3.1rem;
         margin: 5px 0 15px;
         padding: 0;
       }
@@ -90,7 +90,7 @@ nav.global{
       }
 
       @media (min-width: $min-width-lg) {
-        height: 7.25rem;
+        height: 6.8rem;
       }
       }
 

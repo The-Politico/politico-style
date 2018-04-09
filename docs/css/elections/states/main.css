@@ -37,10 +37,11 @@ footer {
   position: relative;
   font-family: "din-2014", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: .75rem;
-  text-align: left; }
-  @media (max-width: 800px) {
+  text-align: left;
+  padding: 1rem; }
+  @media (min-width: 800px) {
     footer {
-      padding: 1rem; } }
+      padding: 3rem 5rem 1.5rem; } }
   footer .footer__group--links {
     float: left;
     width: 70%; }
@@ -76,18 +77,35 @@ footer {
   @media (max-width: 800px) {
     footer {
       padding: 1rem; }
-      footer li, footer ul, footer p {
-        float: none;
-        text-align: center; }
+      footer li {
+        width: 100%;
+        text-align: center;
+        margin: 15px auto 6px;
+        font-size: 14px;
+        font-weight: 200; }
       footer li + li {
-        border-left: none; }
+        border-left: none;
+        margin: 6px auto; }
       footer .footer__group--links,
       footer .footer__group--legal {
         float: none;
         width: 100%; }
+        footer .footer__group--links hr.footer-top-line,
+        footer .footer__group--legal hr.footer-top-line {
+          border-top: 1px solid #6e7381;
+          width: 90px;
+          margin: 0 auto;
+          padding-top: 50px;
+          margin-top: 25px; }
         footer .footer__group--links p,
         footer .footer__group--legal p {
-          text-align: left; } }
+          text-align: center;
+          font-weight: 200;
+          display: inline;
+          margin: 0 auto;
+          float: none;
+          display: block;
+          padding-bottom: 2rem; } }
 
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 html {
