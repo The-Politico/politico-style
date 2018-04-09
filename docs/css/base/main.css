@@ -5192,7 +5192,7 @@ span.dropcap {
 
 h1 {
   font-family: "din-2014", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 1.2rem;
+  font-size: 1.8rem;
   font-weight: bold;
   line-height: 1.1em;
   margin: 0 auto;
@@ -5803,10 +5803,11 @@ nav.global {
           padding: 0.15rem 0.75rem; }
 
 header {
-  padding: 0 20px; }
+  padding: 0 20px 0;
+  margin-bottom: 0; }
   @media (max-width: 768px) {
     header {
-      padding: 0 15px 15px; } }
+      padding: 0 15px 0px; } }
   header + figure {
     margin-top: 0; }
   header p.category,
@@ -5824,7 +5825,7 @@ header {
     font-size: 1.2rem;
     font-weight: normal;
     line-height: 1.2;
-    margin: 5px 0 20px 0;
+    margin: 5px 0 15px 0;
     padding-bottom: 0; }
     @media (min-width: 768px) {
       header .subhead {
