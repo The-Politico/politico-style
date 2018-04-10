@@ -5167,7 +5167,7 @@ p {
   margin: 1rem auto;
   max-width: 575px;
   overflow-wrap: break-word; }
-  @media (min-width: 992px) {
+  @media (min-width: 768px) {
     p {
       font-size: 1.18rem;
       margin-top: 0; } }
@@ -5201,7 +5201,7 @@ h1 {
   @media (min-width: 350px) {
     h1 {
       font-size: 1.9rem; } }
-  @media (min-width: 768px) {
+  @media (min-width: 576px) {
     h1 {
       font-size: 2.4rem;
       margin-top: 0; } }
@@ -5231,25 +5231,25 @@ h2 {
   font-size: 1.45rem;
   line-height: 1.2;
   font-weight: 300; }
-  @media (min-width: 768px) {
+  @media (min-width: 576px) {
     h2 {
       font-size: 1.6rem; } }
 
 h3 {
-  font-size: 1.3rem;
+  font-size: 1.25rem;
   line-height: 1.2;
   font-weight: 700;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
-  @media (min-width: 768px) {
+  @media (min-width: 576px) {
     h3 {
-      font-size: 1.45rem; } }
+      font-size: 1.4rem; } }
 
 h4 {
-  font-size: 1.3rem;
+  font-size: 1.26rem;
   line-height: 1.1;
   font-weight: 500; }
-  @media (min-width: 768px) {
+  @media (min-width: 576px) {
     h4 {
       font-size: 1.2rem; } }
 
@@ -5263,7 +5263,7 @@ h5 {
   margin-bottom: .25rem; }
   h5.light {
     font-weight: 200; }
-  @media (min-width: 768px) {
+  @media (min-width: 576px) {
     h5 {
       font-size: 0.8; } }
 
@@ -5736,7 +5736,7 @@ nav.global {
     nav.global #global-header .bt-icon--politico {
       color: #dc0228;
       font-size: 1.62rem; }
-      @media (min-width: 576px) {
+      @media (min-width: 350px) {
         nav.global #global-header .bt-icon--politico {
           font-size: 1.68rem;
           margin-top: 0; } }
@@ -5745,7 +5745,7 @@ nav.global {
           font-size: 1.8rem;
           margin: 5px 0 15px;
           padding: 0; } }
-      @media (min-width: 768px) {
+      @media (min-width: 576px) {
         nav.global #global-header .bt-icon--politico {
           font-size: 2.8rem;
           margin: 5px 0 15px;
@@ -5783,10 +5783,10 @@ nav.global {
       align-items: center;
       width: 100%;
       height: 4.25rem; }
-      @media (min-width: 576px) {
+      @media (min-width: 350px) {
         nav.global #global-header .header-content {
           height: 4.25rem; } }
-      @media (min-width: 768px) {
+      @media (min-width: 576px) {
         nav.global #global-header .header-content {
           height: 6.25rem; } }
       @media (min-width: 992px) {
@@ -5841,7 +5841,7 @@ header {
     line-height: 1.2;
     margin: 5px 0 15px 0;
     padding-bottom: 0; }
-    @media (min-width: 768px) {
+    @media (min-width: 576px) {
       header .subhead {
         font-size: 1.3rem; } }
   header .info p,

@@ -73,7 +73,7 @@ p {
   max-width: $paragraph-width;
   overflow-wrap: break-word;
 
-  @media (min-width: $min-width-lg) {
+  @media (min-width: $min-width-md) {
     font-size: 1.18rem;
     margin-top: 0;
   }
@@ -102,7 +102,7 @@ span.dropcap {
   margin: 0.225rem .5rem -.5rem 0;;
   text-transform: uppercase;
 
-  @media (min-width: $width-small){
+  @media (min-width: $min-min-width-sm){
     font-size: 5rem;
   }
  }
@@ -118,7 +118,7 @@ h1 {
   padding: 0px 5px 10px;
   max-width: 900px;
 
-  @media (min-width: $min-width-xxs) {
+  @media (min-width: $min-width-xs) {
     font-size: 1.9rem;
   }
 
@@ -176,7 +176,7 @@ h3 {
 }
 
 h4 {
-  font-size: 1.2rem;
+  font-size: 1.26rem;
   line-height: 1.1;
   font-weight: 500;
 

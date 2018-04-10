@@ -12,7 +12,7 @@ figure {
     width: 100%;
   }
 
-  @media (max-width: $width-small) {
+  @media (max-width: $min-width-sm) {
     &.no-gutters-phone{
       width: calc(100% + 30px);
       margin-left: -15px;
@@ -49,7 +49,7 @@ figcaption {
   margin: 0 1% 0 0;
   width: calc(99% / 2);
 
-  @media (max-width: $width-small) {
+  @media (max-width: $min-width-sm) {
     @include clear-photo-sets;
   }
 }
@@ -64,7 +64,7 @@ figcaption {
   margin: 0 1% 0 0;
   width: calc(98% / 3);
 
-  @media (max-width: $width-small) {
+  @media (max-width: $min-width-sm) {
     @include clear-photo-sets;
   }
 }

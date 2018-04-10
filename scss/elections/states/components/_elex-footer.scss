@@ -13,7 +13,7 @@
     float:left;
     width: 20%;
 
-    @media(max-width: $width-medium){
+    @media(max-width: $min-width-md){
       width: 33%;
     }
 
