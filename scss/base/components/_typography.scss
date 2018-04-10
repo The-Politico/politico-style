@@ -163,7 +163,7 @@ h2 {
 }
 
 h3 {
-  font-size: 1.3rem;
+  font-size: 1.25rem;
   line-height: 1.2;
   font-weight: 700;
   -webkit-font-smoothing: antialiased;
@@ -171,12 +171,12 @@ h3 {
 
 
    @media (min-width: $min-width-sm) {
-     font-size: 1.45rem;
+     font-size: 1.4rem;
    }
 }
 
 h4 {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   line-height: 1.1;
   font-weight: 500;
 
@@ -214,7 +214,6 @@ h6 {
 h2 + h3{
   margin-top: 10px;
 }
-
 
 p + h2{padding-top:.5rem;}
 
