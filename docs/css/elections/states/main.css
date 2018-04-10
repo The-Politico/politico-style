@@ -19,7 +19,7 @@ div.share {
       background-color: #3b5998;
       font-size: 13px;
       padding-left: 5px; }
-      div.share a.custom-icon--facebook img {
+      div.share a.custom-icon--facebook svg {
         height: 12px;
         width: 13px;
         margin-top: -2px; }

@@ -94,15 +94,15 @@
     </thead>
     <tbody>
       <tr>
-          <td><code>min-width-xxs</code></td>
+          <td><code>min-width-xs</code></td>
           <td>min-width 350px</td>
       </tr>
       <tr>
-          <td><code>min-width-xs</code></td>
+          <td><code>min-width-sm</code></td>
           <td>min-width 576px</td>
       </tr>
       <tr>
-          <td><code>min-width-sm</code></td>
+          <td><code>min-width-md</code></td>
           <td>min-width 768px</td>
       </tr>
       <tr>
@@ -121,25 +121,21 @@
 <section class="content-fit pt0 mt0">
 
 <pre><code class="language-markup"><script type="prism-html-markup">
-// Extra small devices (portrait phones, less than 576px)
-// No media query since this is the default in Bootstrap
+// ----  Min Width Declarations ---- //
+// Extra small devices (portrait phones, less than 350px) - note the default media query is at 576px, this is here to control for mini-phones.
+//@media (min-width: 350px) { ... }
 
-//  POLITICO addition
-//Extra small devices (landscape phones, 576px and up)
-@media (min-width: 350px) { ...
-
-// BOOTSTRAP DEFAULT
-//Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) { ... }
+// Small devices (landscape phones, 576px and up)
+//@media (min-width: 576px) { ... }
 
 // Medium devices (tablets, 768px and up)
-@media (min-width: 768px) { ... }
+//@media (min-width: 768px) { ... }
 
 // Large devices (desktops, 992px and up)
-@media (min-width: 992px) { ... }
+//@media (min-width: 992px) { ... }
 
 // Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) { ... }
+//@media (min-width: 1200px) { ... }
 
 </script></code></pre>
 
