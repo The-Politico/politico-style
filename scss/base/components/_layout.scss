@@ -161,7 +161,7 @@ $spacing: 6;
 
 //uniform padding bottom
 @mixin uniform-padding-bottom($spacing){
-  padding-top: .5rem*$spacing;
+  padding-bottom: .5rem*$spacing;
 }
 
 @mixin padding-bottom-list{
