@@ -61,8 +61,10 @@
 
 
 // Mag fonts
+//If you want Jubilat you'll need to include the Jubilat Typekit include
 .jubilat,
-.headline.mag{
+.headline.mag,
+.mag{
     @extend %weights;
     font-family: $jubilat;
 }

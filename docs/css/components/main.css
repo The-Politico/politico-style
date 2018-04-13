@@ -5130,19 +5130,24 @@ button.close {
 .text-align-right {
   text-align: right; }
 
-.lighter.span, .lighter.sans, .lighter.graphic-text, .lighter.headline, .lighter.jubilat, h2.lighter, h3.lighter, h4.lighter, h5.lighter, h6.lighter {
+.lighter.span, .lighter.sans, .lighter.graphic-text, .lighter.headline, .lighter.jubilat,
+.lighter.mag, h2.lighter, h3.lighter, h4.lighter, h5.lighter, h6.lighter {
   font-weight: 200; }
 
-.light.span, .light.sans, .light.graphic-text, .light.headline, .light.jubilat, h2.light, h3.light, h4.light, h5.light, h6.light {
+.light.span, .light.sans, .light.graphic-text, .light.headline, .light.jubilat,
+.light.mag, h2.light, h3.light, h4.light, h5.light, h6.light {
   font-weight: 300; }
 
-.normal.span, .normal.sans, .normal.graphic-text, .normal.headline, .normal.jubilat, h2.normal, h3.normal, h4.normal, h5.normal, h6.normal {
+.normal.span, .normal.sans, .normal.graphic-text, .normal.headline, .normal.jubilat,
+.normal.mag, h2.normal, h3.normal, h4.normal, h5.normal, h6.normal {
   font-weight: 500; }
 
-.bold.span, .bold.sans, .bold.graphic-text, .bold.headline, .bold.jubilat, h2.bold, h3.bold, h4.bold, h5.bold, h6.bold {
+.bold.span, .bold.sans, .bold.graphic-text, .bold.headline, .bold.jubilat,
+.bold.mag, h2.bold, h3.bold, h4.bold, h5.bold, h6.bold {
   font-weight: 700; }
 
-.bolder.span, .bolder.sans, .bolder.graphic-text, .bolder.headline, .bolder.jubilat, h2.bolder, h3.bolder, h4.bolder, h5.bolder, h6.bolder {
+.bolder.span, .bolder.sans, .bolder.graphic-text, .bolder.headline, .bolder.jubilat,
+.bolder.mag, h2.bolder, h3.bolder, h4.bolder, h5.bolder, h6.bolder {
   font-weight: 900; }
 
 .sans {
@@ -5158,7 +5163,8 @@ button.close {
   text-transform: uppercase; }
 
 .jubilat,
-.headline.mag {
+.headline.mag,
+.mag {
   font-family: "Jubilat", Georgia, Times, "Times New Roman", serif; }
 
 p {
@@ -5307,7 +5313,7 @@ p + h4 {
 html {
   margin: 0;
   font-family: Georgia, Times, "Times New Roman", serif;
-  font-size: 1rem;
+  font-size: 16px;
   font-weight: 500;
   line-height: 1.2;
   text-align: left;
@@ -5319,7 +5325,7 @@ html {
   box-sizing: border-box; }
 
 article {
-  margin-bottom: 2em; }
+  margin-bottom: 2rem; }
 
 body {
   color: #121212;
