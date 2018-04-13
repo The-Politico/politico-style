@@ -23,13 +23,11 @@ header {
 
   .subhead {
     max-width: 750px;
-    padding: 0;
     font-family: $din;
     font-size: 1.2rem;
     font-weight: normal;
     line-height: 1.2;
-    margin: 5px 0 15px 0;
-    padding-bottom: 0;
+    margin: 0;
 
     @media (min-width: $min-width-sm) {
       font-size: 1.35rem;
@@ -43,9 +41,8 @@ header {
     color: $satan;
     font-family: $din;
     line-height: 1.27rem;
-    margin-top: .5rem;
+    margin: .80rem auto 1rem;
     font-size: 1em;
-    margin-bottom: 10px;
 
     @media (max-width: $min-width-sm) {
       font-size: .9em;

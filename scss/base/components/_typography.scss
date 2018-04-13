@@ -70,7 +70,7 @@
 // Paragraphs
 p {
   font-family: $georgia;
-  font-size: 1.1rem;
+  font-size: 1rem;
   line-height: 1.618;
   margin: 1rem auto;
   max-width: $paragraph-width;
@@ -83,6 +83,10 @@ p {
 
   &.small{
     font-size: 1.02rem;
+
+    @media (max-width: $min-width-sm) {
+      font-size: .85em;
+    }
   }
 
   &.sans{
@@ -90,6 +94,10 @@ p {
 
     &.small{
       font-size: 1rem;
+
+      @media (max-width: $min-width-sm) {
+        font-size: .85em;
+      }
     }
   }
 }
@@ -118,7 +126,7 @@ h1 {
   font-weight: bold;
   line-height: 1.1em;
   margin: 0 auto;
-  padding: 0px 5px 10px;
+  padding: 8px 0;
   max-width: 900px;
 
   @media (min-width: $min-width-xs) {
@@ -126,7 +134,12 @@ h1 {
   }
 
   @media (min-width: $min-width-sm) {
-    font-size: 2.4rem;
+    font-size: 2.25rem;
+    margin-top: 0;
+  }
+
+  @media (min-width: $min-width-md) {
+    font-size: 2.55rem;
     margin-top: 0;
   }
 
@@ -181,14 +194,13 @@ h3 {
 }
 
 h4 {
-  font-size: 1.26rem;
+  font-size: 1.25rem;
   line-height: 1.1;
-  font-weight: 500;
+  font-weight: 200;
   @extend %weights;
 
   @media (min-width: $min-width-sm) {
-    font-size: 1.2rem;
-
+    font-size: 1.1rem;
   }
 }
 
