@@ -5595,15 +5595,15 @@ ul.no-bullets {
   -webkit-margin-before: 0;
   -webkit-padding-start: 0px; }
   ul.no-bullets li {
-    list-style: none;
-    font-size: 1.2rem;
-    line-height: 1.6; }
-  ul.no-bullets.no-indent {
-    -webkit-margin-before: 0;
-    -webkit-padding-start: 0px; }
-  ul.no-bullets.border li {
-    border-top: 1px solid #ddd;
-    padding: 10px; }
+    list-style: none; }
+
+ul.no-indent {
+  -webkit-margin-before: 0;
+  -webkit-padding-start: 0px; }
+
+ul.border li {
+  border-top: 1px solid #ddd;
+  padding: 10px; }
 
 .card {
   padding: 25px 30px 10px;

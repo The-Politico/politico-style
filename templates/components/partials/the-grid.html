@@ -1,67 +1,102 @@
 <a name="the-grid"></a>
-<section>
+<section class="content-fit">
 
 <h3>The Grid</h3>
 <p>The grid system we use is based off of <code>Bootstrap 4.0</code> — read the documentation <a target="blank" href="https://getbootstrap.com/docs/4.0/layout/grid/">here</a>.
+<p>Each column must be in a <code>row</code> inside of a <code>container</code></p>
 
-  <table class="table table-bordered table-striped content-fit">
-    <thead>
-      <tr>
-        <th></th>
-        <th class="text-center">
-          Extra small<br>
-          <small>&lt;576px</small>
-        </th>
-        <th class="text-center">
-          Small<br>
-          <small>≥576px</small>
-        </th>
-        <th class="text-center">
-          Medium<br>
-          <small>≥768px</small>
-        </th>
-        <th class="text-center">
-          Large<br>
-          <small>≥992px</small>
-        </th>
-        <th class="text-center">
-          Extra large<br>
-          <small>≥1200px</small>
-        </th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <th class="text-nowrap" scope="row">Max container width</th>
-        <td>None (auto)</td>
-        <td>540px</td>
-        <td>720px</td>
-        <td>960px</td>
-        <td>1140px</td>
-      </tr>
-      <tr>
-        <th class="text-nowrap" scope="row">Class prefix</th>
-        <td><code>.col-</code></td>
-        <td><code>.col-sm-</code></td>
-        <td><code>.col-md-</code></td>
-        <td><code>.col-lg-</code></td>
-        <td><code>.col-xl-</code></td>
-      </tr>
-      <tr>
-        <th class="text-nowrap" scope="row"># of columns</th>
-        <td colspan="5">12</td>
-      </tr>
-      <tr>
-        <th class="text-nowrap" scope="row">Gutter width</th>
-        <td colspan="5">30px (15px on each side of a column)</td>
-      </tr>
-      <tr>
-        <th class="text-nowrap" scope="row">Nestable</th>
-        <td colspan="5">Yes</td>
-      </tr>
-      <tr>
-        <th class="text-nowrap" scope="row">Column ordering</th>
-        <td colspan="5">Yes</td>
-      </tr>
-    </tbody>
-  </table>
+<div class="container">
+  <div class="row">
+    <div class="col-sm p1 border">
+      One of three columns
+    </div>
+    <div class="col-sm p1 border">
+      One of three columns
+    </div>
+    <div class="col-sm p1 border">
+      One of three columns
+    </div>
+  </div>
+</div>
+
+{% raw %}
+<pre><code class="language-markup"><script type="prism-html-markup">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm">
+        One of three columns
+      </div>
+      <div class="col-sm">
+        One of three columns
+      </div>
+      <div class="col-sm">
+        One of three columns
+      </div>
+    </div>
+  </div>
+</script></code></pre>
+{% endraw %}
+
+<table class="table table-bordered table-striped">
+  <thead>
+    <tr>
+      <th></th>
+      <th class="text-center">
+        Extra small<br>
+        <small>&lt;576px</small>
+      </th>
+      <th class="text-center">
+        Small<br>
+        <small>≥576px</small>
+      </th>
+      <th class="text-center">
+        Medium<br>
+        <small>≥768px</small>
+      </th>
+      <th class="text-center">
+        Large<br>
+        <small>≥992px</small>
+      </th>
+      <th class="text-center">
+        Extra large<br>
+        <small>≥1200px</small>
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th class="text-nowrap" scope="row">Max container width</th>
+      <td>None (auto)</td>
+      <td>540px</td>
+      <td>720px</td>
+      <td>960px</td>
+      <td>1140px</td>
+    </tr>
+    <tr>
+      <th class="text-nowrap" scope="row">Class prefix</th>
+      <td><code>.col-</code></td>
+      <td><code>.col-sm-</code></td>
+      <td><code>.col-md-</code></td>
+      <td><code>.col-lg-</code></td>
+      <td><code>.col-xl-</code></td>
+    </tr>
+    <tr>
+      <th class="text-nowrap" scope="row"># of columns</th>
+      <td colspan="5">12</td>
+    </tr>
+    <tr>
+      <th class="text-nowrap" scope="row">Gutter width</th>
+      <td colspan="5">30px (15px on each side of a column)</td>
+    </tr>
+    <tr>
+      <th class="text-nowrap" scope="row">Nestable</th>
+      <td colspan="5">Yes</td>
+    </tr>
+    <tr>
+      <th class="text-nowrap" scope="row">Column ordering</th>
+      <td colspan="5">Yes</td>
+    </tr>
+  </tbody>
+</table>
+
+</section>
