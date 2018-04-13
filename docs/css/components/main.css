@@ -6178,14 +6178,16 @@ nav {
   nav ul {
     width: 100%;
     padding-left: 0; }
+    nav ul h5.mini-header {
+      margin-top: 1.5rem;
+      padding: .5rem 0 0;
+      display: inline-block;
+      font-weight: 700; }
     nav ul li {
       margin: 4px 0;
-      background-color: #ddd;
       list-style-type: none;
-      padding: 5px 15px;
       cursor: pointer; }
       nav ul li a {
-        color: grey;
         display: block;
         width: 100%; }
       nav ul li:hover {
@@ -6198,7 +6200,7 @@ content {
   width: calc(100% - 300px);
   float: left;
   height: 100vh;
-  padding: 40px 5px;
+  padding: 10px 5px 40px;
   overflow-y: scroll; }
   content article {
     width: 100% !important; }

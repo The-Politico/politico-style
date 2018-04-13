@@ -16,17 +16,22 @@
     <nav>
   <h3>CSS Library</h3>
   <ul>
+    <h5 class="mini-header">Accessiblity</h5>
     <li>
-      <a href="#accessibility">Accessiblity</a>
+      <a href="#accessibility">Best Practices</a>
     </li>
-    <h5 class="pt2">Layout</h5>
+    <h5 class="mini-header">Layout</h5>
     <li>
       <a href="#breakpoints">Breakpoints</a>
     </li>
     <li>
+      <a href="#the-grid">The Grid</a>
+    </li>
+
+    <li>
       <a href="#layout">Standard spacing</a>
     </li>
-    <h5 class="pt3">Typography</h5>
+    <h5 class="mini-header">Typography</h5>
     <li>
       <a href="#header">Header</a>
     </li>
@@ -39,12 +44,12 @@
     <li>
       <a href="#lists">Lists</a>
     </li>
-    <h5 class="pt3">Iconography</h5>
+    <h5 class="mini-header">Iconography</h5>
     <li>
       <a href="#icons">Icons</a>
     </li>
 
-    <h5 class="pt3">Components</h5>
+    <h5 class="mini-header">Components</h5>
     <li>
       <a href="#cards">Cards</a>
     </li>
@@ -54,42 +59,41 @@
     <content>
       <article class="container">
         <section class="border-bottom">
-          <section>
-<h1 class="content-large">Welcome to the <span class="fill-politico-red yell">Politico</span> style guide</h1>
+          <section class="content-fit">
+<h2>Welcome to the Politico style guide</h2>
 
-<h2 class="content-large">What is this?</h2>
-<p class="sans content-large">This tool is a reference for POLITICO styles based of the core <a target="blank" href="https://www.politico.com/">Core</a>, <a target="blank" href="https://www.politicopro.com/">Pro</a> and <a target="blank" href="https://www.politico.com/magazine/">Magazine</a> sites. </p>
-
-<p class="content-large">The grid system we use is based off of <code>Bootstrap 4.0</code> — read the documentation <a target="blank" href="https://getbootstrap.com/docs/4.0/layout/grid/">here</a>.
+<p class="sans">This tool is a reference for POLITICO styles based of the core <a target="blank" href="https://www.politico.com/">Core</a>, <a target="blank" href="https://www.politicopro.com/">Pro</a> and <a target="blank" href="https://www.politico.com/magazine/">Magazine</a> sites. </p>
 </section>
 
         </section>
         <section class="border-bottom">
           <a name="accessibility"></a>
+<section>
 <h3>Design for inclusion</h3>
 <p class="sans">According to the U.S. census, nearly one in five Americans have a disability. As a team we're focused on making sure all of our readers have access to clear, accurate news. Following these <a target="blank" href="https://www.w3.org/WAI/gettingstarted/tips/designing.html">WAi</a> tips ensure our work is accessible.</p>
 
 
-<ul class="content-fit">
-<li>Sufficient contrast between foreground and background. This will also help for mobile users reading in direct sunlight [<a target="blank" href="https://www.census.gov/newsroom/releases/archives/miscellaneous/cb12-134.html"> Color contrast checker</a> ]</li>
-<li>Is your palette color-blind safe? [ <a target="blank" href="http://colororacle.org/"> Install this tool to check your color palette</a> ]</li>
-<li>Don't use color alone to convey information, read [ <a target="blank" href="https://www.w3.org/WAI/gettingstarted/tips/designing.html#dont-use-color-alone-to-convey-information">here</a>] and [<a target="blank" href="http://colororacle.org/resources/2007_JennyKelso_ColorDesign_hires.pdf"> here </a> ]<br>
-<p class="mt4 small sans">This <a target="blank" href="http://colororacle.org/resources/2007_JennyKelso_ColorDesign_hires.pdf">example</a> from Bernhard Jenny and Nathaniel Vaughn Kelso shows the red-green confusion caused by common color-blindness. Here, shapes and pattern fill help distinguish the dots and lines.</p>
-<figure class="ml4">
-  <h5>Lines</h5>
-  <img src="/images/lines.png" />
-</figure>
-<figure class="ml4 mb4">
-  <h5>Shapes</h5>
-  <img src="/images/shapes.png" />
-</figure>
+  <ul class="content-fit">
+    <li>Sufficient contrast between foreground and background. This will also help for mobile users reading in direct sunlight [<a target="blank" href="https://www.census.gov/newsroom/releases/archives/miscellaneous/cb12-134.html"> Color contrast checker</a> ]</li>
+    <li>Is your palette color-blind safe? [ <a target="blank" href="http://colororacle.org/"> Install this tool to check your color palette</a> ]</li>
+    <li>Don't use color alone to convey information, read [ <a target="blank" href="https://www.w3.org/WAI/gettingstarted/tips/designing.html#dont-use-color-alone-to-convey-information">here</a>] and [<a target="blank" href="http://colororacle.org/resources/2007_JennyKelso_ColorDesign_hires.pdf"> here </a> ]<br>
+    <p class="mt4 small sans">This <a target="blank" href="http://colororacle.org/resources/2007_JennyKelso_ColorDesign_hires.pdf">example</a> from Bernhard Jenny and Nathaniel Vaughn Kelso shows the red-green confusion caused by common color-blindness. Here, shapes and pattern fill help distinguish the dots and lines.</p>
+    <figure class="ml4">
+      <h5>Lines</h5>
+      <img src="/images/lines.png" />
+    </figure>
+    <figure class="ml4 mb4">
+      <h5>Shapes</h5>
+      <img src="/images/shapes.png" />
+    </figure>
 
-</li>
-<li>Make sure headings, spacing and labels are associated by proximity. White space if your friend [ <a target="blank" href="https://www.w3.org/WAI/gettingstarted/tips/designing.html#use-headings-and-spacing-to-group-related-content">Read more</a> ]</li>
-<li>Provide easily identifiable feedback. Ie: In a form, can a reader tab to each item, and actively see where the cursor is? [ <a target="blank" href="https://www.w3.org/WAI/gettingstarted/tips/designing.html#provide-easily-identifiable-feedback">Read more</a> ]</li>
-<li>Use <code>alt</code> tags for images and title tages for videos. For video, a transcript is ideal</li>
-<li>Provide controls for content that starts automatically</li>
-</ul>
+    </li>
+    <li>Make sure headings, spacing and labels are associated by proximity. White space if your friend [ <a target="blank" href="https://www.w3.org/WAI/gettingstarted/tips/designing.html#use-headings-and-spacing-to-group-related-content">Read more</a> ]</li>
+    <li>Provide easily identifiable feedback. Ie: In a form, can a reader tab to each item, and actively see where the cursor is? [ <a target="blank" href="https://www.w3.org/WAI/gettingstarted/tips/designing.html#provide-easily-identifiable-feedback">Read more</a> ]</li>
+    <li>Use <code>alt</code> tags for images and title tages for videos. For video, a transcript is ideal</li>
+    <li>Provide controls for content that starts automatically</li>
+  </ul>
+</section>
 
         </section>
         <section class="border-bottom">
@@ -178,8 +182,79 @@
 
         </section>
         <section class="border-bottom">
+          <a name="the-grid"></a>
+<section>
+
+<h3>The Grid</h3>
+<p>The grid system we use is based off of <code>Bootstrap 4.0</code> — read the documentation <a target="blank" href="https://getbootstrap.com/docs/4.0/layout/grid/">here</a>.
+
+  <table class="table table-bordered table-striped content-fit">
+    <thead>
+      <tr>
+        <th></th>
+        <th class="text-center">
+          Extra small<br>
+          <small>&lt;576px</small>
+        </th>
+        <th class="text-center">
+          Small<br>
+          <small>≥576px</small>
+        </th>
+        <th class="text-center">
+          Medium<br>
+          <small>≥768px</small>
+        </th>
+        <th class="text-center">
+          Large<br>
+          <small>≥992px</small>
+        </th>
+        <th class="text-center">
+          Extra large<br>
+          <small>≥1200px</small>
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th class="text-nowrap" scope="row">Max container width</th>
+        <td>None (auto)</td>
+        <td>540px</td>
+        <td>720px</td>
+        <td>960px</td>
+        <td>1140px</td>
+      </tr>
+      <tr>
+        <th class="text-nowrap" scope="row">Class prefix</th>
+        <td><code>.col-</code></td>
+        <td><code>.col-sm-</code></td>
+        <td><code>.col-md-</code></td>
+        <td><code>.col-lg-</code></td>
+        <td><code>.col-xl-</code></td>
+      </tr>
+      <tr>
+        <th class="text-nowrap" scope="row"># of columns</th>
+        <td colspan="5">12</td>
+      </tr>
+      <tr>
+        <th class="text-nowrap" scope="row">Gutter width</th>
+        <td colspan="5">30px (15px on each side of a column)</td>
+      </tr>
+      <tr>
+        <th class="text-nowrap" scope="row">Nestable</th>
+        <td colspan="5">Yes</td>
+      </tr>
+      <tr>
+        <th class="text-nowrap" scope="row">Column ordering</th>
+        <td colspan="5">Yes</td>
+      </tr>
+    </tbody>
+  </table>
+
+        </section>
+        <section class="border-bottom">
           <a name="layout"></a>
 <section>
+
 <h3>Spatial Units and how to use them</h3>
 <p class="sans">Margin and padding are based on <code>.5rem</code> increments. This system, inspired by Buzzfeed's <a target="blank" href="https://solid.buzzfeed.com/layout.html">solid</a> framework used a 6 step system from <br> <code> 0 to 6</code>.
 
