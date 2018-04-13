@@ -1,4 +1,3 @@
-//hi
 // Aligning text
 .text-align-center{
   text-align: center;
@@ -128,7 +127,7 @@ h1 {
   font-weight: bold;
   line-height: 1.1em;
   margin: 0 auto;
-  padding: 8px 0;
+  padding: 5px 0 8px;
   max-width: 900px;
 
   @media (min-width: $min-width-xs) {
@@ -163,9 +162,8 @@ h6 {
   max-width: $paragraph-width;
   font-weight: 200;
 
-
   + p {
-    margin-top: .25rem;
+    margin-top: .35rem;
   }
 }
 
@@ -250,4 +248,9 @@ p + h4{padding-top:.5rem;}
     position: absolute;
     left: -999em;
     top: -999em;
+}
+
+//letter spacing
+@mixin std-letter-spacing{
+  letter-spacing: 3.5;
 }

@@ -1,10 +1,13 @@
+$paragraph-width: 575px;
+
+@mixin paragraph-width{
+  max-width: $paragraph-width;
+}
+
+
 // Sections. Sections should be used to offset sections of the text, like graphics etc.
   section {
   padding: 1.5rem 0;
-
-    figure + p{
-        margin-top: 10px;
-    }
 }
 
 
@@ -40,7 +43,6 @@
 .margin-auto{
   @include margin-auto;
 }
-
 
 //Uniform spacing
 $spacing: 6;
