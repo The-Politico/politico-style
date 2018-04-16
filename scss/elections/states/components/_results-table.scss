@@ -41,7 +41,7 @@
     font-size: 1.1rem;
     border-bottom: dashed 1px #ddd;
 
-    @media(max-width: $width-medium){
+    @media(max-width: $min-width-md){
       font-size: .88rem;
     }
 

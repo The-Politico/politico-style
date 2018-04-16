@@ -5,7 +5,7 @@
 html {
   margin: 0;
   font-family: $georgia;
-  font-size: 1rem;
+  font-size: 16px;
   font-weight: 500;
   line-height: 1.2;
   text-align: left;
@@ -19,7 +19,7 @@ html {
 }
 
 article{
-  margin-bottom: 2em;
+  margin-bottom: 2rem;
 }
 
 body {
@@ -52,19 +52,22 @@ margin: auto 2px;
 }
 
 // lists
-ul.no-bullets{
+ul{
+
+  &.no-bullets{
   -webkit-margin-before: 0;
   -webkit-padding-start: 0px;
 
-  li{
-    list-style: none;
-    font-size: 1.2rem;
-    line-height: 1.6;
+    li{
+      list-style: none;
+    }
   }
+
   &.no-indent{
         -webkit-margin-before: 0;
         -webkit-padding-start: 0px;
   }
+
   &.border{
     li{
     border-top: 1px solid #ddd;

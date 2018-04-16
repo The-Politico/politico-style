@@ -1,15 +1,14 @@
-$min-width-xxs: 350px;
-$min-width-xs: 576px;
-$min-width-sm: 768px;
+$min-width-xs: 350px;
+$min-width-sm: 576px;
+$min-width-md: 768px;
 $min-width-lg: 992px;
 $min-width-xl: 1200px;
 
-$width-xs-small: $min-width-xxs;
-$width-xs-sm: $min-width-xxs;
-$width-sm:$min-width-xs;
-$width-small:$min-width-xs;
-$width-medium:$min-width-sm;
-$width-large: $min-width-lg;
+$min-width-extra-small: $min-width-xs;
+$min-min-width-sm: $min-width-sm;
+$min-min-width-md: $min-width-md;
+$min-width-large: $min-width-lg;
+$min-width-extra-large: $min-width-xl;
 
 // ----  Sass Mixins---- //
 // @include media-breakpoint-only(xs) { ... }
@@ -20,8 +19,8 @@ $width-large: $min-width-lg;
 
 
 // ----  Min Width Declarations ---- //
-// Extra small devices (portrait phones, less than 576px)
-// No media query since this is the default in Bootstrap
+// Extra small devices (portrait phones, less than 350px) - note the default media query is at 576px, this is here to control for mini-phones.
+//@media (min-width: 350px) { ... }
 
 // Small devices (landscape phones, 576px and up)
 //@media (min-width: 576px) { ... }

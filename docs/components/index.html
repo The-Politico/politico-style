@@ -5,7 +5,7 @@
     <title></title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.13.0/themes/prism.min.css" />
     <link rel="stylesheet" href="../css/components/main.css">
-    <link rel="stylesheet" type="text/css" href="https://www.politico.com/interactives/cdn/fonts/base-icons/politico-base-icons.min.css">
+    <link rel="stylesheet" type="text/css" href="https://www.politico.com/interactives/cdn/fonts/battletoads/icons/politico-battletoads-icons.min.css">
 
     <!--Typekit-->
     <link rel="stylesheet" href="https://use.typekit.net/ogn0czn.css">
@@ -14,16 +14,27 @@
   </head>
   <body>
     <nav>
-  <h3>CSS Library</h3>
+  <h4 class="mt5"><b style="color:#dc0228;" class="small bt-icon bt-icon--politico"></b></h4>
   <ul>
-    <h5 class="pt2">Layout</h5>
+    <h5 class="mini-header">Accessiblity</h5>
+    <li>
+      <a href="#accessibility">Best Practices</a>
+    </li>
+    <h5 class="mini-header">Layout</h5>
     <li>
       <a href="#breakpoints">Breakpoints</a>
     </li>
     <li>
-      <a href="#header">Standard spacing</a>
+      <a href="#the-grid">The Grid</a>
     </li>
-    <h5 class="pt3">Typography</h5>
+
+    <li>
+      <a href="#layout">Standard Spacing</a>
+    </li>
+    <h5 class="mini-header">Typography</h5>
+    <li>
+      <a href="#fonts">Fonts</a>
+    </li>
     <li>
       <a href="#header">Header</a>
     </li>
@@ -34,10 +45,17 @@
       <a href="#paragraphs">Paragraphs</a>
     </li>
     <li>
+      <a href="#text-alignment">Text Alignment</a>
+    </li>
+    <li>
       <a href="#lists">Lists</a>
     </li>
+    <h5 class="mini-header">Iconography</h5>
+    <li>
+      <a href="#icons">Icons</a>
+    </li>
 
-    <h5 class="pt3">Components</h5>
+    <h5 class="mini-header">Components</h5>
     <li>
       <a href="#cards">Cards</a>
     </li>
@@ -47,13 +65,40 @@
     <content>
       <article class="container">
         <section class="border-bottom">
-          <section>
-<h1 class="content-large">Welcome to the <span class="fill-politico-red yell">Politico</span> style guide</h1>
+          <section class="content-fit">
+<h2>Welcome to the <b style="color:#dc0228;" class="small bt-icon bt-icon--politico"></b> style guide</h2>
 
-<h2 class="content-large">What is this?</h2>
-<p class="sans content-large">This tool is a reference for POLITICO styles based of the core <a target="blank" href="https://www.politico.com/">Core</a>, <a target="blank" href="https://www.politicopro.com/">Pro</a> and <a target="blank" href="https://www.politico.com/magazine/">Magazine</a> sites. </p>
+<p class="sans">This tool is a reference for POLITICO styles based of the core <a target="blank" href="https://www.politico.com/">Core</a>, <a target="blank" href="https://www.politicopro.com/">Pro</a> and <a target="blank" href="https://www.politico.com/magazine/">Magazine</a> sites. </p>
+</section>
 
-<p class="content-large">The grid system we use is based off of <code>Bootstrap 4.0</code> — read the documentation <a target="blank" href="https://getbootstrap.com/docs/4.0/layout/grid/">here</a>.
+        </section>
+        <section class="border-bottom">
+          <a name="accessibility"></a>
+<section>
+<h3>Design for inclusion</h3>
+<p class="sans">According to the U.S. census, nearly one in five Americans have a disability. As a team, we're focused on making sure all of our readers have access to clear, accurate news. Following these <a target="blank" href="https://www.w3.org/WAI/gettingstarted/tips/designing.html">WAi</a> tips ensure our work is accessible.</p>
+
+
+  <ul class="content-fit">
+    <li>Sufficient contrast between foreground and background. This will also help for mobile users reading in direct sunlight [<a target="blank" href="https://www.census.gov/newsroom/releases/archives/miscellaneous/cb12-134.html"> Check your color contrast here</a> ]</li>
+    <li>Is your palette color-blind safe? [ <a target="blank" href="http://colororacle.org/"> Install this tool to check your color palette</a> ]</li>
+    <li>Don't use color alone to convey information, read [ <a target="blank" href="https://www.w3.org/WAI/gettingstarted/tips/designing.html#dont-use-color-alone-to-convey-information">here</a>] and [<a target="blank" href="http://colororacle.org/resources/2007_JennyKelso_ColorDesign_hires.pdf"> here </a> ]<br>
+    <p class="mt4 small sans">This <a target="blank" href="http://colororacle.org/resources/2007_JennyKelso_ColorDesign_hires.pdf">example</a> from Bernhard Jenny and Nathaniel Vaughn Kelso shows the red-green confusion caused by common color-blindness. Here, shapes and pattern fill help distinguish the dots and lines.</p>
+    <figure class="ml4">
+      <h5>Lines</h5>
+      <img src="/images/lines.png" alt="This chart shows how best to design for colorblind readers. Labels, pattern fill and color combine to make a clear reading experience."/>
+    </figure>
+    <figure class="ml4 mb4">
+      <h5>Shapes</h5>
+      <img src="/images/shapes.png" alt="This chart shows how best to design for colorblind readers. Labels, pattern fill and shape combine to make a clear reading experience."/>
+    </figure>
+
+    </li>
+    <li>Make sure headings, labels and paragraphs are associated by proximity. White space is your friend [ <a target="blank" href="https://www.w3.org/WAI/gettingstarted/tips/designing.html#use-headings-and-spacing-to-group-related-content">Read more</a> ]</li>
+    <li>Provide easily identifiable feedback. Ie: In a form, can a reader tab to each item and actively see where the cursor is? [ <a target="blank" href="https://www.w3.org/WAI/gettingstarted/tips/designing.html#provide-easily-identifiable-feedback">Read more</a> ]</li>
+    <li>Use <code>alt</code> tags for images. For video, a transcript is ideal [ <a target="blank" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/video#Accessibility_concerns">Read more</a> ]</li>
+    <li>Provide controls for content that starts automatically</li>
+  </ul>
 </section>
 
         </section>
@@ -64,7 +109,7 @@
 <p class="sans">More than 63% of our audience comes to us via a mobile device. We prioritize those readers by using <code>min-width</code>.</p>
 
 <h3 class="pt3">Wait, how do min-width breakpoints work again?</h3>
-<p class="sans">The base level css you're writing defaults to the smallest boostrap dedault breakpoint <code>min-width:576px</code>.
+<p class="sans">The base level css you're writing defaults to the smallest boostrap dedault breakpoint <code>min-width:576px</code>. We've added another breakpoint for very small phones, which you'll need to define as needed <code>min-width:350px</code>
 
 <h3 class="pt3">Let's look an an example</h3>
 <p class="sans">This means any screen bigger than 992px, the <code>h2</code> will be aligned center.</p>
@@ -94,15 +139,15 @@
     </thead>
     <tbody>
       <tr>
-          <td><code>min-width-xxs</code></td>
+          <td><code>min-width-xs</code></td>
           <td>min-width 350px</td>
       </tr>
       <tr>
-          <td><code>min-width-xs</code></td>
+          <td><code>min-width-sm</code></td>
           <td>min-width 576px</td>
       </tr>
       <tr>
-          <td><code>min-width-sm</code></td>
+          <td><code>min-width-md</code></td>
           <td>min-width 768px</td>
       </tr>
       <tr>
@@ -121,25 +166,21 @@
 <section class="content-fit pt0 mt0">
 
 <pre><code class="language-markup"><script type="prism-html-markup">
-// Extra small devices (portrait phones, less than 576px)
-// No media query since this is the default in Bootstrap
+// ----  Min Width Declarations ---- //
+// Extra small devices (portrait phones, less than 350px) - note the default media query is at 576px, this is here to control for mini-phones.
+//@media (min-width: 350px) { ... }
 
-//  POLITICO addition
-//Extra small devices (landscape phones, 576px and up)
-@media (min-width: 350px) { ...
-
-// BOOTSTRAP DEFAULT
-//Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) { ... }
+// Small devices (landscape phones, 576px and up)
+//@media (min-width: 576px) { ... }
 
 // Medium devices (tablets, 768px and up)
-@media (min-width: 768px) { ... }
+//@media (min-width: 768px) { ... }
 
 // Large devices (desktops, 992px and up)
-@media (min-width: 992px) { ... }
+//@media (min-width: 992px) { ... }
 
 // Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) { ... }
+//@media (min-width: 1200px) { ... }
 
 </script></code></pre>
 
@@ -147,13 +188,121 @@
 
         </section>
         <section class="border-bottom">
+          <a name="the-grid"></a>
+<section class="content-fit">
+
+<h3>The Grid</h3>
+<p>The grid system we use is based off of <code>Bootstrap 4.0</code> — read the documentation <a target="blank" href="https://getbootstrap.com/docs/4.0/layout/grid/">here</a>.
+<p>Each column must be in a <code>row</code> inside of a <code>container</code></p>
+
+<div class="container pb3">
+  <div class="row">
+    <div class="col-sm p1 border">
+      One of three columns
+    </div>
+    <div class="col-sm p1 border">
+      One of three columns
+    </div>
+    <div class="col-sm p1 border">
+      One of three columns
+    </div>
+  </div>
+</div>
+
+
+<pre><code class="language-markup"><script type="prism-html-markup pb3">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm">
+        One of three columns
+      </div>
+      <div class="col-sm">
+        One of three columns
+      </div>
+      <div class="col-sm">
+        One of three columns
+      </div>
+    </div>
+  </div>
+</script></code></pre>
+
+
+<section>
+<table class="table table-bordered table-striped">
+  <thead>
+    <tr>
+      <th></th>
+      <th class="text-center">
+        Extra small<br>
+        <small>&lt;576px</small>
+      </th>
+      <th class="text-center">
+        Small<br>
+        <small>≥576px</small>
+      </th>
+      <th class="text-center">
+        Medium<br>
+        <small>≥768px</small>
+      </th>
+      <th class="text-center">
+        Large<br>
+        <small>≥992px</small>
+      </th>
+      <th class="text-center">
+        Extra large<br>
+        <small>≥1200px</small>
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th class="text-nowrap" scope="row">Max container width</th>
+      <td>None (auto)</td>
+      <td>540px</td>
+      <td>720px</td>
+      <td>960px</td>
+      <td>1140px</td>
+    </tr>
+    <tr>
+      <th class="text-nowrap" scope="row">Class prefix</th>
+      <td><code>.col-</code></td>
+      <td><code>.col-sm-</code></td>
+      <td><code>.col-md-</code></td>
+      <td><code>.col-lg-</code></td>
+      <td><code>.col-xl-</code></td>
+    </tr>
+    <tr>
+      <th class="text-nowrap" scope="row"># of columns</th>
+      <td colspan="5">12</td>
+    </tr>
+    <tr>
+      <th class="text-nowrap" scope="row">Gutter width</th>
+      <td colspan="5">30px (15px on each side of a column)</td>
+    </tr>
+    <tr>
+      <th class="text-nowrap" scope="row">Nestable</th>
+      <td colspan="5">Yes</td>
+    </tr>
+    <tr>
+      <th class="text-nowrap" scope="row">Column ordering</th>
+      <td colspan="5">Yes</td>
+    </tr>
+  </tbody>
+</table>
+</section>
+</section>
+
+        </section>
+        <section class="border-bottom">
           <a name="layout"></a>
 <section>
+
 <h3>Spatial Units and how to use them</h3>
 <p class="sans">Margin and padding are based on <code>.5rem</code> increments. This system, inspired by Buzzfeed's <a target="blank" href="https://solid.buzzfeed.com/layout.html">solid</a> framework used a 6 step system from <br> <code> 0 to 6</code>.
 
-<div class="row justify-content-md-center content-fit">
-  <table class="table table-bordered col-5 ">
+<div class="container content-fit">
+<div class="row">
+  <table class="table table-bordered col-5">
       <thead>
           <tr>
               <th>Spacial units</th>
@@ -193,11 +342,10 @@
             <td><code>6</code></td>
             <td>= 3rem</td>
         </tr>
-
       </tbody>
   </table>
 
-  <table class="table table-bordered offset-2 col-5">
+  <table class="table table-bordered offset-1 col-5">
       <thead>
           <tr>
               <th>Directions</th>
@@ -227,6 +375,7 @@
           </tr>
       </tbody>
   </table>
+</div>
 </div>
 </section>
 
@@ -265,6 +414,111 @@
 
         </section>
         <section class="border-bottom">
+          <a name="fonts"></a>
+<section>
+<h3 class="mb1">Fonts</h3>
+<p>Our stadard typekit has one font, Din 2014. This typekit is included by default in your generator.</p>
+<section class=" mt1 content-fit"><pre><code class="language-markup"><script type="prism-html-markup"><link rel="stylesheet" href="https://use.typekit.net/dsx2uhv.css">
+</script></code></pre>
+
+</section>
+
+<p class="jubilat light">To include Jubilat on your page, add this typekit</p>
+<section class=" mt1 content-fit"><pre><code class="language-markup"><script type="prism-html-markup"><link rel="stylesheet" href="https://use.typekit.net/bvr3gvp.css">
+</script></code></pre>
+
+</section>
+
+
+<table class="table table-bordered content-fit">
+<h3 class="mb1 mt4">Fonts</h3>
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Code</th>
+    </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>Din 2014</td>
+    <td><code>sans</code>, <code>headline</code>, <code>graphic-text</code></td>
+  <tr>
+  <tr>
+    <td>Georgia</td>
+    <td><code>serif</code>, <code>georgia</code></td>
+  <tr>
+    <tr>
+      <td>Jubliat</td>
+      <td><code>mag</code>, <code>jubilat</code>, <code>
+      headline.mag</code></td>
+    <tr>
+
+</tbody>
+</table>
+
+<h3 class="mb1 mt4">Weights</h3>
+<table class="table table-bordered content-fit">
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Code</th>
+    </tr>
+</thead>
+<tbody>
+  <tr>
+    <td><span class="lighter">lighter, 200</span></td>
+    <td><code>lighter</code></td>
+  <tr>
+  <tr>
+    <td><span class="light">Light, 300</span></td>
+    <td><code>light</code></td>
+  <tr>
+  <tr>
+    <td><span class="normal">Normal, 500</span></td>
+    <td><code>normal</code></td>
+  <tr>
+  <tr>
+    <td><span class="bold">Bold, 700</span></td>
+    <td><code>bold</code></td>
+  <tr>
+  <tr>
+    <td><span class="bolder">Bolder, 900</span></td>
+    <td><code>bolder</code></td>
+  <tr>
+</tbody>
+</table>
+
+
+<h3 class="mb1 mt4">Style</h3>
+<table class="table table-bordered content-fit">
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Code</th>
+    </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>Italic</td>
+    <td><code>italic</code></td>
+  <tr>
+  <tr>
+    <td>underline</td>
+    <td><code>underline</code></td>
+  <tr>
+  <tr>
+    <td>uppercase</td>
+    <td><code>uppercase</code></td>
+  <tr>
+</tbody>
+</table>
+
+
+
+</section>
+
+        </section>
+        <section class="border-bottom">
           <a name="header"></a>
 <header class="center">
     <div class="share">
@@ -288,7 +542,7 @@
     </div>
 </header>
 
-
+<section class="content-fit">
 
 <pre><code class="language-django"><script type="prism-django">
 <header class="center">
@@ -315,6 +569,7 @@
 
 </script></code></pre>
 
+</section>
 
         </section>
         <section class="border-bottom">
@@ -345,9 +600,9 @@
 </section>
 
 
+<section class="content-fit">
 
 <pre><code class="language-markup"><script type="prism-html-markup">
-
 
 <section>
   <h2>This is an overall section of content, h2</h2>
@@ -364,6 +619,7 @@
 
 </script></code></pre>
 
+</section>
 
         </section>
         <section class="border-bottom">
@@ -416,7 +672,7 @@
 
 
 
-
+<section class="content-fit">
 
 <pre><code class="language-markup"><script type="prism-html-markup">
 
@@ -436,52 +692,272 @@
 
 </script></code></pre>
 
+</section>
+
+        </section>
+        <section class="border-bottom">
+          <a name="text-alignment"></a>
+<section>
+<h3 class="mb1">Text Alignment</h3>
+<table class="table table-bordered content-fit">
+<thead>
+    <tr>
+        <th>Type</th>
+        <th>Code</th>
+    </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>Text align left</td>
+    <td><code>text-left</code></td>
+  <tr>
+  <tr>
+    <td>Text align right</td>
+    <td><code>text-right</code></td>
+  <tr>
+  <tr>
+    <td>Text align center</td>
+    <td><code>text-center</code></td>
+  <tr>
+  <tr>
+    <td>Text align X above small viewports</td>
+    <td><code>text-sm-X</code></td>
+  <tr>
+  <tr>
+    <td>Text align X above medium viewports</td>
+    <td><code>text-md-X</code></td>
+  <tr>
+  <tr>
+    <td>Text align X above large viewports</td>
+    <td><code>text-lg-X</code></td>
+  <tr>
+    <tr>
+      <td>Text align X above extra large viewports</td>
+      <td><code>text-xl-X</code></td>
+    <tr>
+</tbody>
+</table>
+
+
+<section class="content-fit">
+
+<pre><code class="language-markup"><script type="prism-html-markup">
+<p class="text-left">Left aligned text on all viewport sizes.</p>
+<p class="text-center">Center aligned text on all viewport sizes.</p>
+<p class="text-right">Right aligned text on all viewport sizes.</p>
+
+<p class="text-sm-left">Left aligned text on viewports sized SM (small) or wider.</p>
+<p class="text-md-left">Left aligned text on viewports sized MD (medium) or wider.</p>
+<p class="text-lg-left">Left aligned text on viewports sized LG (large) or wider.</p>
+<p class="text-xl-left">Left aligned text on viewports sized XL (extra-large) or wider.</p>
+
+</script></code></pre>
+
+</section>
+</section>
 
         </section>
         <section class="border-bottom">
           <a name="lists"></a>
-<section class="small sans content-fit">
-<h3 class="text-align-left">Links to css hacks</h3>
+<section class="content-fit">
+
+<section>
+<h3>Unordered lists</h3>
+
+<code>no-bullets no-indent border</code>
+  <ul class="no-bullets no-indent border">
+    <li>First item in this list</li>
+    <li>Second item in this list</li>
+    <li>Third item in this list</li>
+  </ul>
+
+<br>
+<code>no-bullets no-indent</code>
 <ul class="no-bullets no-indent">
-  <li>
-    <a target="blank" href="https://politico.gitbooks.io/politico-newsroom-developer-guide/content/tipsheets/handy-css-tricks/text-styles.html">Controlling content widths + Text styles, small type too</a>
-  </li>
-
-  <li>
-    <a target="blank" href="https://politico.gitbooks.io/politico-newsroom-developer-guide/content/tipsheets/handy-css-tricks/text-alignment.html">How to align text</a>
-  </li>
-
-  <li>
-    <a target="blank" href="https://politico.gitbooks.io/politico-newsroom-developer-guide/content/tipsheets/design-guides/css-includes/cards.html">Different card styles</a>
-  </li>
-
-  <li>
-    <a target="blank" href="https://politico.gitbooks.io/politico-newsroom-developer-guide/content/tipsheets/handy-css-tricks/sections.html">When to use a section</a>
-  </li>
-  <li>
-    <a target="blank" href="https://politico.gitbooks.io/politico-newsroom-developer-guide/content/tipsheets/handy-css-tricks/lists.html">List styles</a>
-  </li>
-
+  <li>First item in this list</li>
+  <li>Second item in this list</li>
+  <li>Third item in this list</li>
 </ul>
+
+<br>
+<code>no classes applied</code>
+<ul>
+  <li>First item in this list</li>
+  <li>Second item in this list</li>
+  <li>Third item in this list</li>
+</ul>
+</section>
+
+<section>
+<h3>Ordered lists</h3>
+<code>no classes applied</code>
+<ol>
+  <li>First item in this list</li>
+  <li>Second item in this list</li>
+  <li>Third item in this list</li>
+</ol>
+</section>
+
+
+<pre><code class="language-django"><script type="prism-django"><ul class="no-bullets no-indent border">
+    <li>First item in this list</li>
+    <li>Second item in this list</li>
+    <li>Third item in this list</li>
+  </ul>
+</script></code></pre>
+
+</section>
+
+        </section>
+        <section class="border-bottom">
+          <a name="icons"></a>
+<section>
+  <h3>Politico icons</h3>
+  <p class="sans">Use these icons to match the core website when appropriate.</p>
+  <table class="table table-bordered content-fit">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Code</th>
+            <th>Icon</th>
+        </tr>
+    </thead>
+    <tbody>
+      <tr>
+          <td>Politico icon</td>
+          <td><pre><code class="language-markup"><script type="prism-html-markup"><b class="bt-icon bt-icon--politico"></b></script></code></pre></td>
+          <td><b class="bt-icon bt-icon--politico"></b></td>
+      </tr>
+      <tr>
+          <td>Pro icon</td>
+          <td><pre><code class="language-markup"><script type="prism-html-markup"><b class="bt-icon bt-icon--pro-small"></b></script></code></pre></td>
+          <td><b class="bt-icon bt-icon--pro-small"></b></td>
+      </tr>
+      <tr>
+          <td>Magazine</td>
+          <td><pre><code class="language-markup"><script type="prism-html-markup"><b class="bt-icon bt-icon--magazine"></b></script></code></pre></td>
+          <td><b class="bt-icon bt-icon--magazine"></b></td>
+      </tr>
+      <tr>
+          <td>Circle</td>
+          <td><pre><code class="language-markup"><script type="prism-html-markup"><b class="bt-icon bt-icon--circle"></b></script></code></pre></td>
+          <td><b class="bt-icon bt-icon--circle"></b></td>
+      </tr>
+      <tr>
+          <td>Circle, solid</td>
+          <td><pre><code class="language-markup"><script type="prism-html-markup"><b class="bt-icon bt-icon--circle-solid"></b></script></code></pre></td>
+          <td><b class="bt-icon bt-icon--circle-solid"></b></td>
+      </tr>
+      <tr>
+          <td>Close</td>
+          <td><pre><code class="language-markup"><script type="prism-html-markup"><b class="bt-icon bt-icon--close"></b></script></code></pre></td>
+          <td><b class="bt-icon bt-icon--close"></b></td>
+      </tr>
+      <tr>
+          <td>Add</td>
+          <td><pre><code class="language-markup"><script type="prism-html-markup"><b class="bt-icon bt-icon--add"></b></script></code></pre></td>
+          <td><b class="bt-icon bt-icon--add"></b></td>
+      </tr>
+      <tr>
+          <td>Remove</td>
+          <td><pre><code class="language-markup"><script type="prism-html-markup"><b class="bt-icon bt-icon--remove"></b></script></code></pre></td>
+          <td><b class="bt-icon bt-icon--remove"></b></td>
+      </tr>
+      <tr>
+          <td>Edit</td>
+          <td><pre><code class="language-markup"><script type="prism-html-markup"><b class="bt-icon bt-icon--edit"></b></script></code></pre></td>
+          <td><b class="bt-icon bt-icon--edit"></b></td>
+      </tr>
+      <tr>
+          <td>Interactives</td>
+          <td><pre><code class="language-markup"><script type="prism-html-markup"><b class="bt-icon bt-icon--interactives"></b></script></code></pre></td>
+          <td><b class="bt-icon bt-icon--interactives"></b></td>
+      </tr>
+      <tr>
+          <td>Podcast</td>
+          <td><pre><code class="language-markup"><script type="prism-html-markup"><b class="bt-icon bt-icon--podcast"></b></script></code></pre></td>
+          <td><b class="bt-icon bt-icon--podcast"></b></td>
+      </tr>
+      <tr>
+          <td>Photo Gallery</td>
+          <td><pre><code class="language-markup"><script type="prism-html-markup"><b class="bt-icon bt-icon--gallery"></b></script></code></pre></td>
+          <td><b class="bt-icon bt-icon--gallery"></b></td>
+      </tr>
+      <tr>
+          <td>Pie Chart</td>
+          <td><pre><code class="language-markup"><script type="prism-html-markup"><b class="bt-icon bt-icon--pie"></b></script></code></pre></td>
+          <td><b class="bt-icon bt-icon--pie"></b></td>
+      </tr>
+      <tr>
+          <td>Gear</td>
+          <td><pre><code class="language-markup"><script type="prism-html-markup"><b class="bt-icon bt-icon--gear"></b></script></code></pre></td>
+          <td><b class="bt-icon bt-icon--gear"></b></td>
+      </tr>
+      <tr>
+          <td>Mail</td>
+          <td><pre><code class="language-markup"><script type="prism-html-markup"><b class="bt-icon bt-icon--mail"></b></script></code></pre></td>
+          <td><b class="bt-icon bt-icon--mail"></b></td>
+      </tr>
+      <tr>
+          <td>Settings</td>
+          <td><pre><code class="language-markup"><script type="prism-html-markup"><b class="bt-icon bt-icon--settings"></b></script></code></pre></td>
+          <td><b class="bt-icon bt-icon--settings"></b></td>
+      </tr>
+      <tr>
+          <td>Circle Check</td>
+          <td><pre><code class="language-markup"><script type="prism-html-markup"><b class="bt-icon bt-icon--circle-check"></b></script></code></pre></td>
+          <td><b class="bt-icon bt-icon--circle-check"></b></td>
+      </tr>
+      <tr>
+          <td>User</td>
+          <td><pre><code class="language-markup"><script type="prism-html-markup"><b class="bt-icon bt-icon--user"></b></script></code></pre></td>
+          <td><b class="bt-icon bt-icon--user"></b></td>
+      </tr>
+      <tr>
+          <td>Search</td>
+          <td><pre><code class="language-markup"><script type="prism-html-markup"><b class="bt-icon bt-icon--search"></b></script></code></pre></td>
+          <td><b class="bt-icon bt-icon--search"></b></td>
+      </tr>
+
+      <tr>
+          <td>Play Button</td>
+          <td><pre><code class="language-markup"><script type="prism-html-markup"><b class="bt-icon bt-icon--play"></b></script></code></pre></td>
+          <td><b class="bt-icon bt-icon--play"></b></td>
+      </tr>
+      <tr>
+          <td>Alt Play Button</td>
+          <td><pre><code class="language-markup"><script type="prism-html-markup"><b class="bt-icon bt-icon--play-alt"></b></script></code></pre></td>
+          <td><b class="bt-icon bt-icon--play-alt"></b></td>
+      </tr>
+      <tr>
+          <td>Arrow</td>
+          <td><pre><code class="language-markup"><script type="prism-html-markup"><b class="bt-icon bt-icon--arrow"></b></script></code></pre></td>
+          <td><b class="bt-icon bt-icon--arrow"></b></td>
+      </tr>
+    </tbody>
+</table>
 </section>
 
         </section>
         <section class="border-bottom">
           <a name="cards"></a>
+
 <section>
+  <h3 class="mb2">Cards</h3>
+  <p>Cards may be used as a starting point to a more modular design. They take images in the lede position, have <code>titles</code>, <code>subheds</code> and a <code>serif</code> style built in.</p>
   <div class="row">
-    <div class="col-sm-4">
+    <div class="col-md-4">
       <div class="card">
         <figure>
-          <img src="http://images.politico.com/global/2013/02/14/130214_obama_palm_beach_ap_328.jpg" alt="tropical beach">
-          <figcaption>This is the caption</figcaption>
+          <img src="http://images.politico.com/global/2013/02/14/130214_obama_palm_beach_ap_328.jpg" alt="Tropical beach">
+          <figcaption>This is the caption.</figcaption>
         </figure>
         <h3>Card Title</h3>
         <h4>Subtitle if needed</h4>
         <p>A variation of the <span class="highlight">ordinary lorem</span> ipsum text has been used in typesetting since the 1960s or earlier,  by advertisements for Letraset transfer sheets or earlier,  by <span class="highlight">advertisements</span> for Letraset transfer sheets.</p>
       </div>
     </div>
-    <div class="col-sm-4">
+    <div class="col-md-4">
       <div class="card">
         <h3 class="border-bottom">Card Title</h3>
         <h4>Subtitle if needed</h4>
@@ -492,9 +968,9 @@
       </div>
     </div>
 
-    <div class="col-sm-4">
+    <div class="col-md-4">
       <div class="card serif">
-        <h3>Card Title</h3>
+        <h3 class="border-bottom">Card Title</h3>
         <p>Look up! A serif style is appended to the card</p>
 
         <p>Does what you'd expect here too.</p>
@@ -503,6 +979,7 @@
   </row>
 </section>
 
+<section class="content-fit">
 
 <pre><code class="language-markup"><script type="prism-html-markup">
 <section>
@@ -542,6 +1019,7 @@
 
 </script></code></pre>
 
+</section>
 
         </section>
       </article>
