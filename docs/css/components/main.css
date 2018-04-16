@@ -5122,7 +5122,7 @@ button.close {
   color: #dc0228; }
 
 section {
-  padding: 1.5rem 0; }
+  margin: 2.5rem 0; }
 
 .content-small {
   max-width: 400px; }
@@ -5626,7 +5626,8 @@ ul.border li {
       border-radius: 5px 5px 0 0; }
   .card.serif h3 {
     font-family: Georgia, Times, "Times New Roman", serif;
-    font-weight: normal; }
+    font-weight: normal;
+    font-size: 1.3rem; }
   .card.serif p {
     font-family: Georgia, Times, "Times New Roman", serif; }
   .card.color-coded {
@@ -5642,7 +5643,8 @@ ul.border li {
     padding-bottom: 6px;
     margin-bottom: 12px; }
   .card h3 + p {
-    padding-top: 5px; }
+    padding-top: 5px;
+    font-size: 1rem; }
   .card h4 {
     text-align: left;
     font-weight: 300;
