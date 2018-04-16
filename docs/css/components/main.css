@@ -5361,37 +5361,31 @@ section {
 .pr6 {
   margin-right: 3rem; }
 
-.text-align-center {
-  text-align: center; }
-
-.text-align-left {
-  text-align: left; }
-
-.text-align-right {
-  text-align: right; }
-
-.lighter.span, .lighter.sans, .lighter.graphic-text, .lighter.headline, .lighter.jubilat,
+span.lighter, .lighter.sans, .lighter.serif, .lighter.georgia, .lighter.graphic-text, .lighter.headline, .lighter.jubilat,
 .lighter.mag, h2.lighter, h3.lighter, h4.lighter, h5.lighter, h6.lighter {
-  font-weight: 200; }
+  font-weight: 200 !important; }
 
-.light.span, .light.sans, .light.graphic-text, .light.headline, .light.jubilat,
+span.light, .light.sans, .light.serif, .light.georgia, .light.graphic-text, .light.headline, .light.jubilat,
 .light.mag, h2.light, h3.light, h4.light, h5.light, h6.light {
-  font-weight: 300; }
+  font-weight: 300 !important; }
 
-.normal.span, .normal.sans, .normal.graphic-text, .normal.headline, .normal.jubilat,
+span.normal, .normal.sans, .normal.serif, .normal.georgia, .normal.graphic-text, .normal.headline, .normal.jubilat,
 .normal.mag, h2.normal, h3.normal, h4.normal, h5.normal, h6.normal {
-  font-weight: 500; }
+  font-weight: 500 !important; }
 
-.bold.span, .bold.sans, .bold.graphic-text, .bold.headline, .bold.jubilat,
+span.bold, .bold.sans, .bold.serif, .bold.georgia, .bold.graphic-text, .bold.headline, .bold.jubilat,
 .bold.mag, h2.bold, h3.bold, h4.bold, h5.bold, h6.bold {
-  font-weight: 700; }
+  font-weight: 700 !important; }
 
-.bolder.span, .bolder.sans, .bolder.graphic-text, .bolder.headline, .bolder.jubilat,
+span.bolder, .bolder.sans, .bolder.serif, .bolder.georgia, .bolder.graphic-text, .bolder.headline, .bolder.jubilat,
 .bolder.mag, h2.bolder, h3.bolder, h4.bolder, h5.bolder, h6.bolder {
-  font-weight: 900; }
+  font-weight: 900 !important; }
 
 .sans {
   font-family: "din-2014", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+
+.serif, .georgia {
+  font-family: Georgia, Times, "Times New Roman", serif; }
 
 .graphic-text {
   font-family: "din-2014", "Helvetica Neue", Helvetica, Arial, sans-serif; }

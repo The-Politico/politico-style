@@ -5,7 +5,7 @@
     <title></title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.13.0/themes/prism.min.css" />
     <link rel="stylesheet" href="../css/components/main.css">
-    <link rel="stylesheet" type="text/css" href="https://www.politico.com/interactives/cdn/fonts/base-icons/politico-base-icons.min.css">
+    <link rel="stylesheet" type="text/css" href="https://www.politico.com/interactives/cdn/fonts/battletoads/icons/politico-battletoads-icons.min.css">
 
     <!--Typekit-->
     <link rel="stylesheet" href="https://use.typekit.net/ogn0czn.css">
@@ -29,9 +29,12 @@
     </li>
 
     <li>
-      <a href="#layout">Standard spacing</a>
+      <a href="#layout">Standard Spacing</a>
     </li>
     <h5 class="mini-header">Typography</h5>
+    <li>
+      <a href="#fonts">Fonts</a>
+    </li>
     <li>
       <a href="#header">Header</a>
     </li>
@@ -42,11 +45,14 @@
       <a href="#paragraphs">Paragraphs</a>
     </li>
     <li>
+      <a href="#text-alignment">Text Alignment</a>
+    </li>
+    <li>
       <a href="#lists">Lists</a>
     </li>
     <h5 class="mini-header">Iconography</h5>
     <li>
-      <a href="#icons">Icons</a>
+      <a href="icons">Icons</a>
     </li>
 
     <h5 class="mini-header">Components</h5>
@@ -70,27 +76,27 @@
           <a name="accessibility"></a>
 <section>
 <h3>Design for inclusion</h3>
-<p class="sans">According to the U.S. census, nearly one in five Americans have a disability. As a team we're focused on making sure all of our readers have access to clear, accurate news. Following these <a target="blank" href="https://www.w3.org/WAI/gettingstarted/tips/designing.html">WAi</a> tips ensure our work is accessible.</p>
+<p class="sans">According to the U.S. census, nearly one in five Americans have a disability. As a team, we're focused on making sure all of our readers have access to clear, accurate news. Following these <a target="blank" href="https://www.w3.org/WAI/gettingstarted/tips/designing.html">WAi</a> tips ensure our work is accessible.</p>
 
 
   <ul class="content-fit">
-    <li>Sufficient contrast between foreground and background. This will also help for mobile users reading in direct sunlight [<a target="blank" href="https://www.census.gov/newsroom/releases/archives/miscellaneous/cb12-134.html"> Color contrast checker</a> ]</li>
+    <li>Sufficient contrast between foreground and background. This will also help for mobile users reading in direct sunlight [<a target="blank" href="https://www.census.gov/newsroom/releases/archives/miscellaneous/cb12-134.html"> Check your color contrast here</a> ]</li>
     <li>Is your palette color-blind safe? [ <a target="blank" href="http://colororacle.org/"> Install this tool to check your color palette</a> ]</li>
     <li>Don't use color alone to convey information, read [ <a target="blank" href="https://www.w3.org/WAI/gettingstarted/tips/designing.html#dont-use-color-alone-to-convey-information">here</a>] and [<a target="blank" href="http://colororacle.org/resources/2007_JennyKelso_ColorDesign_hires.pdf"> here </a> ]<br>
     <p class="mt4 small sans">This <a target="blank" href="http://colororacle.org/resources/2007_JennyKelso_ColorDesign_hires.pdf">example</a> from Bernhard Jenny and Nathaniel Vaughn Kelso shows the red-green confusion caused by common color-blindness. Here, shapes and pattern fill help distinguish the dots and lines.</p>
     <figure class="ml4">
       <h5>Lines</h5>
-      <img src="/images/lines.png" />
+      <img src="/images/lines.png" alt="This chart shows how best to design for colorblind readers. Labels, pattern fill and color combine to make a clear reading experience."/>
     </figure>
     <figure class="ml4 mb4">
       <h5>Shapes</h5>
-      <img src="/images/shapes.png" />
+      <img src="/images/shapes.png" alt="This chart shows how best to design for colorblind readers. Labels, pattern fill and shape combine to make a clear reading experience."/>
     </figure>
 
     </li>
-    <li>Make sure headings, spacing and labels are associated by proximity. White space if your friend [ <a target="blank" href="https://www.w3.org/WAI/gettingstarted/tips/designing.html#use-headings-and-spacing-to-group-related-content">Read more</a> ]</li>
-    <li>Provide easily identifiable feedback. Ie: In a form, can a reader tab to each item, and actively see where the cursor is? [ <a target="blank" href="https://www.w3.org/WAI/gettingstarted/tips/designing.html#provide-easily-identifiable-feedback">Read more</a> ]</li>
-    <li>Use <code>alt</code> tags for images and title tages for videos. For video, a transcript is ideal</li>
+    <li>Make sure headings, labels and paragraphs are associated by proximity. White space is your friend [ <a target="blank" href="https://www.w3.org/WAI/gettingstarted/tips/designing.html#use-headings-and-spacing-to-group-related-content">Read more</a> ]</li>
+    <li>Provide easily identifiable feedback. Ie: In a form, can a reader tab to each item and actively see where the cursor is? [ <a target="blank" href="https://www.w3.org/WAI/gettingstarted/tips/designing.html#provide-easily-identifiable-feedback">Read more</a> ]</li>
+    <li>Use <code>alt</code> tags for images. For video, a transcript is ideal [ <a target="blank" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/video#Accessibility_concerns">Read more</a> ]</li>
     <li>Provide controls for content that starts automatically</li>
   </ul>
 </section>
@@ -103,7 +109,7 @@
 <p class="sans">More than 63% of our audience comes to us via a mobile device. We prioritize those readers by using <code>min-width</code>.</p>
 
 <h3 class="pt3">Wait, how do min-width breakpoints work again?</h3>
-<p class="sans">The base level css you're writing defaults to the smallest boostrap dedault breakpoint <code>min-width:576px</code>.
+<p class="sans">The base level css you're writing defaults to the smallest boostrap dedault breakpoint <code>min-width:576px</code>. We've added another breakpoint for very small phones, which you'll need to define as needed <code>min-width:350px</code>
 
 <h3 class="pt3">Let's look an an example</h3>
 <p class="sans">This means any screen bigger than 992px, the <code>h2</code> will be aligned center.</p>
@@ -294,8 +300,9 @@
 <h3>Spatial Units and how to use them</h3>
 <p class="sans">Margin and padding are based on <code>.5rem</code> increments. This system, inspired by Buzzfeed's <a target="blank" href="https://solid.buzzfeed.com/layout.html">solid</a> framework used a 6 step system from <br> <code> 0 to 6</code>.
 
-<div class="row justify-content-md-center content-fit">
-  <table class="table table-bordered col-5 ">
+<div class="container content-fit">
+<div class="row">
+  <table class="table table-bordered col-5">
       <thead>
           <tr>
               <th>Spacial units</th>
@@ -335,11 +342,10 @@
             <td><code>6</code></td>
             <td>= 3rem</td>
         </tr>
-
       </tbody>
   </table>
 
-  <table class="table table-bordered offset-2 col-5">
+  <table class="table table-bordered offset-1 col-5">
       <thead>
           <tr>
               <th>Directions</th>
@@ -369,6 +375,7 @@
           </tr>
       </tbody>
   </table>
+</div>
 </div>
 </section>
 
@@ -403,6 +410,78 @@
 
 
 
+</section>
+
+        </section>
+        <section class="border-bottom">
+          <a name="fonts"></a>
+<section>
+<h3 class="mb1">Fonts</h3>
+<table class="table table-bordered content-fit">
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Code</th>
+    </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>Din 2014</td>
+    <td><code>sans</code>, <code>headline</code>, <code>graphic-text</code></td>
+  <tr>
+  <tr>
+    <td>Georgia</td>
+    <td><code>serif</code>, <code>georgia</code></td>
+  <tr>
+    <tr>
+      <td>Jubliat</td>
+      <td><code>mag</code>, <code>jubilat</code>, <code>
+      headline.mag</code></td>
+    <tr>
+
+</tbody>
+</table>
+
+<h3 class="mb1 mt4">Weights</h3>
+<table class="table table-bordered content-fit">
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Code</th>
+    </tr>
+</thead>
+<tbody>
+  <tr>
+    <td><span class="lighter">lighter, 200</span></td>
+    <td><code>lighter</code></td>
+  <tr>
+  <tr>
+    <td><span class="light">Light, 300</span></td>
+    <td><code>light</code></td>
+  <tr>
+  <tr>
+    <td><span class="normal">Normal, 500</span></td>
+    <td><code>normal</code></td>
+  <tr>
+  <tr>
+    <td><span class="bold">Bold, 700</span></td>
+    <td><code>bold</code></td>
+  <tr>
+  <tr>
+    <td><span class="bolder">Bolder, 900</span></td>
+    <td><code>bolder</code></td>
+  <tr>
+</tbody>
+</table>
+
+
+<section class="content-fit">
+
+<pre><code class="language-markup"><script type="prism-html-markup">
+
+</script></code></pre>
+
+</section>
 </section>
 
         </section>
@@ -584,6 +663,68 @@
 
         </section>
         <section class="border-bottom">
+          <a name="text-alignment"></a>
+<section>
+<h3 class="mb1">Text Alignment</h3>
+<table class="table table-bordered content-fit">
+<thead>
+    <tr>
+        <th>Type</th>
+        <th>Code</th>
+    </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>Text align left</td>
+    <td><code>text-left</code></td>
+  <tr>
+  <tr>
+    <td>Text align right</td>
+    <td><code>text-right</code></td>
+  <tr>
+  <tr>
+    <td>Text align center</td>
+    <td><code>text-center</code></td>
+  <tr>
+  <tr>
+    <td>Text align X above small viewports</td>
+    <td><code>text-sm-X</code></td>
+  <tr>
+  <tr>
+    <td>Text align X above medium viewports</td>
+    <td><code>text-md-X</code></td>
+  <tr>
+  <tr>
+    <td>Text align X above large viewports</td>
+    <td><code>text-lg-X</code></td>
+  <tr>
+    <tr>
+      <td>Text align X above extra large viewports</td>
+      <td><code>text-xl-X</code></td>
+    <tr>
+</tbody>
+</table>
+
+
+<section class="content-fit">
+
+<pre><code class="language-markup"><script type="prism-html-markup">
+<p class="text-left">Left aligned text on all viewport sizes.</p>
+<p class="text-center">Center aligned text on all viewport sizes.</p>
+<p class="text-right">Right aligned text on all viewport sizes.</p>
+
+<p class="text-sm-left">Left aligned text on viewports sized SM (small) or wider.</p>
+<p class="text-md-left">Left aligned text on viewports sized MD (medium) or wider.</p>
+<p class="text-lg-left">Left aligned text on viewports sized LG (large) or wider.</p>
+<p class="text-xl-left">Left aligned text on viewports sized XL (extra-large) or wider.</p>
+
+</script></code></pre>
+
+</section>
+</section>
+
+        </section>
+        <section class="border-bottom">
           <a name="lists"></a>
 <section class="content-fit">
 
@@ -625,8 +766,7 @@
 </section>
 
 
-<pre><code class="language-django"><script type="prism-django">
-<ul class="no-bullets no-indent border">
+<pre><code class="language-django"><script type="prism-django"><ul class="no-bullets no-indent border">
     <li>First item in this list</li>
     <li>Second item in this list</li>
     <li>Third item in this list</li>
@@ -644,14 +784,122 @@
   <table class="table table-bordered content-fit">
     <thead>
         <tr>
+            <th>Name</th>
             <th>Code</th>
             <th>Icon</th>
         </tr>
     </thead>
     <tbody>
       <tr>
-          <td><code>b class="bt-icon bt-icon--circle-solid"</code></td>
-          <td><b class="bt-icon bt-icon--circle-solid">Broken</b></td>
+          <td>Politico icon</td>
+          <td><pre><code class="language-markup"><script type="prism-html-markup"><b class="bt-icon bt-icon--politico"></b></script></code></pre></td>
+          <td><b class="bt-icon bt-icon--politico"></b></td>
+      </tr>
+      <tr>
+          <td>Pro icon</td>
+          <td><pre><code class="language-markup"><script type="prism-html-markup"><b class="bt-icon bt-icon--pro-small"></b></script></code></pre></td>
+          <td><b class="bt-icon bt-icon--pro-small"></b></td>
+      </tr>
+      <tr>
+          <td>Magazine</td>
+          <td><pre><code class="language-markup"><script type="prism-html-markup"><b class="bt-icon bt-icon--magazine"></b></script></code></pre></td>
+          <td><b class="bt-icon bt-icon--magazine"></b></td>
+      </tr>
+      <tr>
+          <td>Circle</td>
+          <td><pre><code class="language-markup"><script type="prism-html-markup"><b class="bt-icon bt-icon--circle"></b></script></code></pre></td>
+          <td><b class="bt-icon bt-icon--circle"></b></td>
+      </tr>
+      <tr>
+          <td>Circle, solid</td>
+          <td><pre><code class="language-markup"><script type="prism-html-markup"><b class="bt-icon bt-icon--circle-solid"></b></script></code></pre></td>
+          <td><b class="bt-icon bt-icon--circle-solid"></b></td>
+      </tr>
+      <tr>
+          <td>Add</td>
+          <td><pre><code class="language-markup"><script type="prism-html-markup"><b class="bt-icon bt-icon--add"></b></script></code></pre></td>
+          <td><b class="bt-icon bt-icon--add"></b></td>
+      </tr>
+      <tr>
+          <td>Remove</td>
+          <td><pre><code class="language-markup"><script type="prism-html-markup"><b class="bt-icon bt-icon--remove"></b></script></code></pre></td>
+          <td><b class="bt-icon bt-icon--remove"></b></td>
+      </tr>
+      <tr>
+          <td>Edit</td>
+          <td><pre><code class="language-markup"><script type="prism-html-markup"><b class="bt-icon bt-icon--edit"></b></script></code></pre></td>
+          <td><b class="bt-icon bt-icon--edit"></b></td>
+      </tr>
+      <tr>
+          <td>Interactives</td>
+          <td><pre><code class="language-markup"><script type="prism-html-markup"><b class="bt-icon bt-icon--interactives"></b></script></code></pre></td>
+          <td><b class="bt-icon bt-icon--interactives"></b></td>
+      </tr>
+      <tr>
+          <td>Podcast</td>
+          <td><pre><code class="language-markup"><script type="prism-html-markup"><b class="bt-icon bt-icon--podcast"></b></script></code></pre></td>
+          <td><b class="bt-icon bt-icon--podcast"></b></td>
+      </tr>
+      <tr>
+          <td>Photo Gallery</td>
+          <td><pre><code class="language-markup"><script type="prism-html-markup"><b class="bt-icon bt-icon--gallery"></b></script></code></pre></td>
+          <td><b class="bt-icon bt-icon--gallery"></b></td>
+      </tr>
+      <tr>
+          <td>Pie Chart</td>
+          <td><pre><code class="language-markup"><script type="prism-html-markup"><b class="bt-icon bt-icon--pie"></b></script></code></pre></td>
+          <td><b class="bt-icon bt-icon--pie"></b></td>
+      </tr>
+      <tr>
+          <td>Gear</td>
+          <td><pre><code class="language-markup"><script type="prism-html-markup"><b class="bt-icon bt-icon--gear"></b></script></code></pre></td>
+          <td><b class="bt-icon bt-icon--gear"></b></td>
+      </tr>
+      <tr>
+          <td>Mail</td>
+          <td><pre><code class="language-markup"><script type="prism-html-markup"><b class="bt-icon bt-icon--mail"></b></script></code></pre></td>
+          <td><b class="bt-icon bt-icon--mail"></b></td>
+      </tr>
+      <tr>
+          <td>Settings</td>
+          <td><pre><code class="language-markup"><script type="prism-html-markup"><b class="bt-icon bt-icon--settings"></b></script></code></pre></td>
+          <td><b class="bt-icon bt-icon--settings"></b></td>
+      </tr>
+      <tr>
+          <td>Circle Check</td>
+          <td><pre><code class="language-markup"><script type="prism-html-markup"><b class="bt-icon bt-icon--circle-check"></b></script></code></pre></td>
+          <td><b class="bt-icon bt-icon--circle-check"></b></td>
+      </tr>
+      <tr>
+          <td>User</td>
+          <td><pre><code class="language-markup"><script type="prism-html-markup"><b class="bt-icon bt-icon--user"></b></script></code></pre></td>
+          <td><b class="bt-icon bt-icon--user"></b></td>
+      </tr>
+      <tr>
+          <td>Search</td>
+          <td><pre><code class="language-markup"><script type="prism-html-markup"><b class="bt-icon bt-icon--search"></b></script></code></pre></td>
+          <td><b class="bt-icon bt-icon--search"></b></td>
+      </tr>
+
+      <tr>
+          <td>Play Button</td>
+          <td><pre><code class="language-markup"><script type="prism-html-markup"><b class="bt-icon bt-icon--play"></b></script></code></pre></td>
+          <td><b class="bt-icon bt-icon--play"></b></td>
+      </tr>
+      <tr>
+          <td>Alt Play Button</td>
+          <td><pre><code class="language-markup"><script type="prism-html-markup"><b class="bt-icon bt-icon--play-alt"></b></script></code></pre></td>
+          <td><b class="bt-icon bt-icon--play-alt"></b></td>
+      </tr>
+      <tr>
+          <td>Arrow</td>
+          <td><pre><code class="language-markup"><script type="prism-html-markup"><b class="bt-icon bt-icon--arrow"></b></script></code></pre></td>
+          <td><b class="bt-icon bt-icon--arrow"></b></td>
+      </tr>
+      <tr>
+          <td>Close</td>
+          <td><pre><code class="language-markup"><script type="prism-html-markup"><b class="bt-icon bt-icon--close"></b></script></code></pre></td>
+          <td><b class="bt-icon bt-icon--close"></b></td>
       </tr>
     </tbody>
 </table>
@@ -665,7 +913,7 @@
   <h3 class="mb2">Cards</h3>
   <p>Cards may be used as a starting point to a more modular design. They take images in the lede position, have <code>titles</code>, <code>subheds</code> and a <code>serif</code> style built in.</p>
   <div class="row">
-    <div class="col-sm-4">
+    <div class="col-md-4">
       <div class="card">
         <figure>
           <img src="http://images.politico.com/global/2013/02/14/130214_obama_palm_beach_ap_328.jpg" alt="Tropical beach">
@@ -676,7 +924,7 @@
         <p>A variation of the <span class="highlight">ordinary lorem</span> ipsum text has been used in typesetting since the 1960s or earlier,  by advertisements for Letraset transfer sheets or earlier,  by <span class="highlight">advertisements</span> for Letraset transfer sheets.</p>
       </div>
     </div>
-    <div class="col-sm-4">
+    <div class="col-md-4">
       <div class="card">
         <h3 class="border-bottom">Card Title</h3>
         <h4>Subtitle if needed</h4>
@@ -687,7 +935,7 @@
       </div>
     </div>
 
-    <div class="col-sm-4">
+    <div class="col-md-4">
       <div class="card serif">
         <h3 class="border-bottom">Card Title</h3>
         <p>Look up! A serif style is appended to the card</p>

@@ -1,47 +1,40 @@
-// Aligning text
-.text-align-center{
-  text-align: center;
-}
-
-.text-align-left{
-  text-align: left;
-}
-
-.text-align-right{
-  text-align: right;
-}
 
 //Font weights
 %weights{
   //lightest available for Din 2014 and Jubilat only
   &.lighter{
-    font-weight: 200;
+    font-weight: 200 !important;
   }
 
   &.light{
-      font-weight: 300;
+      font-weight: 300 !important;
   }
 
   &.normal{
-    font-weight: 500;
+    font-weight: 500 !important;
   }
 
   &.bold{
-    font-weight: 700;
+    font-weight: 700 !important;
   }
 
   &.bolder{
-    font-weight: 900;
+    font-weight: 900 !important;
   }
 }
 
-.span{
+span{
   @extend %weights;
 }
 
 .sans {
   @extend %weights;
   font-family: $din;
+}
+
+.serif, .georgia {
+  @extend %weights;
+  font-family: $georgia;
 }
 
 .graphic-text {
