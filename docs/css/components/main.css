@@ -5396,6 +5396,12 @@ span.bolder, .bolder.sans, .bolder.serif, .bolder.georgia, .bolder.graphic-text,
 .uppercase, .yell {
   text-transform: uppercase; }
 
+.italic {
+  font-style: italic; }
+
+.underline {
+  text-decoration: underline; }
+
 .jubilat,
 .headline.mag,
 .mag {
