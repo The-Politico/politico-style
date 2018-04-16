@@ -6169,12 +6169,12 @@ p.correction {
   margin: .8em auto 2em; }
 
 nav {
-  width: 300px;
+  width: 250px;
   float: left;
   height: 100vh;
   overflow-y: scroll;
   font-family: "din-2014", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  padding: 10px; }
+  padding: 10px 40px 10px; }
   nav h4 {
     text-align: left; }
   nav ul {
@@ -6199,7 +6199,7 @@ nav {
           text-decoration: none; }
 
 content {
-  width: calc(100% - 300px);
+  width: calc(100% - 250px);
   float: left;
   height: 100vh;
   padding: 10px 5px 40px;
