@@ -1,0 +1,12 @@
+table{
+  font-family: $din;
+  font-size: .95rem;
+
+  th{
+    -webkit-font-smoothing: antialiased;
+  }
+
+  @media(min-width: $min-width-xs){
+      font-size: 1rem;
+  }
+}

@@ -60,7 +60,7 @@ span{
 }
 
 // Mag fonts
-//If you want Jubilat you'll need to include the Jubilat Typekit include
+//If you want Jubilat  you must uncomment the jubilat include in your index file.
 .jubilat,
 .headline.mag,
 .mag{
@@ -146,7 +146,7 @@ h1 {
 
   @media (min-width: $min-width-lg) {
     font-size: 2.85rem;
-    margin: 5px 0 15px;
+    margin: 5px 0 8px;
     padding: 0;
   }
 
@@ -244,6 +244,10 @@ p + h4{padding-top:.5rem;}
 
 
 //icon text
+.bt-icon{
+  -webkit-font-smoothing: antialiased;
+}
+
 .icon-text {
     position: absolute;
     left: -999em;

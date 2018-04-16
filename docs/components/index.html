@@ -47,15 +47,18 @@
     <li>
       <a href="#text-alignment">Text Alignment</a>
     </li>
-    <li>
-      <a href="#lists">Lists</a>
-    </li>
     <h5 class="mini-header">Iconography</h5>
     <li>
       <a href="#icons">Icons</a>
     </li>
 
     <h5 class="mini-header">Components</h5>
+    <li>
+      <a href="#lists">Lists</a>
+    </li>
+    <li>
+      <a href="#tables">Tables</a>
+    </li>
     <li>
       <a href="#cards">Cards</a>
     </li>
@@ -522,7 +525,11 @@
           <a name="header"></a>
 <header class="center">
     <div class="share">
-      <a href="" class="bt-icon custom-icon--facebook" target="_blank"><img src="/custom-icons/icon_facebook.svg"></a>
+      <a href="" class="bt-icon custom-icon--facebook" target="_blank">
+        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14" height="14" fill="white" viewBox="0 0 15 15">
+        <path d="M9.229 15.988h-3.305v-7.989h-1.652v-2.754h1.652v-1.653c0-2.246 0.932-3.582 3.581-3.582h2.206v2.754h-1.378c-1.031 0-1.1 0.385-1.1 1.103l-0.004 1.378h2.498l-0.292 2.754h-2.206v7.989z"></path>
+        </svg>
+    </a>
       <a href="" class="bt-icon bt-icon--twitter" target="_blank"></a>
       <a href="" class="bt-icon bt-icon--mail" target="_blank"></a>
     </div>
@@ -758,58 +765,6 @@
 
         </section>
         <section class="border-bottom">
-          <a name="lists"></a>
-<section class="content-fit">
-
-<section>
-<h3>Unordered lists</h3>
-
-<code>no-bullets no-indent border</code>
-  <ul class="no-bullets no-indent border">
-    <li>First item in this list</li>
-    <li>Second item in this list</li>
-    <li>Third item in this list</li>
-  </ul>
-
-<br>
-<code>no-bullets no-indent</code>
-<ul class="no-bullets no-indent">
-  <li>First item in this list</li>
-  <li>Second item in this list</li>
-  <li>Third item in this list</li>
-</ul>
-
-<br>
-<code>no classes applied</code>
-<ul>
-  <li>First item in this list</li>
-  <li>Second item in this list</li>
-  <li>Third item in this list</li>
-</ul>
-</section>
-
-<section>
-<h3>Ordered lists</h3>
-<code>no classes applied</code>
-<ol>
-  <li>First item in this list</li>
-  <li>Second item in this list</li>
-  <li>Third item in this list</li>
-</ol>
-</section>
-
-
-<pre><code class="language-django"><script type="prism-django"><ul class="no-bullets no-indent border">
-    <li>First item in this list</li>
-    <li>Second item in this list</li>
-    <li>Third item in this list</li>
-  </ul>
-</script></code></pre>
-
-</section>
-
-        </section>
-        <section class="border-bottom">
           <a name="icons"></a>
 <section>
   <h3>Politico icons</h3>
@@ -936,6 +891,152 @@
       </tr>
     </tbody>
 </table>
+</section>
+
+        </section>
+        <section class="border-bottom">
+          <a name="lists"></a>
+<section class="content-fit pt2">
+
+<section>
+<h3>Unordered lists</h3>
+
+<code>no-bullets no-indent border</code>
+  <ul class="no-bullets no-indent border">
+    <li>First item in this list</li>
+    <li>Second item in this list</li>
+    <li>Third item in this list</li>
+  </ul>
+
+<br>
+<code>no-bullets no-indent</code>
+<ul class="no-bullets no-indent">
+  <li>First item in this list</li>
+  <li>Second item in this list</li>
+  <li>Third item in this list</li>
+</ul>
+
+<br>
+<code>no classes applied</code>
+<ul>
+  <li>First item in this list</li>
+  <li>Second item in this list</li>
+  <li>Third item in this list</li>
+</ul>
+</section>
+
+<section>
+<h3>Ordered lists</h3>
+<code>no classes applied</code>
+<ol>
+  <li>First item in this list</li>
+  <li>Second item in this list</li>
+  <li>Third item in this list</li>
+</ol>
+</section>
+
+
+<pre><code class="language-django"><script type="prism-django"><ul class="no-bullets no-indent border">
+    <li>First item in this list</li>
+    <li>Second item in this list</li>
+    <li>Third item in this list</li>
+  </ul>
+</script></code></pre>
+
+</section>
+
+        </section>
+        <section class="border-bottom">
+          <a name="tables"></a>
+<section class="content-fit">
+  <h3 class="mb1">Tables</h3>
+  <p>Our tables are built off of the bootstrap styles seen <a target="blank" href="https://getbootstrap.com/docs/4.0/content/tables/">here</a>.</p>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">First</th>
+      <th scope="col">Last</th>
+      <th scope="col">Handle</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Carrie</td>
+      <td>Buddoff Brown</td>
+      <td><a href="https://twitter.com/cbudoffbrown">@cbudoffbrown</a></td>
+    </tr>
+    <tr>
+
+    </tr>  <th scope="row">2</th>
+      <td>Paul</td>
+      <td>Volpe</td>
+      <td><a href="https://twitter.com/pvolpe">@pvolpe</a></td>
+  </tbody>
+</table>
+
+
+<pre><code class="language-django"><script type="prism-django">
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">First</th>
+      <th scope="col">Last</th>
+      <th scope="col">Handle</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Carrie</td>
+      <td>Buddoff Brown</td>
+      <td><a href="https://twitter.com/cbudoffbrown">@cbudoffbrown</a></td>
+    </tr>
+    <tr>
+
+    </tr>  <th scope="row">2</th>
+      <td>Paul</td>
+      <td>Volpe</td>
+      <td><a href="https://twitter.com/pvolpe">@pvolpe</a></td>
+  </tbody>
+</table>
+</script></code></pre>
+
+
+
+<section class="content-fit">
+
+<h3 class="mb1">Some other options</h3>
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="col">Type</th>
+      <th scope="col">Code</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Bordered</td>
+      <td><code>table-bordered</code></td>
+    </tr>
+    <tr>
+      <td>Striped</td>
+      <td><code>table-striped</code></td>
+    </tr>
+    <tr>
+      <td>Hover</td>
+      <td><code>table-hover</code></td>
+    </tr>
+    <tr>
+      <td>Condensed padding</td>
+      <td><code>table-sm</code></td>
+    </tr>
+  </tbody>
+</table>
+</section>
 </section>
 
         </section>

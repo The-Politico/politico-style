@@ -5465,7 +5465,7 @@ h1 {
   @media (min-width: 992px) {
     h1 {
       font-size: 2.85rem;
-      margin: 5px 0 15px;
+      margin: 5px 0 8px;
       padding: 0; } }
 
 h2,
@@ -5541,6 +5541,9 @@ p + h3 {
 
 p + h4 {
   padding-top: .5rem; }
+
+.bt-icon {
+  -webkit-font-smoothing: antialiased; }
 
 .icon-text {
   position: absolute;
@@ -5858,7 +5861,7 @@ header {
     margin: 0; }
     @media (min-width: 576px) {
       header .subhead {
-        font-size: 1.35rem; } }
+        font-size: 1.33rem; } }
   header .info p,
   header .info a {
     max-width: 750px;
@@ -6142,6 +6145,15 @@ div.share {
       background-color: #282D40; }
     div.share a:hover {
       text-decoration: none; }
+
+table {
+  font-family: "din-2014", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: .95rem; }
+  table th {
+    -webkit-font-smoothing: antialiased; }
+  @media (min-width: 350px) {
+    table {
+      font-size: 1rem; } }
 
 section.credits p {
   border-top: 1px solid #E5E7EB;
