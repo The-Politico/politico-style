@@ -1,0 +1,28 @@
+section.themes{
+  margin-top: 50px;
+  h6{
+    margin-bottom: 5px;
+    font-weight: 700;
+    font-family: $sans;
+    color: $satan;
+    text-transform: uppercase;
+    letter-spacing: 3.5px;
+  }
+  span.cell{
+    display: inline-block;
+    width: 100px;
+    border-left: 1px solid $politico-line;
+    &:first-child{
+      border-left:none;
+    }
+
+    a{
+      color: $politico-light-gray;
+      font-weight: 200;
+      transition: all .2s;
+      &:hover{
+        color: $politico-medium-gray;
+      }
+    }
+  }
+}

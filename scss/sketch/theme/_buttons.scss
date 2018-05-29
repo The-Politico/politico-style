@@ -1,0 +1,21 @@
+button{
+  cursor:pointer;
+  background-color: white;
+  border: 1px solid $politico-light-gray;
+  border-radius: 5px;
+  color: $politico-medium-gray;
+  transition: all .2s;
+
+  &:hover{
+    box-shadow: $boxshadow-medium;
+
+  }
+
+  &.btn-super{
+    padding: 15px 30px;
+    font-size: 24px;
+    display: block;
+    margin: 0 auto;
+    text-decoration: none !important;
+  }
+}

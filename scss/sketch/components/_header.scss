@@ -1,7 +1,8 @@
 header {
+    font-size: 24px;
     padding: 10px 20px;
-    background-color: #ffffff;
-    border-bottom: 1px solid #cccccc;
+    background-color: white;
+    border-bottom: 1px solid $politico-line;
     b {
         color: $politico-red;
     }
