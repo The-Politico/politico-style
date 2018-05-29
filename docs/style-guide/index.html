@@ -16,6 +16,10 @@
     <nav>
   <h4 class="mt5"><b style="color:#dc0228;" class="small bt-icon bt-icon--politico"></b></h4>
   <ul>
+    <h5 class="mini-header">Themes</h5>
+    <li>
+      <a href="#themes">Getting started</a>
+    </li>
     <h5 class="mini-header">Accessiblity</h5>
     <li>
       <a href="#accessibility">Best Practices</a>
@@ -76,6 +80,35 @@
 
         </section>
         <section class="border-bottom">
+          <a name="themes"></a>
+<section class="content-fit">
+
+<h3>Getting started with themes</h3>
+
+<p class="sans">
+  Install the theme.
+</p>
+
+<pre><code class="language-markup"><script type="pb3">$ yarn add politico-style</script></code></pre>
+
+
+<p class="sans">
+  Include the theme you want in your SCSS...
+</p>
+
+<pre><code class="language-css"><script type="pb3">@import '~politico-style/scss/base/theme';</script></code></pre>
+
+
+<p class="sans">
+  ... or in your JavaScript.
+</p>
+
+<pre><code class="language-javascript"><script type="pb3">import 'politico-style/scss/base/theme';</script></code></pre>
+
+</section>
+
+        </section>
+        <section class="border-bottom">
           <a name="accessibility"></a>
 <section>
 <h3>Design for inclusion</h3>
@@ -120,7 +153,7 @@
 <section class="content-fit mt0 pt0">
 
 
-<pre><code class="language-markup"><script type="prism-html-markup">
+<pre><code class="language-css"><script type="prism-html-markup">
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) {
       h2{
@@ -168,7 +201,7 @@
 <h3 class="pt3">Copy and paste these as needed</h3>
 <section class="content-fit pt0 mt0">
 
-<pre><code class="language-markup"><script type="prism-html-markup">
+<pre><code class="language-css"><script type="prism-html-markup">
 // ----  Min Width Declarations ---- //
 // Extra small devices (portrait phones, less than 350px) - note the default media query is at 576px, this is here to control for mini-phones.
 //@media (min-width: 350px) { ... }
@@ -555,7 +588,7 @@
 
 <section class="content-fit">
 
-<pre><code class="language-django"><script type="prism-django">
+<pre><code class="language-markup"><script type="prism-html-markup">
 <header class="center">
     <div class="share">
       <a href="" class="bt-icon custom-icon--facebook" target="_blank"><img src="/custom-icons/icon_facebook.svg"></a>
@@ -940,7 +973,7 @@
 </section>
 
 
-<pre><code class="language-django"><script type="prism-django"><ul class="no-bullets no-indent border">
+<pre><code class="language-markup"><script type="prism-html-markup"><ul class="no-bullets no-indent border">
     <li>First item in this list</li>
     <li>Second item in this list</li>
     <li>Third item in this list</li>
@@ -982,7 +1015,7 @@
 </table>
 
 
-<pre><code class="language-django"><script type="prism-django">
+<pre><code class="language-markup"><script type="prism-html-markup">
 <table class="table">
   <thead>
     <tr>
