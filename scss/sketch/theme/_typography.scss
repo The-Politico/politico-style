@@ -1,5 +1,23 @@
+body{
+  font-family: $sans;
+}
+
+h1,h2,h3,h4,h5,h6{
+  font-family: $header;
+  font-weight: 200;
+}
+
 h1,
 h2 {
     text-align: center;
     font-weight: normal;
+    &.gray{
+      color: $politico-medium-gray;
+      font-weight: 200;
+    }
+    margin: 20px 0;
+}
+
+.bt-icon--politico{
+  color: $politico-red;
 }
