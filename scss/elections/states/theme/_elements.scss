@@ -24,10 +24,12 @@ a{
 
 tbody{
   font-family: $din;
+  font-variant-ligatures: none;
 }
 
 h1, h2, h3, h4, h5, h6{
   font-family: $din;
+  font-variant-ligatures: none;
   text-align: center;
 }
 
