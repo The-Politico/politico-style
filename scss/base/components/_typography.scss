@@ -30,6 +30,7 @@ span{
 .sans {
   @extend %weights;
   font-family: $din;
+  font-variant-ligatures: none;
 }
 
 .serif, .georgia {
@@ -40,11 +41,13 @@ span{
 .graphic-text {
   @extend %weights;
   font-family: $din;
+  font-variant-ligatures: none;
 }
 
 .headline {
   @extend %weights;
   font-family: $din;
+  font-variant-ligatures: none;
 }
 
 .uppercase, .yell{
@@ -92,6 +95,7 @@ p {
 
   &.sans{
     font-family: $din;
+    font-variant-ligatures: none;
 
     &.small{
       font-size: 1rem;
@@ -110,6 +114,7 @@ span.dropcap {
   font-size: 4rem;
   line-height: 0.65;
   font-family: $din;
+  font-variant-ligatures: none;
   font-weight: bold;
   margin: 0.225rem .5rem -.5rem 0;;
   text-transform: uppercase;
@@ -123,6 +128,7 @@ span.dropcap {
 
 h1 {
   font-family: $din;
+  font-variant-ligatures: none;
   font-size: 1.9rem;
   font-weight: bold;
   line-height: 1.1em;
@@ -158,6 +164,7 @@ h4,
 h5,
 h6 {
   font-family: $din;
+  font-variant-ligatures: none;
   margin: 0 auto;
   max-width: $paragraph-width;
   font-weight: 200;

@@ -43,6 +43,7 @@
 
     span.elex-tag{
       font-family: $din;
+      font-variant-ligatures: none;
       font-size: 1.2rem;
       padding: 11px 0 0 2px;
       float:left;
@@ -83,6 +84,7 @@
       li > a {
         display: block;
         font-family: $din;
+        font-variant-ligatures: none;
         font-weight: 700;
         line-height: 45px;
         min-width: 2.5em;
