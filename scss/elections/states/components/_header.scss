@@ -8,6 +8,7 @@ h1{
 
 p.time{
   font-family: $din;
+  font-variant-ligatures: none;
   margin: 5px auto;
 
   .live{

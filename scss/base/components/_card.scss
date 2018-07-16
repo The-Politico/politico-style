@@ -73,6 +73,7 @@
     font-size: 1.05rem;
     line-height: 1.5em;
     font-family: $din;
+    font-variant-ligatures: none;
 
     &:first-of-type{
       margin-top: .1rem;

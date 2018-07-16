@@ -9,6 +9,7 @@
   p {
     text-transform: uppercase;
     font-family: $din;
+    font-variant-ligatures: none;
     font-size: 12px;
     color: $politico-medium-gray;
     margin: 5px auto 0;
