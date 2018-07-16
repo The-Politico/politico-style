@@ -5988,7 +5988,7 @@ figcaption {
   text-align: left; }
 
 .diptych {
-  margin: 2em 0;
+  margin: 10px 0;
   width: 100%; }
 
 .diptych figure {
@@ -6003,6 +6003,9 @@ figcaption {
 
 .diptych figure:last-of-type {
   margin-right: 0; }
+
+.triptych {
+  margin-top: 10px; }
 
 .triptych figure {
   float: left;

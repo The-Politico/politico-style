@@ -40,7 +40,7 @@ figcaption {
 //Photo sets
 //2
 .diptych {
-  margin: 2em 0;
+  margin: 10px 0;
   width: 100%;
 }
 
@@ -59,6 +59,10 @@ figcaption {
 }
 
 //3
+
+.triptych{
+  margin-top: 10px;
+}
 .triptych figure {
   float: left;
   margin: 0 1% 0 0;
