@@ -10,6 +10,7 @@
     <!--Typekit-->
     <link rel="stylesheet" href="https://use.typekit.net/ogn0czn.css">
     <script>try{Typekit.load({ async: true });}catch(e){}</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js"></script>
     <!-- end -->
   </head>
   <body>
@@ -746,17 +747,23 @@
 
         </section>
         <section class="border-bottom">
-          <a name="base-colors"></a>
+          <script src="//cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.4.0/clipboard.min.js"></script>
+
+<a name="base-colors"></a>
 <section>
 <h3 class="mb1">Base Colors</h3>
-<p>Our stadard typekit has one font, Din 2014. This typekit is included by default in your generator.</p>
-<section class=" mt1 content-fit"><pre><code class="language-markup"><script type="prism-html-markup"><link rel="stylesheet" href="https://use.typekit.net/dsx2uhv.css">
-</script></code></pre>
+<input id="Lily" value="Lily">
+<button class="button" id="copy-button" data-clipboard-target="#Lily">Lily</button>
 
-</section>
+<input id="Jon" value="Jon">
+<button class="button" id="copy-button" data-clipboard-target="#Jon">Jon</button>
 
 
-</section>
+<script>
+(function(){
+    new Clipboard('#copy-button');
+})();
+</script>
 
         </section>
         <section class="border-bottom">

@@ -5382,16 +5382,19 @@ span.bolder, .bolder.sans, .bolder.serif, .bolder.georgia, .bolder.graphic-text,
   font-weight: 900 !important; }
 
 .sans {
-  font-family: "din-2014", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  font-family: "din-2014", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-variant-ligatures: none; }
 
 .serif, .georgia {
   font-family: Georgia, Times, "Times New Roman", serif; }
 
 .graphic-text {
-  font-family: "din-2014", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  font-family: "din-2014", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-variant-ligatures: none; }
 
 .headline {
-  font-family: "din-2014", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  font-family: "din-2014", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-variant-ligatures: none; }
 
 .uppercase, .yell {
   text-transform: uppercase; }
@@ -5424,7 +5427,8 @@ p {
       p.small {
         font-size: .85em; } }
   p.sans {
-    font-family: "din-2014", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+    font-family: "din-2014", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-variant-ligatures: none; }
     p.sans.small {
       font-size: 1rem; }
       @media (max-width: 576px) {
@@ -5436,6 +5440,7 @@ span.dropcap {
   font-size: 4rem;
   line-height: 0.65;
   font-family: "din-2014", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-variant-ligatures: none;
   font-weight: bold;
   margin: 0.225rem .5rem -.5rem 0;
   text-transform: uppercase; }
@@ -5445,6 +5450,7 @@ span.dropcap {
 
 h1 {
   font-family: "din-2014", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-variant-ligatures: none;
   font-size: 1.9rem;
   font-weight: bold;
   line-height: 1.1em;
@@ -5474,6 +5480,7 @@ h4,
 h5,
 h6 {
   font-family: "din-2014", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-variant-ligatures: none;
   margin: 0 auto;
   max-width: 575px;
   font-weight: 200; }
@@ -5657,7 +5664,8 @@ ul.border li {
   .card p {
     font-size: 1.05rem;
     line-height: 1.5em;
-    font-family: "din-2014", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+    font-family: "din-2014", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-variant-ligatures: none; }
     .card p:first-of-type {
       margin-top: .1rem; }
     .card p:last-of-type {
@@ -5665,6 +5673,7 @@ ul.border li {
 
 .key {
   font-family: "din-2014", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-variant-ligatures: none;
   font-size: .8rem;
   padding-right: 3px;
   margin: 10px auto;
@@ -5711,6 +5720,7 @@ h4.refer-toss {
     text-align: left; }
   .refer h4 {
     font-family: "din-2014", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-variant-ligatures: none;
     font-size: 1.25rem;
     line-height: 1;
     margin-bottom: 0;
@@ -5818,6 +5828,7 @@ nav.global {
       display: -ms-flexbox;
       display: flex;
       font-family: "din-2014", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-variant-ligatures: none;
       margin-top: 10px;
       font-weight: 700;
       font-size: .75rem;
@@ -5848,6 +5859,7 @@ header {
   header p.category a {
     color: #dc0228;
     font-family: "din-2014", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-variant-ligatures: none;
     font-size: 1em;
     font-weight: bold;
     margin-bottom: 0;
@@ -5855,6 +5867,7 @@ header {
   header .subhead {
     max-width: 750px;
     font-family: "din-2014", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-variant-ligatures: none;
     font-size: 1.2rem;
     font-weight: normal;
     line-height: 1.2;
@@ -5867,6 +5880,7 @@ header {
     max-width: 750px;
     color: #666;
     font-family: "din-2014", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-variant-ligatures: none;
     line-height: 1.27rem;
     margin: .80rem auto 1rem;
     font-size: 1em; }
@@ -5895,6 +5909,7 @@ footer {
   padding: 3rem 5rem 1.5rem;
   position: relative;
   font-family: "din-2014", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-variant-ligatures: none;
   font-size: .75rem;
   text-align: left;
   padding: 1rem; }
@@ -5910,6 +5925,7 @@ footer {
     text-align: right; }
   footer p {
     font-family: "din-2014", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-variant-ligatures: none;
     font-size: .75rem;
     text-align: right;
     color: rgba(255, 255, 255, 0.8); }
@@ -5982,6 +5998,7 @@ figure {
 figcaption {
   color: #6E7381;
   font-family: "din-2014", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-variant-ligatures: none;
   font-size: .84em;
   line-height: 1.2em;
   padding: 5px;
@@ -6027,6 +6044,7 @@ figcaption {
 
 .btn {
   font-family: "din-2014", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-variant-ligatures: none;
   margin: 5px 5px 0 0; }
 
 .button-group {
@@ -6107,6 +6125,7 @@ figcaption {
   .content-group.ad p {
     text-transform: uppercase;
     font-family: "din-2014", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-variant-ligatures: none;
     font-size: 12px;
     color: #6E7381;
     margin: 5px auto 0; }
@@ -6151,6 +6170,7 @@ div.share {
 
 table {
   font-family: "din-2014", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-variant-ligatures: none;
   font-size: .95rem; }
   table th {
     -webkit-font-smoothing: antialiased; }
@@ -6162,6 +6182,7 @@ section.credits p {
   border-top: 1px solid #E5E7EB;
   color: #666;
   font-family: "din-2014", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-variant-ligatures: none;
   font-size: .9em;
   margin-top: 3em;
   padding-top: 1em;
@@ -6181,4 +6202,5 @@ p.correction {
   border-radius: 4px;
   line-height: 1.3em;
   font-family: "din-2014", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-variant-ligatures: none;
   margin: .8em auto 2em; }

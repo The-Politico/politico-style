@@ -36,6 +36,7 @@ footer {
   padding: 3rem 5rem 1.5rem;
   position: relative;
   font-family: "din-2014", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-variant-ligatures: none;
   font-size: .75rem;
   text-align: left;
   padding: 1rem; }
@@ -51,6 +52,7 @@ footer {
     text-align: right; }
   footer p {
     font-family: "din-2014", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-variant-ligatures: none;
     font-size: .75rem;
     text-align: right;
     color: rgba(255, 255, 255, 0.8); }
@@ -302,10 +304,12 @@ a {
   margin-right: auto; }
 
 tbody {
-  font-family: "din-2014", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  font-family: "din-2014", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-variant-ligatures: none; }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "din-2014", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-variant-ligatures: none;
   text-align: center; }
 
 h1 {
@@ -406,6 +410,7 @@ h5 + h1 {
     display: inline-block; }
   #global-header #global-branding span.elex-tag {
     font-family: "din-2014", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-variant-ligatures: none;
     font-size: 1.2rem;
     padding: 11px 0 0 2px;
     float: left;
@@ -437,6 +442,7 @@ h5 + h1 {
     #global-header #nav-micro ul li > a {
       display: block;
       font-family: "din-2014", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-variant-ligatures: none;
       font-weight: 700;
       line-height: 45px;
       min-width: 2.5em;
@@ -453,6 +459,7 @@ header.center {
     line-height: 1; }
   header.center p.time {
     font-family: "din-2014", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-variant-ligatures: none;
     margin: 5px auto; }
     header.center p.time .live {
       font-weight: bold;
@@ -466,7 +473,8 @@ header.center {
   .jumpto p {
     font-size: .8rem;
     text-align: center;
-    font-family: "din-2014", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+    font-family: "din-2014", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-variant-ligatures: none; }
   .jumpto a {
     text-decoration: underline;
     margin: 0 5px; }
@@ -558,6 +566,7 @@ section.results-list {
   padding-right: 15px;
   padding-bottom: 5px;
   font-family: "din-2014", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-variant-ligatures: none;
   font-weight: normal;
   font-size: .7rem;
   text-align: left; }
@@ -574,6 +583,7 @@ td {
 
 .key {
   font-family: "din-2014", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-variant-ligatures: none;
   font-size: .8rem;
   padding-right: 3px;
   margin: 10px auto;
@@ -637,6 +647,7 @@ td {
     -webkit-margin-after: 0;
     -webkit-padding-start: 0;
     font-family: "din-2014", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-variant-ligatures: none;
     float: left;
     width: 20%; }
     @media (max-width: 768px) {
