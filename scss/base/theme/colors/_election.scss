@@ -1,4 +1,51 @@
 //election-colors
-$dem: #2b6abd;
-$gop: #fd5639;
+$dem: #3571C0;
+$dem-light:#9AD3FC;
+$gop: #FE5C40;
+$gop-light: #FFB2CB;
+
+///----DEM----///
+$dem1: $dem;
+$dem2: #D9C3A5;
+$dem3: #8998AB;
+$dem4: $dem-light;
+
+//More Dem colors
+$dem5: #C3F4CD;
+$dem6: #5DAED4;
+$dem7: #8ABDC0;
+$dem8: #775180;
+$dem9: #FFD682;
+$dem10:#948064;
+
+
+///----GOP----///
+$gop1: $gop;
+$gop2: #B8948E;
+$gop3: #FBA723;
+$gop4: $gop-light;
+
+//More GOP colors
+$gop5: #B41E61;
+$gop6: #433E76;
+$gop7: #AC5141;
+$gop8: #7957B4;
+$gop9: #FEE0C2;
+$gop10: #FD87F7;
+
+
+///----DEM to GOP ramp----///
+//dem standard
+$demgop2: #7392d0;
+$demgop3: #a4b5e0;
+$demgop4: #d2d9f0;
+//white
+$gopdem4: #ffd8cd;
+$gopdem3: #ffb19c;
+$gopdem2: #ff896d;
+//gop standard
+
+
+
+
 $teal: #6BD1BB;
