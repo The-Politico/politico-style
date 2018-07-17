@@ -1,44 +1,21 @@
-// Brand colors
-$politico-red: #dc0228;
-$politico-dark-red: #b70000;
-$politico-very-dark-red: #ac001e;
-$politico-light-background: #f4f5f7;
-$politico-line: #E5E7EB;
-$politico-light-gray: #B1B4BD;
-$politico-medium-gray: #6E7381;
-$politico-dark-gray: #282D40;
-$politico-magazine-background: #121522;
-$politico-blue: #007BC7;
-$politico-alt-black: #121212;
-
-.fill-politico-red{
-  color: $politico-red;
-}
-
-
-
 // Monochromes
 $transparent: transparent;
 $black: #000000;
-$alt-black: $politico-magazine-background;
 $satan: #666;
 $white: #ffffff;
-$gray: #dddddd;
+$gray: $politico-light-gray-type;
 $light-gray: $politico-line;
-$gray: $politico-light-gray;
-$dark-gray: $politico-dark-gray;
-$very-dark-gray: $politico-magazine-background;
-
+$very-dark-gray: $politico-dark-gray-type;
 
 // Element colors
 $facebook: #3b5998;
 $twitter: #00aced;
-$mail: #a9a9a9;
+$mail: $politico-light-gray-type;;
 $link: $politico-blue;
 $link-hover: #0e9af3;
-$button: #7aaaf4;
+$button: $politico-line;
+$annotation: #fff1df;
+$annotation-hover: #fff9f1;
 $highlighter-yellow: #fffab7;
 $highlighter-orange: #f9d289;
-$dem: #2b6abd;
-$gop: #fd5639;
-$teal: #6BD1BB;
+$midnight: #312b41;
