@@ -1,9 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Nanum+Gothic+Coding|Raleway");
 @import url("https://use.typekit.net/dsx2uhv.css");
 @import url("https://www.politico.com/interactives/cdn/fonts/battletoads/icons/politico-battletoads-icons.min.css");
-.fill-politico-red {
-  color: #dc0228; }
-
 /*!
  * Bootstrap v4.0.0 (https://getbootstrap.com)
  * Copyright 2011-2018 The Bootstrap Authors
@@ -1931,7 +1928,7 @@ a.text-dark:hover, a.text-dark:focus {
   --orange: #fd7e14;
   --yellow: #ffc107;
   --green: #28a745;
-  --teal: #6BD1BB;
+  --teal: #20c997;
   --cyan: #17a2b8;
   --white: #ffffff;
   --gray: #6c757d;
@@ -5142,12 +5139,12 @@ h2 {
     font-weight: 200; }
 
 .bt-icon--politico {
-  color: #dc0228; }
+  color: #DC0228; }
 
 button {
   cursor: pointer;
   background-color: white;
-  border: 1px solid #B1B4BD;
+  border: 1px solid #E5E7EB;
   border-radius: 5px;
   color: #6E7381;
   transition: all .2s; }
@@ -5182,4 +5179,4 @@ header {
   background-color: white;
   border-bottom: 1px solid #E5E7EB; }
   header b {
-    color: #dc0228; }
+    color: #DC0228; }

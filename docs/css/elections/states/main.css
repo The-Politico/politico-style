@@ -1,6 +1,3 @@
-.fill-politico-red {
-  color: #dc0228; }
-
 div.share {
   text-align: center;
   margin: 20px auto; }
@@ -26,7 +23,7 @@ div.share {
     div.share a.bt-icon--twitter {
       background-color: #00aced; }
     div.share a.bt-icon--mail {
-      background-color: #282D40; }
+      background-color: #666; }
     div.share a:hover {
       text-decoration: none; }
 
@@ -392,7 +389,7 @@ h5 + h1 {
   font-size: 16px;
   line-height: 46px;
   margin-left: .7em;
-  color: #dc0228; }
+  color: #DC0228; }
   @media (max-width: 600px) {
     #global-header .icon-politico {
       font-size: 12px; } }
@@ -463,10 +460,10 @@ header.center {
     margin: 5px auto; }
     header.center p.time .live {
       font-weight: bold;
-      color: #dc0228;
+      color: #DC0228;
       font-size: 1.1rem; }
     header.center p.time .timestamp {
-      color: #dc0228; }
+      color: #DC0228; }
 
 .jumpto {
   margin: 0 auto; }
