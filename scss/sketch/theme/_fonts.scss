@@ -3,6 +3,8 @@
 @import url('https://www.politico.com/interactives/cdn/fonts/battletoads/icons/politico-battletoads-icons.min.css');
 
 $monospace: 'Nanum Gothic Coding', monospace;
-$sans: 'din-2014', 'Raleway', sans-serif;
-$serif: Georgia, Times, 'Times New Roman', serif;
-$header: 'din-2014', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+
+h1{
+  font-weight: 100;
+}

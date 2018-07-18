@@ -1,3 +1,13 @@
+
+@import '../base/theme/breakpoints.scss';
+@import '../base/components/mixins.scss';
+@import '../base/components/layout.scss';
+@import '../base/theme/colors/base.scss';
+@import '../base/theme/colors/brand.scss';
+@import '../base/theme/fonts.scss';
+@import '../base/components/typography.scss';
+
+
 @import 'theme/colors';
 @import 'theme/fonts';
 @import 'theme/bootstrap';
@@ -6,4 +16,4 @@
 @import 'theme/sections';
 
 @import 'components/base';
-@import 'components/header';
+// @import 'components/header';

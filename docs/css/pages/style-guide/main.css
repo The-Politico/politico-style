@@ -6105,7 +6105,7 @@ figcaption {
 .btn {
   font-size: 17px;
   line-height: 1em;
-  border: 1px solid #E5E7EB;
+  border: 1px solid #6E7381;
   color: #000000;
   padding: 8px 10px;
   -webkit-border-radius: 5px;
@@ -6114,9 +6114,9 @@ figcaption {
   border-radius: 5px; }
   .btn:hover, .btn:focus {
     color: #ffffff;
-    background-color: #E5E7EB; }
+    background-color: #6E7381; }
   .btn:active, .btn.active {
-    border: 1px solid #E5E7EB;
+    border: 1px solid #6E7381;
     box-shadow: none; }
 
 .button-group.secondary .btn {

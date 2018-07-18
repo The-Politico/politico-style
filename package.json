@@ -1,6 +1,6 @@
 {
   "name": "politico-style",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Web fashions by Politico Interactives.",
   "main": "index.js",
   "repository": "git@github.com:The-Politico/politico-style.git",
@@ -26,6 +26,7 @@
     "bootstrap": "^4.0.0",
     "bootstrap-sass": "^3.3.7",
     "clipboard": "^2.0.1",
+    "npm": "^6.2.0",
     "open": "^0.0.5"
   },
   "devDependencies": {
