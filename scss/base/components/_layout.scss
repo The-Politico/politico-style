@@ -44,6 +44,13 @@ $paragraph-width: 575px;
   @include margin-auto;
 }
 
+.m0{
+  margin:0 !important;
+}
+.p0{
+  padding: 0 !important;
+}
+
 //Uniform spacing
 $spacing: 6;
 
