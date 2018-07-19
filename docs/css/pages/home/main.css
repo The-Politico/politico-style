@@ -1,6 +1,12 @@
 @import url("https://use.typekit.net/dsx2uhv.css");
 @import url("https://www.politico.com/interactives/cdn/fonts/battletoads/icons/politico-battletoads-icons.min.css");
 @import url("https://fonts.googleapis.com/css?family=IBM+Plex+Sans:700i");
+.courier {
+  font-family: "courier new"; }
+
+.fancy-serif {
+  font-family: "IBM Plex Sans", sans-serif; }
+
 /*!
  * Bootstrap v4.0.0 (https://getbootstrap.com)
  * Copyright 2011-2018 The Bootstrap Authors

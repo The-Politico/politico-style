@@ -8,3 +8,10 @@ $din: $sans;
 $serif: Georgia, Times, 'Times New Roman', serif;
 $header: 'din-2014', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 $fancy-serif: 'IBM Plex Sans', sans-serif;
+
+.courier{
+  font-family: "courier new";
+}
+.fancy-serif{
+  font-family: $fancy-serif;
+}
