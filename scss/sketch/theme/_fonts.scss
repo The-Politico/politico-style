@@ -1,8 +1,10 @@
-@import url('https://fonts.googleapis.com/css?family=Nanum+Gothic+Coding|Raleway');
 @import url('https://use.typekit.net/dsx2uhv.css');
 @import url('https://www.politico.com/interactives/cdn/fonts/battletoads/icons/politico-battletoads-icons.min.css');
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans:700i');
 
-$monospace: 'Nanum Gothic Coding', monospace;
+
 $sans: 'din-2014', 'Raleway', sans-serif;
+$din: $sans;
 $serif: Georgia, Times, 'Times New Roman', serif;
 $header: 'din-2014', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$fancy-serif: 'IBM Plex Sans', sans-serif;
