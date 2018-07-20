@@ -5479,6 +5479,252 @@ button.close {
     .navbar-dark .navbar-text a:hover, .navbar-dark .navbar-text a:focus {
       color: #ffffff; }
 
+section {
+  margin: 2.5rem 0; }
+
+.content-small {
+  max-width: 400px; }
+
+.content-fit {
+  max-width: 575px; }
+
+.content-large {
+  max-width: 800px; }
+
+.content-extra-large {
+  max-width: 1200px; }
+
+.content-full-width {
+  width: 100%; }
+
+.content-small,
+.content-fit,
+.content-large,
+.content-extra-large,
+.content-full-width {
+  margin-left: auto;
+  margin-right: auto; }
+
+.margin-auto {
+  margin-left: auto;
+  margin-right: auto; }
+
+.m0 {
+  margin: 0 !important; }
+
+.p0 {
+  padding: 0 !important; }
+
+.m0 {
+  margin: 0rem; }
+
+.m1 {
+  margin: 0.5rem; }
+
+.m2 {
+  margin: 1rem; }
+
+.m3 {
+  margin: 1.5rem; }
+
+.m4 {
+  margin: 2rem; }
+
+.m5 {
+  margin: 2.5rem; }
+
+.m6 {
+  margin: 3rem; }
+
+.mt0 {
+  margin-top: 0rem; }
+
+.mt1 {
+  margin-top: 0.5rem; }
+
+.mt2 {
+  margin-top: 1rem; }
+
+.mt3 {
+  margin-top: 1.5rem; }
+
+.mt4 {
+  margin-top: 2rem; }
+
+.mt5 {
+  margin-top: 2.5rem; }
+
+.mt6 {
+  margin-top: 3rem; }
+
+.mb0 {
+  margin-bottom: 0rem; }
+
+.mb1 {
+  margin-bottom: 0.5rem; }
+
+.mb2 {
+  margin-bottom: 1rem; }
+
+.mb3 {
+  margin-bottom: 1.5rem; }
+
+.mb4 {
+  margin-bottom: 2rem; }
+
+.mb5 {
+  margin-bottom: 2.5rem; }
+
+.mb6 {
+  margin-bottom: 3rem; }
+
+.ml0 {
+  margin-left: 0rem; }
+
+.ml1 {
+  margin-left: 0.5rem; }
+
+.ml2 {
+  margin-left: 1rem; }
+
+.ml3 {
+  margin-left: 1.5rem; }
+
+.ml4 {
+  margin-left: 2rem; }
+
+.ml5 {
+  margin-left: 2.5rem; }
+
+.ml6 {
+  margin-left: 3rem; }
+
+.mr0 {
+  margin-right: 0rem; }
+
+.mr1 {
+  margin-right: 0.5rem; }
+
+.mr2 {
+  margin-right: 1rem; }
+
+.mr3 {
+  margin-right: 1.5rem; }
+
+.mr4 {
+  margin-right: 2rem; }
+
+.mr5 {
+  margin-right: 2.5rem; }
+
+.mr6 {
+  margin-right: 3rem; }
+
+.p0 {
+  padding: 0rem; }
+
+.p1 {
+  padding: 0.5rem; }
+
+.p2 {
+  padding: 1rem; }
+
+.p3 {
+  padding: 1.5rem; }
+
+.p4 {
+  padding: 2rem; }
+
+.p5 {
+  padding: 2.5rem; }
+
+.p6 {
+  padding: 3rem; }
+
+.pt0 {
+  padding-top: 0rem; }
+
+.pt1 {
+  padding-top: 0.5rem; }
+
+.pt2 {
+  padding-top: 1rem; }
+
+.pt3 {
+  padding-top: 1.5rem; }
+
+.pt4 {
+  padding-top: 2rem; }
+
+.pt5 {
+  padding-top: 2.5rem; }
+
+.pt6 {
+  padding-top: 3rem; }
+
+.pb0 {
+  padding-bottom: 0rem; }
+
+.pb1 {
+  padding-bottom: 0.5rem; }
+
+.pb2 {
+  padding-bottom: 1rem; }
+
+.pb3 {
+  padding-bottom: 1.5rem; }
+
+.pb4 {
+  padding-bottom: 2rem; }
+
+.pb5 {
+  padding-bottom: 2.5rem; }
+
+.pb6 {
+  padding-bottom: 3rem; }
+
+.pl0 {
+  padding-left: 0rem; }
+
+.pl1 {
+  padding-left: 0.5rem; }
+
+.pl2 {
+  padding-left: 1rem; }
+
+.pl3 {
+  padding-left: 1.5rem; }
+
+.pl4 {
+  padding-left: 2rem; }
+
+.pl5 {
+  padding-left: 2.5rem; }
+
+.pl6 {
+  padding-left: 3rem; }
+
+.pr0 {
+  margin-right: 0rem; }
+
+.pr1 {
+  margin-right: 0.5rem; }
+
+.pr2 {
+  margin-right: 1rem; }
+
+.pr3 {
+  margin-right: 1.5rem; }
+
+.pr4 {
+  margin-right: 2rem; }
+
+.pr5 {
+  margin-right: 2.5rem; }
+
+.pr6 {
+  margin-right: 3rem; }
+
 body {
   font-family: "din-2014", "Raleway", sans-serif; }
 
@@ -5498,6 +5744,195 @@ h2 {
 
 .bt-icon--politico {
   color: #DC0228; }
+
+span.lighter, .lighter.sans, .lighter.serif, .lighter.georgia, .lighter.graphic-text, .lighter.headline, h2.lighter, h3.lighter, h4.lighter, h5.lighter, h6.lighter {
+  font-weight: 200 !important; }
+
+span.light, .light.sans, .light.serif, .light.georgia, .light.graphic-text, .light.headline, h2.light, h3.light, h4.light, h5.light, h6.light {
+  font-weight: 300 !important; }
+
+span.normal, .normal.sans, .normal.serif, .normal.georgia, .normal.graphic-text, .normal.headline, h2.normal, h3.normal, h4.normal, h5.normal, h6.normal {
+  font-weight: 500 !important; }
+
+span.bold, .bold.sans, .bold.serif, .bold.georgia, .bold.graphic-text, .bold.headline, h2.bold, h3.bold, h4.bold, h5.bold, h6.bold {
+  font-weight: 700 !important; }
+
+span.bolder, .bolder.sans, .bolder.serif, .bolder.georgia, .bolder.graphic-text, .bolder.headline, h2.bolder, h3.bolder, h4.bolder, h5.bolder, h6.bolder {
+  font-weight: 900 !important; }
+
+.sans {
+  font-family: "din-2014", "Raleway", sans-serif;
+  font-variant-ligatures: none; }
+
+.serif, .georgia {
+  font-family: Georgia, Times, "Times New Roman", serif; }
+
+.graphic-text {
+  font-family: "din-2014", "Raleway", sans-serif;
+  font-variant-ligatures: none; }
+
+.headline {
+  font-family: "din-2014", "Raleway", sans-serif;
+  font-variant-ligatures: none; }
+
+.uppercase, .yell {
+  text-transform: uppercase; }
+
+.italic {
+  font-style: italic; }
+
+.underline {
+  text-decoration: underline; }
+
+p {
+  font-family: Georgia, Times, "Times New Roman", serif;
+  font-size: 1rem;
+  line-height: 1.618;
+  margin: 1rem auto;
+  max-width: 575px;
+  overflow-wrap: break-word; }
+  @media (min-width: 768px) {
+    p {
+      font-size: 1.18rem;
+      margin-top: 0; } }
+  p.small {
+    font-size: 1.02rem; }
+    @media (max-width: 576px) {
+      p.small {
+        font-size: .85em; } }
+  p.sans {
+    font-family: "din-2014", "Raleway", sans-serif;
+    font-variant-ligatures: none; }
+    p.sans.small {
+      font-size: 1rem; }
+      @media (max-width: 576px) {
+        p.sans.small {
+          font-size: .85em; } }
+
+h1 {
+  font-variant-ligatures: none;
+  font-size: 1.9rem;
+  line-height: 1.1em;
+  margin: 0 auto;
+  padding: 5px 0 8px;
+  max-width: 900px;
+  font-weight: 100; }
+  @media (min-width: 350px) {
+    h1 {
+      font-size: 1.9rem; } }
+  @media (min-width: 576px) {
+    h1 {
+      font-size: 2.25rem;
+      margin-top: 0; } }
+  @media (min-width: 768px) {
+    h1 {
+      font-size: 2.55rem;
+      margin-top: 0; } }
+  @media (min-width: 992px) {
+    h1 {
+      font-size: 2.85rem;
+      margin: 5px 0 8px;
+      padding: 0; } }
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "din-2014", "Raleway", sans-serif;
+  font-variant-ligatures: none;
+  margin: 0 auto;
+  max-width: 575px;
+  font-weight: 200; }
+  h2 + p,
+  h3 + p,
+  h4 + p,
+  h5 + p,
+  h6 + p {
+    margin-top: .35rem; }
+
+h2 {
+  font-size: 1.45rem;
+  line-height: 1.2;
+  font-weight: 300; }
+  @media (min-width: 576px) {
+    h2 {
+      font-size: 1.6rem; } }
+
+h3 {
+  font-size: 1.25rem;
+  line-height: 1.2;
+  font-weight: 700;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+  @media (min-width: 576px) {
+    h3 {
+      font-size: 1.4rem; } }
+
+h4 {
+  font-size: 1.25rem;
+  line-height: 1.1;
+  font-weight: 200; }
+  @media (min-width: 576px) {
+    h4 {
+      font-size: 1.1rem; } }
+
+span.label {
+  display: block;
+  margin: 0 auto;
+  width: auto; }
+
+h5 {
+  font-size: 0.75rem;
+  line-height: 1.3;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 3.5px;
+  color: #666;
+  margin-bottom: .25rem; }
+  h5.light {
+    font-weight: 200; }
+  @media (min-width: 576px) {
+    h5 {
+      font-size: 0.8; } }
+  h5.tag {
+    margin: 10px 0;
+    background-color: #222;
+    color: #fff;
+    padding: 5px 10px 4px;
+    display: inline-block;
+    line-height: 1.2; }
+    h5.tag.outline {
+      background-color: #fff;
+      color: #000;
+      display: inline-block;
+      border: solid 1px black; }
+
+h6 {
+  font-size: .9rem;
+  line-height: 1.3;
+  font-weight: 500;
+  letter-spacing: .25px; }
+
+h2 + h3 {
+  margin-top: 10px; }
+
+p + h2 {
+  padding-top: .5rem; }
+
+p + h3 {
+  padding-top: .5rem; }
+
+p + h4 {
+  padding-top: .5rem; }
+
+.bt-icon {
+  -webkit-font-smoothing: antialiased; }
+
+.icon-text {
+  position: absolute;
+  left: -999em;
+  top: -999em; }
 
 button {
   cursor: pointer;
@@ -5527,7 +5962,39 @@ section {
   margin-bottom: 2rem; }
   .form-group label {
     margin-bottom: 0;
-    font-size: 10px; }
+    font-size: 1rempx; }
+  .form-group .form-control {
+    font-family: Georgia, Times, "Times New Roman", serif;
+    font-size: 1.1rem; }
+
+ol.instructions {
+  list-style-type: none;
+  margin: 0;
+  margin-left: 3em;
+  padding: 0;
+  counter-reset: li-counter; }
+
+ol.instructions > li {
+  position: relative;
+  margin-bottom: 20px;
+  padding: 1em;
+  border-left: 2px solid #CCCCCC;
+  background-color: #f2f2f2; }
+
+ol.instructions > li:before {
+  position: absolute;
+  top: 0;
+  left: -1.5em;
+  width: 1em;
+  font-size: 2em;
+  line-height: 1;
+  font-weight: 100;
+  text-align: right;
+  color: #464646;
+  z-index: -99;
+  overflow: hidden;
+  content: counter(li-counter);
+  counter-increment: li-counter; }
 
 body {
   background-color: #fafafb; }
@@ -5562,12 +6029,7 @@ nav.global {
     padding: .25rem .5rem; }
 
 header {
-  font-size: 16px;
-  padding: 10px 20px 5px;
-  background-color: white;
-  border-bottom: 1px solid #E5E7EB; }
-  header b {
-    color: #DC0228; }
+  padding: 2rem 0 1.5rem; }
 
 .breadcrumb {
   font-family: "din-2014", "Raleway", sans-serif;

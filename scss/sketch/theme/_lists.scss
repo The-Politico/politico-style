@@ -1,0 +1,66 @@
+ol.instructions {
+    list-style-type: none;
+    margin: 0;
+    margin-left: 3em;
+    padding: 0;
+    counter-reset: li-counter;
+}
+ol.instructions > li{
+    position: relative;
+    margin-bottom: 20px;
+    padding: 1em;
+    border-left: 2px solid #CCCCCC;
+    background-color: #f2f2f2;
+}
+ol.instructions > li:before {
+    position: absolute;
+    top: 0;
+    left: -1.5em;
+    width: 1em;
+
+    font-size: 2em;
+    line-height: 1;
+    font-weight: 100;
+    text-align: right;
+    color: #464646;
+
+    z-index: -99;
+    overflow: hidden;
+
+    content: counter(li-counter);
+    counter-increment: li-counter;
+}
+//
+// .instructions {
+//   margin: 0;
+//   padding: 0;
+//   list-style-type: none;
+// }
+//
+// .instructions li {
+//   counter-increment: step-counter;
+//   margin-bottom: 20px;
+//   font-family: $georgia;
+//   font-size: 1.2rem;
+//   font-weight: 200;
+//
+// }
+//
+// .instructions li::before {
+//   content: counter(step-counter);
+//   margin-right: 5px;
+//   background-color: $white;
+//   font-weight: bold;
+//   padding: 6px 12px;
+//   border-radius: 100px;
+//   border: 1px solid $politico-medium-gray;
+//   line-height: 1;
+//   font-size: 1.4rem;
+//   font-family: $din;
+//   font-weight: 100;
+//   display: block;
+//   width: 37px;
+//   margin: 10px auto 5px;
+//   float: left;
+//
+// }

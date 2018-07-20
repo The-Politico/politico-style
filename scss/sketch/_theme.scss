@@ -1,16 +1,22 @@
 @import 'theme/colors';
 @import 'theme/fonts';
 @import 'theme/bootstrap';
+@import '../base/theme/breakpoints';
+@import '../base/components/mixins';
+@import '../base/components/layout';
 @import 'theme/typography';
 @import 'theme/buttons';
 @import 'theme/sections';
 @import 'theme/forms';
+@import 'theme/lists';
 
 @import 'components/base';
 @import 'components/global-nav';
 @import 'components/header';
 @import 'components/breadcrumb';
 @import 'components/footer';
+
+
 
 
 article{ max-width: 650px;}
