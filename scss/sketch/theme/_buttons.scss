@@ -6,6 +6,16 @@ button{
   color: $politico-medium-gray;
   transition: all .2s;
 
+  &.btn.btn-outline-light{
+     border: white 1px solid;
+  }
+
+  &.btn.btn-light{
+     border: white 1px solid;
+  }
+
+  body > article > section:nth-child(4) > button.btn.btn-outline-light
+
   &:hover{
     box-shadow: $boxshadow-medium;
 

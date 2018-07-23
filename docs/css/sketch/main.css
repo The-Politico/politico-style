@@ -5953,7 +5953,11 @@ button {
   border-radius: 5px;
   color: #6E7381;
   transition: all .2s; }
-  button:hover {
+  button.btn.btn-outline-light {
+    border: white 1px solid; }
+  button.btn.btn-light {
+    border: white 1px solid; }
+  body > article > section:nth-child(4) > button.btn.btn-outline-light button:hover {
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); }
   button.btn-super {
     padding: 15px 30px;
