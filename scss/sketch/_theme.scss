@@ -9,6 +9,7 @@
 @import 'theme/sections';
 @import 'theme/forms';
 @import 'theme/lists';
+@import 'theme/search';
 
 @import 'components/base';
 @import 'components/global-nav';
@@ -18,5 +19,4 @@
 
 
 
-
-article{ max-width: 650px;}
+article.container{ max-width: 650px;}

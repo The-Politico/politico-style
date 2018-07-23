@@ -9,23 +9,30 @@
 
     {% include "sketch/partials/nav-global.html" %}
 
-    <article>
+    <article class="container">
       <header>
         <h5 class="text-center">Welcome to</h5>
-        <h1 class="courier">[Fake News APP]</h1>
+        <h1>Fake News APP</h1>
       </header>
 
+      <div class="row justify-content-between content-fit search">
+        <div class="offset-sm-1 col-sm-9">
+          <input class="form-control" type="search" placeholder="Start with a suggestion" aria-label="Search">
+        </div>
+        <div class="col-sm-2">
+          <button class="btn btn-outline-success " type="submit"><b class="bt-icon bt-icon--search"></b></button>
+        </div>
+      </div>
+
+
       <section>
+        <h2>Instructions</h2>
         <ol class="instructions">
           <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</li>
           <li>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</li>
           <li>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi.</li>
-        </ol
+        </ol>
       </section>
-
-      <p>
-        A theme for first drafts.
-      </p>
 
       <section>
         {% include "sketch/partials/forms.html" %}

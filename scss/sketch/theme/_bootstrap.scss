@@ -1,3 +1,13 @@
 @import '../../base/theme/bootstrap';
 @import "~bootstrap/scss/nav";
 @import "~bootstrap/scss/navbar";
+// @import "~bootstrap/scss/utilities";
+
+
+.row {
+    margin: 1rem 0;
+}
+
+.row + .row {
+    margin-top: 1rem;
+}

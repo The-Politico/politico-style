@@ -1,9 +1,12 @@
 .form-group{
-  margin-bottom: 2rem;
+
 
   label{
-    margin-bottom: 0;
-    font-size: 1rempx;
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
 
   .form-control{

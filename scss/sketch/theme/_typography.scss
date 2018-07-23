@@ -3,13 +3,15 @@ body{
 }
 
 h1,h2,h3,h4,h5,h6{
-  font-family: $header;
+  font-family: $fancy-serif;
   font-weight: 200;
 }
 
+h1{
+  text-align: center;
+}
 h1,
 h2 {
-    text-align: center;
     font-weight: normal;
     &.gray{
       color: $politico-medium-gray;
@@ -164,7 +166,7 @@ h6 {
   font-family: $din;
   font-variant-ligatures: none;
   margin: 0 auto;
-  max-width: $paragraph-width;
+  // max-width: $paragraph-width;
   font-weight: 200;
 
   + p {
@@ -284,4 +286,14 @@ p + h4{padding-top:.5rem;}
 //letter spacing
 @mixin std-letter-spacing{
   letter-spacing: 3.5;
+}
+
+
+section h2{
+  font-weight: 500;
+  border-top: dashed 1px gray;
+  font-size: 2rem;
+  padding-top: 3rem;
+  margin-bottom: .5rem;
+  font-family: $fancy-serif;
 }
