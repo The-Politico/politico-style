@@ -8,7 +8,7 @@ import { faCopy, faPlus, faMinus } from '@fortawesome/free-solid-svg-icons';
 
 import Button from './Button';
 
-class JsSnippet extends React.Component {
+class Snippet extends React.Component {
   constructor(props) {
     super(props);
     this.state = {expanded: false};
@@ -29,7 +29,7 @@ class JsSnippet extends React.Component {
         `}
       >
         <SyntaxHighlighter
-          language='javascript'
+          language={this.props.language}
           style={light}
         >
           {this.props.snippet}
@@ -47,6 +47,7 @@ class JsSnippet extends React.Component {
                 {expanded: !prev.expanded}
               ));
             }}
+            hidden={!this.props.expandable}
           >
             <FontAwesomeIcon icon={this.state.expanded ? faMinus : faPlus} />
           </Button>
@@ -63,4 +64,9 @@ class JsSnippet extends React.Component {
   }
 };
 
-export default JsSnippet;
+Snippet.defaultProps = {
+  expandable: true,
+  language: 'javascript',
+};
+
+export default Snippet;

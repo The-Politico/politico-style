@@ -6,6 +6,7 @@ module.exports = {
   entry: {
     home: __dirname + '/js/pages/home/index.js',
     sketch: __dirname + '/js/pages/sketch/index.js',
+    guide: __dirname + '/js/pages/guide/index.js',
   },
   output: {
     filename: '[name].js',
@@ -52,7 +53,22 @@ module.exports = {
           "css-loader",
           "sass-loader"
         ]
-      }
+      }, {
+        test: /\.(png|svg|jpg|gif)$/,
+        use: ['file-loader']
+      }, {
+        test: /\.html$/,
+        use: [
+          {
+            loader: 'html-loader',
+            options: {
+              minimize: true,
+              removeComments: false,
+              collapseWhitespace: false
+            }
+          }
+        ]
+      },
     ]
   },
   plugins: [
@@ -60,6 +76,11 @@ module.exports = {
       template: 'templates/home/index.html',
       filename: 'index.html',
       chunks: ['home']
+    }),
+    new HtmlWebpackPlugin({
+      template: 'templates/guide/index.html',
+      filename: 'guide/index.html',
+      chunks: ['guide']
     }),
     new HtmlWebpackPlugin({
       template: 'templates/sketch/index.html',

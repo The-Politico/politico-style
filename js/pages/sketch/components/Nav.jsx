@@ -1,5 +1,5 @@
 import React from 'react';
-import JsSnippet from 'LIB/snippets/JS';
+import Snippet from 'LIB/snippets/Snippet';
 import { Sketch } from 'lib';
 const { Nav } = Sketch;
 
@@ -36,7 +36,7 @@ const NavComponent = () => (
         </li>
       </ul>
     </Nav>
-    <JsSnippet snippet={snippet} />
+    <Snippet snippet={snippet} />
   </div>
 );
 
