@@ -1,6 +1,5 @@
 .form-group{
 
-
   label{
     margin-top: 1rem;
     font-size: 1.2rem;
@@ -14,4 +13,9 @@
     font-size: 1.1rem;
 
   }
+}
+
+input{
+  border: solid 1px #ced4da;
+  padding: 1px 8px;
 }
