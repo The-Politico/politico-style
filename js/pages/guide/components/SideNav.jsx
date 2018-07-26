@@ -57,6 +57,9 @@ const SideNav = () => (
     <li>
       <a href='#sequential-colors'>Sequential</a>
     </li>
+    <li>
+      <a href='#working-with-colors'>Working with Colors</a>
+    </li>
     <h5 className='mini-header'>Iconography</h5>
     <li>
       <a href='#icons'>Icons</a>

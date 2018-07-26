@@ -1,0 +1,12 @@
+hex, variables
+#FFF1DF, $annotation
+#FFF9F1, $annotation-hover
+#FFFAB7, $highlighter-yellow
+#FFFFFF, $white
+#000000, $black
+#666666, $satan
+#B1B4BD, $gray $politico-light-type-gray
+#E5E7EB, $light-gray $politico-line $button
+#312B41, $midnight
+#75CCCA, $positive $yes
+#EF8B67, $negative $no

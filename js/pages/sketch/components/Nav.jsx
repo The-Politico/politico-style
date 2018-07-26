@@ -1,5 +1,5 @@
 import React from 'react';
-import Snippet from 'LIB/snippets/Snippet';
+import Snippet from 'LIB/components/snippets/Snippet';
 import { Sketch } from 'lib';
 const { Nav } = Sketch;
 

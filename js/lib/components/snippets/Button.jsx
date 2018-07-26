@@ -15,6 +15,7 @@ const Button = styled('button')`
   &:active{
     color: #81C784;
   }
+  transition: color .2s ease-out;
   outline: none !important;
 `;
 

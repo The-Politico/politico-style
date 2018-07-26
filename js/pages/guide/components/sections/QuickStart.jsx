@@ -1,5 +1,5 @@
 import React from 'react';
-import Snippet from 'LIB/snippets/Snippet';
+import Snippet from 'LIB/components/snippets/Snippet';
 
 const QuickStart = () => (
   <section className='border-bottom'>

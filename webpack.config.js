@@ -22,7 +22,7 @@ module.exports = {
   resolve: {
     extensions: ['.js', '.jsx'],
     alias: {
-      LIB: path.resolve(__dirname, 'js/lib/components/'),
+      LIB: path.resolve(__dirname, 'js/lib/'),
       lib: path.resolve(__dirname, 'js/lib/index.js'),
       SCSS: path.resolve(__dirname, 'scss/'),
     }
@@ -53,6 +53,15 @@ module.exports = {
           "css-loader",
           "sass-loader"
         ]
+      }, {
+        test: /\.csv$/,
+        loader: 'csv-loader',
+        options: {
+          dynamicTyping: true,
+          header: true,
+          trimHeaders: true,
+          skipEmptyLines: true
+        }
       }, {
         test: /\.(png|svg|jpg|gif)$/,
         use: ['file-loader']

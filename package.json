@@ -28,8 +28,7 @@
   "dependencies": {
     "bootstrap": "^4.1.2",
     "bootstrap-sass": "^3.3.7",
-    "clipboard": "^2.0.1",
-    "open": "^0.0.5"
+    "lodash": "^4.17.10"
   },
   "peerDependencies": {
     "react": "^16.4.1",
@@ -50,8 +49,10 @@
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-2": "^6.24.1",
     "babel-preset-stage-3": "^6.24.1",
+    "clipboard": "^2.0.1",
     "copy-to-clipboard": "^3.0.8",
     "css-loader": "^1.0.0",
+    "csv-loader": "^3.0.2",
     "emotion": "^9.2.6",
     "eslint": "^4.19.1",
     "eslint-config-standard": "^11.0.0",
@@ -63,9 +64,12 @@
     "eslint-plugin-react": "^7.10.0",
     "eslint-plugin-standard": "^3.1.0",
     "file-loader": "^1.1.11",
+    "hex-rgb": "^3.0.0",
     "html-loader": "^0.5.5",
     "html-webpack-plugin": "^3.2.0",
     "node-sass": "^4.9.0",
+    "open": "^0.0.5",
+    "papaparse": "^4.5.0",
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
     "react-emotion": "^9.2.6",

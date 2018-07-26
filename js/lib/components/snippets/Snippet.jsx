@@ -11,7 +11,7 @@ import Button from './Button';
 class Snippet extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {expanded: false};
+    this.state = {expanded: props.expanded};
   }
 
   render() {
@@ -19,10 +19,13 @@ class Snippet extends React.Component {
       <div
         className={css`
           position:relative;
-          max-width: 500px;
+          max-width: ${this.props.width}px;
           margin: 20px auto;
           & > *:first-child {
-            max-height: ${this.state.expanded ? '300px' : '50px'};
+            max-height: ${() => {
+        if (this.props.expanded && !this.props.expandable) return '';
+        return this.state.expanded ? '300px' : '50px';
+      }};
             transition: all .2s;
             border: 1px solid #eee;
           }
@@ -66,7 +69,9 @@ class Snippet extends React.Component {
 
 Snippet.defaultProps = {
   expandable: true,
+  expanded: false,
   language: 'javascript',
+  width: 575,
 };
 
 export default Snippet;
