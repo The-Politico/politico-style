@@ -6034,6 +6034,12 @@ section {
 .form-group .form-control {
   font-family: Georgia, Times, "Times New Roman", serif;
   font-size: 1.1rem; }
+  .form-group .form-control:focus {
+    color: black;
+    background-color: #ffffff;
+    border-color: #b1eaf3;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(146, 202, 234, 0.25); }
 
 input {
   border: solid 1px #ced4da;
