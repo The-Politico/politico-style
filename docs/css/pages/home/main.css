@@ -4,6 +4,9 @@
 .courier {
   font-family: "courier new"; }
 
+.fancy-serif {
+  font-family: "Old Standard TT", serif; }
+
 /*!
  * Bootstrap v4.0.0 (https://getbootstrap.com)
  * Copyright 2011-2018 The Bootstrap Authors
@@ -5836,8 +5839,8 @@ h1 {
   @media (min-width: 992px) {
     h1 {
       font-size: 2.85rem;
-      margin: 5px 0 8px;
-      padding: 0; } }
+      margin: 0 auto;
+      padding: 5px 0 8px; } }
 
 h2,
 h3,
@@ -6112,7 +6115,7 @@ nav.global {
     padding: .25rem .5rem; }
 
 header {
-  padding: 2rem 0 1.5rem; }
+  padding: 3rem 0 1.5rem; }
 
 .breadcrumb {
   font-family: "din-2014", "Raleway", sans-serif;
@@ -6149,11 +6152,12 @@ section.themes {
     section.themes span.cell:first-child {
       border-left: none; }
     section.themes span.cell a {
-      color: #E5E7EB;
+      color: #666;
       font-weight: 200;
       transition: all .2s; }
       section.themes span.cell a:hover {
-        color: #6E7381; }
+        color: #6E7381;
+        text-decoration: underline; }
 
 section.go {
   margin: 50px 0 100px; }

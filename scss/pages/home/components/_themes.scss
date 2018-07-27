@@ -17,11 +17,13 @@ section.themes{
     }
 
     a{
-      color: $politico-light-gray;
+      color: $politico-dark-gray;
       font-weight: 200;
       transition: all .2s;
+
       &:hover{
         color: $politico-medium-gray;
+        text-decoration: underline;
       }
     }
   }
