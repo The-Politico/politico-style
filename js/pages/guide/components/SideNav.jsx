@@ -38,7 +38,7 @@ const SideNav = () => (
     <li>
       <a href='#text-alignment'>Text Alignment</a>
     </li>
-    <h5 className='mini-header'>Color Palette</h5>
+    <h5 className='mini-header'>Color Palettes</h5>
     <li>
       <a href='#brand-colors'>Brand</a>
     </li>
@@ -46,7 +46,7 @@ const SideNav = () => (
       <a href='#base-colors'>Base</a>
     </li>
     <li>
-      <a href='#election-colors'>Election</a>
+      <a href='#election-colors'>Elections</a>
     </li>
     <li>
       <a href='#qualitative-colors'>Qualitative</a>

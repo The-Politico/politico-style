@@ -13,6 +13,10 @@ import Paragraphs from './sections/Paragraphs';
 import Alignment from './sections/Alignment';
 import Colors from './sections/Colors';
 import Icons from './sections/Icons';
+import Lists from './sections/Lists';
+import Tables from './sections/Tables';
+import Photos from './sections/Photos';
+import Cards from './sections/Cards';
 
 const CenterWell = () => (
   <content>
@@ -29,6 +33,10 @@ const CenterWell = () => (
     <Alignment />
     <Colors />
     <Icons />
+    <Lists />
+    <Tables />
+    <Photos />
+    <Cards />
   </content>
 );
 

@@ -6,7 +6,7 @@ const Accessiblity = () => (
     <section>
       <h3>Design for inclusion</h3>
       <p className='sans'>
-        According to the U.S. census, nearly one in five Americans have a disability. As a team, we're focused on making sure all of our readers have access to clear, accurate news. Following these <a target='blank' href='https://www.w3.org/WAI/gettingstarted/tips/designing.html'>WAi</a> tips ensure our work is accessible.
+        According to the U.S. census, nearly one in five Americans have a disability. As a team, we're focused on making sure all of our readers have access to clear, accurate news. Following these <a target='blank' href='https://www.w3.org/WAI/gettingstarted/tips/designing.html'>WAI</a> tips ensure our work is accessible.
       </p>
 
       <ul className='content-fit'>
