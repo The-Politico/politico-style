@@ -1,14 +1,29 @@
 .form-group{
-  margin-bottom: 2rem;
 
   label{
-    margin-bottom: 0;
-    font-size: 1rempx;
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
 
   .form-control{
     font-family: $georgia;
     font-size: 1.1rem;
 
+    &:focus{
+    color: black;
+    background-color: #ffffff;
+    border-color: #b1eaf3;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(146, 202, 234, 0.25);
+    }
+
   }
+}
+
+input{
+  border: solid 1px #ced4da;
+  padding: 1px 8px;
 }

@@ -1,14 +1,17 @@
 
 @import url('https://use.typekit.net/dsx2uhv.css');
 @import url('https://www.politico.com/interactives/cdn/fonts/battletoads/icons/politico-battletoads-icons.min.css');
-@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans:700i');
+@import url('https://fonts.googleapis.com/css?family=Inconsolata|Old+Standard+TT');
+
 
 $sans: 'din-2014', 'Raleway', sans-serif;
 $din: $sans;
 $serif: Georgia, Times, 'Times New Roman', serif;
 $header: 'din-2014', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-$fancy-serif: 'IBM Plex Sans', sans-serif;
 $georgia: $serif;
+$mono: 'Inconsolata', monospace;
+$fancy-serif: 'Old Standard TT', serif;
+$courier: 'courier new';
 
 .courier{
   font-family: "courier new";

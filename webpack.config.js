@@ -1,23 +1,25 @@
-const HtmlWebpackPlugin = require('html-webpack-plugin');
 const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
-module.exports = {
-  mode: 'development',
+module.exports = (env, argv) => ({
+  mode:  argv.mode === 'production' ? 'production' : 'development',
   entry: {
     home: __dirname + '/js/pages/home/index.js',
     sketch: __dirname + '/js/pages/sketch/index.js',
     guide: __dirname + '/js/pages/guide/index.js',
+    elections: __dirname + '/js/pages/elections/index.js',
+    base: __dirname + '/js/pages/base/index.js',
   },
   output: {
-    filename: '[name].js',
-    path: __dirname + '/dist/js'
+    filename: '[name]/script.js',
+    path: __dirname + '/docs',
   },
   devServer: {
-    contentBase: './dist',
     compress: true,
     port: 3000,
     open: true,
-    contentBase: './templates'
+    contentBase: './docs',
   },
   resolve: {
     extensions: ['.js', '.jsx'],
@@ -38,21 +40,21 @@ module.exports = {
               "es2017",
               "react",
               "stage-2",
-              "stage-3"
+              "stage-3",
             ],
             plugins: [
               "module-resolver",
-              "transform-react-jsx"
-            ]
-          }
-        }
+              "transform-react-jsx",
+            ],
+          },
+        },
       }, {
       test: /\.scss$/,
         use: [
-          "style-loader",
+          argv.mode === 'production' ? MiniCssExtractPlugin.loader : 'style-loader',
           "css-loader",
-          "sass-loader"
-        ]
+          "sass-loader",
+        ],
       }, {
         test: /\.csv$/,
         loader: 'csv-loader',
@@ -60,11 +62,16 @@ module.exports = {
           dynamicTyping: true,
           header: true,
           trimHeaders: true,
-          skipEmptyLines: true
-        }
+          skipEmptyLines: true,
+        },
       }, {
         test: /\.(png|svg|jpg|gif)$/,
-        use: ['file-loader']
+        use: [{
+          loader: 'file-loader',
+          options: {
+            outputPath: 'images/',
+          },
+        }],
       }, {
         test: /\.html$/,
         use: [
@@ -73,28 +80,41 @@ module.exports = {
             options: {
               minimize: true,
               removeComments: false,
-              collapseWhitespace: false
-            }
-          }
-        ]
+              collapseWhitespace: false,
+            },
+          },
+        ],
       },
-    ]
+    ],
   },
   plugins: [
     new HtmlWebpackPlugin({
       template: 'templates/home/index.html',
       filename: 'index.html',
-      chunks: ['home']
+      chunks: ['home'],
     }),
     new HtmlWebpackPlugin({
       template: 'templates/guide/index.html',
       filename: 'guide/index.html',
-      chunks: ['guide']
+      chunks: ['guide'],
     }),
     new HtmlWebpackPlugin({
       template: 'templates/sketch/index.html',
       filename: 'sketch/index.html',
-      chunks: ['sketch']
+      chunks: ['sketch'],
+    }),
+    new HtmlWebpackPlugin({
+      template: 'templates/elections/index.html',
+      filename: 'elections/index.html',
+      chunks: ['elections'],
+    }),
+    new HtmlWebpackPlugin({
+      template: 'templates/base/index.html',
+      filename: 'base/index.html',
+      chunks: ['base'],
+    }),
+    new MiniCssExtractPlugin({
+      filename: '[name]/style.css',
     }),
   ],
-}
+});

@@ -4,32 +4,40 @@ ol.instructions {
     margin-left: 3em;
     padding: 0;
     counter-reset: li-counter;
+    font-family: $georgia;
+    font-size: 1.2rem;
+
 }
 ol.instructions > li{
     position: relative;
     margin-bottom: 20px;
     padding: 1em;
-    border-left: 2px solid #CCCCCC;
     background-color: #f2f2f2;
+    border: 2px solid #f2f2f2;
+    width: 95.5%;
+    margin-left: 4.5%;
 }
 ol.instructions > li:before {
-    position: absolute;
-    top: 0;
-    left: -1.5em;
-    width: 1em;
-
-    font-size: 2em;
-    line-height: 1;
-    font-weight: 100;
-    text-align: right;
-    color: #464646;
-
-    z-index: -99;
-    overflow: hidden;
-
-    content: counter(li-counter);
-    counter-increment: li-counter;
+  position: absolute;
+  top: 8%;
+  left: -4.5em;
+  font-family: $din;
+  font-size: 1em;
+  line-height: 1;
+  font-weight: 100;
+  text-align: center;
+  color: #464646;
+  z-index: -99;
+  overflow: hidden;
+  content: counter(li-counter);
+  counter-increment: li-counter;
+  border-radius: 100px;
+  padding: 20px 25px;
+  background-color: #f2f2f2;
 }
+
+
+
 //
 // .instructions {
 //   margin: 0;

@@ -1,0 +1,51 @@
+.filter{
+  background-color: $dark;
+  color: $white;
+  border-radius: 25px;
+  font-size: 14px;
+  padding: 3px 10px;
+  letter-spacing: 1.2px;
+  font-weight: 300;
+
+  &.active{
+    background-color: $politico-dark-red;
+  }
+
+  &.fake-hover{
+    background-color: darken( $politico-dark-red, 10% );
+  }
+
+  .badge{
+    border-radius: 100px;
+    margin-left: 3px;
+    padding-top: 4px;
+    border: 0;
+    color: $politico-dark-red;
+  }
+}
+
+ul.filter{
+  -webkit-margin-before: 0em;
+  -webkit-margin-after: 0em;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+  -webkit-padding-start: 0px;
+  li{
+    list-style:none;
+
+    &.active{
+      background-color:gray;
+    }
+  }
+}
+
+
+div.ReactTags__selected span.ReactTags__tag{
+  background-color: $dark;
+  color: $white;
+  border-radius: 4px;
+  font-size: 14px;
+  padding: 3px 10px;
+  letter-spacing: 1.2px;
+  font-weight: 300;
+}

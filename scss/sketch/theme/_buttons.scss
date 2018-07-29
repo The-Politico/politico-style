@@ -5,6 +5,27 @@ button{
   border-radius: 5px;
   color: $politico-medium-gray;
   transition: all .2s;
+  letter-spacing: .5px;
+  font-weight: 200;
+  margin: 2px;
+
+  &.primary{
+    background-color: $politico-dark-red;
+    border-color: $politico-dark-red;
+  }
+
+  &.primary.outline{
+    color: $politico-dark-red;
+    border-color: $politico-dark-red;
+  }
+
+  &.btn.btn-outline-light{
+     border: white 1px solid;
+  }
+
+  &.btn.btn-light{
+     border: white 1px solid;
+  }
 
   &:hover{
     box-shadow: $boxshadow-medium;
