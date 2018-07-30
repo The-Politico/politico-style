@@ -2,6 +2,7 @@
 import React from 'react';
 
 const FilterList = () => (
+  <section>
   <ul className="search-filter-list filter-author">
 
       <li className="search-filter-list-item ">
@@ -17,6 +18,7 @@ const FilterList = () => (
       </li>
 
   </ul>
+  </section>
 );
 
 export default FilterList;
