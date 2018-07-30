@@ -17,14 +17,14 @@ const QualitativeColors = () => {
       </section>
 
       <section>
-        <h4 className='mb1'>Seven-color palette</h4>
+        <h4 className='mb1'>Six-color palette</h4>
         <Snippet
-          snippet={`const { seven } = Colors.qualitative;`}
+          snippet={`const { six } = Colors.qualitative;`}
           langauge='javascript'
           expandable={false}
           expanded
         />
-        <ColorTable colors={Colors.qualitative.seven} />
+        <ColorTable colors={Colors.qualitative.six} />
       </section>
 
       <section>

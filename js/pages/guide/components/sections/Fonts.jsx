@@ -79,6 +79,43 @@ const Fonts = () => (
         </tbody>
       </table>
 
+      <h3 className='mb1 mt4'>Variables</h3>
+      <table className='table table-bordered content-fit'>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Variable</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td className='sans'>Din 2014</td>
+            <td>
+              <CopyClick copy='$din'>
+                <code>$din</code>
+              </CopyClick>
+            </td>
+          </tr>
+          <tr>
+            <td className='serif'>Georgia</td>
+            <td>
+              <CopyClick copy='$georgia'>
+                <code>$georgia</code>
+              </CopyClick>
+            </td>
+          </tr>
+          <tr>
+            <td className='jubilat'>Jubilat</td>
+            <td>
+              <CopyClick copy='$jubilat'>
+                <code>$jubilat</code>
+              </CopyClick>
+            </td>
+          </tr>
+
+        </tbody>
+      </table>
+
       <h3 className='mb1 mt4'>Weights</h3>
       <table className='table table-bordered content-fit'>
         <thead>

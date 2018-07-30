@@ -9,7 +9,7 @@ import dem from './schemes/elections/dem.csv';
 import demgop from './schemes/elections/dem-gop.csv';
 
 import four from './schemes/qualitative/four.csv';
-import seven from './schemes/qualitative/seven.csv';
+import six from './schemes/qualitative/six.csv';
 import pairs from './schemes/qualitative/pairs.csv';
 import maps from './schemes/qualitative/maps.csv';
 
@@ -31,7 +31,7 @@ export default {
   },
   qualitative: {
     four: scheme(four),
-    seven: scheme(seven),
+    six: scheme(six),
     pairs: scheme(pairs),
     maps: scheme(maps),
   },

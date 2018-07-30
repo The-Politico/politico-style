@@ -6,6 +6,7 @@ import SearchBox from './components/SearchBox';
 import Instructions from './components/Instructions';
 import Buttons from './components/Buttons';
 import Filters from './components/Filters';
+import FilterList from './components/FilterList';
 import Tags from './components/Tags';
 import Checkboxes from './components/Checkboxes';
 import RadioButtons from './components/RadioButtons';
@@ -22,6 +23,7 @@ const App = () => (
       <Instructions />
       <Buttons />
       <Filters />
+      <FilterList />
       <Tags />
       <Checkboxes />
       <RadioButtons />
