@@ -7,6 +7,7 @@ button{
   transition: all .2s;
   letter-spacing: .5px;
   font-weight: 200;
+  margin: 2px;
 
   &.primary{
     background-color: $politico-dark-red;

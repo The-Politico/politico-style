@@ -5957,7 +5957,8 @@ button {
   color: #6E7381;
   transition: all .2s;
   letter-spacing: .5px;
-  font-weight: 200; }
+  font-weight: 200;
+  margin: 2px; }
   button.primary {
     background-color: #AC0825;
     border-color: #AC0825; }
