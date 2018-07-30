@@ -6481,6 +6481,24 @@ p.correction {
   font-variant-ligatures: none;
   margin: .8em auto 2em; }
 
+#mc_embed_signup {
+  background-color: transparent;
+  clear: left;
+  font: 14px;
+  padding: 20px 0 30px;
+  font-family: "din-2014", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  #mc_embed_signup form {
+    padding: 10px 0 0 0 !important; }
+  #mc_embed_signup h2 {
+    margin: 0; }
+  #mc_embed_signup .mc-field-group label {
+    float: left; }
+  #mc_embed_signup .mc-field-group input {
+    background-color: transparent; }
+  #mc_embed_signup .indicates-required {
+    float: right;
+    margin-top: 8px; }
+
 nav {
   width: 250px;
   float: left;
