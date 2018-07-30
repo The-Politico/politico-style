@@ -1,0 +1,29 @@
+
+
+  #mc_embed_signup{
+    background-color:$transparent;
+    clear:left;
+    font:14px;
+    padding: 20px 0 30px;
+    font-family: $din;
+
+    form{
+      padding: 10px 0 0 0 !important;
+    }
+
+    h2{
+      margin: 0;
+    }
+    .mc-field-group{
+      label{
+        float:left;
+      }
+      input{
+        background-color: $transparent;
+      }
+    }
+    .indicates-required{
+      float:right;
+      margin-top: 8px;
+    }
+}
