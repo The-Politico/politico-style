@@ -2,8 +2,8 @@
 import React from 'react';
 
 const Tags = () => (
-  <section>
-    <h2>Tags</h2>
+  <section className="border-top">
+    <h2 className='section-header'>Tags</h2>
     <div id='check-tags-container' className='row'>
       <div id='check-tags' className='tagContainer'>
         <div className='ReactTags__tags'>

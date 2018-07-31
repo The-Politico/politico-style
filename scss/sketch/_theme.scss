@@ -15,10 +15,16 @@
 
 @import 'components/base';
 @import 'components/global-nav';
-@import 'components/header';
+// @import 'components/header';
 @import 'components/breadcrumb';
 @import 'components/footer';
 
 
 
-article.container{ max-width: 650px;}
+article.container{
+  max-width: 650px;
+
+  .css-1x4ajun{
+    max-width: 100%;
+  }
+}

@@ -18,8 +18,8 @@ const App = () => (
 
     <article className='container'>
       <Header />
-      <SearchBox />
       <Instructions />
+      <SearchBox />
       <Buttons />
       <Filters />
       <Tags />

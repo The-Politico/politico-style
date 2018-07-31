@@ -22,8 +22,8 @@ const snippet = `const { Button } = Sketch;
 `;
 
 const Buttons = () => (
-  <section>
-    <h2>Buttons</h2>
+  <section className="border-top">
+    <h2 className='section-header'>Buttons</h2>
     <Button>Primary</Button>
     <Button type='secondary'>Secondary</Button>
     <Button type='dark'>Dark</Button>
