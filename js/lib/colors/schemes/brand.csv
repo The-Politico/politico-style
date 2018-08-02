@@ -1,10 +1,10 @@
 hex, variables
 #DC0228, $politico-red
-#AC0825, $politico-red-dark
+#AC0825, $politico-dark-red
 #F4F5F7, $politico-light-background
 #E5E7EB, $politico-line
-#B1B4BD, $politico-light-type-gray
-#6E7381, $politico-dark-type-gray
+#B1B4BD, $politico-light-gray-type
+#6E7381, $politico-dark-gray-type
 #282D40, $politico-black
 #121522, $politico-magazine
 #007BC7, $link $politico-blue
