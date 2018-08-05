@@ -1,6 +1,10 @@
 section{
   padding:1.5rem 0px;
+  margin: 1.5rem 0;
 
+  &.border-top{
+    padding-top: 0.5rem;
+  }
   p{
     font-size: 20px;
   }

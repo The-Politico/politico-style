@@ -15,8 +15,8 @@ const snippet = `const { InstructionsList } = Sketch;
 `;
 
 const Instructions = () => (
-  <section>
-    <h2>Instructions</h2>
+  <section className="border-top">
+    <h2 className='section-header'>Instructions</h2>
     <InstructionsList>
       <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</li>
       <li>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</li>

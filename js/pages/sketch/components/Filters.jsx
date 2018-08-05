@@ -25,8 +25,8 @@ class Filters extends React.Component {
 
   render() {
     return (
-      <section>
-        <h2>Pill Filters</h2>
+      <section className="border-top">
+        <h2 className='section-header'>Pill Filters</h2>
         <PillFilter
           active={this.state.filter1}
           onClick={() => this.setState((prev) => ({filter1: !prev.filter1}))}

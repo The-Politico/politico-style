@@ -23,8 +23,8 @@ class Checkboxes extends React.Component {
   }
   render() {
     return (
-      <section>
-        <h2>Checkboxes</h2>
+      <section className="border-top">
+        <h2 className='section-header'>Checkboxes</h2>
         <Checkbox
           name='opt1'
           checked={this.state.opt1}

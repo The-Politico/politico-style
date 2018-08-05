@@ -35,8 +35,8 @@ class RadioButtons extends React.Component {
   }
   render() {
     return (
-      <section>
-        <h2>Radio Buttons</h2>
+      <section class="border-top">
+        <h2 class="section-header">Radio Buttons</h2>
         <RadioButton
           id='opt1'
           checked={this.state.selected === 'opt1'}

@@ -2,9 +2,9 @@
 import React from 'react';
 
 const Forms = () => (
-  <section>
+  <section className="border-top">
 
-    <h2>Claim</h2>
+    <h2 className='section-header'>Claim</h2>
     <div id='claim-shortText-container' className='form-group '>
       <label id='label-claim-shortText' htmlFor='claim-shortText'>Claim Summary</label>
 

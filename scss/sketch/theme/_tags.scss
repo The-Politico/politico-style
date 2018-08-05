@@ -1,0 +1,16 @@
+.ReactTags__tag{
+  margin: 0 2px 2px 0;
+}
+
+div.ReactTags__selected span.ReactTags__tag{
+    font-size: 14px;
+    padding: 3px 16px 3px 10px;
+    position: relative;
+  }
+
+a:not([href]):not([tabindex]){
+  position: absolute;
+  top: 1px;
+  right: 4px;
+  font-size: 18px;
+}
