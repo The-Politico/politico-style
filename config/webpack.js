@@ -1,32 +1,35 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const portfinder = require('portfinder');
 
-module.exports = (env, argv) => ({
+portfinder.basePort = 3000;
+
+const config = (env, argv, port) => ({
   mode:  argv.mode === 'production' ? 'production' : 'development',
   entry: {
-    home: __dirname + '/js/pages/home/index.js',
-    sketch: __dirname + '/js/pages/sketch/index.js',
-    guide: __dirname + '/js/pages/guide/index.js',
-    elections: __dirname + '/js/pages/elections/index.js',
-    base: __dirname + '/js/pages/base/index.js',
+    home: path.resolve(process.cwd(), 'js/pages/home/index.js'),
+    sketch: path.resolve(process.cwd(), 'js/pages/sketch/index.js'),
+    guide: path.resolve(process.cwd(), 'js/pages/guide/index.js'),
+    elections: path.resolve(process.cwd(), 'js/pages/elections/index.js'),
+    base: path.resolve(process.cwd(), 'js/pages/base/index.js'),
   },
   output: {
     filename: '[name]/script.js',
-    path: __dirname + '/docs',
+    path: path.resolve(process.cwd(), 'docs'),
   },
   devServer: {
     compress: true,
-    port: 3000,
+    port: port,
     open: true,
     contentBase: './docs',
   },
   resolve: {
     extensions: ['.js', '.jsx'],
     alias: {
-      LIB: path.resolve(__dirname, 'js/lib/'),
-      lib: path.resolve(__dirname, 'js/lib/index.js'),
-      SCSS: path.resolve(__dirname, 'scss/'),
+      LIB: path.resolve(process.cwd(), 'js/lib/'),
+      lib: path.resolve(process.cwd(), 'js/lib/index.js'),
+      SCSS: path.resolve(process.cwd(), 'scss/'),
     }
   },
   module: {
@@ -34,17 +37,18 @@ module.exports = (env, argv) => ({
       {
         test: /\.(js|jsx)$/,
         use: {
-          loader: "babel-loader",
+          loader: 'babel-loader',
           options: {
             presets: [
-              "es2017",
-              "react",
-              "stage-2",
-              "stage-3",
+              ['@babel/preset-env', {
+                'targets': {
+                  'browsers': 'last 2 versions',
+                },
+              }],
+              '@babel/preset-react',
             ],
             plugins: [
-              "module-resolver",
-              "transform-react-jsx",
+              '@babel/proposal-class-properties',
             ],
           },
         },
@@ -89,27 +93,27 @@ module.exports = (env, argv) => ({
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: 'templates/home/index.html',
+      template: path.resolve(process.cwd(), 'templates/home/index.html'),
       filename: 'index.html',
       chunks: ['home'],
     }),
     new HtmlWebpackPlugin({
-      template: 'templates/guide/index.html',
+      template: path.resolve(process.cwd(), 'templates/guide/index.html'),
       filename: 'guide/index.html',
       chunks: ['guide'],
     }),
     new HtmlWebpackPlugin({
-      template: 'templates/sketch/index.html',
+      template: path.resolve(process.cwd(), 'templates/sketch/index.html'),
       filename: 'sketch/index.html',
       chunks: ['sketch'],
     }),
     new HtmlWebpackPlugin({
-      template: 'templates/elections/index.html',
+      template: path.resolve(process.cwd(), 'templates/elections/index.html'),
       filename: 'elections/index.html',
       chunks: ['elections'],
     }),
     new HtmlWebpackPlugin({
-      template: 'templates/base/index.html',
+      template: path.resolve(process.cwd(), 'templates/base/index.html'),
       filename: 'base/index.html',
       chunks: ['base'],
     }),
@@ -118,3 +122,7 @@ module.exports = (env, argv) => ({
     }),
   ],
 });
+
+module.exports = (env, argv) =>
+  portfinder.getPortPromise()
+    .then(port => config(env, argv, port));
