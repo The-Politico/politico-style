@@ -310,407 +310,407 @@ function createColorScheme(rows) {
 
 var brand = [{
   hex: "#DC0228",
-  " variables": " $politico-red"
+  variables: " $politico-red"
 }, {
   hex: "#AC0825",
-  " variables": " $politico-dark-red"
+  variables: " $politico-dark-red"
 }, {
   hex: "#F4F5F7",
-  " variables": " $politico-light-background"
+  variables: " $politico-light-background"
 }, {
   hex: "#E5E7EB",
-  " variables": " $politico-line"
+  variables: " $politico-line"
 }, {
   hex: "#B1B4BD",
-  " variables": " $politico-light-gray-type"
+  variables: " $politico-light-gray-type"
 }, {
   hex: "#6E7381",
-  " variables": " $politico-dark-gray-type"
+  variables: " $politico-dark-gray-type"
 }, {
   hex: "#282D40",
-  " variables": " $politico-black"
+  variables: " $politico-black"
 }, {
   hex: "#121522",
-  " variables": " $politico-magazine"
+  variables: " $politico-magazine"
 }, {
   hex: "#007BC7",
-  " variables": " $link $politico-blue"
+  variables: " $link $politico-blue"
 }, {
   hex: "#0E9AF3",
-  " variables": " $link-hover"
+  variables: " $link-hover"
 }, {
   hex: "#F86F00",
-  " variables": " $politico-orange"
+  variables: " $politico-orange"
 }, {
   hex: "#3B5998",
-  " variables": " $facebook"
+  variables: " $facebook"
 }, {
   hex: "#00ACED",
-  " variables": " $twitter"
+  variables: " $twitter"
 }, {
   hex: "#121522",
-  " variables": " $mail $politico-magazine"
+  variables: " $mail $politico-magazine"
 }];
 
 var base = [{
   hex: "#FFF1DF",
-  " variables": " $annotation"
+  variables: " $annotation"
 }, {
   hex: "#FFF9F1",
-  " variables": " $annotation-hover"
+  variables: " $annotation-hover"
 }, {
   hex: "#FFFAB7",
-  " variables": " $highlighter-yellow"
+  variables: " $highlighter-yellow"
 }, {
   hex: "#FFFFFF",
-  " variables": " $white"
+  variables: " $white"
 }, {
   hex: "#000000",
-  " variables": " $black"
+  variables: " $black"
 }, {
   hex: "#666666",
-  " variables": " $satan"
+  variables: " $satan"
 }, {
   hex: "#B1B4BD",
-  " variables": " $gray $politico-light-type-gray"
+  variables: " $gray $politico-light-type-gray"
 }, {
   hex: "#E5E7EB",
-  " variables": " $light-gray $politico-line $button"
+  variables: " $light-gray $politico-line $button"
 }, {
   hex: "#312B41",
-  " variables": " $midnight"
+  variables: " $midnight"
 }, {
   hex: "#75CCCA",
-  " variables": " $positive $yes"
+  variables: " $positive $yes"
 }, {
   hex: "#EF8B67",
-  " variables": " $negative $no"
+  variables: " $negative $no"
 }];
 
 var party = [{
   hex: "#3571C0",
-  " variables": " $dem"
+  variables: " $dem"
 }, {
   hex: "#FE5C40",
-  " variables": " $gop"
+  variables: " $gop"
 }];
 
 var gop = [{
   hex: "#FE5C40",
-  " variables": " $gop $gop0"
+  variables: " $gop $gop0"
 }, {
   hex: "#B8948E",
-  " variables": " $gop1"
+  variables: " $gop1"
 }, {
   hex: "#FBA723",
-  " variables": " $gop2"
+  variables: " $gop2"
 }, {
   hex: "#FFB2CB",
-  " variables": " $gop3 $gop-light"
+  variables: " $gop3 $gop-light"
 }, {
   hex: "#B41E61",
-  " variables": " $gop4"
+  variables: " $gop4"
 }, {
   hex: "#433E76",
-  " variables": " $gop5"
+  variables: " $gop5"
 }, {
   hex: "#AC5141",
-  " variables": " $gop6"
+  variables: " $gop6"
 }, {
   hex: "#7957B4",
-  " variables": " $gop7"
+  variables: " $gop7"
 }, {
   hex: "#FEE0C2",
-  " variables": " $gop8"
+  variables: " $gop8"
 }, {
   hex: "#FD87F7",
-  " variables": " $gop9"
+  variables: " $gop9"
 }];
 
 var dem = [{
   hex: "#3571C0",
-  " variables": " $dem $dem0"
+  variables: " $dem $dem0"
 }, {
   hex: "#D9C3A5",
-  " variables": " $dem1"
+  variables: " $dem1"
 }, {
   hex: "#8998AB",
-  " variables": " $dem2"
+  variables: " $dem2"
 }, {
   hex: "#9AD3FC",
-  " variables": " $dem3 $dem-light"
+  variables: " $dem3 $dem-light"
 }, {
   hex: "#C3F4CD",
-  " variables": " $dem4"
+  variables: " $dem4"
 }, {
   hex: "#5DAED4",
-  " variables": " $dem5"
+  variables: " $dem5"
 }, {
   hex: "#8ABDC0",
-  " variables": " $dem6"
+  variables: " $dem6"
 }, {
   hex: "#775180",
-  " variables": " $dem7"
+  variables: " $dem7"
 }, {
   hex: "#FFD682",
-  " variables": " $dem8"
+  variables: " $dem8"
 }, {
   hex: "#948064",
-  " variables": " $dem9"
+  variables: " $dem9"
 }];
 
 var demgop = [{
   hex: "#3571C0",
-  " variables": " $dem $demgop0"
+  variables: " $dem $demgop0"
 }, {
   hex: "#7392d0",
-  " variables": " $demgop1"
+  variables: " $demgop1"
 }, {
   hex: "#A4B5E0",
-  " variables": " $demgop2"
+  variables: " $demgop2"
 }, {
   hex: "#D2D9F0",
-  " variables": " $demgop3"
+  variables: " $demgop3"
 }, {
   hex: "#FFFFFF",
-  " variables": " $white $demgop"
+  variables: " $white $demgop"
 }, {
   hex: "#FFD8CD",
-  " variables": " $gopdem3"
+  variables: " $gopdem3"
 }, {
   hex: "#FFB19C",
-  " variables": " $gopdem2"
+  variables: " $gopdem2"
 }, {
   hex: "#FF896D",
-  " variables": " $gopdem1"
+  variables: " $gopdem1"
 }, {
   hex: "#FE5C40",
-  " variables": " $gop $gopdem0"
+  variables: " $gop $gopdem0"
 }];
 
 var four = [{
   hex: "#4FC1E7",
-  " variables": " $q4-aqua"
+  variables: " $q4-aqua"
 }, {
   hex: "#6BAE80",
-  " variables": " $q4-green"
+  variables: " $q4-green"
 }, {
   hex: "#3D284D",
-  " variables": " $q4-gray"
+  variables: " $q4-gray"
 }, {
   hex: "#694ED6",
-  " variables": " $q7-purple"
+  variables: " $q7-purple"
 }];
 
 var six = [{
   hex: "#0D3C73",
-  " variables": " $q6-teal"
+  variables: " $q6-teal"
 }, {
   hex: "#329CAC",
-  " variables": " $q6-darkblue"
+  variables: " $q6-darkblue"
 }, {
   hex: "#47BEF8",
-  " variables": " $q6-aqua"
+  variables: " $q6-aqua"
 }, {
   hex: "#F95100",
-  " variables": " $q6-orange"
+  variables: " $q6-orange"
 }, {
   hex: "#F7A12D",
-  " variables": " $q6-gold"
+  variables: " $q6-gold"
 }, {
   hex: "#AB9F8F",
-  " variables": " $q6-dirt"
+  variables: " $q6-dirt"
 }];
 
 var pairs = [{
   hex: "#3D284D",
-  " variables": " $qp-gray"
+  variables: " $qp-gray"
 }, {
   hex: "#8E8E98",
-  " variables": " $qp-lightgray"
+  variables: " $qp-lightgray"
 }, {
   hex: "#7C7CE0",
-  " variables": " $qp-purple"
+  variables: " $qp-purple"
 }, {
   hex: "#9D9DEA",
-  " variables": " $qp-lightpurple"
+  variables: " $qp-lightpurple"
 }, {
   hex: "#9B9B52",
-  " variables": " $qp-green"
+  variables: " $qp-green"
 }, {
   hex: "#C6C677",
-  " variables": " $qp-lightgreen"
+  variables: " $qp-lightgreen"
 }];
 
 var maps = [{
   hex: "#3D284D",
-  " variables": " $q7-gray"
+  variables: " $q7-gray"
 }, {
   hex: "#2F6CBA",
-  " variables": " $q7-blue"
+  variables: " $q7-blue"
 }, {
   hex: "#88C2B2",
-  " variables": " $q7-green"
+  variables: " $q7-green"
 }, {
   hex: "#FFCAB3",
-  " variables": " $q7-peach"
+  variables: " $q7-peach"
 }, {
   hex: "#DFA486",
-  " variables": " $q7-camel"
+  variables: " $q7-camel"
 }, {
   hex: "#BD3232",
-  " variables": " $q7-red"
+  variables: " $q7-red"
 }, {
   hex: "#EBEB35",
-  " variables": " $q7-yellow"
+  variables: " $q7-yellow"
 }];
 
 var moneyFoam = [{
   hex: "#46825A",
-  " variables": " $moneyfoam1"
+  variables: " $moneyfoam1"
 }, {
   hex: "#5D926D",
-  " variables": " $moneyfoam2"
+  variables: " $moneyfoam2"
 }, {
   hex: "#73A281",
-  " variables": " $moneyfoam3"
+  variables: " $moneyfoam3"
 }, {
   hex: "#88B395",
-  " variables": " $moneyfoam4"
+  variables: " $moneyfoam4"
 }, {
   hex: "#9FC4AA",
-  " variables": " $moneyfoam5"
+  variables: " $moneyfoam5"
 }, {
   hex: "#B6D4BF",
-  " variables": " $moneyfoam6"
+  variables: " $moneyfoam6"
 }, {
   hex: "#CCE6D5",
-  " variables": " $moneyfoam7"
+  variables: " $moneyfoam7"
 }, {
   hex: "#E4F7EB",
-  " variables": " $moneyfoam8"
+  variables: " $moneyfoam8"
 }];
 
 var redYellow = [{
   hex: "#E53516",
-  " variables": " $redyellow1"
+  variables: " $redyellow1"
 }, {
   hex: "#EC5624",
-  " variables": " $redyellow2"
+  variables: " $redyellow2"
 }, {
   hex: "#F17233",
-  " variables": " $redyellow3"
+  variables: " $redyellow3"
 }, {
   hex: "#F68A41",
-  " variables": " $redyellow4"
+  variables: " $redyellow4"
 }, {
   hex: "#FAA050",
-  " variables": " $redyellow5"
+  variables: " $redyellow5"
 }, {
   hex: "#FDB75F",
-  " variables": " $redyellow6"
+  variables: " $redyellow6"
 }, {
   hex: "#FECD6F",
-  " variables": " $redyellow7"
+  variables: " $redyellow7"
 }, {
   hex: "#FFE37E",
-  " variables": " $redyellow8"
+  variables: " $redyellow8"
 }];
 
 var sangriaPeach = [{
   hex: "#7A0001",
-  " variables": " $sangriapeach1"
+  variables: " $sangriapeach1"
 }, {
   hex: "#972516",
-  " variables": " $sangriapeach2"
+  variables: " $sangriapeach2"
 }, {
   hex: "#B2422C",
-  " variables": " $sangriapeach3"
+  variables: " $sangriapeach3"
 }, {
   hex: "#CC5F44",
-  " variables": " $sangriapeach4"
+  variables: " $sangriapeach4"
 }, {
   hex: "#E37E61",
-  " variables": " $sangriapeach5"
+  variables: " $sangriapeach5"
 }, {
   hex: "#F59E82",
-  " variables": " $sangriapeach6"
+  variables: " $sangriapeach6"
 }, {
   hex: "#FFC1AA",
-  " variables": " $sangriapeach7"
+  variables: " $sangriapeach7"
 }, {
   hex: "#FFE5D8",
-  " variables": " $sangriapeach8"
+  variables: " $sangriapeach8"
 }];
 
 var mossSaphire = [{
   hex: "#959632",
-  " variables": " $moss1"
+  variables: " $moss1"
 }, {
   hex: "#A8A74E",
-  " variables": " $moss2"
+  variables: " $moss2"
 }, {
   hex: "#BCB968",
-  " variables": " $moss3"
+  variables: " $moss3"
 }, {
   hex: "#CFCB83",
-  " variables": " $moss4"
+  variables: " $moss4"
 }, {
   hex: "#E3DD9E",
-  " variables": " $moss5"
+  variables: " $moss5"
 }, {
   hex: "#F6F0B9",
-  " variables": " $mosssapphire"
+  variables: " $mosssapphire"
 }, {
   hex: "#D6D2BD",
-  " variables": " $sapphire5"
+  variables: " $sapphire5"
 }, {
   hex: "#B4B5C0",
-  " variables": " $sapphire4"
+  variables: " $sapphire4"
 }, {
   hex: "#909AC2",
-  " variables": " $sapphire3"
+  variables: " $sapphire3"
 }, {
   hex: "#667FC3",
-  " variables": " $sapphire2"
+  variables: " $sapphire2"
 }, {
   hex: "#2166C3",
-  " variables": " $sapphire1"
+  variables: " $sapphire1"
 }];
 
 var tealDirt = [{
   hex: "#196B66",
-  " variables": " $teal1"
+  variables: " $teal1"
 }, {
   hex: "#218C86",
-  " variables": " $teal2"
+  variables: " $teal2"
 }, {
   hex: "#26B1AA",
-  " variables": " $teal3"
+  variables: " $teal3"
 }, {
   hex: "#8CD1CE",
-  " variables": " $teal4"
+  variables: " $teal4"
 }, {
   hex: "#BCDEDD",
-  " variables": " $teal5"
+  variables: " $teal5"
 }, {
   hex: "#E9F0EC",
-  " variables": " $dirtteal"
+  variables: " $dirtteal"
 }, {
   hex: "#D2D3C4",
-  " variables": " $dirt5"
+  variables: " $dirt5"
 }, {
   hex: "#BBA88F",
-  " variables": " $dirt4"
+  variables: " $dirt4"
 }, {
   hex: "#9E7A4C",
-  " variables": " $dirt3"
+  variables: " $dirt3"
 }, {
   hex: "#784C11",
-  " variables": " $dirt2"
+  variables: " $dirt2"
 }, {
   hex: "#5D3B0F",
-  " variables": " $dirt1"
+  variables: " $dirt1"
 }];
 
 var index$1 = {

@@ -31,7 +31,16 @@ export default {
     ...Object.keys(pkg.dependencies),
   ],
   plugins: [
-    dsv(),
+    dsv({
+      processRow( row, id ) {
+        const trimmedRow = {};
+        Object.keys( row ).forEach( key => {
+          const value = row[ key ];
+          trimmedRow[key.trim()] = isNaN( +value ) ? value : +value;
+        });
+        return trimmedRow;
+      }
+    }),
     json(),
     alias({
       resolve: ['.jsx', '.js'],
