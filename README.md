@@ -1,8 +1,10 @@
 ![POLITICO](https://rawgithub.com/The-Politico/src/master/images/logo/badge.png)
 
-# politico-style
+# politico-style [![npm version](https://badge.fury.io/js/politico-style.svg)](https://badge.fury.io/js/politico-style)
 
 Web fashions by POLITICO Interatives.
+
+#### [See the docs.](https://the-politico.github.io/politico-style/)
 
 ### Using in your project
 
