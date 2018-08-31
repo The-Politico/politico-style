@@ -4,13 +4,14 @@ import Nav from './components/Nav';
 import Header from './components/Header';
 import SearchBox from './components/SearchBox';
 import Instructions from './components/Instructions';
+import TextInput from './components/TextInput';
+import Select from './components/Select';
+import Typeahead from './components/Typeahead';
+import ImageUpload from './components/ImageUpload';
 import Buttons from './components/Buttons';
 import Filters from './components/Filters';
-import FilterList from './components/FilterList';
-import Tags from './components/Tags';
 import Checkboxes from './components/Checkboxes';
 import RadioButtons from './components/RadioButtons';
-import Forms from './components/Forms';
 import Footer from './components/Footer';
 
 const App = () => (
@@ -21,13 +22,14 @@ const App = () => (
       <Header />
       <SearchBox />
       <Instructions />
+      <TextInput />
+      <Select />
+      <Typeahead />
+      <ImageUpload />
       <Buttons />
       <Filters />
-      <FilterList />
-      <Tags />
       <Checkboxes />
       <RadioButtons />
-      <Forms />
     </article>
 
     <Footer />

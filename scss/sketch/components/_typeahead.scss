@@ -1,0 +1,85 @@
+@import '~react-bootstrap-typeahead/css/Typeahead.css';
+
+$text-black: #495057;
+$border-color: #ced4da;
+
+.typeahead {
+
+  .rbt {
+    border: 0;
+    padding: 0;
+  }
+
+  .rbt-menu {
+    margin-bottom: 2px;
+  }
+
+  .rbt-menu-custom-option {
+    text-decoration: underline;
+  }
+
+  .rbt-token {
+    background-color: $dark;
+    border-radius: 4px;
+    color: $white;
+    font-family: $sans;
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 1.2px;
+    padding: 3px 21px 3px 10px;
+
+    .rbt-token-remove-button {
+      &:hover {
+        color: $white;
+        opacity: 1;
+      }
+    }
+  }
+
+  .dropdown-menu {
+    background-clip: padding-box;
+    background-color: $white;
+    border: 1px solid $border-color;
+    border-radius: .25rem;
+    display: none;
+    float: left;
+    font-size: 1rem;
+    left: 0;
+    list-style: none;
+    margin: .125rem 0 0;
+    min-width: 10rem;
+    padding: .5rem 0;
+    position: absolute;
+    text-align: left;
+    top: 100%;
+    z-index: 1000;
+  }
+
+  .dropdown-item {
+    background-color: transparent;
+    border: 0;
+    clear: both;
+    color: $text-black;
+    display: block;
+    font-weight: 400;
+    padding: .25rem 1.5rem;
+    text-align: inherit;
+    white-space: nowrap;
+    width: 100%;
+
+    &.disabled {
+      cursor: default;
+    }
+  }
+
+  &.form-control {
+    border: 0;
+    padding-left: 0;
+    padding-right: 0;
+
+    input {
+      padding-left: .75rem;
+      padding-right: .75rem;
+    }
+  }
+}

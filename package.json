@@ -36,7 +36,9 @@
     "classnames": "^2.2.6",
     "hex-rgb": "^3.0.0",
     "lodash": "^4.17.10",
-    "prop-types": "^15.6.2"
+    "prop-types": "^15.6.2",
+    "react-bootstrap-typeahead": "^3.2.0",
+    "react-loader-spinner": "^2.1.0"
   },
   "peerDependencies": {
     "react": "^16.4.1",
