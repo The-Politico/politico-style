@@ -1,6 +1,6 @@
 {
   "name": "politico-style",
-  "version": "3.0.2",
+  "version": "3.0.3",
   "description": "Web fashions by Politico Interactives.",
   "module": "dist/main.esm.js",
   "repository": "git@github.com:The-Politico/politico-style.git",
