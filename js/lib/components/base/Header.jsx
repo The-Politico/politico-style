@@ -57,7 +57,7 @@ const Header = (props) => {
       </p>
       <div className='info'>
         <p>
-          By <span className='authors'>{makeBylines(props.authors)}</span> | <span className='timestamp'> <time dateTime={props.timestamp}>{formatDate(props.timestamp)}</time></span> {props.updated && <span className='updated'>| <time dateTime={props.updated}>Updated {formatDate(props.updated)}</time></span>}
+          By <span className='authors'>{makeBylines(props.authors)}</span> | <span className='timestamp'> <time dateTime={props.published}>{formatDate(props.published)}</time></span> {props.updated && <span className='updated'>| <time dateTime={props.updated}>Updated {formatDate(props.updated)}</time></span>}
         </p>
       </div>
     </header>
@@ -71,7 +71,7 @@ Header.defaultProps = {
   },
   headline: 'Your pithy, compelling headline, would you share it?',
   deck: 'Short deck',
-  timestamp: null,
+  published: null,
   updated: null,
   authors: [{
     name: 'Jane Doe',
