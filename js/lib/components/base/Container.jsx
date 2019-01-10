@@ -19,7 +19,10 @@ const Container = props => {
         updated={meta.updated}
       />
 
-      {props.children}
+      <article className='container'>
+        {props.children}
+      </article>
+
       <Footer />
     </Fragment>
   );
