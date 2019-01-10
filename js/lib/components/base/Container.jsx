@@ -19,7 +19,7 @@ const Container = props => {
         updated={meta.updated}
       />
 
-      <p>This page only works with hydration.</p>
+      {props.children}
       <Footer />
     </Fragment>
   );
