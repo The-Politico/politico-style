@@ -6,7 +6,7 @@ const portfinder = require('portfinder');
 portfinder.basePort = 3000;
 
 const config = (env, argv, port) => ({
-  mode:  argv.mode === 'production' ? 'production' : 'development',
+  mode: argv.mode === 'production' ? 'production' : 'development',
   entry: {
     home: path.resolve(process.cwd(), 'js/pages/home/index.js'),
     sketch: path.resolve(process.cwd(), 'js/pages/sketch/index.js'),
@@ -30,7 +30,7 @@ const config = (env, argv, port) => ({
       LIB: path.resolve(process.cwd(), 'js/lib/'),
       lib: path.resolve(process.cwd(), 'js/lib/index.js'),
       SCSS: path.resolve(process.cwd(), 'scss/'),
-    }
+    },
   },
   module: {
     rules: [
@@ -53,11 +53,11 @@ const config = (env, argv, port) => ({
           },
         },
       }, {
-      test: /\.scss$/,
+        test: /\.scss$/,
         use: [
           argv.mode === 'production' ? MiniCssExtractPlugin.loader : 'style-loader',
-          "css-loader",
-          "sass-loader",
+          'css-loader',
+          'sass-loader',
         ],
       }, {
         test: /\.csv$/,
