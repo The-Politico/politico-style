@@ -3,11 +3,11 @@ import {default as React, Fragment} from 'react';
 import { Head, Navigation, Footer, Header, Ad } from './';
 
 const Container = props => {
-  const { meta, social, content } = props;
+  const { meta, content } = props;
 
   return (
     <Fragment>
-      <Head title={meta.pageName} social={social} />
+      <Head title={meta.pageName} social={content.social} />
       <Navigation />
       <Ad.Banner />
       <Header
@@ -29,7 +29,6 @@ const Container = props => {
 };
 
 Container.defaultProps = {
-  social: {},
   meta: {
     pageName: '',
     authors: [],
@@ -40,6 +39,7 @@ Container.defaultProps = {
     headline: '',
     deck: '',
     section: '',
+    social: {},
   },
 };
 
