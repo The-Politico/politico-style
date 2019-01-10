@@ -1,5 +1,5 @@
 import {default as React, Fragment} from 'react';
-import Dateline from 'dateline';
+import dateFns from 'date-fns';
 
 const makeBylines = authors => {
   if (authors.length === 1) {
@@ -26,7 +26,7 @@ const makeBylines = authors => {
 };
 
 const formatDate = date => {
-  return new Dateline(date).getAPTime({includeMinutes: true});
+  return dateFns.format(new Date(date), 'MM/DD/YYYY H:mm A EST');
 };
 
 const Header = (props) => {
@@ -52,7 +52,7 @@ const Header = (props) => {
       </p>
       <div className='info'>
         <p>
-          By {makeBylines(props.authors)} | <span className='timestamp'> <time dateTime={props.timestamp}>{formatDate(props.timestamp)}</time></span> {props.updated && <span className='updated'>| <time dateTime={props.updated}>{formatDate(props.updated)}</time></span>}
+          By <span className='authors'>{makeBylines(props.authors)}</span> | <span className='timestamp'> <time dateTime={props.timestamp}>{formatDate(props.timestamp)}</time></span> {props.updated && <span className='updated'>| <time dateTime={props.updated}>Updated {formatDate(props.updated)}</time></span>}
         </p>
       </div>
     </header>
