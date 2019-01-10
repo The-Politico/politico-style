@@ -3,7 +3,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = (env, argv) => ({
-  mode:  argv.mode === 'production' ? 'production' : 'development',
+  mode: argv.mode === 'production' ? 'production' : 'development',
   entry: {
     home: __dirname + '/js/pages/home/index.js',
     sketch: __dirname + '/js/pages/sketch/index.js',
@@ -27,33 +27,33 @@ module.exports = (env, argv) => ({
       LIB: path.resolve(__dirname, 'js/lib/'),
       lib: path.resolve(__dirname, 'js/lib/index.js'),
       SCSS: path.resolve(__dirname, 'scss/'),
-    }
+    },
   },
   module: {
     rules: [
       {
         test: /\.(js|jsx)$/,
         use: {
-          loader: "babel-loader",
+          loader: 'babel-loader',
           options: {
             presets: [
-              "es2017",
-              "react",
-              "stage-2",
-              "stage-3",
+              'es2017',
+              'react',
+              'stage-2',
+              'stage-3',
             ],
             plugins: [
-              "module-resolver",
-              "transform-react-jsx",
+              'module-resolver',
+              'transform-react-jsx',
             ],
           },
         },
       }, {
-      test: /\.scss$/,
+        test: /\.scss$/,
         use: [
           argv.mode === 'production' ? MiniCssExtractPlugin.loader : 'style-loader',
-          "css-loader",
-          "sass-loader",
+          'css-loader',
+          'sass-loader',
         ],
       }, {
         test: /\.csv$/,

@@ -34,6 +34,7 @@
     "classnames": "^2.2.6",
     "lodash": "^4.17.10",
     "prop-types": "^15.6.2",
+    "randomstring": "^1.1.5",
     "react-bootstrap-typeahead": "^3.2.0",
     "react-loader-spinner": "^2.1.0"
   },
