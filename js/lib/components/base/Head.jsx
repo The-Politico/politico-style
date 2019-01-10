@@ -66,13 +66,11 @@ Head.defaultProps = {
     'fbook': {
       'card_title': '',
       'card_description': '',
-      'author': 'politico',
     },
     'twitter': {
       'card_title': '',
       'share_tweet': '',
       'card_description': '',
-      'author': '@politico',
     },
     'image': {
       'url': '',

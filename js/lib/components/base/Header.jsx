@@ -1,4 +1,33 @@
-import React from 'react';
+import {default as React, Fragment} from 'react';
+import Dateline from 'dateline';
+
+const makeBylines = authors => {
+  if (authors.length === 1) {
+    return <span className='byline' dangerouslySetInnerHTML={{__html: authors[0]}} />;
+  } else if (authors.length === 0) {
+    return null;
+  }
+
+  const output = authors.slice();
+  const lastAuthor = output.pop();
+  const secondToLastAuthor = output.pop();
+  return (
+    <Fragment>
+      {output.map((a, i) =>
+        <Fragment key={i}>
+          <a href={a.link}><span className='byline' dangerouslySetInnerHTML={{__html: a.name}} /></a>,&nbsp;
+        </Fragment>
+      )}
+      <a href={secondToLastAuthor.link}><span className='byline' dangerouslySetInnerHTML={{__html: secondToLastAuthor.name}} /></a>
+      &nbsp;and&nbsp;
+      <a href={lastAuthor.link}><span className='byline' dangerouslySetInnerHTML={{__html: lastAuthor.name}} /></a>
+    </Fragment>
+  );
+};
+
+const formatDate = date => {
+  return new Dateline(date).getAPTime({includeMinutes: true});
+};
 
 const Header = (props) => {
   return (
@@ -23,7 +52,7 @@ const Header = (props) => {
       </p>
       <div className='info'>
         <p>
-                By <span className='byline'><a href='###'>First Lastname</a></span> and <span className='byline'><a href='###'>First Lastname</a></span> | <span className='timestamp'> <time dateTime='{{META.timestamp}}'> 04/05/2018 05:00 AM EDT</time></span>
+          By {makeBylines(props.authors)} | <span className='timestamp'> <time dateTime={props.timestamp}>{formatDate(props.timestamp)}</time></span> {props.updated && <span className='updated'>| <time dateTime={props.updated}>{formatDate(props.updated)}</time></span>}
         </p>
       </div>
     </header>
@@ -38,8 +67,9 @@ Header.defaultProps = {
   hed: 'Your pithy, compelling headline, would you share it?',
   deck: 'Short deck',
   timestamp: null,
+  updated: null,
   authors: [{
-    byline: 'Jane Doe',
+    name: 'Jane Doe',
     link: 'https://www.twitter.com/jd/',
   }],
 };
