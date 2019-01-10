@@ -13,9 +13,9 @@ const makeBylines = authors => {
   const secondToLastAuthor = output.pop();
   return (
     <Fragment>
-      {output.map((a, i) =>
+      {output.map((author, i) =>
         <Fragment key={i}>
-          <a href={a.link}><span className='byline' dangerouslySetInnerHTML={{__html: a.name}} /></a>,&nbsp;
+          <a href={author.link}><span className='byline' dangerouslySetInnerHTML={{__html: author.name}} /></a>,&nbsp;
         </Fragment>
       )}
       <a href={secondToLastAuthor.link}><span className='byline' dangerouslySetInnerHTML={{__html: secondToLastAuthor.name}} /></a>
@@ -26,7 +26,12 @@ const makeBylines = authors => {
 };
 
 const formatDate = date => {
-  return dateFns.format(new Date(date), 'MM/DD/YYYY H:mm A EST');
+  if (typeof date === 'string') {
+    const dateString = dateFns.format(new Date(date), 'MM/DD/YYYY H:mm A');
+    return `${dateString} EST`;
+  } else {
+    return '';
+  }
 };
 
 const Header = (props) => {
@@ -42,13 +47,13 @@ const Header = (props) => {
         <a href='' className='bt-icon bt-icon--mail' target='_blank' />
       </div>
       <p className='category'>
-        <a href={props.section.link} target='_blank'>Category title</a>
+        <a href={props.section.link} target='_blank'>{props.section.name}</a>
       </p>
       <h1>
-          Your pithy, compelling headline, would you share it?
+        {props.headline}
       </h1>
       <p className='subhead'>
-                Short subhead
+        {props.deck}
       </p>
       <div className='info'>
         <p>
@@ -64,7 +69,7 @@ Header.defaultProps = {
     name: 'Section title',
     link: 'https://www.politico.com',
   },
-  hed: 'Your pithy, compelling headline, would you share it?',
+  headline: 'Your pithy, compelling headline, would you share it?',
   deck: 'Short deck',
   timestamp: null,
   updated: null,
