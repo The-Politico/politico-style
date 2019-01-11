@@ -18,8 +18,14 @@ const makeBylines = authors => {
           <a href={author.link}><span className='byline' dangerouslySetInnerHTML={{__html: author.name}} /></a>,&nbsp;
         </Fragment>
       )}
-      <a href={secondToLastAuthor.link}><span className='byline' dangerouslySetInnerHTML={{__html: secondToLastAuthor.name}} /></a>
-      &nbsp;and&nbsp;
+
+      {secondToLastAuthor &&
+        <Fragment>
+          <a href={secondToLastAuthor.link}><span className='byline' dangerouslySetInnerHTML={{__html: secondToLastAuthor.name}} /></a>
+          &nbsp;and&nbsp;
+        </Fragment>
+      }
+
       <a href={lastAuthor.link}><span className='byline' dangerouslySetInnerHTML={{__html: lastAuthor.name}} /></a>
     </Fragment>
   );
