@@ -2,15 +2,10 @@ import {default as React, Fragment} from 'react';
 import dateFns from 'date-fns';
 
 const makeBylines = authors => {
-  if (authors.length === 1) {
-    return <span className='byline' dangerouslySetInnerHTML={{__html: authors[0]}} />;
-  } else if (authors.length === 0) {
-    return null;
-  }
-
   const output = authors.slice();
   const lastAuthor = output.pop();
   const secondToLastAuthor = output.pop();
+
   return (
     <Fragment>
       {output.map((author, i) =>
@@ -63,7 +58,7 @@ const Header = (props) => {
       </p>
       <div className='info'>
         <p>
-          By <span className='authors'>{makeBylines(props.authors)}</span> | <span className='timestamp'> <time dateTime={props.published}>{formatDate(props.published)}</time></span> {props.updated && <span className='updated'>| <time dateTime={props.updated}>Updated {formatDate(props.updated)}</time></span>}
+          {props.authors && props.authors.length > 0 && <span className='authors'> By {makeBylines(props.authors)}</span> } {props.published && <span className='timestamp'> | <time dateTime={props.published}>{formatDate(props.published)}</time></span> } {props.updated && <span className='updated'>| <time dateTime={props.updated}>Updated {formatDate(props.updated)}</time></span>}
         </p>
       </div>
     </header>
@@ -79,10 +74,7 @@ Header.defaultProps = {
   deck: 'Short deck',
   published: null,
   updated: null,
-  authors: [{
-    name: 'Jane Doe',
-    link: 'https://www.twitter.com/jd/',
-  }],
+  authors: [],
 };
 
 export default Header;
