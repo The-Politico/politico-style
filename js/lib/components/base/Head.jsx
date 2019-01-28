@@ -124,15 +124,33 @@ const Head = props => {
             })();
 
             // responsive ad script
-            // eslint-disable-next-line
             !(function (a) { var b = function () { var a = document.createElement('p'); a.style.width = '100%', a.style.height = '200px'; var b = document.createElement('div'); b.style.position = 'absolute', b.style.top = '0px', b.style.left = '0px', b.style.visibility = 'hidden', b.style.width = '200px', b.style.height = '150px', b.style.overflow = 'hidden', b.appendChild(a), document.body.appendChild(b); var c = a.offsetWidth; b.style.overflow = 'scroll'; var d = a.offsetWidth; return c === d && (d = b.clientWidth), document.body.removeChild(b), c - d; }; var c = function () { typeof googletag !== 'undefined' && googletag.cmd.push(function () { googletag.pubads().refresh(); }); }; var d = function () { var a = 'alpha'; return i >= 748 && i < 990 ? a = 'beta' : i >= 990 && i < l ? a = 'gamma' : i >= l && i < 1028 ? a = 'delta' : i >= 1028 && (a = 'epsilon'), a != 'epsilon' && a != 'delta' && (jQuery('.global-utility-bar .reveal-toggle .reveal').removeClass('is-active'), jQuery('.utility-bar-bottom').removeClass('is-active'), jQuery('.dynamic-ad-wrapper .ad-slot').remove(), jQuery('.global-utility-bar .dynamic-ad-wrapper').html('')), a; }; var e = {currentAdThreshold: ''}; var f = function () { var a = d(); e.currentAdThreshold !== a && (e.currentAdThreshold = a, c()); }; var g = function () { e.currentAdThreshold = d(); }; a(window).on('resize', function () { i = document.documentElement.clientWidth + h, f(); }); var h = b(); var i = document.documentElement.clientWidth + h; var l = 1012; g(); }(jQuery));  //
           };
 
+          function loadUtag(){
+            var loadMax = 5000;
+            var loadCount = 0;
+            var loadInterval = 300;
+            var utagLoader = window.setInterval(function(){
+              console.log('load', loadCount;)
+              if(window.jQuery){
+                setupUtag();
+                window.clearInterval(utagLoader);
+              } else {
+                loadCount = loadCount + 1;
+              }
+
+              if(loadCount * loadInterval > loadMax){
+                window.clearInterval(utagLoader);
+              }
+            }, loadInterval)
+          }
+
           // Cross-Browser Ready Script
           if (document.attachEvent ? document.readyState === 'complete' : document.readyState !== 'loading') {
-            setupUtag();
+            loadUtag();
           } else {
-            document.addEventListener('DOMContentLoaded', setupUtag);
+            document.addEventListener('DOMContentLoaded', loadUtag);
           }
         `}
       </script>
