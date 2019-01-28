@@ -132,7 +132,6 @@ const Head = props => {
             var loadCount = 0;
             var loadInterval = 300;
             var utagLoader = window.setInterval(function(){
-              console.log('load', loadCount;)
               if(window.jQuery){
                 setupUtag();
                 window.clearInterval(utagLoader);
@@ -154,7 +153,7 @@ const Head = props => {
           }
         `}
       </script>
-      {props.children}
+      { props.children }
     </Helmet>
   );
 };
