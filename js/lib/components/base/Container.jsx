@@ -1,13 +1,12 @@
 import {default as React, Fragment} from 'react';
 
-import { Head, Navigation, Footer, Header, Ad } from './';
+import { Navigation, Footer, Header, Ad } from './';
 
 const Container = props => {
   const { meta, content } = props;
 
   return (
     <Fragment>
-      <Head title={meta.pageName} social={content.social} />
       <Navigation />
       <Ad.Banner />
       <Header

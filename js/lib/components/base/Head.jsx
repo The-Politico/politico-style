@@ -52,10 +52,91 @@ const Head = props => {
             script.setAttribute("src", "//www.npttech.com/advertising.js");
             script.setAttribute("onerror", "setNptTechAdblockerCookie(true);");
             document.getElementsByTagName("head")[0].appendChild(script);
-            `}
+          `}
       </script>
       <link rel='stylesheet' href='https://use.typekit.net/ogn0czn.css' />
       <script>{`try{Typekit.load({ async: true });}catch(e){}`}</script>
+      <script>
+        {`// UTag Setup Script
+          function get (obj, key, def) {
+            if (obj.hasOwnProperty(key)) {
+              return obj[key];
+            } else {
+              return def;
+            }
+          }
+
+          function makeBylines (authors) {
+            if (authors.length === 1) {
+              return authors[0];
+            } else if (authors.length === 0) {
+              return null;
+            }
+
+            var output = authors.slice();
+            var lastAuthor = output.pop();
+            var secondToLastAuthor = output.pop();
+
+            var commaAuthors = output.length > 0 ? output.join(', ') + ', ' : '';
+
+            return commaAuthors + secondToLastAuthor + ' and ' + lastAuthor;
+          }
+
+          function setupUtag () {
+            var conf = window.pibOptions;
+
+            if (!window.pibOptions) {
+              return;
+            }
+
+            const authors = get(conf, 'authors', []).map(function (a) {
+              if (typeof a === 'string') {
+                return a;
+              } else if (typeof a === 'object' && 'name' in a) {
+                return a.name;
+              } else {
+                return '';
+              }
+            });
+
+            // Set up utag variables from project package.json
+            window.utag_data = {
+              'page_level_1': 'interactives',
+              'free_paid_content': get(conf, 'freePaidContent', null),
+              'ad_unit_section': get(conf, 'adUnitSection', null),
+              'site_section': get(conf, 'siteSection', null),
+              'page_type': get(conf, 'pageType', null),
+              'site_domain': 'www.politico.com',
+              'internal_site_id': 'politico',
+              'page_name': get(conf, 'pageName', null),
+              'content_author': authors.join('|'),
+              'content_byline': 'By ' + makeBylines(authors),
+              'enable_prebid': true,
+            };
+
+            // load the utag script
+            (function (a, b, c, d) {
+              a = '//tags.tiqcdn.com/utag/politico/main/prod/utag.js';
+              b = document; c = 'script'; d = b.createElement(c); d.src = a;
+              d.type = 'text/java' + c;
+              d.async = true;
+              a = b.getElementsByTagName(c)[0]; a.parentNode.insertBefore(d, a);
+            })();
+
+            // responsive ad script
+            // eslint-disable-next-line
+            !(function (a) { var b = function () { var a = document.createElement('p'); a.style.width = '100%', a.style.height = '200px'; var b = document.createElement('div'); b.style.position = 'absolute', b.style.top = '0px', b.style.left = '0px', b.style.visibility = 'hidden', b.style.width = '200px', b.style.height = '150px', b.style.overflow = 'hidden', b.appendChild(a), document.body.appendChild(b); var c = a.offsetWidth; b.style.overflow = 'scroll'; var d = a.offsetWidth; return c === d && (d = b.clientWidth), document.body.removeChild(b), c - d; }; var c = function () { typeof googletag !== 'undefined' && googletag.cmd.push(function () { googletag.pubads().refresh(); }); }; var d = function () { var a = 'alpha'; return i >= 748 && i < 990 ? a = 'beta' : i >= 990 && i < l ? a = 'gamma' : i >= l && i < 1028 ? a = 'delta' : i >= 1028 && (a = 'epsilon'), a != 'epsilon' && a != 'delta' && (jQuery('.global-utility-bar .reveal-toggle .reveal').removeClass('is-active'), jQuery('.utility-bar-bottom').removeClass('is-active'), jQuery('.dynamic-ad-wrapper .ad-slot').remove(), jQuery('.global-utility-bar .dynamic-ad-wrapper').html('')), a; }; var e = {currentAdThreshold: ''}; var f = function () { var a = d(); e.currentAdThreshold !== a && (e.currentAdThreshold = a, c()); }; var g = function () { e.currentAdThreshold = d(); }; a(window).on('resize', function () { i = document.documentElement.clientWidth + h, f(); }); var h = b(); var i = document.documentElement.clientWidth + h; var l = 1012; g(); }(jQuery));  //
+          };
+
+          // Cross-Browser Ready Script
+          if (document.attachEvent ? document.readyState === 'complete' : document.readyState !== 'loading') {
+            setupUtag();
+          } else {
+            document.addEventListener('DOMContentLoaded', setupUtag);
+          }
+        `}
+      </script>
+      {props.children}
     </Helmet>
   );
 };
