@@ -28,7 +28,7 @@ const makeBylines = authors => {
 
 const formatDate = date => {
   if (typeof date === 'string') {
-    const dateString = dateFns.format(new Date(date), 'MM/DD/YYYY H:mm A');
+    const dateString = dateFns.format(new Date(date), 'MM/DD/YYYY h:mm A');
     return `${dateString} EST`;
   } else {
     return '';
