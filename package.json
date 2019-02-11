@@ -1,6 +1,6 @@
 {
   "name": "politico-style",
-  "version": "3.0.11",
+  "version": "3.0.12",
   "description": "Web fashions by Politico Interactives.",
   "module": "dist/main.esm.js",
   "repository": "git@github.com:The-Politico/politico-style.git",
@@ -31,7 +31,7 @@
   "style": "docs/base/style.css",
   "sass": "scss/base/main.scss",
   "dependencies": {
-    "bootstrap": "@4.2.1",
+    "bootstrap": "==4.2.1",
     "bootstrap-sass": "^3.3.7",
     "classnames": "^2.2.6",
     "date-fns": "^1.30.1",
