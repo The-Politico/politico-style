@@ -12,6 +12,7 @@ import Buttons from './components/Buttons';
 import Filters from './components/Filters';
 import Checkboxes from './components/Checkboxes';
 import RadioButtons from './components/RadioButtons';
+import Toggles from './components/Toggles';
 import Footer from './components/Footer';
 
 const App = () => (
@@ -30,6 +31,7 @@ const App = () => (
       <Filters />
       <Checkboxes />
       <RadioButtons />
+      <Toggles />
     </article>
 
     <Footer />

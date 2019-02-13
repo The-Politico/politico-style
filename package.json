@@ -1,6 +1,6 @@
 {
   "name": "politico-style",
-  "version": "3.0.12",
+  "version": "3.0.13",
   "description": "Web fashions by Politico Interactives.",
   "module": "dist/main.esm.js",
   "repository": "git@github.com:The-Politico/politico-style.git",
@@ -41,7 +41,8 @@
     "prop-types": "^15.6.2",
     "randomstring": "^1.1.5",
     "react-bootstrap-typeahead": "^3.2.0",
-    "react-loader-spinner": "^2.1.0"
+    "react-loader-spinner": "^2.1.0",
+    "react-switch": "^4.0.1"
   },
   "peerDependencies": {
     "react": "^16.4.1",

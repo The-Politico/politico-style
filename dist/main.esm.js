@@ -4,6 +4,7 @@ import classnames from 'classnames';
 import Loader from 'react-loader-spinner';
 import { Typeahead } from 'react-bootstrap-typeahead';
 import hexRgb from 'hex-rgb';
+import Switch from 'react-switch';
 
 var Header = function Header(props) {
   return React.createElement("header", null, React.createElement("h5", {
@@ -704,68 +705,6 @@ Typeahead$1.propTypes = {
   label: PropTypes.string
 };
 
-var Home = function Home() {
-  return React.createElement("svg", {
-    xmlns: "http://www.w3.org/2000/svg",
-    version: "1.1",
-    x: "0px",
-    y: "0px",
-    viewBox: "0 0 100 100",
-    enableBackground: "new 0 0 100 100",
-    xmlSpace: "preserve"
-  }, React.createElement("path", {
-    d: "M79.5,81.458h-57V41.27L51,16.729L79.5,41.27V81.458z M25.5,78.458h51V42.646L51,20.688L25.5,42.646V78.458z"
-  }));
-};
-
-var Nav = function Nav(props) {
-  return React.createElement("nav", {
-    className: "global"
-  }, React.createElement("div", {
-    className: "header-left bt-icon--house"
-  }, React.createElement("a", {
-    href: props.homeLink
-  }, React.createElement(Home, null))), React.createElement("b", {
-    className: "bt-icon bt-icon--politico"
-  }), React.createElement("span", {
-    className: "project-name"
-  }, "/ ", React.createElement("a", {
-    href: props.appLink
-  }, props.appName)), React.createElement("div", {
-    className: "float-right"
-  }, props.children));
-};
-
-Nav.defaultProps = {
-  appLink: './',
-  appName: 'New project',
-  homeLink: './../'
-};
-
-var Footer = function Footer(props) {
-  return React.createElement("footer", null, React.createElement("p", {
-    className: "text-center"
-  }, " Brought to you by the POLITICO Interactive News Team"));
-};
-
-
-
-var index = /*#__PURE__*/Object.freeze({
-  Header: Header,
-  InstructionsList: InstructionsList,
-  Button: Button,
-  Checkbox: Checkbox,
-  ImageUpload: ImageUpload,
-  RadioButton: RadioButton,
-  RadioGroup: RadioGroup,
-  PillFilter: PillFilter,
-  TextInput: TextInput,
-  Select: Select,
-  Typeahead: Typeahead$1,
-  Nav: Nav,
-  Footer: Footer
-});
-
 /**
  * Create a color values object with hex value and two funcs
  * to return RGBA values as either a string or an array of values.
@@ -1244,7 +1183,7 @@ var tealDirt = [{
   variables: " $dirt1"
 }];
 
-var index$1 = {
+var colors = {
   brand: createColorScheme(brand),
   base: createColorScheme(base),
   elections: {
@@ -1270,4 +1209,86 @@ var index$1 = {
   }
 };
 
-export { index as Sketch, index$1 as Colors };
+var Toggle = function Toggle(props) {
+  var active = props.active,
+      onClick = props.onClick;
+  return React.createElement(Switch, {
+    checked: active,
+    onChange: onClick,
+    onColor: colors.brand.politicoDarkRed.hex,
+    offColor: "#343a40"
+  });
+};
+
+Toggle.defaultProps = {
+  active: false
+};
+Toggle.propTypes = {
+  active: PropTypes.bool,
+  onClick: PropTypes.func
+};
+
+var Home = function Home() {
+  return React.createElement("svg", {
+    xmlns: "http://www.w3.org/2000/svg",
+    version: "1.1",
+    x: "0px",
+    y: "0px",
+    viewBox: "0 0 100 100",
+    enableBackground: "new 0 0 100 100",
+    xmlSpace: "preserve"
+  }, React.createElement("path", {
+    d: "M79.5,81.458h-57V41.27L51,16.729L79.5,41.27V81.458z M25.5,78.458h51V42.646L51,20.688L25.5,42.646V78.458z"
+  }));
+};
+
+var Nav = function Nav(props) {
+  return React.createElement("nav", {
+    className: "global"
+  }, React.createElement("div", {
+    className: "header-left bt-icon--house"
+  }, React.createElement("a", {
+    href: props.homeLink
+  }, React.createElement(Home, null))), React.createElement("b", {
+    className: "bt-icon bt-icon--politico"
+  }), React.createElement("span", {
+    className: "project-name"
+  }, "/ ", React.createElement("a", {
+    href: props.appLink
+  }, props.appName)), React.createElement("div", {
+    className: "float-right"
+  }, props.children));
+};
+
+Nav.defaultProps = {
+  appLink: './',
+  appName: 'New project',
+  homeLink: './../'
+};
+
+var Footer = function Footer(props) {
+  return React.createElement("footer", null, React.createElement("p", {
+    className: "text-center"
+  }, " Brought to you by the POLITICO Interactive News Team"));
+};
+
+
+
+var index = /*#__PURE__*/Object.freeze({
+  Header: Header,
+  InstructionsList: InstructionsList,
+  Button: Button,
+  Checkbox: Checkbox,
+  ImageUpload: ImageUpload,
+  RadioButton: RadioButton,
+  RadioGroup: RadioGroup,
+  PillFilter: PillFilter,
+  TextInput: TextInput,
+  Select: Select,
+  Typeahead: Typeahead$1,
+  Toggle: Toggle,
+  Nav: Nav,
+  Footer: Footer
+});
+
+export { index as Sketch, colors as Colors };
