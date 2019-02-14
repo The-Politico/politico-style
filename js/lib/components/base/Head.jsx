@@ -11,8 +11,8 @@ const Head = props => {
       <meta httpEquiv='Content-Type' content='text/html; charset=UTF-8' />
       <meta httpEquiv='X-UA-Compatible' content='IE=edge,chrome=1' />
       <meta name='viewport' content='width=device-width, initial-scale=1' />
-      <meta property='og:url' content={'https://politico.com'} />
-      <link rel='canonical' href={'https://politico.com'} />
+      <meta property='og:url' content={`https://politico.com/${props.publishPath}`} />
+      <link rel='canonical' href={`https://politico.com/${props.publishPath}`} />
       <meta property='twitter:card' content='summary_large_image' />
       <meta property='og:type' content='article' />
       <meta property='twitter:site' content='@politico' />
@@ -171,6 +171,7 @@ const Head = props => {
 
 Head.defaultProps = {
   title: '',
+  publihshPath: '',
   social: {
     'fbook': {
       'card_title': '',
