@@ -6109,23 +6109,28 @@ section {
 .pr6 {
   margin-right: 3rem; }
 
-span.lighter, .lighter.sans, .lighter.serif, .lighter.georgia, .lighter.graphic-text, .lighter.headline, .lighter.jubilat,
+span.lighter, .lighter.sans, .lighter.serif,
+.lighter.georgia, .lighter.graphic-text, .lighter.headline, .lighter.jubilat,
 .lighter.mag, h2.lighter, h3.lighter, h4.lighter, h5.lighter, h6.lighter {
   font-weight: 200 !important; }
 
-span.light, .light.sans, .light.serif, .light.georgia, .light.graphic-text, .light.headline, .light.jubilat,
+span.light, .light.sans, .light.serif,
+.light.georgia, .light.graphic-text, .light.headline, .light.jubilat,
 .light.mag, h2.light, h3.light, h4.light, h5.light, h6.light {
   font-weight: 300 !important; }
 
-span.normal, .normal.sans, .normal.serif, .normal.georgia, .normal.graphic-text, .normal.headline, .normal.jubilat,
+span.normal, .normal.sans, .normal.serif,
+.normal.georgia, .normal.graphic-text, .normal.headline, .normal.jubilat,
 .normal.mag, h2.normal, h3.normal, h4.normal, h5.normal, h6.normal {
   font-weight: 500 !important; }
 
-span.bold, .bold.sans, .bold.serif, .bold.georgia, .bold.graphic-text, .bold.headline, .bold.jubilat,
+span.bold, .bold.sans, .bold.serif,
+.bold.georgia, .bold.graphic-text, .bold.headline, .bold.jubilat,
 .bold.mag, h2.bold, h3.bold, h4.bold, h5.bold, h6.bold {
   font-weight: 700 !important; }
 
-span.bolder, .bolder.sans, .bolder.serif, .bolder.georgia, .bolder.graphic-text, .bolder.headline, .bolder.jubilat,
+span.bolder, .bolder.sans, .bolder.serif,
+.bolder.georgia, .bolder.graphic-text, .bolder.headline, .bolder.jubilat,
 .bolder.mag, h2.bolder, h3.bolder, h4.bolder, h5.bolder, h6.bolder {
   font-weight: 900 !important; }
 
@@ -6133,7 +6138,8 @@ span.bolder, .bolder.sans, .bolder.serif, .bolder.georgia, .bolder.graphic-text,
   font-family: "din-2014", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-variant-ligatures: none; }
 
-.serif, .georgia {
+.serif,
+.georgia {
   font-family: Georgia, Times, "Times New Roman", serif; }
 
 .graphic-text {
@@ -6144,7 +6150,8 @@ span.bolder, .bolder.sans, .bolder.serif, .bolder.georgia, .bolder.graphic-text,
   font-family: "din-2014", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-variant-ligatures: none; }
 
-.uppercase, .yell {
+.uppercase,
+.yell {
   text-transform: uppercase; }
 
 .italic {
@@ -6173,7 +6180,7 @@ p {
     font-size: 1.02rem; }
     @media (max-width: 576px) {
       p.small {
-        font-size: .85em; } }
+        font-size: 0.85em; } }
   p.sans {
     font-family: "din-2014", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-variant-ligatures: none; }
@@ -6181,7 +6188,7 @@ p {
       font-size: 1rem; }
       @media (max-width: 576px) {
         p.sans.small {
-          font-size: .85em; } }
+          font-size: 0.85em; } }
 
 span.dropcap {
   float: left;
@@ -6190,7 +6197,7 @@ span.dropcap {
   font-family: "din-2014", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-variant-ligatures: none;
   font-weight: bold;
-  margin: 0.225rem .5rem -.5rem 0;
+  margin: 0.225rem 0.5rem -0.5rem 0;
   text-transform: uppercase; }
   @media (min-width: 576px) {
     span.dropcap {
@@ -6237,7 +6244,7 @@ h6 {
   h4 + p,
   h5 + p,
   h6 + p {
-    margin-top: .35rem; }
+    margin-top: 0.35rem; }
 
 h2 {
   font-size: 1.45rem;
@@ -6271,13 +6278,14 @@ span.label {
   width: auto; }
 
 h5 {
-  font-size: 0.75rem;
   line-height: 1.3;
   text-transform: uppercase;
   font-weight: 500;
-  letter-spacing: 3.5px;
+  font-size: 0.825rem;
+  letter-spacing: 0.21em;
+  font-family: "din-2014", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #666;
-  margin-bottom: .25rem; }
+  margin-bottom: 0.25rem; }
   h5.light {
     font-weight: 200; }
   @media (min-width: 576px) {
@@ -6297,22 +6305,22 @@ h5 {
       border: solid 1px black; }
 
 h6 {
-  font-size: .9rem;
+  font-size: 0.9rem;
   line-height: 1.3;
   font-weight: 500;
-  letter-spacing: .25px; }
+  letter-spacing: 0.25px; }
 
 h2 + h3 {
   margin-top: 10px; }
 
 p + h2 {
-  padding-top: .5rem; }
+  padding-top: 0.5rem; }
 
 p + h3 {
-  padding-top: .5rem; }
+  padding-top: 0.5rem; }
 
 p + h4 {
-  padding-top: .5rem; }
+  padding-top: 0.5rem; }
 
 .bt-icon {
   -webkit-font-smoothing: antialiased; }
@@ -6321,6 +6329,17 @@ p + h4 {
   position: absolute;
   left: -999em;
   top: -999em; }
+
+.spacecase {
+  letter-spacing: 0.21em;
+  text-transform: uppercase;
+  font-family: "din-2014", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  .spacecase.sentence-case {
+    text-transform: none; }
+  .spacecase.standard {
+    font-size: 0.85rem; }
+  .spacecase.larger {
+    font-size: 1rem; }
 
 .clear {
   clear: both; }
