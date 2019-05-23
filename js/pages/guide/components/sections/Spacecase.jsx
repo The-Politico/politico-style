@@ -8,7 +8,7 @@ const Spacecase = () => (
     <section>
       <h3 className='mb1'>Using Spacecase™</h3>
       <p>
-        We use spacecase through our builds to stylize label text. When applied
+        We use spacecase throughout builds to stylize label text. When applied
         to an element the letter spacing is set to <code>0.21em</code> or 0.21px
         the relative font size of its nearest parent.
       </p>
@@ -16,7 +16,7 @@ const Spacecase = () => (
         Spacecase defaults to uppercase and should be used on short snippets of
         text with few exceptions (to be decided on an individual basis). There
         in an override available <code>sentence-case</code> which removes the
-        text transformation, but this is not recommended.
+        text-transformation, but is not recommended.
       </p>
       <p className='spacecase standard mt3 mb3'>
         This line uses the standard spacecase
