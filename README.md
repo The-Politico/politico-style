@@ -59,7 +59,7 @@ $ npm run build
 ```
 
 To publish:
-Update the version number in package.json.
+Update the version number in package.json
 
 ```
 $ npm publish
