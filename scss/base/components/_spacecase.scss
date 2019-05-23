@@ -1,0 +1,19 @@
+.spacecase {
+  letter-spacing: 0.21em;
+  text-transform: uppercase;
+  font-family: $din;
+
+  &.sentence-case {
+    text-transform: none;
+  }
+
+  &.standard {
+    font-size: 0.85rem;
+    //this is equal to the h5 style
+  }
+
+  &.larger {
+    font-size: 1rem;
+    //try not to exceed this size
+  }
+}

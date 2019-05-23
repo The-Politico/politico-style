@@ -1,29 +1,28 @@
-
 //Font weights
-%weights{
+%weights {
   //lightest available for Din 2014 and Jubilat only
-  &.lighter{
+  &.lighter {
     font-weight: 200 !important;
   }
 
-  &.light{
-      font-weight: 300 !important;
+  &.light {
+    font-weight: 300 !important;
   }
 
-  &.normal{
+  &.normal {
     font-weight: 500 !important;
   }
 
-  &.bold{
+  &.bold {
     font-weight: 700 !important;
   }
 
-  &.bolder{
+  &.bolder {
     font-weight: 900 !important;
   }
 }
 
-span{
+span {
   @extend %weights;
 }
 
@@ -33,7 +32,8 @@ span{
   font-variant-ligatures: none;
 }
 
-.serif, .georgia {
+.serif,
+.georgia {
   @extend %weights;
   font-family: $georgia;
 }
@@ -50,15 +50,16 @@ span{
   font-variant-ligatures: none;
 }
 
-.uppercase, .yell{
+.uppercase,
+.yell {
   text-transform: uppercase;
 }
 
-.italic{
+.italic {
   font-style: italic;
 }
 
-.underline{
+.underline {
   text-decoration: underline;
 }
 
@@ -66,9 +67,9 @@ span{
 //If you want Jubilat  you must uncomment the jubilat include in your index file.
 .jubilat,
 .headline.mag,
-.mag{
-    @extend %weights;
-    font-family: $jubilat;
+.mag {
+  @extend %weights;
+  font-family: $jubilat;
 }
 
 // Paragraphs
@@ -85,28 +86,27 @@ p {
     margin-top: 0;
   }
 
-  &.small{
+  &.small {
     font-size: 1.02rem;
 
     @media (max-width: $min-width-sm) {
-      font-size: .85em;
+      font-size: 0.85em;
     }
   }
 
-  &.sans{
+  &.sans {
     font-family: $din;
     font-variant-ligatures: none;
 
-    &.small{
+    &.small {
       font-size: 1rem;
 
       @media (max-width: $min-width-sm) {
-        font-size: .85em;
+        font-size: 0.85em;
       }
     }
   }
 }
-
 
 // The dropcap as needed, not included by default
 span.dropcap {
@@ -116,13 +116,13 @@ span.dropcap {
   font-family: $din;
   font-variant-ligatures: none;
   font-weight: bold;
-  margin: 0.225rem .5rem -.5rem 0;;
+  margin: 0.225rem 0.5rem -0.5rem 0;
   text-transform: uppercase;
 
-  @media (min-width: $min-min-width-sm){
+  @media (min-width: $min-min-width-sm) {
     font-size: 5rem;
   }
- }
+}
 
 // H groups
 
@@ -155,7 +155,6 @@ h1 {
     margin: 0 auto;
     padding: 5px 0 8px;
   }
-
 }
 
 h2,
@@ -170,7 +169,7 @@ h6 {
   font-weight: 200;
 
   + p {
-    margin-top: .35rem;
+    margin-top: 0.35rem;
   }
 }
 
@@ -179,7 +178,6 @@ h2 {
   line-height: 1.2;
   font-weight: 300;
   @extend %weights;
-
 
   @media (min-width: $min-width-sm) {
     font-size: 1.6rem;
@@ -191,13 +189,12 @@ h3 {
   line-height: 1.2;
   font-weight: 700;
   -webkit-font-smoothing: antialiased;
- -moz-osx-font-smoothing: grayscale;
-   @extend %weights;
+  -moz-osx-font-smoothing: grayscale;
+  @extend %weights;
 
-
-   @media (min-width: $min-width-sm) {
-     font-size: 1.4rem;
-   }
+  @media (min-width: $min-width-sm) {
+    font-size: 1.4rem;
+  }
 }
 
 h4 {
@@ -211,23 +208,24 @@ h4 {
   }
 }
 
-span.label{
+span.label {
   display: block;
   margin: 0 auto;
   width: auto;
 }
 
 h5 {
-  font-size: 0.75rem;
   line-height: 1.3;
   text-transform: uppercase;
   font-weight: 500;
-  letter-spacing: 3.5px;
+  font-size: 0.825rem;
+  letter-spacing: 0.21em;
+  font-family: $din;
   color: $satan;
-  margin-bottom: .25rem;
+  margin-bottom: 0.25rem;
   @extend %weights;
 
-  &.light{
+  &.light {
     font-weight: 200;
   }
 
@@ -235,7 +233,7 @@ h5 {
     font-size: 0.8;
   }
 
-  &.tag{
+  &.tag {
     margin: 10px 0;
     background-color: #222;
     color: #fff;
@@ -243,7 +241,7 @@ h5 {
     display: inline-block;
     line-height: 1.2;
 
-    &.outline{
+    &.outline {
       background-color: #fff;
       color: #000;
       display: inline-block;
@@ -253,37 +251,36 @@ h5 {
 }
 
 h6 {
-  font-size: .9rem;
+  font-size: 0.9rem;
   line-height: 1.3;
   font-weight: 500;
-  letter-spacing: .25px;
-    @extend %weights;
+  letter-spacing: 0.25px;
+  @extend %weights;
 }
 
-h2 + h3{
+h2 + h3 {
   margin-top: 10px;
 }
 
-p + h2{padding-top:.5rem;}
+p + h2 {
+  padding-top: 0.5rem;
+}
 
+p + h3 {
+  padding-top: 0.5rem;
+}
 
-p + h3{padding-top:.5rem;}
-
-p + h4{padding-top:.5rem;}
-
+p + h4 {
+  padding-top: 0.5rem;
+}
 
 //icon text
-.bt-icon{
+.bt-icon {
   -webkit-font-smoothing: antialiased;
 }
 
 .icon-text {
-    position: absolute;
-    left: -999em;
-    top: -999em;
-}
-
-//letter spacing
-@mixin std-letter-spacing{
-  letter-spacing: 3.5;
+  position: absolute;
+  left: -999em;
+  top: -999em;
 }

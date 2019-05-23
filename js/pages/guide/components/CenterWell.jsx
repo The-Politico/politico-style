@@ -11,6 +11,7 @@ import Header from './sections/Header';
 import Subheds from './sections/Subheds';
 import Paragraphs from './sections/Paragraphs';
 import Alignment from './sections/Alignment';
+import Spacecase from './sections/Spacecase';
 import Colors from './sections/Colors';
 import Icons from './sections/Icons';
 import Lists from './sections/Lists';
@@ -27,6 +28,7 @@ const CenterWell = () => (
     <TheGrid />
     <Layout />
     <Fonts />
+    <Spacecase />
     <Header />
     <Subheds />
     <Paragraphs />

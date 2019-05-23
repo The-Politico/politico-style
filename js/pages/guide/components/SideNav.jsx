@@ -27,6 +27,9 @@ const SideNav = () => (
       <a href='#fonts'>Fonts</a>
     </li>
     <li>
+      <a href='#spacecase'>Spacecase</a>
+    </li>
+    <li>
       <a href='#header'>Header</a>
     </li>
     <li>
