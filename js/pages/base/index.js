@@ -1,1 +1,2 @@
-import 'SCSS/base/main.scss';
+/* Implemented Redirect */
+// import 'SCSS/base/main.scss';
