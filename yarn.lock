@@ -1447,8 +1447,9 @@ boolbase@~1.0.0:
   resolved "https://registry.yarnpkg.com/boolbase/-/boolbase-1.0.0.tgz#68dff5fbe60c51eb37725ea9e3ed310dcc1e776e"
 
 bootstrap-sass@^3.3.7:
-  version "3.3.7"
-  resolved "https://registry.yarnpkg.com/bootstrap-sass/-/bootstrap-sass-3.3.7.tgz#6596c7ab40f6637393323ab0bc80d064fc630498"
+  version "3.4.1"
+  resolved "https://registry.yarnpkg.com/bootstrap-sass/-/bootstrap-sass-3.4.1.tgz#6843c73b1c258a0ac5cb2cc6f6f5285b664a8e9a"
+  integrity sha512-p5rxsK/IyEDQm2CwiHxxUi0MZZtvVFbhWmyMOt4lLkA4bujDA1TGoKT0i1FKIWiugAdP+kK8T5KMDFIKQCLYIA==
 
 bootstrap@==4.2.1:
   version "4.2.1"
@@ -2703,7 +2704,7 @@ etag@~1.8.1:
 
 event-stream@~3.3.0:
   version "3.3.4"
-  resolved "http://registry.npmjs.org/event-stream/-/event-stream-3.3.4.tgz#4ab4c9a0f5a54db9338b4c34d86bfce8f4b35571"
+  resolved "https://registry.npmjs.org/event-stream/-/event-stream-3.3.4.tgz#4ab4c9a0f5a54db9338b4c34d86bfce8f4b35571"
   dependencies:
     duplexer "~0.1.1"
     from "~0"
